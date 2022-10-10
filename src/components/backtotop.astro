@@ -1,0 +1,36 @@
+---
+---
+
+<button class="back-to-top opacity-0 fixed block rounded-full bottom-10 right-10 focus:ring-4 focus:outline-none focus:ring-teal-300 transition-opacity duration-500" tabindex="0">
+  <svg class="w-10 h-10 px-2 py-2 text-white bg-teal-500 rounded-full hover:bg-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="back-to-top">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+  </svg>
+</button>
+
+<script is:inline>
+  const showOnPx = 100;
+  const backToTopButton = document.querySelector(".back-to-top");
+
+  const scrollContainer = () => {
+    return document.documentElement || document.body;
+  };
+
+  const goToTop = () => {
+    document.body.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  document.addEventListener("scroll", () => {
+    console.log("Scroll Height: ", scrollContainer().scrollHeight);
+    console.log("Client Height: ", scrollContainer().clientHeight);
+
+    if (scrollContainer().scrollTop > showOnPx) {
+      backToTopButton.classList.remove("opacity-0");
+    } else {
+      backToTopButton.classList.add("opacity-0");
+    }
+  });
+
+  backToTopButton.addEventListener("click", goToTop);
+</script>
