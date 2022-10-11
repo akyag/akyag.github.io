@@ -6,3 +6,7 @@ const { label = "Toggle between Dark and Light mode", class: className = "text-g
 <button type="button" class={className} aria-label={label} data-aw-toggle-color-scheme>
   <Icon name={iconName} class={iconClass} />
 </button>
+<label for="check" class="relative h-6 w-12 cursor-pointer rounded-full bg-white">
+  <input class="peer sr-only" type="checkbox" id="check" data-aw-toggle-color-scheme />
+  <span class="absolute left-1 top-1 h-4/6 w-1/3 rounded-full bg-geraldine-200 transition-all duration-500 peer-checked:left-7 peer-checked:bg-geraldine-600"></span>
+</label>

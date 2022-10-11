@@ -29,6 +29,7 @@
       document.documentElement.classList.toggle("dark");
       localStorage.theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
     });
+    
   };
   window.onpageshow = function () {
     const elem = document.querySelector("[data-aw-toggle-menu]");
