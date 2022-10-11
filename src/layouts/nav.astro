@@ -1,5 +1,7 @@
 ---
 import headerLogo from "../images/headerlogo.svg";
+import DarkMode from "../components/DarkMode.astro";
+import ToggleTheme from "../components/ToggleTheme.astro";
 ---
 
 <header class="relative z-10 justify-between hidden max-w-6xl px-8 py-8 mx-auto md:flex xl:px-0">
@@ -12,20 +14,11 @@ import headerLogo from "../images/headerlogo.svg";
     <a href="/about" class="text-base text-dark-500 dark:text-white hover:transition-all hover:duration-200 hover:ease-in-out font-display hover:text-geraldine-600 focus:border-b-4 focus:outline-none focus:border-geraldine-500" active-class="border-b-4 border-geraldine-500">About</a>
     <a href="/work" class="text-base text-dark-500 dark:text-white hover:transition-all hover:duration-200 hover:ease-in-out font-display hover:text-geraldine-600 focus:border-b-4 focus:outline-none focus:border-geraldine-500" active-class="border-b-4 border-geraldine-500">Work</a>
     <a href="/contact" class="text-base text-dark-500 dark:text-white hover:transition-all hover:duration-200 hover:ease-in-out font-display hover:text-geraldine-600 focus:border-b-4 focus:outline-none focus:border-geraldine-500" active-class="border-b-4 border-geraldine-500">Contact</a>
-    <!-- <div>
-                <p class="p-4 pb-2">
-                    <select
-                        v-model="$colorMode.preference"
-                        class="border rounded-md appearance-none dark:bg-gray-900 dark:border-gray-700"
-                    >
-                        <option value="light">Light</option>
-                        <option value="dark">Dark</option>
-                    </select>
-                </p>
-            </div>-->
-    <label for="check" class="relative h-6 w-12 cursor-pointer rounded-full bg-white">
+    <!-- <label for="check" class="relative h-6 w-12 cursor-pointer rounded-full bg-white">
       <input class="peer sr-only" type="checkbox" id="check" />
       <span class="absolute left-1 top-1 h-4/6 w-1/3 rounded-full bg-geraldine-200 transition-all duration-500 peer-checked:left-7 peer-checked:bg-geraldine-600"></span>
-    </label>
+    </label> -->
+    <DarkMode />
+    <ToggleTheme iconClass="w-5 h-5" />
   </nav>
 </header>
