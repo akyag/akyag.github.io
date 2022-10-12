@@ -19,8 +19,7 @@
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
-    "@astrojs/preact": "^1.2.0",
     "astro-icon": "^0.7.3",
-    "preact": "^10.11.1"
+    "svgo": "^2.8.0"
   }
 }

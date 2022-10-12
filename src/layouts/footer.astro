@@ -2,6 +2,7 @@
 let currentDate = new Date().getFullYear();
 import Backtotop from "../components/backtotop.astro";
 import footerLogo from "../images/logo-white.svg";
+import AstroDark from "../images/astro-dark.svg";
 ---
 
 <footer class="h-auto py-12 mt-12 text-white divide-y-2 divide-dark-50 bg-dark-800 dark:bg-dark-800">
@@ -136,7 +137,7 @@ import footerLogo from "../images/logo-white.svg";
             <circle cx="12" cy="12" r="9"></circle>
             <path d="M14.5 9a3.5 4 0 1 0 0 6"></path>
           </svg>
-          2009 - {currentDate} - weboreviews.com
+          2009 - {currentDate} - Built using <a href="https://astro.build" target="_blank" rel="noopener"><img src={AstroDark} class="w-16 h-6 inline-block mx-2" alt="" /></a>
         </div>
         <div class="pt-2 pl-2 lg:pt-0">
           Designed with

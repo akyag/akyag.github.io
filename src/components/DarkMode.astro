@@ -29,7 +29,13 @@
       document.documentElement.classList.toggle("dark");
       localStorage.theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
     });
-    
+    if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.getElementById("check").checked = true;
+      document.getElementById("check2").checked = true;
+    } else {
+      document.getElementById("check").checked = false;
+      document.getElementById("check2").checked = false;
+    }
   };
   window.onpageshow = function () {
     const elem = document.querySelector("[data-aw-toggle-menu]");
