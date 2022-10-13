@@ -1,0 +1,174 @@
+---
+// Component Imports
+import Nav from "../layouts/nav.astro";
+import MobileNav from "../layouts/mobile-nav.astro";
+import AboutHero from "../layouts/about-hero.astro";
+import Footer from "../layouts/footer.astro";
+import "../styles/global.css";
+import Me from "../images/me.png";
+import Link from "../components/link.astro";
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>About Me</title>
+  </head>
+
+  <body class="bg-gray-100 dark:bg-dark-900 text-gray-700">
+    <div class="absolute inset-0 h-[480px] md:h-[540px] lg:h-[720px] 2xl:h-[960px] bg-center bg-no-repeat bottom-10 dark:bg-dark-900 hero-bg">
+      <div class="absolute inset-0 bg-grid-gray-900/[0.05] bg-bottom border-b border-gray-100/5" style="
+          mask-image: linear-gradient(to bottom, transparent, black);
+          -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+        "></div>
+    </div>
+    <div class="md:space-y-16 lg:space-y-48 2xl:space-y-72">
+      <div>
+        <header class="relative">
+          <Nav />
+          <MobileNav />
+        </header>
+        <div class="relative mx-auto max-w-7xl mb-48">
+          <AboutHero />
+        </div>
+      </div>
+      <main id="content-wrapper" class="container p-8 mx-auto lg:p-24 dark:bg-dark-900 dark:text-white">
+        <div class="max-w-6xl mx-auto space-y-12 leading-relaxed mt-16 lg:mt-0">
+          <h3 class="mx-3 my-5 text-5xl font-bold text-center font-display">About Me</h3>
+          <div class="flex flex-col space-y-12 md:space-x-12 md:space-y-0 md:flex-row">
+            <div class="flex justify-center flex-shrink-0">
+              <img src={Me} alt="Akshay Ghate" class="w-32 h-32 mx-8 transition duration-200 ease-in-out border-4 border-gray-100 rounded-full shadow-lg dark:border-gray-800 hover:border-geraldine-400 dark:hover:border-geraldine-300" />
+            </div>
+            <div class="space-y-4">
+              <div class="text-2xl font-semibold">
+                Hi there,
+                <span class="inline-block w-7 h-7">
+                  <svg viewBox="0 0 64 64"
+                    ><path fill="#42ade2" d="M16.1 48.5c-.5-.1-.9-.2-1.4-.4c-.5-.2-.9-.3-1.3-.5c-.9-.4-1.7-.9-2.5-1.5C9.3 45 8 43.5 7 41.7C6 40 5.4 38 5.3 36.1c-.1-1 0-1.9.1-2.9c.1-.5.2-.9.3-1.4c.1-.5.3-.9.4-1.4l.1 1.4c0 .5.1.9.2 1.4c.1.9.3 1.8.5 2.6c.4 1.7 1 3.3 1.9 4.8c.9 1.5 1.9 2.9 3.2 4.2c.6.6 1.3 1.2 2 1.8c.3.3.7.6 1.1.9l1 1m-.3 3.6c-.3.2-.7.3-1.1.4c-.4.1-.7.2-1.1.2c-.7.1-1.5.2-2.3.1c-1.5-.1-3.1-.5-4.4-1.2c-1.4-.7-2.6-1.8-3.4-3.1c-.4-.6-.8-1.3-1.1-2c-.1-.3-.2-.7-.3-1.1c0-.3-.1-.6-.1-1c.3.3.5.5.7.8c.3.3.5.6.7.8c.5.5.9 1 1.4 1.4c1 .9 2 1.7 3.2 2.3c1.1.6 2.4 1.1 3.6 1.5c.6.2 1.3.3 2 .5c.3.1.7.1 1 .2c.5.1.8.1 1.2.2M38.4 3.5c.5.1.9.3 1.4.5c.5.2.9.4 1.3.6c.9.5 1.7 1 2.5 1.6c1.6 1.2 2.9 2.8 3.8 4.6c.9 1.8 1.4 3.8 1.4 5.7c0 1-.1 1.9-.3 2.9c-.1.5-.2.9-.4 1.4c-.2.5-.3.9-.5 1.3l-.1-1.4c0-.5 0-.9-.1-1.4l-.3-2.7c-.3-1.7-.9-3.4-1.7-5c-.8-1.6-1.8-3-3-4.3c-.6-.7-1.3-1.3-1.9-2c-.3-.3-.7-.6-1.1-.9l-1-.9m8.7-.4c.4.1.7.2 1 .4c.3.1.7.3 1 .5c.6.4 1.2.8 1.8 1.3c1.1 1 2 2.2 2.5 3.6c.6 1.4.8 2.9.6 4.4c-.1.7-.3 1.4-.5 2.1c-.1.3-.3.7-.4 1c-.2.3-.3.6-.6.9v-2c0-.7-.1-1.3-.1-1.9c-.2-1.3-.4-2.5-.9-3.6c-.5-1.2-1.1-2.2-1.8-3.3c-.4-.5-.8-1.1-1.2-1.6c-.2-.3-.4-.5-.7-.8c-.2-.5-.5-.8-.7-1"></path><path fill="#d6a57c" d="M10 18c-2 .9-2.7 3.3-1.8 5.3l12.6 26.3l7-3.3l-12.6-26.4c-.9-2-3.2-2.9-5.2-1.9m33.1 20.9l7.4-3.6l-14.4-30c-1-2-3.4-2.9-5.5-1.9c-2 1-2.9 3.4-1.9 5.5l14.4 30"></path><path
+                      fill="#b58360"
+                      d="M30.7 3.4c-.2.1-.4.2-.6.4c1.9-.5 3.9.4 4.8 2.2l14.4 30l1.3-.6l-14.4-30c-1-2.1-3.4-3-5.5-2"></path><path fill="#d6a57c" d="m27.8 46.2l7.7-3.7l-14.7-30.6c-1-2.1-3.6-3.1-5.7-2.1s-3 3.6-2 5.7l14.7 30.7"></path><path fill="#b58360" d="M15.1 9.9c-.2.1-.4.2-.6.4c1.9-.5 4.1.4 5 2.3l9.1 19.1l2.2 1.3l-10-21c-1-2.2-3.5-3.1-5.7-2.1"></path><path fill="#d6a57c" d="m34.3 40.1l7.7-3.7L27.3 5.8c-1-2.1-3.6-3.1-5.7-2c-2.1 1-3 3.6-2 5.7l14.7 30.6"></path><path fill="#b58360" d="M21.6 3.7c-.2.1-.4.3-.6.4c1.9-.5 4.1.4 5 2.3L36.3 28l2.2 1.3L27.3 5.8c-1-2.2-3.6-3.1-5.7-2.1M10 18c-.2.1-.4.2-.6.4c1.8-.5 3.7.4 4.5 2.2l7.5 15.7l2.2 1.3L15.2 20c-.9-2.1-3.2-3-5.2-2"></path><path fill="#d6a57c" d="M60.8 15c-2.7-2.1-7.1.2-9.3 7.4c-1.5 5-1.7 6.5-4.9 8l-1.8-3.7S16.4 40.4 17.5 42.6c0 0 3.4 10.6 9.2 15.5c8.6 7.3 28.7-.5 29.6-19.6c.5-11.1 7.4-21.2 4.5-23.5"></path><g fill="#b58360"><path d="M60.8 15c-.5-.4-1.1-.6-1.7-.7c.1.1.3.1.4.2c3 2.3-.1 7.6-1.8 12.4c-1.4 3.8-2.6 7.7-2.4 11.5c.8 16.6-15.9 24.5-25.9 21.5c9.8 4.1 28-3.7 27.2-21c-.2-3.8.9-7.5 2.4-11.5c1.6-4.8 4.7-10.1 1.8-12.4"></path><path d="M47.5 30c-6.2.7-15.3 9.6-8.9 19.3c-4.7-9.8 3-16.4 7.9-18.7c.5-.4 1-.6 1-.6"></path></g>
+                  </svg>
+                </span>
+              </div>
+              <p class="first-letter:text-3xl first-letter:text-geraldine-500 first-letter:font-semibold">I am a frontend designer, freelance developer and a proud nerd. I work primarily in HTML, CSS and JS and have experience with CSS Frameworks like Bulma, Foundation and TailwindCSS. Currently, I prefer using Tailwind and Vue.JS in my projects as it gives me complete freedom to incorporate my ideas. In design tools, I am used to quite a few applications like Adobe Photoshop, Inkscape and CorelDRAW. I am fascinated by topics such as encryption, design trends, security, etc. In my free time I enjoy playing, following football, tinkering with computer hardware, watching movies. Science-fiction and fantasy are my favorite genres.</p>
+              <p>
+                If you have any questions or just want to say hi, feel free to
+                <Link href="/contact#content-wrapper">contact me</Link> or through social media networks listed in the footer. If you use Open PGP, here is my
+                <a class="font-semibold text-teal-500 hover:transition hover:duration-150 hover:ease focus:border-b-4 focus:border-geraldine-500 hover:text-geraldine-700 dark:text-[#2DD4BF] dark:hover:text-geraldine-400 focus:outline-none" href="https://raw.githubusercontent.com/akyag/akyag.github.io/master/public_key.asc" target="_blank" rel="noopener">public encryption key</a>.
+              </p>
+              <p class="mr-12 text-xl font-medium text-right">- Akshay Ghate</p>
+            </div>
+          </div>
+          <div class="text-2xl font-semibold uppercase font-display">
+            <span class="border-b-4 border-geraldine-600">Tech Stack</span>
+            <div class="flex flex-wrap items-start gap-6 py-8">
+              <div>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="block hover:transition-all hover:duration-200 hover:ease-out focus:ring-4 focus:ring-offset-4 focus:outline-none hover:grayscale-0 focus:grayscale-0 filter grayscale focus:ring-geraldine-500 dark:focus:ring-offset-dark-900" target="_blank" rel="noopener" title="HTML5">
+                  <svg class="w-10 h-10" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg)" aria-label="tech-icon">
+                    <path fill="#e44f26" d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30L5.902 27.201z"></path>
+                    <path fill="#f1662a" d="M16 27.858l8.17-2.265l1.922-21.532H16v23.797z"></path>
+                    <path fill="#ebebeb" d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.25l.074.83l.759 8.517H16v-3.091z"></path>
+                    <path fill="#ebebeb" d="M16 21.434l-.014.004l-3.442-.929l-.22-2.465H9.221l.433 4.852l6.332 1.758l.014-.004v-3.216z"></path>
+                    <path fill="#fff" d="M15.989 13.407v3.091h3.806l-.358 4.009l-3.448.93v3.216l6.337-1.757l.046-.522l.726-8.137l.076-.83H15.989z"></path>
+                    <path fill="#fff" d="M15.989 7.151V10.242h7.466l.062-.694l.141-1.567l.074-.83h-7.743z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="block hover:transition-all hover:duration-200 hover:ease-out focus:ring-4 focus:ring-offset-4 focus:outline-none hover:grayscale-0 focus:grayscale-0 filter grayscale focus:ring-geraldine-500 dark:focus:ring-offset-dark-900" target="_blank" rel="noopener" title="CSS3">
+                  <svg class="w-10 h-10" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg)" aria-label="tech-icon">
+                    <path fill="#1572b6" d="M5.902 27.201L3.656 2h24.688l-2.249 25.197L15.985 30L5.902 27.201z"></path>
+                    <path fill="#33a9dc" d="M16 27.858l8.17-2.265l1.922-21.532H16v23.797z"></path>
+                    <path fill="#fff" d="M16 13.191h4.09l.282-3.165H16V6.935h7.75l-.074.829l-.759 8.518H16v-3.091z"></path>
+                    <path fill="#ebebeb" d="M16.019 21.218l-.014.004l-3.442-.93l-.22-2.465H9.24l.433 4.853l6.331 1.758l.015-.004v-3.216z"></path>
+                    <path fill="#fff" d="M19.827 16.151l-.372 4.139l-3.447.93v3.216l6.336-1.756l.047-.522l.537-6.007h-3.101z"></path>
+                    <path fill="#ebebeb" d="M16.011 6.935v3.091H8.545l-.062-.695l-.141-1.567l-.074-.829h7.743z"></path>
+                    <path fill="#ebebeb" d="M16 13.191v3.091H12.601l-.062-.695l-.14-1.567l-.074-.829H16z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a href="https://nuxtjs.org" class="block hover:transition-all hover:duration-200 hover:ease-out focus:ring-4 focus:ring-offset-4 focus:outline-none hover:grayscale-0 focus:grayscale-0 filter grayscale focus:ring-geraldine-500 dark:focus:ring-offset-dark-900" target="_blank" rel="noopener" title="NuxtJS">
+                  <svg viewBox="0 0 124 124" class="w-10 h-10" aria-label="tech-icon">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M55.7498 27.1551C52.5277 21.615 44.4723 21.6149 41.2502 27.1551L6.13404 87.5346C2.91191 93.0748 6.93956 100 13.3838 100H40.7975C38.0438 97.5934 37.0241 93.4303 39.1079 89.8584L65.7033 44.2694L55.7498 27.1551Z" fill="#80EEC0"></path>
+                    <path d="M78.0002 40.3997C80.6668 35.8668 87.3332 35.8668 89.9998 40.3997L119.061 89.801C121.728 94.3339 118.395 100 113.062 100H54.9383C49.6052 100 46.2719 94.3339 48.9385 89.801L78.0002 40.3997Z" fill="#00DC82"></path>
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a href="https://v3.vuejs.org/" class="block hover:transition-all hover:duration-200 hover:ease-out focus:ring-4 focus:ring-offset-4 focus:outline-none hover:grayscale-0 focus:grayscale-0 filter grayscale focus:ring-geraldine-500 dark:focus:ring-offset-dark-900" target="_blank" rel="noopener" title="Vue JS">
+                  <svg class="w-10 h-10" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 221" style="transform: rotate(360deg)" aria-label="tech-icon">
+                    <path d="M204.8 0H256L128 220.8L0 0h97.92L128 51.2L157.44 0h47.36z" fill="#41B883"></path>
+                    <path d="M0 0l128 220.8L256 0h-51.2L128 132.48L50.56 0H0z" fill="#41B883"></path>
+                    <path d="M50.56 0L128 133.12L204.8 0h-47.36L128 51.2L97.92 0H50.56z" fill="#35495E"></path>
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a href="https://tailwindcss.com/" class="block hover:transition-all hover:duration-200 hover:ease-out focus:ring-4 focus:ring-offset-4 focus:outline-none hover:grayscale-0 focus:grayscale-0 filter grayscale focus:ring-geraldine-500 dark:focus:ring-offset-dark-900" target="_blank" rel="noopener" title="TailwindCSS">
+                  <svg class="w-12 h-10" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 154" style="transform: rotate(360deg)" aria-label="tech-icon">
+                    <defs>
+                      <linearGradient x1="-2.778%" y1="32%" x2="100%" y2="67.556%" id="IconifyId-175bb4c82e0-4b8afb-1334">
+                        <stop stop-color="#2298BD" offset="0%"></stop>
+                        <stop stop-color="#0ED7B5" offset="100%"></stop>
+                      </linearGradient>
+                    </defs>
+                    <path d="M128 0C93.867 0 72.533 17.067 64 51.2C76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2c-12.8 17.067-27.733 23.467-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2c9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2c-12.8 17.067-27.733 23.467-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z" fill="url(#IconifyId-175bb4c82e0-4b8afb-1334)"></path>
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a href="https://bulma.io/" class="block hover:transition-all hover:duration-200 hover:ease-out focus:ring-4 focus:ring-offset-4 focus:outline-none hover:grayscale-0 focus:grayscale-0 filter grayscale focus:ring-geraldine-500 dark:focus:ring-offset-dark-900" target="_blank" rel="noopener" title="Bulma CSS Framework">
+                  <svg class="w-12 h-10" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 373" style="transform: rotate(360deg)" aria-label="tech-icon">
+                    <path fill="#00D1B2" d="M0 256L23.273 93.09L116.363 0l116.364 116.364l-69.818 69.818L256 279.272l-139.636 93.092z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="block hover:transition-all hover:duration-200 hover:ease-out focus:ring-4 focus:ring-offset-4 focus:outline-none hover:grayscale-0 focus:grayscale-0 filter grayscale focus:ring-geraldine-500 dark:focus:ring-offset-dark-900" target="_blank" rel="noopener" title="JavaScript">
+                  <svg class="w-10 h-10" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg)" aria-label="tech-icon">
+                    <path fill="#f5de19" d="M2 2h28v28H2z"></path>
+                    <path d="M20.809 23.875a2.866 2.866 0 0 0 2.6 1.6c1.09 0 1.787-.545 1.787-1.3c0-.9-.716-1.222-1.916-1.747l-.658-.282c-1.9-.809-3.16-1.822-3.16-3.964c0-1.973 1.5-3.476 3.853-3.476a3.889 3.889 0 0 1 3.742 2.107L25 18.128A1.789 1.789 0 0 0 23.311 17a1.145 1.145 0 0 0-1.259 1.128c0 .789.489 1.109 1.618 1.6l.658.282c2.236.959 3.5 1.936 3.5 4.133c0 2.369-1.861 3.667-4.36 3.667a5.055 5.055 0 0 1-4.795-2.691zm-9.295.228c.413.733.789 1.353 1.693 1.353c.864 0 1.41-.338 1.41-1.653v-8.947h2.631v8.982c0 2.724-1.6 3.964-3.929 3.964a4.085 4.085 0 0 1-3.947-2.4z" fill="#000"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div>
+                <a href="https://git-scm.com/" class="block hover:transition-all hover:duration-200 hover:ease-out focus:ring-4 focus:ring-offset-4 focus:outline-none hover:grayscale-0 focus:grayscale-0 filter grayscale focus:ring-geraldine-500 dark:focus:ring-offset-dark-900" target="_blank" rel="noopener" title="Git">
+                  <svg class="w-10 h-10" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="transform: rotate(360deg)" aria-label="tech-icon">
+                    <path d="M2.6 10.59L8.38 4.8l1.69 1.7c-.24.85.15 1.78.93 2.23v5.54c-.6.34-1 .99-1 1.73a2 2 0 0 0 2 2a2 2 0 0 0 2-2c0-.74-.4-1.39-1-1.73V9.41l2.07 2.09c-.07.15-.07.32-.07.5a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2c-.18 0-.35 0-.5.07L13.93 7.5a1.98 1.98 0 0 0-1.15-2.34c-.43-.16-.88-.2-1.28-.09L9.8 3.38l.79-.78c.78-.79 2.04-.79 2.82 0l7.99 7.99c.79.78.79 2.04 0 2.82l-7.99 7.99c-.78.79-2.04.79-2.82 0L2.6 13.41c-.79-.78-.79-2.04 0-2.82z" fill="#E74029"></path>
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a href="https://sass-lang.com/" class="block hover:transition-all hover:duration-200 hover:ease-out focus:ring-4 focus:ring-offset-4 focus:outline-none hover:grayscale-0 focus:grayscale-0 filter grayscale focus:ring-geraldine-500 dark:focus:ring-offset-dark-900" target="_blank" rel="noopener" title="SASS">
+                  <svg class="w-10 h-10" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 192" style="transform: rotate(360deg)" aria-label="tech-icon">
+                    <path
+                      d="M220.281 110.514c-8.906.046-16.647 2.191-23.128 5.362c-2.379-4.71-4.757-8.906-5.176-11.984c-.467-3.59-1.026-5.782-.467-10.072c.56-4.29 3.078-10.399 3.031-10.865c-.046-.466-.56-2.658-5.689-2.704c-5.129-.047-9.559.979-10.072 2.331c-.513 1.352-1.492 4.43-2.145 7.6c-.886 4.664-10.258 21.31-15.62 30.03c-1.726-3.403-3.218-6.388-3.545-8.766c-.466-3.59-1.026-5.782-.466-10.072c.56-4.29 3.078-10.398 3.031-10.865c-.047-.466-.56-2.658-5.689-2.704c-5.13-.047-9.56.979-10.072 2.331c-.513 1.353-1.073 4.523-2.145 7.601c-1.073 3.078-13.523 30.87-16.787 38.05a214.726 214.726 0 0 1-4.15 8.627s-.047.14-.187.373a117.773 117.773 0 0 1-1.398 2.658v.046c-.7 1.26-1.446 2.425-1.819 2.425c-.28 0-.793-3.357.093-7.927c1.865-9.652 6.295-24.667 6.249-25.18c0-.28.839-2.891-2.891-4.244c-3.638-1.352-4.943.886-5.27.886c-.326 0-.56.793-.56.793s4.058-16.88-7.74-16.88c-7.367 0-17.533 8.067-22.569 15.341a6269.96 6269.96 0 0 0-17.16 9.373c-2.75 1.539-5.595 3.078-8.253 4.523c-.187-.186-.373-.42-.56-.606c-14.269-15.248-40.661-26.02-39.542-46.49c.42-7.461 2.984-27.046 50.687-50.827c39.262-19.352 70.505-13.99 75.914-2.099c7.74 16.974-16.74 48.496-57.309 53.065c-15.481 1.726-23.595-4.243-25.646-6.481c-2.145-2.332-2.472-2.472-3.265-2.005c-1.305.7-.466 2.798 0 4.01c1.213 3.17 6.202 8.766 14.642 11.518c7.461 2.424 25.6 3.777 47.563-4.71c24.574-9.513 43.786-35.952 38.144-58.101c-5.643-22.476-42.947-29.89-78.246-17.347C61.086 13.99 38.33 25.74 21.963 41.035C2.518 59.22-.56 75.028.699 81.65c4.524 23.501 36.932 38.796 49.895 50.127c-.653.373-1.26.7-1.772.98c-6.482 3.217-31.196 16.133-37.351 29.796c-6.994 15.481 1.12 26.58 6.482 28.071c16.647 4.617 33.76-3.683 42.946-17.393c9.186-13.709 8.067-31.522 3.824-39.682c-.047-.093-.093-.187-.187-.28c1.679-.979 3.404-2.005 5.083-2.984a247.933 247.933 0 0 1 9.373-5.27c-1.586 4.337-2.752 9.513-3.311 16.974c-.7 8.767 2.89 20.144 7.6 24.62c2.099 1.96 4.57 2.006 6.156 2.006c5.502 0 7.974-4.57 10.725-9.979c3.357-6.621 6.388-14.315 6.388-14.315s-3.777 20.797 6.482 20.797c3.73 0 7.507-4.85 9.186-7.321v.046s.093-.14.28-.466c.373-.606.606-.98.606-.98v-.092c1.492-2.612 4.85-8.534 9.839-18.373c6.435-12.683 12.637-28.537 12.637-28.537s.56 3.87 2.471 10.305c1.12 3.777 3.45 7.927 5.316 11.937c-1.492 2.099-2.425 3.264-2.425 3.264l.047.047c-1.213 1.585-2.518 3.31-3.964 4.99c-5.083 6.061-11.144 13.01-11.984 15.014c-.98 2.378-.746 4.104 1.12 5.503c1.352 1.026 3.776 1.165 6.248 1.026c4.57-.327 7.787-1.446 9.372-2.145c2.472-.886 5.363-2.239 8.067-4.244c4.99-3.684 8.02-8.953 7.741-15.9c-.14-3.824-1.399-7.648-2.938-11.239c.467-.652.886-1.305 1.353-1.958c7.88-11.518 13.989-24.155 13.989-24.155s.56 3.87 2.471 10.306c.933 3.264 2.845 6.808 4.523 10.258c-7.414 6.016-11.984 13.01-13.616 17.58c-2.937 8.487-.653 12.31 3.684 13.196c1.958.42 4.756-.513 6.808-1.399c2.611-.839 5.689-2.284 8.627-4.43c4.99-3.683 9.792-8.813 9.512-15.76c-.14-3.171-.979-6.296-2.145-9.327c6.295-2.61 14.409-4.056 24.76-2.844c22.197 2.611 26.58 16.46 25.74 22.29c-.839 5.828-5.502 8.999-7.04 9.978c-1.54.98-2.052 1.306-1.912 2.005c.186 1.026.932.98 2.238.793c1.819-.326 11.658-4.71 12.077-15.435c.7-13.709-12.357-28.677-35.439-28.537zM49.055 168.242c-7.368 8.02-17.626 11.051-22.056 8.487c-4.756-2.752-2.891-14.596 6.155-23.082c5.502-5.176 12.59-9.98 17.3-12.917c1.072-.653 2.658-1.585 4.57-2.751c.326-.187.513-.28.513-.28l1.119-.7c3.31 12.124.14 22.803-7.601 31.243zm53.625-36.465c-2.565 6.249-7.927 22.243-11.191 21.357c-2.798-.746-4.524-12.87-.56-24.854c2.005-6.016 6.248-13.197 8.72-15.994c4.01-4.477 8.44-5.97 9.512-4.15c1.353 2.378-4.896 19.724-6.481 23.641zm44.252 21.17c-1.073.56-2.098.933-2.565.653c-.326-.187.467-.933.467-.933s5.549-5.968 7.74-8.673c1.26-1.585 2.751-3.45 4.337-5.549v.606c0 7.135-6.902 11.938-9.98 13.896zm34.133-7.787c-.793-.56-.653-2.425 2.005-8.254c1.026-2.285 3.45-6.108 7.601-9.792c.466 1.492.793 2.938.746 4.29c-.047 9-6.481 12.357-10.352 13.756z"
+                      fill="#CD6799"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal2">
+            <p class="text-xl italic font-bold font-display">
+              <span class="border-b-4 border-green-500">Special thanks:</span>
+            </p>
+            <div class="container px-6 mt-8 border-l-8 border-gray-600 shadow-lg bg-gray-50 dark:bg-dark-700 dark:border-teal-500">
+              <p class="py-6 font-mono">Teresa Tafoya, Sushrut Joshi, Kshitij Limaye, Mangesh Thombare, Sohan Zambare, Arturo Guzman, Meghana Gokhale, Tejas Gokhale.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,75 @@
+---
+// Component Imports
+import Nav from "../layouts/nav.astro";
+import MobileNav from "../layouts/mobile-nav.astro";
+import WorkHero from "../layouts/work-hero.astro";
+import Footer from "../layouts/footer.astro";
+import "../styles/global.css";
+import captivatingJourneys from "../images/captivating-journeys.png";
+import ensys from "../images/ensys.png";
+import mangesh from "../images/mangesh.png";
+import photoRetouch from "../images/photo-retouch.png";
+import airClub from "../images/airclub.png";
+import posimind from "../images/posimind.png";
+import saptarshi from "../images/saptarshi.png";
+import Card from "../components/card.astro";
+import OldCard from "../components/old-card.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Work</title>
+  </head>
+
+  <body class="bg-gray-100 dark:bg-dark-900 text-gray-700">
+    <div class="absolute inset-0 h-[480px] md:h-[540px] lg:h-[720px] 2xl:h-[960px] bg-center bg-no-repeat bottom-10 dark:bg-dark-900 hero-bg">
+      <div class="absolute inset-0 bg-grid-gray-900/[0.05] bg-bottom border-b border-gray-100/5" style="
+          mask-image: linear-gradient(to bottom, transparent, black);
+          -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+        "></div>
+    </div>
+    <div class="md:space-y-16 lg:space-y-48 2xl:space-y-72">
+      <div>
+        <header class="relative">
+          <Nav />
+          <MobileNav />
+        </header>
+        <div class="relative mx-auto max-w-7xl mb-48">
+          <WorkHero />
+        </div>
+      </div>
+      <main id="content-wrapper" class="container p-8 mx-auto lg:p-12 dark:bg-dark-900 dark:text-white">
+        <div class="container leading-relaxed">
+          <div class="space-y-12">
+            <h3 class="mx-3 my-5 text-5xl font-bold text-center font-display">Work</h3>
+            <div class="flex flex-wrap justify-center gap-8 place-content-center">
+              <Card imagepath={captivatingJourneys} title="Captivating Journeys" feature1="- Travel website." feature2="- Responsive design." feature3="- Responsive slideshow." target="/captivating-journeys#content-wrapper" />
+
+              <Card imagepath={ensys} title="Ensys Engineers" feature1="- Local business website." feature2="- Responsive design." feature3="- Image slider." feature4="- Contact form with map." target="/ensys-engineers#content-wrapper" />
+
+              <Card imagepath={mangesh} title="Mangesh Thombare" feature1="- Portfolio website." feature2="- Responsive design." feature3="- Embedded videos and documents." feature4="- Modal for images." target="/mangesh-thombare#content-wrapper" />
+            </div>
+
+            <div class="m-12 text-4xl font-semibold border-b-4 font-display border-geraldine-600">Old Projects</div>
+
+            <div class="flex flex-row flex-wrap gap-8 place-content-center">
+              <OldCard imagepath={photoRetouch} fulltitle="Photo Retouch" title="Photo" subtitle="Retouch" feature1="- Photo studio website." feature2="- Non-responsive design." feature3="- Image slideshow." />
+
+              <OldCard imagepath={airClub} fulltitle="Air Club" title="Air" subtitle="Club" feature1="- Responsive design." feature2="- Image slider." feature3="- Multiple color variations." />
+
+              <OldCard imagepath={posimind} fulltitle="Posimind" title="Posimind" feature1="- Local business website." feature2="- Non-responsive design." feature3="- Customized contact forms." />
+
+              <OldCard imagepath={saptarshi} fulltitle="Saptarshi" title="Saptarshi" feature1="- Responsive design." feature2="- Image slider." feature3="- Scrolling header." feature4="- Embedded map." />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <Footer />
+  </body>
+</html>

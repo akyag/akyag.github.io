@@ -1,0 +1,26 @@
+---
+const { imagepath, title, feature1, feature2, feature3, feature4, target } = Astro.props;
+---
+
+<div class="grid max-w-sm grid-rows-2 overflow-hidden bg-white border border-gray-200 rounded-md shadow-md dark:border-dark-600 dark:bg-dark-700 hover:filter hover:drop-shadow-lg">
+  <div class="flex flex-initial p-6">
+    <img class="object-cover w-auto h-auto border-b-2 shadow-lg dark:filter dark:brightness-75 dark:contrast-125" src={imagepath} alt={title} />
+  </div>
+  <div class="grid grid-cols-1 py-4 gap-y-4 place-content-center">
+    <div class="text-3xl font-semibold text-center font-display">{title}</div>
+    <ul class="pl-6">
+      <li>{feature1}</li>
+      <li>{feature2}</li>
+      <li>{feature3}</li>
+      <li>{feature4}</li>
+    </ul>
+    <div class="grid pr-5 place-content-end">
+      <a href={target} class="inline-flex items-center px-4 py-2 mt-2 text-sm font-semibold text-white rounded-md shadow-md hover:transition-all hover:duration-150 hover:ease bg-green-700 dark:bg-green-400 dark:text-dark-700 hover:bg-green-600 dark:hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-400 dark:focus:ring-red-200">
+        <svg class="w-4 h-4 mr-1 text-white dark:text-dark-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+        </svg>
+        <span>Details</span>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,190 @@
+---
+// Component Imports
+import Nav from "../layouts/nav.astro";
+import MobileNav from "../layouts/mobile-nav.astro";
+import DesignHero from "../layouts/design-hero.astro";
+import Footer from "../layouts/footer.astro";
+import "../styles/global.css";
+import responsive from "../images/responsive.svg";
+import { Icon } from "astro-icon";
+import Link from "../components/link.astro";
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Design</title>
+  </head>
+
+  <body class="bg-gray-100 dark:bg-dark-900 text-gray-700">
+    <div class="absolute inset-0 h-[480px] md:h-[540px] lg:h-[720px] 2xl:h-[960px] bg-center bg-no-repeat bottom-10 dark:bg-dark-900 hero-bg">
+      <div class="absolute inset-0 bg-grid-gray-900/[0.05] bg-bottom border-b border-gray-100/5" style="
+          mask-image: linear-gradient(to bottom, transparent, black);
+          -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+        "></div>
+    </div>
+    <div class="md:space-y-16 lg:space-y-48 2xl:space-y-72">
+      <div>
+        <header class="relative">
+          <Nav />
+          <MobileNav />
+        </header>
+        <div class="relative mx-auto max-w-7xl mb-48">
+          <DesignHero />
+        </div>
+      </div>
+      <main id="content-wrapper" class="container p-8 mx-auto lg:p-24 dark:bg-dark-900 dark:text-white">
+        <div class="mx-auto space-y-16 leading-relaxed max-w-prose">
+          <h3 class="mx-3 my-5 text-5xl font-bold text-center font-display">Design</h3>
+          <p class="first-letter:text-3xl first-letter:text-geraldine-500 first-letter:font-semibold">Underneath are a few modern concepts generally used in web design process. These established standards and practices will offer you an insight into what exactly is included in my web design services.</p>
+
+          <div class="space-y-5">
+            <div class="flex items-center">
+              <svg class="flex-shrink-0 w-12 h-12 mx-2 my-2 text-cyan-600 dark:text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <h4 class="text-3xl font-semibold font-display">Web Standards</h4>
+            </div>
+            <p>Web standards are the formal, non-proprietary standards and other technical specifications that define and describe aspects of the World Wide Web.</p>
+            <p>Web standards, in the narrow sense, consist of the following: Recommendations published by the World Wide Web Consortium (W3C), such as HTML, Cascading Style Sheets, the Document Object Model, image formats like Portable Network Graphics and Scalable Vector Graphics. My process includes these standardized best practices.</p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center">
+              <svg class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-indigo-600 dark:text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+              </svg>
+              <h4 class="text-3xl font-semibold font-display">Responsive</h4>
+            </div>
+            <p>Responsive web design is an approach to web design that makes web pages render properly on a variety of devices and window or screen sizes.</p>
+            <p>Your website will be crafted to provide an optimal viewing experience, easy reading and navigation with a minimum of re-sizing, panning, and scrolling across a broad range of devices (from mobile phones to desktop computer monitors).</p>
+            <p>Want to see it live in action? Try re-sizing your browser window!</p>
+            <img class="dark:filter dark:brightness-75 dark:contrast-125" src={responsive} alt="Responsive" />
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center">
+              <svg class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+              </svg>
+              <h4 class="text-3xl font-semibold font-display">Compatibility</h4>
+            </div>
+            <p>Clean coding. Your website will function properly in all popular and latest browsers. I perform a cross-platform testing.</p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center">
+              <svg aria-label="icon" focusable="false" role="img" class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-lime-600 dark:text-lime-400" viewBox="0 0 512 512" style="transform: rotate(360deg)">
+                <circle fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" cx="256" cy="56" r="40"></circle>
+                <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" d="M204.23 274.44c2.9-18.06 4.2-35.52-.5-47.59c-4-10.38-12.7-16.19-23.2-20.15L88 176.76c-12-4-23.21-10.7-24-23.94c-1-17 14-28 29-24c0 0 88 31.14 163 31.14s162-31 162-31c18-5 30 9 30 23.79c0 14.21-11 19.21-24 23.94l-88 31.91c-8 3-21 9-26 18.18c-6 10.75-5 29.53-2.1 47.59l5.9 29.63l37.41 163.9c2.8 13.15-6.3 25.44-19.4 27.74S308 489 304.12 476.28l-37.56-115.93q-2.71-8.34-4.8-16.87L256 320l-5.3 21.65q-2.52 10.35-5.8 20.48L208 476.18c-4 12.85-14.5 21.75-27.6 19.46s-22.4-15.59-19.46-27.74l37.39-163.83z"></path>
+              </svg>
+              <h4 class="text-3xl font-semibold font-display">Accessibility</h4>
+            </div>
+            <p>A website that is accessible is designed to function properly with assistive technologies so that the information and functionality that is fundamental to the website is made accessible to every visitor. I use a variety of tools to audit my websites and that also includes testing it against the web accessibility guidelines defined by W3C.</p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center">
+              <svg class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-rose-600 dark:text-rose-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"></path>
+              </svg>
+              <h4 class="text-3xl font-semibold font-display">Contact Form</h4>
+            </div>
+            <p>
+              You will be provided a contact form with custom form fields, so your customers can contact you and provide information that
+              <strong>you</strong> need.
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center">
+              <svg class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-purple-600 dark:text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+              </svg>
+              <h4 class="text-3xl font-semibold font-display">Dark mode</h4>
+            </div>
+            <p>The dark mode is a color scheme that uses light-colored text, icons and graphical user interface elements on a dark background. It reduces strain on your eyes and is very popular among all users. You can try seeing this website in dark mode if you haven't already. Use the theme button in the menu.</p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center">
+              <svg class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="icon">
+                <path d="M3.316 3L12 18l8.684-15H23L12 22L1 3h2.316zm4.342 0L12 10.5L16.342 3h2.316L12 14.5L5.342 3h2.316z" fill="currentColor"></path>
+              </svg>
+              <h4 class="text-3xl font-semibold font-display">JS framework / CSS3 effects</h4>
+            </div>
+            <p>Use of animation and rich functionality of JavaScript, providing ease of use to your visitors. I build websites using astro. You can find out more about the build tool from the link in the footer. Astro ensures your website is lightweight and only loads what's needed on the page. <Icon name="noto:rocket" class="inline-block w-6 h-6" /></p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center">
+              <svg class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-yellow-600 dark:text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+              </svg>
+              <h4 class="text-3xl font-semibold font-display">No templates</h4>
+            </div>
+            <p>I never use templates. Your website will be carefully crafted from scratch, just for you. That includes every small element. I don't use bootstrap or any other framework templates.</p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center">
+              <svg class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+              </svg>
+              <h4 class="text-3xl font-semibold font-display">Optimization</h4>
+            </div>
+            <p>When optimizing a website for performance, there are three primary types of front end optimization techniques.</p>
+            <ul class="list-decimal list-inside">
+              <li>Techniques that reduce the number of requests.</li>
+              <li>Techniques that reduce the overall size of the content.</li>
+              <li>Practices that promote parallelization (i.e. simultaneous download of assets).</li>
+            </ul>
+            <p>By structuring the HTML properly, optimizing images, minifying CSS and JavaScript, your website will be lightening fast.</p>
+            <div>
+              You are probably more interested in the result right? I tested my code in a few tools. GTmetrix to test performance and an open-source tool called Lighthouse from Google which has audits for performance, accessibility, progressive web apps, SEO and more. Following are the results.
+              <ul class="mt-4 list-decimal list-inside">
+                <li><Link href="data/GTmetrix-report-weboreviews.com-20210323T015209-MvenFCli.pdf" target="_blank">GTmetrix Analysis</Link></li>
+                <li><Link href="data/weboreviews.com_2021-03-23_14-21-25.html" target="_blank">Lighthouse - desktop device</Link></li>
+                <li><Link href="data/weboreviews.com_2021-03-23_14-23-18-mobile.html" target="_blank">Lighthouse - desktop device</Link></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center">
+              <svg class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 8h6m-5 0a3 3 0 110 6H9l3 3m-3-6h6m6 1a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <h4 class="text-3xl font-semibold font-display">Pricing</h4>
+            </div>
+            <p>I charge on the basis of how much work I have to do. Fundamental design will have a determined price, and the separate pages will be charged based on how the content changes.</p>
+            <p>
+              For a quotation,
+              <Link href="/contact#content-wrapper">Contact Me</Link>
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center">
+              <svg class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-orange-600 dark:text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+              <h4 class="text-3xl font-semibold font-display">Value Add-on</h4>
+            </div>
+            <ul class="list-decimal list-inside">
+              <li>I personally see that my service fits within your budget and/or time constraints.</li>
+              <li>I will provide you with ongoing web support of your new site. Especially as your business grows and your online information and site's written content changes.</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <Footer />
+  </body>
+</html>
