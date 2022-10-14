@@ -1,121 +1,92 @@
 ---
 // Component Imports
-import Nav from "../layouts/nav.astro";
-import MobileNav from "../layouts/mobile-nav.astro";
-import Hero from "../layouts/work-hero.astro";
-import Footer from "../layouts/footer.astro";
+import Layout from "../layouts/PageLayout.astro";
+import Hero from "../layouts/WorkHero.astro";
 import ensys from "../images/ensys.png";
-import "../styles/global.css";
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+
+const meta = {
+  title: "Ensys Engineers",
+  description: "Business website for a heat pump manufacturing business.",
+};
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Ensys Engineers</title>
-  </head>
+<Layout {meta}>
+  <Hero />
+  <div id="content-wrapper" class="md: mt-40 lg:mt-0 2xl:mt-80 container p-8 mx-auto lg:p-24 dark:bg-dark-900 dark:text-white">
+    <div class="container min-h-full px-4 my-2 space-y-5 leading-relaxed text-left lg:px-8">
+      <div id="pagination" class="flex flex-wrap items-center space-x-4">
+        <a href="/" class="hover:duration-200 hover:transition-all hover:ease hover:text-geraldine-500 focus:border-b-4 focus:outline-none focus:border-geraldine-500">Home</a>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="arrow">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+        </svg>
+        <a href="/work#content-wrapper" class="hover:duration-200 hover:transition-all hover:ease hover:text-geraldine-500 focus:border-b-4 focus:outline-none focus:border-geraldine-500">Work</a>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="arrow">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+        </svg>
+        <a href="#" class="focus:border-b-4 focus:outline-none focus:border-geraldine-500">Ensys Engineers</a>
+      </div>
 
-  <body class="bg-gray-100 dark:bg-dark-900 text-gray-700">
-    <div class="absolute inset-0 h-[480px] md:h-[540px] lg:h-[720px] 2xl:h-[960px] bg-center bg-no-repeat bottom-10 dark:bg-dark-900 hero-bg">
-      <div class="absolute inset-0 bg-grid-gray-900/[0.05] bg-bottom border-b border-gray-100/5" style="
-          mask-image: linear-gradient(to bottom, transparent, black);
-          -webkit-mask-image: linear-gradient(to bottom, transparent, black);
-        "></div>
-    </div>
-    <div class="md:space-y-16 lg:space-y-48 2xl:space-y-72">
-      <div>
-        <header class="relative">
-          <Nav />
-          <MobileNav />
-        </header>
-        <div class="relative mx-auto max-w-7xl mb-48">
-          <Hero />
+      <div class="my-6 text-3xl font-semibold font-display" id="anchor">
+        Ensys
+        <span class="text-indigo-600 dark:text-indigo-300">Engineers</span>
+      </div>
+      <div class="flex flex-col items-start md:flex-row">
+        <div class="flex flex-shrink-0 mx-2 my-4 border-2 border-gray-200 shadow-lg dark:border-gray-800 md:w-1/2 lg:w-auto hover:border-geraldine-400 dark:hover:border-geraldine-400">
+          <img class="object-contain w-full h-auto dark:filter dark:brightness-75 dark:contrast-125" src={ensys} alt="Ensys" />
+        </div>
+
+        <div class="flex flex-col px-2 mb-8 space-y-3 md:pl-6">
+          <p>This heat pump manufacturing business required a website to showcase the pumps they were making along with the manufacturing facilities, their past clients and a contact page which showed their location on map.</p>
+
+          <p>Some key points and requirements of this project were as follows</p>
+
+          <ul class="list-decimal list-inside">
+            <li>Local business website.</li>
+            <li>Responsive design.</li>
+            <li>Image slider.</li>
+            <li>Contact form with map.</li>
+          </ul>
+          <div class="flex items-center">
+            <div class="mr-2">
+              <a class="inline-flex items-center px-4 py-2.5 text-sm font-semibold text-white dark:text-dark-700 transition-all duration-150 rounded-md shadow-md bg-cyan-600 ease hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-cyan-400 dark:bg-cyan-400 dark:hover:bg-cyan-500 dark:focus:ring-cyan-200" href="http://ensys.in" target="_blank" rel="noopener">
+                <svg class="w-5 h-5 mr-2 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="Link">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+                <span>Website</span>
+              </a>
+            </div>
+            <div>
+              <a class="inline-flex items-center px-4 py-2.5 text-sm font-semibold text-white dark:text-dark-700 transition-all duration-150 rounded-md shadow-md cursor-pointer ease bg-emerald-600 hover:bg-emerald-500 focus:ring-4 focus:outline-none focus:ring-emerald-400 dark:bg-emerald-400 dark:hover:bg-emerald-500 dark:focus:ring-emerald-200" tabindex="0">
+                <svg class="w-5 h-5 mr-2 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="Image">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                <span>Screenshot</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <main id="content-wrapper" class="container p-8 mx-auto lg:p-24 dark:bg-dark-900 dark:text-white">
-        <div class="container min-h-full px-4 my-20 space-y-5 leading-relaxed text-left lg:px-8">
-          <div id="pagination" class="flex flex-wrap items-center space-x-4">
-            <a href="/" class="hover:duration-200 hover:transition-all hover:ease hover:text-geraldine-500 focus:border-b-4 focus:outline-none focus:border-geraldine-500">Home</a>
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="arrow">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
-            </svg>
-            <a href="/work" class="hover:duration-200 hover:transition-all hover:ease hover:text-geraldine-500 focus:border-b-4 focus:outline-none focus:border-geraldine-500">Work</a>
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="arrow">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
-            </svg>
-            <a href="#" class="focus:border-b-4 focus:outline-none focus:border-geraldine-500">Ensys Engineers</a>
-          </div>
-
-          <div class="my-6 text-3xl font-semibold font-display" id="anchor">
-            Ensys
-            <span class="text-indigo-600 dark:text-indigo-300">Engineers</span>
-          </div>
-          <div class="flex flex-col items-start md:flex-row">
-            <div class="flex flex-shrink-0 mx-2 my-4 border-2 border-gray-200 shadow-lg dark:border-gray-800 md:w-1/2 lg:w-auto hover:border-geraldine-400 dark:hover:border-geraldine-400">
-              <img class="object-contain w-full h-auto dark:filter dark:brightness-75 dark:contrast-125" src={ensys} alt="Ensys" />
-            </div>
-
-            <div class="flex flex-col px-2 mb-8 space-y-3 md:pl-6">
-              <p>This heat pump manufacturing business required a website to showcase the pumps they were making along with the manufacturing facilities, their past clients and a contact page which showed their location on map.</p>
-
-              <p>Some key points and requirements of this project were as follows</p>
-
-              <ul class="list-decimal list-inside">
-                <li>Local business website.</li>
-                <li>Responsive design.</li>
-                <li>Image slider.</li>
-                <li>Contact form with map.</li>
-              </ul>
-              <div class="flex items-center">
-                <div class="mr-2">
-                  <a class="inline-flex items-center px-4 py-2.5 text-sm font-semibold text-white dark:text-dark-700 transition-all duration-150 rounded-md shadow-md bg-cyan-600 ease hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-cyan-400 dark:bg-cyan-400 dark:hover:bg-cyan-500 dark:focus:ring-cyan-200" href="http://ensys.in" target="_blank" rel="noopener">
-                    <svg class="w-5 h-5 mr-2 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="Link">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                    <span>Website</span>
-                  </a>
-                </div>
-                <div>
-                  <a class="inline-flex items-center px-4 py-2.5 text-sm font-semibold text-white dark:text-dark-700 transition-all duration-150 rounded-md shadow-md cursor-pointer ease bg-emerald-600 hover:bg-emerald-500 focus:ring-4 focus:outline-none focus:ring-emerald-400 dark:bg-emerald-400 dark:hover:bg-emerald-500 dark:focus:ring-emerald-200" tabindex="0">
-                    <svg class="w-5 h-5 mr-2 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="Image">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                    <span>Screenshot</span>
-                  </a>
-
-               </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex py-10">
-            <div class="flex items-start">
-              <svg class="inline-block w-5 h-5 fill-current text-geraldine-600 md:w-10 md:h-10" aria-label="Quotes" viewBox="0 0 512 512">
-                <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
-              </svg>
-            </div>
-            <div class="px-4 space-y-3 md:px-8">
-              <p>We thank Akshay for the fantastic job done for our website Ensys.</p>
-
-              <p>It was a pleasure working with Akshay, as he worked closely with us at every step in developing the site. We value his creative input that exceeded our expectations.</p>
-
-              <p>He is young but very professional, committed to focusing on the customer’s needs and showing a genuine interest in helping the customer to achieve the required results. From the first moment we felt that our project was in good hands and that the experience, knowledge and enthusiasm of this young man would show in our new website.</p>
-
-              <p class="font-semibold text-right">- Ensys Engineers</p>
-            </div>
-            <div class="flex items-end">
-              <svg class="inline-block w-5 h-5 fill-current text-geraldine-600 md:w-10 md:h-10" aria-label="Quotes" viewBox="0 0 512 512">
-                <path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"></path>
-              </svg>
-            </div>
-          </div>
+      <div class="flex py-10">
+        <div class="flex items-start">
+          <svg class="inline-block w-5 h-5 fill-current text-geraldine-600 md:w-10 md:h-10" aria-label="Quotes" viewBox="0 0 512 512">
+            <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
+          </svg>
         </div>
-      </main>
-    </div>
+        <div class="px-4 space-y-3 md:px-8">
+          <p>We thank Akshay for the fantastic job done for our website Ensys.</p>
 
-    <Footer />
-  </body>
-</html>
+          <p>It was a pleasure working with Akshay, as he worked closely with us at every step in developing the site. We value his creative input that exceeded our expectations.</p>
+
+          <p>He is young but very professional, committed to focusing on the customer’s needs and showing a genuine interest in helping the customer to achieve the required results. From the first moment we felt that our project was in good hands and that the experience, knowledge and enthusiasm of this young man would show in our new website.</p>
+
+          <p class="font-semibold text-right">- Ensys Engineers</p>
+        </div>
+        <div class="flex items-end">
+          <svg class="inline-block w-5 h-5 fill-current text-geraldine-600 md:w-10 md:h-10" aria-label="Quotes" viewBox="0 0 512 512">
+            <path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

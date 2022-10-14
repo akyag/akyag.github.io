@@ -1,0 +1,28 @@
+---
+import headerLogo from "../images/headerlogo.svg";
+import ToggleTheme from "../core/ToggleTheme.astro";
+import { Icon } from "astro-icon";
+import ActiveLink from "../components/ActiveLink.astro";
+import MobileNav from "./MobileNav.astro";
+---
+
+<header class="relative z-10 justify-between hidden max-w-6xl px-8 py-8 mx-auto md:flex xl:px-10">
+  <div class="items-center">
+    <a href="/" class="block">
+      <img src={headerLogo} width="80" height="45" alt="Web-o-Reviews" />
+    </a>
+  </div>
+  <nav class="flex items-center space-x-4">
+    <ActiveLink href={"/"}>Home</ActiveLink>
+    <ActiveLink href={"/about"}>About</ActiveLink>
+    <ActiveLink href={"/design"}>Design</ActiveLink>
+    <ActiveLink href={"/work"}>Work</ActiveLink>
+    <ActiveLink href={"/contact"}>Contact</ActiveLink>
+    <!-- <Icon name="tabler:sun" class="w-6 h-6 text-dark-500" /> -->
+    <svg class="w-6 h-6 text-dark-500" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7l-.7.7m0 11.4l.7.7m-12.1-.7l-.7.7"></path></g></svg>
+    <ToggleTheme />
+    <svg class="w-6 h-6 text-dark-500" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"></path></svg>
+    <!-- <Icon name="tabler:moon" class="w-6 h-6 text-dark-500" /> -->
+  </nav>
+</header>
+<MobileNav />

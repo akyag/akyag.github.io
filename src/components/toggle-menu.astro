@@ -1,9 +1,0 @@
----
-import { Icon } from "astro-icon";
-
-const { label = "Toggle Menu", class: className = "ml-12 text-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm inline-flex items-center transition", iconClass = "w-8 h-8", iconName = "tabler:menu-2" } = Astro.props;
----
-
-<button type="button" class={className} aria-label={label} toggle-menu>
-  <Icon name={iconName} class={iconClass} optimize={false} />
-</button>

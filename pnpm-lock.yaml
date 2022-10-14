@@ -6,6 +6,7 @@ specifiers:
   '@tailwindcss/forms': ^0.5.3
   astro: ^1.4.6
   astro-icon: ^0.7.3
+  astro-seo: ^0.6.0
   autoprefixer: ^10.4.7
   canvas-confetti: ^1.5.1
   postcss: ^8.4.14
@@ -24,6 +25,7 @@ dependencies:
 devDependencies:
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.1.8
   astro-icon: 0.7.3
+  astro-seo: 0.6.0
   svgo: 2.8.0
 
 packages:
@@ -755,6 +757,10 @@ packages:
       node-fetch: 3.2.10
       resolve-pkg: 2.0.0
       svgo: 2.8.0
+    dev: true
+
+  /astro-seo/0.6.0:
+    resolution: {integrity: sha512-nR+dJlAyQhX6s0oAmbBqPq3KCZax/zVAerFsclGiJQ2znOkS/7L+RGjziS4M9Q3OQxm3FMfqIKHp9Ns73Q81ww==}
     dev: true
 
   /astro/1.4.6:

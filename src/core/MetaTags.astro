@@ -1,0 +1,19 @@
+---
+import { SEO } from "astro-seo";
+import { SITE } from "../../config.mjs";
+const {
+  title = SITE.name,
+  description = "",
+  canonical,
+  noindex = false,
+  nofollow = false,
+
+  ogTitle = title,
+  ogType = "website",
+} = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<SEO title={title} description={description} noindex={noindex} nofollow={nofollow} />

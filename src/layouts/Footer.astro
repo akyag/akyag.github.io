@@ -1,6 +1,6 @@
 ---
 let currentDate = new Date().getFullYear();
-import Backtotop from "../components/backtotop.astro";
+import Backtotop from "../components/BackToTop.astro";
 import footerLogo from "../images/logo-white.svg";
 import AstroDark from "../images/astro-dark.svg";
 ---
@@ -18,9 +18,9 @@ import AstroDark from "../images/astro-dark.svg";
   </div>
   <div class="flex flex-col items-center justify-around mx-auto max-w-6xl pt-12 mb-12 md:flex-row md:items-end md:px-6 lg:px-8">
     <div class="flex flex-row">
-      <div class="w-40 space-y-3 md:space-y-0">
-        <div class="mb-4 font-semibold text-center uppercase">Information</div>
-        <div class="grid items-center grid-cols-6 leading-relaxed divide-x-2 divide-dark-50 group">
+      <div class="w-40">
+        <span class="font-semibold flex justify-center uppercase">Information</span>
+        <div class="mt-4 grid items-center grid-cols-6 leading-relaxed divide-x-2 divide-dark-50 group">
           <div class="col-span-2 ml-5">
             <svg class="w-6 h-6 text-teal-500 transition-colors duration-200 ease-out group-hover:text-geraldine-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <title>License</title>
@@ -61,9 +61,9 @@ import AstroDark from "../images/astro-dark.svg";
           </div>
         </div>
       </div>
-      <div class="w-40 space-y-3 md:space-y-0">
-        <div class="mb-4 font-semibold text-center uppercase">Find me on</div>
-        <div class="grid items-center grid-cols-6 leading-relaxed divide-x-2 divide-dark-50 group">
+      <div class="w-40">
+        <span class="font-semibold flex justify-center text-center uppercase">Find me on</span>
+        <div class="mt-4 grid items-center grid-cols-6 leading-relaxed divide-x-2 divide-dark-50 group">
           <div class="col-span-2 ml-5">
             <svg class="w-6 h-6 text-teal-500 transition-colors duration-200 ease-out group-hover:text-geraldine-600" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <title>LinkedIn</title>
@@ -124,12 +124,12 @@ import AstroDark from "../images/astro-dark.svg";
       </div>
     </div>
     <div class="flex flex-col items-center mt-8">
-      <div class="mb-4">
+      <div>
         <a href="/" class="block hover:transition-all hover:duration-200 hover:ease-out hover:scale-105">
           <img src={footerLogo} alt="Web-o-Reviews" width="250" height="32" />
         </a>
       </div>
-      <div class="flex flex-col items-center justify-center max-w-4xl grid-cols-1 gap-2 divide-y-2 divide-dark-50 lg:divide-y-0 lg:divide-x-2 lg:flex-row">
+      <div class="mt-4 flex flex-col items-center justify-center max-w-4xl grid-cols-1 gap-2 divide-y-2 divide-dark-50 lg:divide-y-0 lg:divide-x-2 lg:flex-row">
         <div>
           <svg class="inline-block w-5 h-5 -mt-1 mr-1" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <title>Copyright</title>
