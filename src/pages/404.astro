@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/PageLayout.astro";
+import notFound from "../images/not-found.svg";
+import Link from "../components/Link.astro";
+
+const meta = {
+  title: "404 error",
+  description: "Page not found!",
+};
+---
+
+<Layout {meta}>
+  <!-- Full body element start -->
+
+  <div class="relative z-10 mb-48 container p-8 lg:p-24 mx-auto">
+    <div class="flex flex-row flex-wrap gap-2 items-center place-content-center mx-auto max-w-7xl text-gray-700 dark:text-white 2xl:text-white mt-40 md:mt-4 gap-y-16 lg:gap-y-2">
+      <div class="flex items-center place-content-center">
+        <img class="h-48 md:h-64 xl:h-72 dark:filter dark:brightness-75 dark:contrast-125" src={notFound} alt="404 Page not found!" />
+      </div>
+      <div class="flex flex-col items-center p-4 place-content-center mt-40 lg:mt-52 xl:mt-40">
+        <div class="text-3xl font-bold font-display md:text-4xl xl:text-3xl"><span>Sorry we couldn't find this page.</span></div>
+        <div class="text-lg mt-4"><span>But don't worry, you can find plenty of other things on our homepage.</span></div>
+        <a href="/" class="p-4 mt-4 px-4 py-2.5 text-sm font-semibold text-white rounded-md shadow-md dark:text-dark-700 hover:transition-all hover:duration-150 hover:ease bg-geraldine-700 hover:bg-geraldine-600 focus:ring-4 focus:outline-none focus:ring-geraldine-400">Back to Home</a>
+      </div>
+    </div>
+  </div>
+  <!-- Full body element end -->
+</Layout>
