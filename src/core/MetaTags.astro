@@ -2,7 +2,7 @@
 import { SEO } from "astro-seo";
 import { SITE } from "../../config.mjs";
 const {
-  title = SITE.name,
+  title = "SITE.name",
   description = "",
   canonical,
   noindex = false,
@@ -10,6 +10,7 @@ const {
 
   ogTitle = title,
   ogType = "website",
+  ogImage = "https://weboreviews.com/og-image.jpg",
 } = Astro.props;
 ---
 
@@ -17,5 +18,23 @@ const {
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="generator" content={Astro.generator} />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-<SEO title={title} description={description} noindex={noindex} nofollow={nofollow} />
+<!-- SEO entries start -->
+<SEO
+  title={title}
+  description={description}
+  noindex={noindex}
+  nofollow={nofollow}
+  openGraph={{
+    basic: {
+      title: ogTitle,
+      type: ogType,
+      image: ogImage,
+    },
+    image: {
+      alt: ogTitle,
+      width: 821,
+      height: 430,
+    },
+  }}
+/>
+<!-- SEO entries end -->

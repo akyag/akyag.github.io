@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 400 240"
+   version="1.1"
+   width="400"
+   height="240"
+   id="svg2"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs28">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       id="filter1044"
+       x="-0.018290459"
+       y="-0.016"
+       width="1.0542045"
+       height="1.0345">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1034" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1036" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1.6"
+         result="blur"
+         id="feGaussianBlur1038" />
+      <feOffset
+         dx="3.7"
+         dy="0.6"
+         result="offset"
+         id="feOffset1040" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1042" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       id="filter1056"
+       x="-0.017815309"
+       y="-0.016"
+       width="1.0527964"
+       height="1.0345">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1046" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1048" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1.6"
+         result="blur"
+         id="feGaussianBlur1050" />
+      <feOffset
+         dx="3.7"
+         dy="0.6"
+         result="offset"
+         id="feOffset1052" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1054" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       id="filter1068"
+       x="-0.020257698"
+       y="-0.021235145"
+       width="1.0600345"
+       height="1.0457883">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1058" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1060" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1.6"
+         result="blur"
+         id="feGaussianBlur1062" />
+      <feOffset
+         dx="3.7"
+         dy="0.6"
+         result="offset"
+         id="feOffset1064" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1066" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path4160"
+     d="M 0.40019821,0.23167312 89.892993,0 210.34572,240 h -94.992 z"
+     style="fill:#f57e7e;fill-opacity:1;fill-rule:evenodd;stroke:none;filter:url(#filter1044)" />
+  <path
+     id="path4162"
+     d="m 104.1581,0 h 91.48136 c 40.355,79.234 138.3061,158.75 122.3161,240 h -23.748 -23.748 -23.748 -23.748 z"
+     style="fill:#f57e7e;fill-opacity:1;fill-rule:evenodd;filter:url(#filter1056)" />
+  <path
+     id="path4394"
+     d="M 317.99842,180.8323 400,0 H 210.44243 c 23.8368,50.368533 47.8869,72.471107 78.88122,120.57323 14.47697,21.42172 24.46387,39.08459 28.67477,60.25907 z"
+     style="fill:#14b8a6;fill-opacity:1;fill-rule:evenodd;filter:url(#filter1068)" />
+</svg>
