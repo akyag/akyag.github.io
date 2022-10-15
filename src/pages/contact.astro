@@ -17,9 +17,12 @@ const meta = {
         <div class="my-2 text-xl font-semibold">Hey, Got a question?</div>
         <p>Send it to me and I will get back as soon as possible.</p>
 
-        <form id="contact-form" class="caret-teal-500" autocomplete="off">
+        <form id="contact-form" class="caret-teal-500" autocomplete="off" method="POST" action="https://submit-form.com/Da0shbFy" data-botpoison-public-key="pk_e1f693b8-f1ab-44fd-bba1-34c297a90937">
+          <input type="hidden" name="_redirect" value="https://weboreviews.com/thanks" />
+          <input type="hidden" name="_email.subject" value="Web-o-Reviews" />
+
           <div class="space-y-4">
-            <input type="hidden" name="contact_number" />
+            <!-- <input type="hidden" name="contact_number" /> -->
 
             <div>
               <label for="user_name" class="text-sm font-medium">Name</label>
@@ -54,7 +57,7 @@ const meta = {
                     <path d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"></path>
                   </svg>
                 </div>
-                <input type="tel" name="user_phone" id="user_phone" aria-label="User Phone" required class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]" />
+                <input type="tel" name="user_phone" id="user_phone" aria-label="User Phone" class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]" />
               </div>
             </div>
             <span class="text-xs">*Optional</span>
@@ -105,7 +108,7 @@ const meta = {
               <label for="terms" class="ml-2 text-sm font-medium"> I understand that this form collects my name and email, so I can be contacted.</label>
             </div>
 
-            <button class="inline-flex items-center px-4 py-2.5 text-sm font-semibold text-white rounded-md shadow-md dark:text-dark-700 dark:bg-teal-300 dark:hover:bg-teal-400 dark:focus:ring-[#2DD4BF] hover:transition-all hover:duration-150 hover:ease bg-teal-700 hover:bg-teal-600 focus:ring-4 focus:outline-none focus:ring-teal-400" type="submit" onclick="function (event)">
+            <button class="inline-flex items-center px-4 py-2.5 text-sm font-semibold text-white rounded-md shadow-md dark:text-dark-700 dark:bg-teal-300 dark:hover:bg-teal-400 dark:focus:ring-[#2DD4BF] hover:transition-all hover:duration-150 hover:ease bg-teal-700 hover:bg-teal-600 focus:ring-4 focus:outline-none focus:ring-teal-400" type="submit">
               <svg class="w-5 h-5 mr-2 text-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="arrow">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
               </svg>

@@ -3,7 +3,6 @@ import "../styles/global.css";
 
 import MetaTags from "../core/MetaTags.astro";
 import DarkMode from "../core/DarkMode.astro";
-import EmailJS from "../components/EmailJS.astro";
 
 const { meta = {} } = Astro.props;
 ---
@@ -12,6 +11,7 @@ const { meta = {} } = Astro.props;
 <html lang="en" class="motion-safe:scroll-smooth">
   <head>
     <MetaTags {...meta} />
+    <script is:inline src="https://unpkg.com/@botpoison/browser" async></script>
   </head>
 
   <body class="bg-gray-100 dark:bg-dark-900 text-gray-700">
@@ -22,7 +22,6 @@ const { meta = {} } = Astro.props;
           "></div>
     </div>
     <slot />
-    <EmailJS />
     <DarkMode />
   </body>
 </html>
