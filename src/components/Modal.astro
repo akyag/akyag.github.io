@@ -3,7 +3,7 @@ const { triggerId, title, closeText = "Close" } = Astro.props;
 ---
 
 <div class="modal fixed hidden -z-10 backdrop-blur-md drop-shadow-md" role="dialog" aria-labelledby={triggerId}>
-  <div class="modal__inner opacity-1 transition-opacity duration-300 ease-in-out dark:bg-dark-900 bg-white dark:text-white overflow-scroll">
+  <div class="modal__inner opacity-1 transition-opacity duration-300 ease-in-out dark:bg-dark-900 bg-white dark:text-white">
     <div class="flex flex-col gap-2 p-8 border-1 border-gray-600">
       <h3 class="border-b-4 text-lg border-red-600 dark:border-red-400" tabindex="-1">{title}</h3>
       <slot>Modal description.</slot>
