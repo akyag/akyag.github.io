@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/tailwind": "^2.0.2",
-    "astro": "^1.4.6",
+    "@astrojs/tailwind": "^2.1.0",
+    "astro": "^1.5.0",
     "astro-compress": "^1.0.12",
-    "autoprefixer": "^10.4.7",
+    "autoprefixer": "^10.4.12",
     "canvas-confetti": "^1.5.1",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.0.24"
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
     "@fontsource/montserrat": "^4.5.13",

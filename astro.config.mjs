@@ -10,5 +10,6 @@ import "@fontsource/mulish"
 // https://astro.build/config
 export default defineConfig({
   site: 'https://weboreviews.com',
+  trailingSlash: 'always',
   integrations: [tailwind(), sitemap(), robotsTxt(), compress()]
 });
