@@ -3,6 +3,8 @@ lockfileVersion: 5.4
 specifiers:
   '@astrojs/sitemap': ^1.0.0
   '@astrojs/tailwind': ^2.0.2
+  '@fontsource/montserrat': ^4.5.13
+  '@fontsource/mulish': ^4.5.13
   '@tailwindcss/forms': ^0.5.3
   astro: ^1.4.6
   astro-compress: ^1.0.12
@@ -26,6 +28,8 @@ dependencies:
   tailwindcss: 3.1.8_postcss@8.4.17
 
 devDependencies:
+  '@fontsource/montserrat': 4.5.13
+  '@fontsource/mulish': 4.5.13
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.1.8
   astro-icon: 0.7.3
   astro-robots-txt: 0.3.10
@@ -432,6 +436,14 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/montserrat/4.5.13:
+    resolution: {integrity: sha512-/XlcNsMFjdWX4Away8Ax/4NgND8Ckk9gVDwgz1sfxF6h+gFHChLOV0IvPrUfCQjZ1F35igg+nR9bSxmjsYEskQ==}
+    dev: true
+
+  /@fontsource/mulish/4.5.13:
+    resolution: {integrity: sha512-uJ4NzvEZSCZnrKU0Xvk6Qf0WFMRnyCwslLOtHIao3vh2+W1llbaZy4+PiR6mcB2Y62dPG2HvZPN0NnKfDaFSbA==}
+    dev: true
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
