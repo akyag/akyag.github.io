@@ -1,0 +1,9 @@
+---
+const { href, color, iconClass = "w-6 h-6 mr-2 fill-current", iconName } = Astro.props;
+import { Icon } from "astro-icon";
+---
+
+<a href={href} rel="prefetch" class:list={["group flex items-center px-4 py-2.5 text-sm font-semibold text-white rounded-md shadow-md dark:text-dark-700 hover:transition-all hover:duration-150 hover:ease focus:outline-none", color]}>
+  <Icon name={iconName} class={iconClass} />
+  <span class="pt-1"><slot /></span>
+</a>
