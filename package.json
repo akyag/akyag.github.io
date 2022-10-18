@@ -27,6 +27,9 @@
     "astro-icon": "^0.7.3",
     "astro-robots-txt": "^0.3.10",
     "astro-seo": "^0.6.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.6.0",
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "svgo": "^2.8.0"
   }
 }

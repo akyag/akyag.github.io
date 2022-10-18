@@ -10,15 +10,31 @@ const meta = {
 
 <Layout {meta}>
   <Hero />
-  <div id="content-wrapper" class="md: mt-40 lg:mt-0 2xl:mt-80 container p-8 mx-auto lg:p-24 dark:bg-dark-900 dark:text-white">
+  <div
+    id="content-wrapper"
+    class="md: mt-40 lg:mt-0 2xl:mt-80 container p-8 mx-auto lg:p-24 dark:bg-dark-900 dark:text-white"
+  >
     <div class="grid grid-cols-1 space-y-4 leading-relaxed place-items-center">
       <div class="grid max-w-prose">
-        <h3 class="mx-3 my-5 text-5xl font-bold text-center font-display">Contact Form</h3>
+        <h3 class="mx-3 my-5 text-5xl font-bold text-center font-display">
+          Contact Form
+        </h3>
         <div class="my-2 text-xl font-semibold">Hey, Got a question?</div>
         <p>Send it to me and I will get back as soon as possible.</p>
 
-        <form id="contact-form" class="caret-teal-500" autocomplete="off" method="POST" action="https://submit-form.com/Da0shbFy" data-botpoison-public-key="pk_e1f693b8-f1ab-44fd-bba1-34c297a90937">
-          <input type="hidden" name="_redirect" value="https://weboreviews.com/thanks/" />
+        <form
+          id="contact-form"
+          class="caret-teal-500"
+          autocomplete="off"
+          method="POST"
+          action="https://submit-form.com/Da0shbFy"
+          data-botpoison-public-key="pk_e1f693b8-f1ab-44fd-bba1-34c297a90937"
+        >
+          <input
+            type="hidden"
+            name="_redirect"
+            value="https://weboreviews.com/thanks/"
+          />
           <input type="hidden" name="_email.subject" value="Web-o-Reviews" />
 
           <div class="space-y-4">
@@ -28,11 +44,25 @@ const meta = {
               <label for="user_name" class="text-sm font-medium">Name</label>
               <div class="flex">
                 <div class="z-10 pl-3 pointer-events-none">
-                  <svg class="w-5 h-full fill-current" viewBox="0 0 20 20" fill="currentColor" aria-label="icon">
-                    <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                  <svg
+                    class="w-5 h-full fill-current"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-label="icon"
+                  >
+                    <path
+                      d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                      clip-rule="evenodd"></path>
                   </svg>
                 </div>
-                <input type="text" name="user_name" id="user_name" aria-label="User Name" required class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]" />
+                <input
+                  type="text"
+                  name="user_name"
+                  id="user_name"
+                  aria-label="User Name"
+                  required
+                  class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]"
+                />
               </div>
             </div>
 
@@ -40,12 +70,28 @@ const meta = {
               <label for="user_email" class="text-sm font-medium">Email</label>
               <div class="flex">
                 <div class="z-10 pl-3 pointer-events-none">
-                  <svg class="w-5 h-full fill-current" viewBox="0 0 20 20" fill="currentColor" aria-label="icon">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                  <svg
+                    class="w-5 h-full fill-current"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-label="icon"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    ></path>
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    ></path>
                   </svg>
                 </div>
-                <input type="email" name="user_email" id="user_email" aria-label="User Email" required class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]" />
+                <input
+                  type="email"
+                  name="user_email"
+                  id="user_email"
+                  aria-label="User Email"
+                  required
+                  class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]"
+                />
               </div>
             </div>
 
@@ -53,25 +99,49 @@ const meta = {
               <label for="user_phone" class="text-sm font-medium">Phone*</label>
               <div class="flex">
                 <div class="z-10 pl-3 pointer-events-none">
-                  <svg class="w-5 h-full fill-current" viewBox="0 0 20 20" fill="currentColor" aria-label="icon">
-                    <path d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"></path>
+                  <svg
+                    class="w-5 h-full fill-current"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-label="icon"
+                  >
+                    <path
+                      d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
+                    ></path>
                   </svg>
                 </div>
-                <input type="tel" name="user_phone" id="user_phone" aria-label="User Phone" class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]" />
+                <input
+                  type="tel"
+                  name="user_phone"
+                  id="user_phone"
+                  aria-label="User Phone"
+                  class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]"
+                />
               </div>
             </div>
             <span class="text-xs">*Optional</span>
 
             <div class="text-2xl font-semibold">
-              <span class="border-b-4 border-green-600 font-display">What is this contact about?</span>
+              <span class="border-b-4 border-green-600 font-display"
+                >What is this contact about?</span
+              >
             </div>
 
             <div>
-              <label for="user_dept" class="text-sm font-medium">Department</label>
+              <label for="user_dept" class="text-sm font-medium"
+                >Department</label
+              >
               <div>
-                <select name="user_dept" id="user_dept" required class="w-full border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]">
+                <select
+                  name="user_dept"
+                  id="user_dept"
+                  required
+                  class="w-full border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]"
+                >
                   <option disabled selected>Select your option</option>
-                  <option value="Website development">Website development</option>
+                  <option value="Website development"
+                    >Website development</option
+                  >
                   <option value="Enquiry">Inquiry</option>
                   <option value="Chat">Chat</option>
                   <option value="Other">Other</option>
@@ -80,37 +150,93 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_subject" class="text-sm font-medium">Subject</label>
+              <label for="user_subject" class="text-sm font-medium"
+                >Subject</label
+              >
               <div class="flex">
                 <div class="z-10 pl-3 pointer-events-none">
-                  <svg class="w-5 h-full fill-current" viewBox="0 0 20 20" fill="currentColor" aria-label="icon">
-                    <path d="M9.243 3.03a1 1 0 01.727 1.213L9.53 6h2.94l.56-2.243a1 1 0 111.94.486L14.53 6H17a1 1 0 110 2h-2.97l-1 4H15a1 1 0 110 2h-2.47l-.56 2.242a1 1 0 11-1.94-.485L10.47 14H7.53l-.56 2.242a1 1 0 11-1.94-.485L5.47 14H3a1 1 0 110-2h2.97l1-4H5a1 1 0 110-2h2.47l.56-2.243a1 1 0 011.213-.727zM9.03 8l-1 4h2.938l1-4H9.031z"></path>
+                  <svg
+                    class="w-5 h-full fill-current"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-label="icon"
+                  >
+                    <path
+                      d="M9.243 3.03a1 1 0 01.727 1.213L9.53 6h2.94l.56-2.243a1 1 0 111.94.486L14.53 6H17a1 1 0 110 2h-2.97l-1 4H15a1 1 0 110 2h-2.47l-.56 2.242a1 1 0 11-1.94-.485L10.47 14H7.53l-.56 2.242a1 1 0 11-1.94-.485L5.47 14H3a1 1 0 110-2h2.97l1-4H5a1 1 0 110-2h2.47l.56-2.243a1 1 0 011.213-.727zM9.03 8l-1 4h2.938l1-4H9.031z"
+                    ></path>
                   </svg>
                 </div>
-                <input type="text" name="user_subject" id="user_subject" aria-label="User Subject" required class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]" />
+                <input
+                  type="text"
+                  name="user_subject"
+                  id="user_subject"
+                  aria-label="User Subject"
+                  required
+                  class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]"
+                />
               </div>
             </div>
 
             <div>
-              <label for="user_message" class="text-sm font-medium">Message</label>
+              <label for="user_message" class="text-sm font-medium"
+                >Message</label
+              >
               <div class="flex">
                 <div class="z-10 pt-3 pl-3 pointer-events-none">
-                  <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20" fill="currentColor" aria-label="icon">
-                    <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"></path>
+                  <svg
+                    class="w-5 h-5 fill-current"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-label="icon"
+                  >
+                    <path
+                      d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
+                    ></path>
                   </svg>
                 </div>
-                <textarea name="user_message" id="user_message" aria-label="User Message" placeholder="Explain how I can help you" required class="w-full h-64 pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]"></textarea>
+                <textarea
+                  name="user_message"
+                  id="user_message"
+                  aria-label="User Message"
+                  placeholder="Explain how I can help you"
+                  required
+                  class="w-full h-64 pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500 dark:bg-dark-700 dark:border-gray-700 dark:focus:ring-[#2DD4BF]"
+                ></textarea>
               </div>
             </div>
 
             <div class="flex items-center">
-              <input id="terms" name="terms" aria-label="Terms" type="checkbox" required class="text-teal-500 rounded focus:ring-teal-500 focus:ring-2 dark:focus:ring-offset-grayscale-700 dark:bg-grayscale-700 dark:focus:ring-[#2DD4BF]" />
-              <label for="terms" class="ml-2 text-sm font-medium"> I understand that this form collects my name and email, so I can be contacted.</label>
+              <input
+                id="terms"
+                name="terms"
+                aria-label="Terms"
+                type="checkbox"
+                required
+                class="text-teal-500 rounded focus:ring-teal-500 focus:ring-2 dark:focus:ring-offset-grayscale-700 dark:bg-grayscale-700 dark:focus:ring-[#2DD4BF]"
+              />
+              <label for="terms" class="ml-2 text-sm font-medium">
+                I understand that this form collects my name and email, so I can
+                be contacted.</label
+              >
             </div>
 
-            <button class="inline-flex items-center px-4 py-2.5 text-sm font-semibold text-white rounded-md shadow-md dark:text-dark-700 dark:bg-teal-300 dark:hover:bg-teal-400 dark:focus:ring-[#2DD4BF] hover:transition-all hover:duration-150 hover:ease bg-teal-700 hover:bg-teal-600 focus:ring-4 focus:outline-none focus:ring-teal-400" type="submit">
-              <svg class="w-5 h-5 mr-2 text-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="arrow">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+            <button
+              class="inline-flex items-center px-4 py-2.5 text-sm font-semibold text-white rounded-md shadow-md dark:text-dark-700 dark:bg-teal-300 dark:hover:bg-teal-400 dark:focus:ring-[#2DD4BF] hover:transition-all hover:duration-150 hover:ease bg-teal-700 hover:bg-teal-600 focus:ring-4 focus:outline-none focus:ring-teal-400"
+              type="submit"
+            >
+              <svg
+                class="w-5 h-5 mr-2 text-current"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-label="arrow"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
               </svg>
               <span>Send Message</span>
             </button>

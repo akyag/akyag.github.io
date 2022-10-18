@@ -2,6 +2,13 @@
 const { href, color } = Astro.props;
 ---
 
-<a href={href} rel="prefetch" class:list={["inline-flex items-center px-4 py-2.5 text-sm font-semibold text-white rounded-md shadow-md dark:text-dark-700 hover:transition-all hover:duration-150 hover:ease focus:outline-none", color]}>
+<a
+  href={href}
+  rel="prefetch"
+  class:list={[
+    "inline-flex items-center px-4 py-2 text-sm font-semibold text-white rounded-md shadow-md dark:text-dark-700 hover:transition-all hover:duration-150 hover:ease focus:outline-none",
+    color,
+  ]}
+>
   <slot />
 </a>

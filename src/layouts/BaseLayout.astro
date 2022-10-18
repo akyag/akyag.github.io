@@ -14,11 +14,17 @@ const { meta = {} } = Astro.props;
   </head>
 
   <body class="bg-gray-100 dark:bg-dark-900 text-gray-700 font-body">
-    <div class="absolute inset-0 h-[480px] md:h-[540px] lg:h-[720px] 2xl:h-[960px] bg-center bg-no-repeat dark:bg-dark-900 hero-bg">
-      <div class="absolute inset-0 bg-grid-gray-900/[0.05] bg-bottom border-b border-gray-100/5" style="
+    <div
+      class="absolute inset-0 h-[480px] md:h-[540px] lg:h-[720px] 2xl:h-[960px] bg-center bg-no-repeat dark:bg-dark-900 hero-bg"
+    >
+      <div
+        class="absolute inset-0 bg-grid-gray-900/[0.05] bg-bottom border-b border-gray-100/5"
+        style="
           mask-image: linear-gradient(to bottom, transparent, black);
           -webkit-mask-image: linear-gradient(to bottom, transparent, black);
-          "></div>
+          "
+      >
+      </div>
     </div>
     <slot />
     <DarkMode />

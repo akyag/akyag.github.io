@@ -5,16 +5,36 @@ import ButtonIcon from "../components/ButtonIcon.astro";
 
 <section class="relative z-10" id="hero">
   <div class="container mx-auto my-12 lg:p-0 lg:my-48">
-    <div class="grid items-center grid-cols-1 gap-12 md:grid-cols-2 place-items-center">
+    <div
+      class="grid items-center grid-cols-1 gap-12 md:grid-cols-2 place-items-center"
+    >
       <div class="grid items-center place-items-center">
-        <h1 class="text-4xl font-display font-bold leading-relaxed text-center text-white lg:text-5xl 2xl:text-7xl mt-16 md:mt-0">Web-o-Reviews</h1>
-        <h2 class="mt-2 text-2xl font-semibold leading-snug text-center text-white">Engaging, purposeful, and creative.</h2>
+        <h1
+          class="text-4xl font-display font-bold leading-relaxed text-center text-white lg:text-5xl 2xl:text-7xl mt-16 md:mt-0"
+        >
+          Web-o-Reviews
+        </h1>
+        <h2
+          class="mt-2 text-2xl font-semibold leading-snug text-center text-white"
+        >
+          Engaging, purposeful, and creative.
+        </h2>
         <div class="mt-8">
-          <ButtonIcon href="/work/" iconName="icon-work" color="bg-geraldine-700 hover:bg-geraldine-600 dark:bg-geraldine-400 dark:hover:bg-geraldine-500">Web Design</ButtonIcon>
+          <ButtonIcon
+            href="/work/"
+            iconName="icon-work"
+            iconClass="w-6 h-6 fill-current mr-2"
+            color="bg-geraldine-700 hover:bg-geraldine-600 dark:bg-geraldine-400 dark:hover:bg-geraldine-500"
+            >Web Design</ButtonIcon
+          >
         </div>
       </div>
       <div>
-        <img class="h-36 md:h-40 lg:h-48 2xl:h-60 dark:filter dark:brightness-75 dark:contrast-125" src={homeHero} alt="Responsive image" />
+        <img
+          class="h-36 md:h-40 lg:h-48 2xl:h-60 dark:filter dark:brightness-75 dark:contrast-125"
+          src={homeHero}
+          alt="Responsive image"
+        />
       </div>
     </div>
   </div>
