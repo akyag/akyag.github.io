@@ -6,23 +6,10 @@ const {
   class:
     className = "ml-12 text-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm inline-flex items-center transition",
   iconClass = "w-8 h-8 dark:text-white",
-  iconName = "tabler:menu-2",
+  iconName = "icon-menu",
 } = Astro.props;
 ---
 
 <button type="button" class={className} aria-label={label} toggle-menu>
-  <!-- <Icon name={iconName} class={iconClass} optimize={false} /> -->
-  <svg
-    class="w-8 h-8 dark:text-white"
-    xmlns="http://www.w3.org/2000/svg"
-    preserveAspectRatio="xMidYMid meet"
-    viewBox="0 0 24 24"
-    ><path
-      fill="none"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M4 6h16M4 12h16M4 18h16"></path>
-  </svg>
+  <Icon name={iconName} class={iconClass} optimize={false} />
 </button>
