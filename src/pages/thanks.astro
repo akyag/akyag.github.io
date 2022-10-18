@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/PageLayout.astro";
 import Thanks from "../images/mail.svg";
-import Link from "../components/Link.astro";
+import Button from "../components/Button.astro";
 
 const meta = {
   title: "Thanks",
@@ -21,6 +21,8 @@ const meta = {
           class="h-40 md:h-56 xl:h-72 dark:filter dark:brightness-75 dark:contrast-125"
           src={Thanks}
           alt="Message Sent"
+          width="361"
+          height="324"
         />
       </div>
       <div class="flex flex-col items-center p-4 place-content-center">
@@ -30,12 +32,13 @@ const meta = {
         <div class="text-lg mt-4">
           <span
             >Your message was sent successfully. I will get back to you as soon
-            as possible.</span>
+            as possible.</span
+          >
         </div>
-        <a
+        <Button
           href="/"
-          class="p-4 mt-4 px-4 py-2.5 text-sm font-semibold text-white rounded-md shadow-md dark:text-dark-700 hover:transition-all hover:duration-150 hover:ease bg-geraldine-700 hover:bg-geraldine-600 focus:ring-4 focus:outline-none focus:ring-geraldine-400"
-          >Back to Home</a
+          color="bg-geraldine-700 hover:bg-geraldine-600 dark:bg-geraldine-400 dark:hover:bg-geraldine-500 mt-4"
+          >Back to Home</Button
         >
       </div>
     </div>

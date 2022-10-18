@@ -2,6 +2,8 @@
 import Layout from "../layouts/PageLayout.astro";
 import Hero from "../layouts/ArchiveHero.astro";
 import nextGen from "../images/nextgen.svg";
+import ButtonIcon from "../components/ButtonIcon.astro";
+import { Icon } from "astro-icon";
 
 const meta = {
   title: "Archive",
@@ -60,41 +62,21 @@ const meta = {
           These are some forum signatures and wallpapers I made in Photoshop.
           You can view the gallery at deviantart.
         </p>
-        <div class="flex items-center">
-          <a
+        <div class="flex gap-x-4 items-center">
+          <ButtonIcon
             href="https://www.deviantart.com/akyag/gallery/37760236/signatures"
             target="_blank"
-            rel="noopener"
-            class="inline-flex items-center px-4 py-2.5 mr-4 text-sm font-semibold text-white bg-green-700 dark:text-dark-700 rounded-md shadow-md hover:transition-all hover:duration-150 hover:ease hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-400 dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-200"
+            color="bg-green-700 hover:bg-green-600 dark:bg-green-400 dark:hover:bg-green-500"
+            iconName="icon-deviantart"
+            iconClass="w-5 h-5 mr-2 fill-current">signatures</ButtonIcon
           >
-            <svg
-              class="w-5 h-5 mr-2 fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512"
-              aria-label="deviantart"
-            >
-              <path
-                d="M320 93.2l-98.2 179.1 7.4 9.5H320v127.7H159.1l-13.5 9.2-43.7 84c-.3 0-8.6 8.6-9.2 9.2H0v-93.2l93.2-179.4-7.4-9.2H0V102.5h156l13.5-9.2 43.7-84c.3 0 8.6-8.6 9.2-9.2H320v93.1z"
-              ></path>
-            </svg>Signatures
-          </a>
-          <a
+          <ButtonIcon
             href="https://www.deviantart.com/akyag/gallery/37773265/wallpapers"
             target="_blank"
-            rel="noopener"
-            class="inline-flex items-center px-4 py-2.5 mr-4 text-sm font-semibold text-white bg-green-700 dark:text-dark-700 rounded-md shadow-md hover:transition-all hover:duration-150 hover:ease hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-400 dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-200"
+            color="bg-green-700 hover:bg-green-600 dark:bg-green-400 dark:hover:bg-green-500"
+            iconName="icon-deviantart"
+            iconClass="w-5 h-5 mr-2 fill-current">Wallpapers</ButtonIcon
           >
-            <svg
-              class="w-5 h-5 mr-2 fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512"
-              aria-label="deviantart"
-            >
-              <path
-                d="M320 93.2l-98.2 179.1 7.4 9.5H320v127.7H159.1l-13.5 9.2-43.7 84c-.3 0-8.6 8.6-9.2 9.2H0v-93.2l93.2-179.4-7.4-9.2H0V102.5h156l13.5-9.2 43.7-84c.3 0 8.6-8.6 9.2-9.2H320v93.1z"
-              ></path>
-            </svg>Wallpapers
-          </a>
         </div>
       </div>
     </div>

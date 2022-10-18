@@ -5,6 +5,8 @@ import Hero from "../layouts/WorkHero.astro";
 import mangesh from "../images/mangesh.png";
 import mangeshFull from "../images/mangesh-lg.png";
 import Modal from "../components/Modal.astro";
+import ButtonIcon from "../components/ButtonIcon.astro";
+import { Icon } from "astro-icon";
 
 const meta = {
   title: "Mangesh Thombare",
@@ -24,44 +26,20 @@ const meta = {
       <div id="pagination" class="flex flex-wrap items-center space-x-4">
         <a
           href="/"
-          class="hover:duration-200 hover:transition-all hover:ease hover:text-geraldine-500 focus:border-b-4 focus:outline-none focus:border-geraldine-500"
-          >Home</a
+          class="hover:duration-200 hover:transition-all hover:ease hover:text-geraldine-500 focus:border-b-4 focus:outline-none focus:border-slate-500"
+          tabindex="0">Home</a
         >
-        <svg
-          class="w-4 h-4"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          aria-label="arrow"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
-        </svg>
+        <Icon name="icon-arrow" class="w-4 h-4" />
         <a
           href="/work/#content-wrapper"
-          class="hover:duration-200 hover:transition-all hover:ease hover:text-geraldine-500 focus:border-b-4 focus:outline-none focus:border-geraldine-500"
-          >Work</a
+          class="hover:duration-200 hover:transition-all hover:ease hover:text-geraldine-500 focus:border-b-4 focus:outline-none focus:border-slate-500"
+          tabindex="0">Work</a
         >
-        <svg
-          class="w-4 h-4"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          aria-label="arrow"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
-        </svg>
+        <Icon name="icon-arrow" class="w-4 h-4" />
         <a
           href="#"
-          class="focus:border-b-4 focus:outline-none focus:border-geraldine-500"
-          >Mangesh Thombare</a
+          class="focus:border-b-4 focus:outline-none focus:border-slate-500"
+          tabindex="0">Mangesh Thombare</a
         >
       </div>
 
@@ -96,27 +74,12 @@ const meta = {
           </ul>
           <div class="flex items-center">
             <div>
-              <a
+              <ButtonIcon
                 id="modal3-trigger"
-                class="inline-flex items-center px-4 py-2.5 text-sm font-semibold text-white dark:text-dark-700 transition-all duration-150 rounded-md shadow-md cursor-pointer ease bg-emerald-600 hover:bg-emerald-500 focus:ring-4 focus:outline-none focus:ring-emerald-400 dark:bg-emerald-400 dark:hover:bg-emerald-500 dark:focus:ring-emerald-200"
-                tabindex="0"
+                color="bg-emerald-700 hover:bg-emerald-600 dark:bg-emerald-400 dark:hover:bg-emerald-500 cursor-pointer"
+                iconName="icon-picture"
+                iconClass="w-5 h-5 mr-2 text-current">Screenshot</ButtonIcon
               >
-                <svg
-                  class="w-5 h-5 mr-2 text-current"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-label="Image"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  ></path>
-                </svg>
-                <span>Screenshot</span>
-              </a>
             </div>
           </div>
         </div>

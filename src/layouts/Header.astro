@@ -10,7 +10,11 @@ import MobileNav from "./MobileNav.astro";
   class="relative z-10 justify-between hidden max-w-6xl px-8 py-8 mx-auto md:flex xl:px-10"
 >
   <div class="items-center">
-    <a href="/" class="block">
+    <a
+      href="/"
+      class="block focus:outline-none focus:ring-2 focus:ring-slate-700/50 focus:ring-offset-2 focus:ring-offset-transparent"
+      tabindex="0"
+    >
       <img src={headerLogo} width="80" height="45" alt="Web-o-Reviews" />
     </a>
   </div>
