@@ -13,9 +13,9 @@ const meta = {
   <Hero />
   <div
     id="content-wrapper"
-    class="md: mt-40 lg:mt-0 2xl:mt-80 container p-8 mx-auto lg:p-24 dark:bg-dark-900 dark:text-white"
+    class="md:mt-60 lg:mt-0 2xl:mt-80 container p-8 mx-auto lg:p-24 dark:bg-dark-900 dark:text-white"
   >
-    <div class="grid grid-cols-1 space-y-4 leading-relaxed place-items-center">
+    <div class="grid grid-cols-1 leading-relaxed place-items-center">
       <div class="grid max-w-prose">
         <h3 class="mx-3 my-5 text-5xl font-bold text-center font-display">
           Contact Form
@@ -42,7 +42,7 @@ const meta = {
 
             <div>
               <label for="user_name" class="text-sm font-medium">Name</label>
-              <div class="flex">
+              <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
                   <svg
                     class="w-5 h-full fill-current"
@@ -61,14 +61,19 @@ const meta = {
                   id="user_name"
                   aria-label="User Name"
                   required
-                  class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
+                  class="w-full peer pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
                 />
+                <div
+                  class="absolute inset-y-0 right-0 text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                >
+                  Required
+                </div>
               </div>
             </div>
 
             <div>
               <label for="user_email" class="text-sm font-medium">Email</label>
-              <div class="flex">
+              <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
                   <svg
                     class="w-5 h-full fill-current"
@@ -90,14 +95,19 @@ const meta = {
                   id="user_email"
                   aria-label="User Email"
                   required
-                  class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
+                  class="w-full peer pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
                 />
+                <div
+                  class="absolute inset-y-0 right-0 text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                >
+                  Required
+                </div>
               </div>
             </div>
 
             <div>
-              <label for="user_phone" class="text-sm font-medium">Phone*</label>
-              <div class="flex">
+              <label for="user_phone" class="text-sm font-medium">Phone</label>
+              <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
                   <svg
                     class="w-5 h-full fill-current"
@@ -115,11 +125,15 @@ const meta = {
                   name="user_phone"
                   id="user_phone"
                   aria-label="User Phone"
-                  class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
+                  class="w-full peer pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
                 />
+                <div
+                  class="absolute inset-y-0 right-0 text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                >
+                  Required
+                </div>
               </div>
             </div>
-            <span class="text-xs">*Optional</span>
 
             <div class="text-2xl font-semibold">
               <span class="border-b-4 border-green-600 font-display"
@@ -153,7 +167,7 @@ const meta = {
               <label for="user_subject" class="text-sm font-medium"
                 >Subject</label
               >
-              <div class="flex">
+              <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
                   <svg
                     class="w-5 h-full fill-current"
@@ -172,8 +186,13 @@ const meta = {
                   id="user_subject"
                   aria-label="User Subject"
                   required
-                  class="w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
+                  class="peer w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
                 />
+                <div
+                  class="absolute inset-y-0 right-0 text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                >
+                  Required
+                </div>
               </div>
             </div>
 
@@ -181,7 +200,7 @@ const meta = {
               <label for="user_message" class="text-sm font-medium"
                 >Message</label
               >
-              <div class="flex">
+              <div class="flex relative">
                 <div class="z-10 pt-3 pl-3 pointer-events-none">
                   <svg
                     class="w-5 h-5 fill-current"
@@ -200,8 +219,13 @@ const meta = {
                   aria-label="User Message"
                   placeholder="Explain how I can help you"
                   required
-                  class="w-full h-64 pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
+                  class="w-full peer h-64 pl-10 pt-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
                 ></textarea>
+                <div
+                  class="absolute inset-y-0 right-0 text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                >
+                  Required
+                </div>
               </div>
             </div>
 
