@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@astrojs/prefetch': ^0.1.0
   '@astrojs/sitemap': ^1.0.0
   '@astrojs/tailwind': ^2.1.1
   '@fontsource/montserrat': ^4.5.13
@@ -22,6 +23,7 @@ specifiers:
   taze: ^0.8.3
 
 dependencies:
+  '@astrojs/prefetch': 0.1.0
   '@astrojs/sitemap': 1.0.0
   '@astrojs/tailwind': 2.1.1_tailwindcss@3.2.1
   astro: 1.6.1
@@ -136,6 +138,12 @@ packages:
       micromark-util-types: 1.0.2
       uvu: 0.5.6
       vfile-message: 3.1.2
+    dev: false
+
+  /@astrojs/prefetch/0.1.0:
+    resolution: {integrity: sha512-dm+VdR1bkv7ZHbvT9kQI2hIHF0jOMs1rWRc3J1bhdLRDJZpwxmcAy00p4Hdyom/j+JPiLeMIN/1/mmoEQt3eZQ==}
+    dependencies:
+      throttles: 1.0.1
     dev: false
 
   /@astrojs/prism/1.0.1:
@@ -4805,6 +4813,11 @@ packages:
       acorn: 8.8.1
       commander: 2.20.3
       source-map-support: 0.5.21
+    dev: false
+
+  /throttles/1.0.1:
+    resolution: {integrity: sha512-fab7Xg+zELr9KOv4fkaBoe/b3L0GMGLd0IBSCn16GoE/Qx6/OfCr1eGNyEcDU2pUA79qQfZ8kPQWlRuok4YwTw==}
+    engines: {node: '>=6'}
     dev: false
 
   /tiny-glob/0.2.9:
