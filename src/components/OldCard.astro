@@ -9,11 +9,12 @@ const {
   feature3,
   feature4,
 } = Astro.props;
+import { Image } from "@astrojs/image/components";
 ---
 
 <div>
   <div class="relative w-full">
-    <img
+    <Image
       src={imagepath}
       alt={fulltitle}
       class="object-cover w-full h-56 max-w-sm border border-gray-300 rounded-lg shadow-md dark:border-dark-600 dark:filter dark:brightness-75 dark:contrast-125"

@@ -10,8 +10,13 @@ import "@fontsource/mulish";
 import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
+import image from "@astrojs/image";
+
+// https://astro.build/config
 export default defineConfig({
   site: 'https://weboreviews.com',
   trailingSlash: 'always',
-  integrations: [tailwind(), sitemap(), robotsTxt(), compress(), prefetch()]
+  integrations: [tailwind(), sitemap(), robotsTxt(), image({
+    serviceEntryPoint: '@astrojs/image/sharp'
+  }), compress(), prefetch()]
 });

@@ -2,13 +2,14 @@
 const { imagepath, title, feature1, feature2, feature3, feature4, target } =
   Astro.props;
 import ButtonIcon from "./ButtonIcon.astro";
+import { Image } from "@astrojs/image/components";
 ---
 
 <div
   class="grid max-w-sm grid-rows-2 overflow-hidden bg-white border border-gray-200 rounded-md shadow-md dark:border-dark-600 dark:bg-dark-700 hover:filter hover:drop-shadow-lg"
 >
   <div class="flex flex-initial p-6">
-    <img
+    <Image
       class="object-cover w-auto h-auto border-b-2 shadow-lg dark:filter dark:brightness-75 dark:contrast-125"
       src={imagepath}
       alt={title}

@@ -3,6 +3,7 @@ import Layout from "../layouts/PageLayout.astro";
 import Hero from "../layouts/AboutHero.astro";
 import Me from "../images/me.png";
 import Link from "../components/Link.astro";
+import { Image } from "@astrojs/image/components";
 
 const meta = {
   title: "About Me",
@@ -14,9 +15,9 @@ const meta = {
   <Hero />
   <div
     id="content-wrapper"
-    class="md: mt-40 lg:mt-0 2xl:mt-80 container p-8 mx-auto lg:p-24 dark:bg-dark-900 dark:text-white"
+    class="container px-8 md:px-0 py-6 md:py-24 mx-auto dark:bg-dark-900 dark:text-white"
   >
-    <div class="max-w-6xl mx-auto space-y-12 leading-relaxed mt-16 lg:mt-0">
+    <div class="max-w-6xl mx-auto space-y-12 leading-relaxed">
       <h3 class="mx-3 my-5 text-5xl font-bold text-center font-display">
         About Me
       </h3>
@@ -24,7 +25,7 @@ const meta = {
         class="flex flex-col space-y-12 md:space-x-12 md:space-y-0 md:flex-row"
       >
         <div class="flex justify-center flex-shrink-0">
-          <img
+          <Image
             src={Me}
             alt="Akshay Ghate"
             class="w-32 h-32 mx-8 transition duration-200 ease-in-out border-4 border-gray-100 rounded-full shadow-lg dark:border-gray-800 hover:border-geraldine-400 dark:hover:border-geraldine-300"
