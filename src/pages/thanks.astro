@@ -12,11 +12,13 @@ const meta = {
 <Layout {meta}>
   <!-- Full body element start -->
 
-  <div class="relative z-10 mb-40 container p-8 lg:p-24 mx-auto">
+  <div
+    class="relative z-10 container px-8 py-12 md:py-0 lg:px-24 2xl:mb-44 mx-auto"
+  >
     <div
-      class="flex flex-row flex-wrap gap-x-2 items-center place-content-center mx-auto max-w-7xl text-gray-700 dark:text-white xl:text-white mt-40 md:mt-4 gap-y-16 lg:gap-y-28"
+      class="flex flex-col md:flex-row gap-x-2 items-center place-content-center mx-auto max-w-full text-white"
     >
-      <div class="flex items-center place-content-center px-8 py-24 md:py-14">
+      <div class="flex items-center place-content-center px-8 py-24">
         {
           /*  <img
           class="h-40 md:h-56 xl:h-72 dark:filter dark:brightness-75 dark:contrast-125"
@@ -27,20 +29,18 @@ const meta = {
         />  */
         }
         <img
-          class="h-40 md:h-56 xl:h-72 dark:filter dark:brightness-75 dark:contrast-125"
+          class="w-[200px] lg:w-[300px] 2xl:w-[400px] h-auto dark:filter dark:brightness-75 dark:contrast-125"
           src={Thanks}
           alt="Message Sent"
         />
       </div>
       <div class="flex flex-col items-center p-4 place-content-center">
-        <div class="text-5xl font-bold font-display md:text-6xl xl:text-8xl">
+        <div class="text-5xl font-bold font-display md:text-6xl 2xl:text-8xl">
           <span>Thanks !!</span>
         </div>
         <div class="text-lg mt-4">
-          <span
-            >Your message was sent successfully. I will get back to you as soon
-            as possible.</span
-          >
+          <p>Your message was sent successfully.</p>
+          <p>I will get back to you as soon as possible.</p>
         </div>
         <Button
           href="/"

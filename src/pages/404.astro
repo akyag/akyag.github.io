@@ -12,9 +12,11 @@ const meta = {
 <Layout {meta}>
   <!-- Full body element start -->
 
-  <div class="relative z-10 mb-48 container p-8 lg:p-24 mx-auto">
+  <div
+    class="relative z-10 container px-8 py-24 lg:px-24 my-24 md:my-0 lg:my-12 2xl:my-32 mx-auto"
+  >
     <div
-      class="flex flex-row flex-wrap gap-2 items-center place-content-center mx-auto max-w-7xl text-gray-700 dark:text-white 2xl:text-white mt-40 md:mt-4 gap-y-16 lg:gap-y-2"
+      class="flex flex-col flex-shrink-0 md:flex-row gap-x-2 gap-y-4 items-center place-content-center mx-auto max-w-full text-white"
     >
       <div class="flex items-center place-content-center">
         {
@@ -27,18 +29,20 @@ const meta = {
              /> */
         }
         <img
-          class="h-48 md:h-64 xl:h-72 dark:filter dark:brightness-75 dark:contrast-125"
+          class="w-[300px] lg:w-[450px] 2xl:w-[600px] h-auto dark:filter dark:brightness-75 dark:contrast-125"
           src={notFound}
           alt="404 Page not found!"
         />
       </div>
       <div
-        class="flex flex-col items-center p-4 place-content-center mt-40 lg:mt-52 xl:mt-40"
+        class="flex flex-col items-center p-4 place-content-center space-y-4"
       >
-        <div class="text-3xl font-bold font-display md:text-4xl xl:text-3xl">
+        <div
+          class="text-2xl text-center font-bold font-display md:text-3xl 2xl:text-4xl"
+        >
           <span>Sorry we couldn't find this page.</span>
         </div>
-        <div class="text-lg mt-4">
+        <div class="text-lg text-center">
           <span
             >But don't worry, you can find plenty of other things on our
             homepage.</span
@@ -46,7 +50,7 @@ const meta = {
         </div>
         <Button
           href="/"
-          color="bg-geraldine-700 hover:bg-geraldine-600 dark:bg-geraldine-400 dark:hover:bg-geraldine-500 mt-4"
+          color="bg-geraldine-700 hover:bg-geraldine-600 dark:bg-geraldine-400 dark:hover:bg-geraldine-500"
           >Back to Home</Button
         >
       </div>
