@@ -35,6 +35,10 @@ module.exports = {
 					'900': '#111b1b',
 				}
 			},
+			backgroundImage: {
+				'hero-img': "url('../bg.png')",
+				'hero-img-dark': "url('../bg-dark.png')",
+			}
 		},
 	},
 	plugins: [
