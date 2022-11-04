@@ -1,6 +1,7 @@
 ---
 // Component Imports
-import Layout from "../layouts/PageLayout.astro";
+import Page from "../layouts/Page.astro";
+import Head from "../layouts/Head.astro";
 import Hero from "../layouts/WorkHero.astro";
 import ensys from "../images/ensys.png";
 import ensysFull from "../images/ensys-lg.png";
@@ -15,7 +16,8 @@ const meta = {
 };
 ---
 
-<Layout {meta}>
+<Page>
+  <Head slot="head" {meta} />
   <Hero />
   <div
     id="content-wrapper"
@@ -158,4 +160,4 @@ const meta = {
       />
     </div>
   </Modal>
-</Layout>
+</Page>

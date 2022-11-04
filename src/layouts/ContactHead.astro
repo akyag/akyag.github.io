@@ -1,0 +1,14 @@
+---
+import "../styles/global.css";
+
+import MetaTags from "../core/MetaTags.astro";
+import DarkMode from "../core/DarkMode.astro";
+
+const { meta = {} } = Astro.props;
+---
+
+<head>
+  <MetaTags {...meta} />
+  <DarkMode />
+  <script is:inline src="https://unpkg.com/@botpoison/browser" async></script>
+</head>

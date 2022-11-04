@@ -1,5 +1,6 @@
 ---
-import Layout from "../layouts/PageLayout.astro";
+import Page from "../layouts/Page.astro";
+import Head from "../layouts/Head.astro";
 import Thanks from "../images/mail.svg";
 import Button from "../components/Button.astro";
 
@@ -9,10 +10,11 @@ const meta = {
 };
 ---
 
-<Layout {meta}>
+<Page>
+  <Head slot="head" {meta} />
   <!-- Full body element start -->
 
-  <div
+  <main
     class="relative z-10 container px-8 py-12 md:py-0 lg:px-24 2xl:mb-44 mx-auto"
   >
     <div
@@ -49,6 +51,6 @@ const meta = {
         >
       </div>
     </div>
-  </div>
+  </main>
   <!-- Full body element end -->
-</Layout>
+</Page>

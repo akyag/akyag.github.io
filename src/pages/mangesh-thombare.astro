@@ -1,6 +1,7 @@
 ---
 // Component Imports
-import Layout from "../layouts/PageLayout.astro";
+import Page from "../layouts/Page.astro";
+import Head from "../layouts/Head.astro";
 import Hero from "../layouts/WorkHero.astro";
 import mangesh from "../images/mangesh.png";
 import mangeshFull from "../images/mangesh-lg.png";
@@ -15,9 +16,10 @@ const meta = {
 };
 ---
 
-<Layout {meta}>
+<Page>
+  <Head slot="head" {meta} />
   <Hero />
-  <div
+  <main
     id="content-wrapper"
     class="container mx-auto px-8 md:px-0 py-6 md:py-24 dark:bg-dark-900 dark:text-white"
   >
@@ -124,7 +126,7 @@ const meta = {
         </div>
       </div>
     </div>
-  </div>
+  </main>
   <Modal triggerId="modal3-trigger" title="Mangesh Thombare">
     <div class="mt-3 grid place-content-center">
       <Picture
@@ -137,4 +139,4 @@ const meta = {
       />
     </div>
   </Modal>
-</Layout>
+</Page>

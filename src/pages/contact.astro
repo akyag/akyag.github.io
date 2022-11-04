@@ -1,17 +1,19 @@
 ---
-import Layout from "../layouts/ContactLayout.astro";
+import Page from "../layouts/Page.astro";
+import Head from "../layouts/ContactHead.astro";
 import Hero from "../layouts/ContactHero.astro";
 import { Icon } from "astro-icon";
 
 const meta = {
-  title: "Contact Me",
+  title: "Contact",
   description: "Use the form on the page to contact me with your query.",
 };
 ---
 
-<Layout {meta}>
+<Page>
+  <Head slot="head" {meta} />
   <Hero />
-  <div
+  <main
     id="content-wrapper"
     class="container mx-auto px-8 md:px-0 py-6 md:py-24 dark:bg-dark-900 dark:text-white"
   >
@@ -255,5 +257,5 @@ const meta = {
         </form>
       </div>
     </div>
-  </div>
-</Layout>
+  </main>
+</Page>

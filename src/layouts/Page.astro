@@ -1,19 +1,11 @@
 ---
-import "../styles/global.css";
-
-import MetaTags from "../core/MetaTags.astro";
-import DarkMode from "../core/DarkMode.astro";
-
-const { meta = {} } = Astro.props;
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="motion-safe:scroll-smooth">
-  <head>
-    <MetaTags {...meta} />
-    <script is:inline src="https://unpkg.com/@botpoison/browser" async></script>
-  </head>
-
+  <slot name="head" />
   <body class="bg-gray-100 dark:bg-dark-900 text-gray-700 font-body">
     <div
       class="absolute inset-0 h-[700px] md:h-[600px] lg:h-[720px] 2xl:h-[960px] bg-center bg-no-repeat dark:bg-dark-900 bg-hero-img dark:bg-hero-img-dark"
@@ -27,7 +19,8 @@ const { meta = {} } = Astro.props;
       >
       </div>
     </div>
+    <Header />
     <slot />
-    <DarkMode />
+    <Footer />
   </body>
 </html>

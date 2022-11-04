@@ -2,15 +2,15 @@
 import { SEO } from "astro-seo";
 import { SITE } from "../../config.mjs";
 const {
-  title = "SITE.name",
+  title = "",
   description = "",
   canonical,
   noindex = false,
   nofollow = false,
 
-  ogTitle = "Web-o-Reviews | " + title,
+  ogTitle = "Web-o-Reviews",
   ogType = "website",
-  ogImage = "https://weboreviews.com/og-image.jpg",
+  ogImage = "/og-image.png",
 } = Astro.props;
 ---
 
@@ -28,7 +28,7 @@ const {
 <meta name="theme-color" content="#ffffff" />
 <!-- SEO entries start -->
 <SEO
-  title={title}
+  title={title + " - Akshay Ghate"}
   description={description}
   noindex={noindex}
   nofollow={nofollow}
@@ -44,7 +44,7 @@ const {
       height: 630,
     },
     optional: {
-      description: "Pune based responsive website design services.",
+      description: "Akshay Ghate's Portfolio and future blog.",
     },
   }}
 />

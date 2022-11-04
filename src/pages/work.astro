@@ -1,6 +1,7 @@
 ---
 // Component Imports
-import Layout from "../layouts/PageLayout.astro";
+import Page from "../layouts/Page.astro";
+import Head from "../layouts/Head.astro";
 import Hero from "../layouts/WorkHero.astro";
 import captivatingJourneys from "../images/captivating-journeys.png";
 import ensys from "../images/ensys.png";
@@ -18,18 +19,21 @@ const meta = {
 };
 ---
 
-<Layout {meta}>
+<Page>
+  <Head slot="head" {meta} />
   <Hero />
   <div
     id="content-wrapper"
     class="container mx-auto px-8 md:px-0 py-6 md:py-24 dark:bg-dark-900 dark:text-white"
   >
-    <div class="container leading-relaxed">
+    <div class="leading-relaxed max-w-5xl mx-auto">
       <div class="space-y-12">
         <h3 class="mx-3 my-5 text-5xl font-bold text-center font-display">
-          Work
+          Projects
         </h3>
-        <div class="flex flex-wrap justify-center gap-8 place-content-center">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-stretch gap-8 pt-12 place-content-center"
+        >
           <Card
             imagepath={captivatingJourneys}
             title="Captivating Journeys"
@@ -66,7 +70,9 @@ const meta = {
           Old Projects
         </div>
 
-        <div class="flex flex-row flex-wrap gap-8 place-content-center">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-stretch gap-16 pt-12"
+        >
           <OldCard
             imagepath={photoRetouch}
             fulltitle="Photo Retouch"
@@ -109,4 +115,4 @@ const meta = {
       </div>
     </div>
   </div>
-</Layout>
+</Page>

@@ -4,6 +4,7 @@ import Backtotop from "../components/BackToTop.astro";
 import footerLogo from "../images/logo-white.svg";
 import AstroDark from "../images/astro-dark.svg";
 import Button from "../components/Button.astro";
+import { Icon } from "astro-icon";
 ---
 
 <footer
@@ -320,17 +321,7 @@ import Button from "../components/Button.astro";
         </div>
         <div class="pt-2 pl-2 lg:pt-0">
           Designed with
-          <svg
-            class="inline-block w-6 h-6 text-red-600"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <title>Heart</title>
-            <path
-              fill-rule="evenodd"
-              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-              clip-rule="evenodd"></path>
-          </svg>
+          <Icon name="fe:heart" size={32} class="text-red-600 inline-block" />
           by Akshay Ghate.
         </div>
       </div>

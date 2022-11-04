@@ -2,7 +2,18 @@
   box-sizing: border-box;
   margin: 0;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer base {
+  *::-webkit-scrollbar {
+    @apply w-3 h-3 bg-slate-100 dark:bg-slate-900;
+  }
+  *::-webkit-scrollbar-thumb {
+    @apply w-3 h-3 rounded bg-slate-300 dark:bg-slate-700;
+  }
+}
 :root {
   --user-font-scale: 1rem - 16px;
   font-size: clamp(

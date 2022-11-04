@@ -1,6 +1,7 @@
 ---
 // Component Imports
-import Layout from "../layouts/PageLayout.astro";
+import Page from "../layouts/Page.astro";
+import Head from "../layouts/Head.astro";
 import Hero from "../layouts/DesignHero.astro";
 import Link from "../components/Link.astro";
 import responsive from "../images/responsive.svg";
@@ -12,7 +13,8 @@ const meta = {
 };
 ---
 
-<Layout {meta}>
+<Page>
+  <Head slot="head" {meta} />
   <Hero />
   <div
     id="content-wrapper"
@@ -455,4 +457,4 @@ const meta = {
       </div>
     </div>
   </div>
-</Layout>
+</Page>
