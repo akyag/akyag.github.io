@@ -36,3 +36,69 @@
 .bg-hero-img-dark {
   background-image: url(../images/bg-dark.png);
 } */
+
+@keyframes leftslide {
+  0% {
+    transform: translate(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.animate-leftslide {
+  animation: leftslide ease 0.5s backwards;
+}
+@keyframes rightslide {
+  0% {
+    transform: translate(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.animate-rightslide {
+  animation: rightslide ease 0.5s backwards;
+}
+@keyframes lift {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-lift {
+  animation: lift ease 0.5s backwards;
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animate-pop {
+  animation: pop ease 0.5s backwards;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-drop {
+  animation: drop ease 0.5s backwards;
+}

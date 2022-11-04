@@ -46,16 +46,7 @@ const meta = {
               <label for="user_name" class="text-sm font-medium">Name</label>
               <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
-                  <svg
-                    class="w-5 h-full fill-current"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-label="icon"
-                  >
-                    <path
-                      d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                      clip-rule="evenodd"></path>
-                  </svg>
+                  <Icon name="bx:user" class="w-5 h-full fill-current" />
                 </div>
                 <input
                   type="text"
@@ -77,19 +68,7 @@ const meta = {
               <label for="user_email" class="text-sm font-medium">Email</label>
               <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
-                  <svg
-                    class="w-5 h-full fill-current"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-label="icon"
-                  >
-                    <path
-                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                    ></path>
-                    <path
-                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                    ></path>
-                  </svg>
+                  <Icon name="bx:envelope" class="w-5 h-full fill-current" />
                 </div>
                 <input
                   type="email"
@@ -111,16 +90,7 @@ const meta = {
               <label for="user_phone" class="text-sm font-medium">Phone</label>
               <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
-                  <svg
-                    class="w-5 h-full fill-current"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-label="icon"
-                  >
-                    <path
-                      d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
-                    ></path>
-                  </svg>
+                  <Icon name="bx:phone" class="w-5 h-full fill-current" />
                 </div>
                 <input
                   type="tel"
@@ -171,16 +141,7 @@ const meta = {
               >
               <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
-                  <svg
-                    class="w-5 h-full fill-current"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-label="icon"
-                  >
-                    <path
-                      d="M9.243 3.03a1 1 0 01.727 1.213L9.53 6h2.94l.56-2.243a1 1 0 111.94.486L14.53 6H17a1 1 0 110 2h-2.97l-1 4H15a1 1 0 110 2h-2.47l-.56 2.242a1 1 0 11-1.94-.485L10.47 14H7.53l-.56 2.242a1 1 0 11-1.94-.485L5.47 14H3a1 1 0 110-2h2.97l1-4H5a1 1 0 110-2h2.47l.56-2.243a1 1 0 011.213-.727zM9.03 8l-1 4h2.938l1-4H9.031z"
-                    ></path>
-                  </svg>
+                  <Icon name="bx:hash" class="w-5 h-full fill-current" />
                 </div>
                 <input
                   type="text"
@@ -204,16 +165,7 @@ const meta = {
               >
               <div class="flex relative">
                 <div class="z-10 pt-3 pl-3 pointer-events-none">
-                  <svg
-                    class="w-5 h-5 fill-current"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-label="icon"
-                  >
-                    <path
-                      d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
-                    ></path>
-                  </svg>
+                  <Icon name="bx:edit-alt" class="w-5 h-5 fill-current" />
                 </div>
                 <textarea
                   name="user_message"
@@ -250,7 +202,10 @@ const meta = {
               class="flex items-center content-center px-6 h-12 text-sm font-semibold text-white dark:text-dark-700 rounded-md shadow-md hover:transition-all hover:duration-150 hover:ease focus:outline-none focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 focus:ring-offset-transparent bg-teal-700 hover:bg-teal-600 dark:bg-teal-400 dark:hover:bg-teal-500"
               type="submit"
             >
-              <Icon name="icon-arrow" class="w-5 h-5 mr-2 text-current" />
+              <Icon
+                name="bx:chevrons-right"
+                class="w-7 h-7 mr-1 text-current"
+              />
               <span>Send Message</span>
             </button>
           </div>

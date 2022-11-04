@@ -1,0 +1,52 @@
+---
+import { Icon } from "astro-icon";
+import Bullet from "./Bullet.astro";
+export interface props {
+  iconName: string;
+  extra: string;
+  title: string;
+  description: string;
+  bullets: string;
+}
+
+const {
+  iconName,
+  extra,
+  title,
+  description,
+  bullet1,
+  bullet2,
+  bullet3,
+  bullet4,
+  bullets,
+} = Astro.props;
+---
+
+<div
+  class:list={[
+    "px-6 py-4 bg-white border border-gray-200 rounded-md shadow-md lg:px-8 dark:border-dark-600 dark:bg-dark-500 animate-pop",
+    extra,
+  ]}
+>
+  <div
+    class="z-10 flex items-center justify-center w-16 h-16 p-3 mx-auto -mt-12 bg-teal-600 rounded-full dark:ring-offset-gray-800 dark:bg-teal-400 ring-offset-4 ring-teal-600 dark:ring-teal-400 ring-2"
+  >
+    <Icon name={iconName} class="w-12 h-12 text-white dark:text-gray-800" />
+  </div>
+  <h4
+    class="my-4 text-xl font-semibold border-b-2 border-teal-600 dark:border-teal-400"
+  >
+    {title}
+  </h4>
+  <p class="text-base">
+    {description}
+  </p>
+  <p class="my-2 text-xs font-semibold uppercase">Key Process:</p>
+  <div class="flex flex-wrap justify-start p-1">
+    <Bullet />
+    <Bullet>{bullet2}</Bullet>
+    <Bullet>{bullet3}</Bullet>
+    <Bullet>{bullet4 ? bullet4 : bullet1}</Bullet>
+    {(<Bullet {...bullets} />)}
+  </div>
+</div>
