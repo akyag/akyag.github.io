@@ -13,7 +13,6 @@ specifiers:
   astro-compress: 1.0.12
   astro-icon: https://gitpkg.now.sh/stramel/astro-icon/packages/core?main
   astro-robots-txt: ^0.3.10
-  astro-seo: ^0.6.0
   autoprefixer: ^10.4.13
   canvas-confetti: ^1.6.0
   postcss: ^8.4.18
@@ -45,7 +44,6 @@ devDependencies:
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.1
   astro-icon: '@gitpkg.now.sh/stramel/astro-icon/packages/core?main_@iconify+json@2.1.132'
   astro-robots-txt: 0.3.10
-  astro-seo: 0.6.0
   prettier: 2.7.1
   prettier-plugin-astro: 0.7.0
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
@@ -990,10 +988,6 @@ packages:
       deepmerge: 4.2.2
       valid-filename: 4.0.0
       zod: 3.19.1
-    dev: true
-
-  /astro-seo/0.6.0:
-    resolution: {integrity: sha512-nR+dJlAyQhX6s0oAmbBqPq3KCZax/zVAerFsclGiJQ2znOkS/7L+RGjziS4M9Q3OQxm3FMfqIKHp9Ns73Q81ww==}
     dev: true
 
   /astro/1.6.2:
