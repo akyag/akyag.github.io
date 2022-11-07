@@ -1,9 +1,12 @@
 ---
-const { href, target } = Astro.props;
+const { href, target, extraclass } = Astro.props;
 ---
 
 <a
-  class="font-semibold text-teal-700 hover:transition hover:duration-150 hover:ease focus:border-b-4 focus:border-slate-500 hover:text-geraldine-700 dark:text-[#2DD4BF] dark:hover:text-geraldine-400 focus:outline-none"
+  class:list={[
+    "font-semibold text-teal-700 hover:transition hover:duration-150 hover:ease focus:border-b-4 focus:border-slate-500 hover:text-geraldine-700 dark:text-[#2DD4BF] dark:hover:text-geraldine-400 focus:outline-none",
+    extraclass,
+  ]}
   href={href}
   target={target}
   rel="noopener"

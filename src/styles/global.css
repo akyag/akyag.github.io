@@ -14,15 +14,67 @@
     @apply w-3 h-3 rounded bg-slate-300 dark:bg-slate-700;
   }
 }
-:root {
+/* :root {
   --user-font-scale: 1rem - 16px;
   font-size: clamp(
     0.875rem,
     0.4626rem + 1.0309vw + var(--user-font-scale),
     1.125rem
   );
-}
+} */
+/* @link https://utopia.fyi/type/calculator?c=320,20,1.2,1536,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 
+/* @link https://utopia.fyi/type/calculator?c=320,19,1.2,1536,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+/* @link https://utopia.fyi/type/calculator?c=320,19,1.2,1536,21,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+/* @link https://utopia.fyi/type/calculator?c=320,19,1.2,1536,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+/* @link https://utopia.fyi/type/calculator?c=320,19,1.2,1536,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+:root {
+  --step--2: clamp(0.63rem, calc(0.88rem + -0.26vw), 0.82rem);
+  --step--1: clamp(0.88rem, calc(1.02rem + -0.14vw), 0.99rem);
+  --step-0: clamp(1.19rem, calc(1.17rem + 0.08vw), 1.25rem);
+  --step-1: clamp(1.43rem, calc(1.33rem + 0.45vw), 1.77rem);
+  --step-2: clamp(1.71rem, calc(1.5rem + 1.04vw), 2.5rem);
+  --step-3: clamp(2.05rem, calc(1.66rem + 1.95vw), 3.53rem);
+  --step-4: clamp(2.46rem, calc(1.8rem + 3.33vw), 5rem);
+  --step-5: clamp(2.96rem, calc(1.87rem + 5.41vw), 7.07rem);
+}
+@layer components {
+  .text-f-xs {
+    font-size: var(--step--2);
+  }
+
+  .text-f-sm {
+    font-size: var(--step--1);
+  }
+
+  .text-f-base {
+    font-size: var(--step-0);
+  }
+
+  .text-f-lg {
+    font-size: var(--step-1);
+  }
+
+  .text-f-xl {
+    font-size: var(--step-2);
+  }
+
+  .text-f-2xl {
+    font-size: var(--step-3);
+  }
+
+  .text-f-3xl {
+    font-size: var(--step-4);
+  }
+
+  .text-f-4xl {
+    font-size: var(--step-5);
+  }
+}
 .bg-grid-gray-900\/\[0\.05\] {
   /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e"); */
   background-color: #111b1b;

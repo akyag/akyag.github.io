@@ -19,10 +19,10 @@ const meta = {
   >
     <div class="grid grid-cols-1 leading-relaxed place-items-center">
       <div class="grid max-w-prose">
-        <h3 class="mx-3 my-5 text-5xl font-bold text-center font-display">
+        <h3 class="my-5 text-f-xl font-bold text-center font-display">
           Contact Form
         </h3>
-        <div class="my-2 text-xl font-semibold">Hey, Got a question?</div>
+        <div class="my-2 text-f-lg font-semibold">Hey, Got a question?</div>
         <p>Send it to me and I will get back as soon as possible.</p>
 
         <form
@@ -42,8 +42,8 @@ const meta = {
           <div class="space-y-4">
             {/* <input type="hidden" name="contact_number" /> */}
 
-            <div>
-              <label for="user_name" class="text-sm font-medium">Name</label>
+            <div class="mt-4">
+              <label for="user_name" class="font-semibold">Name</label>
               <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
                   <Icon name="bx:user" class="w-5 h-full fill-current" />
@@ -57,7 +57,7 @@ const meta = {
                   class="w-full peer pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
                 />
                 <div
-                  class="absolute inset-y-0 right-0 text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                  class="absolute inset-y-0 text-f-sm right-0 text-slate-600 dark:text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
                 >
                   Required
                 </div>
@@ -65,7 +65,7 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_email" class="text-sm font-medium">Email</label>
+              <label for="user_email" class="font-semibold">Email</label>
               <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
                   <Icon name="bx:envelope" class="w-5 h-full fill-current" />
@@ -79,7 +79,7 @@ const meta = {
                   class="w-full peer pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
                 />
                 <div
-                  class="absolute inset-y-0 right-0 text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                  class="absolute inset-y-0 right-0 text-f-sm text-slate-600 dark:text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
                 >
                   Required
                 </div>
@@ -87,7 +87,7 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_phone" class="text-sm font-medium">Phone</label>
+              <label for="user_phone" class="font-semibold">Phone</label>
               <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
                   <Icon name="bx:phone" class="w-5 h-full fill-current" />
@@ -100,23 +100,21 @@ const meta = {
                   class="w-full peer pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
                 />
                 <div
-                  class="absolute inset-y-0 right-0 text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                  class="absolute inset-y-0 right-0 text-f-sm text-slate-600 dark:text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
                 >
                   Required
                 </div>
               </div>
             </div>
 
-            <div class="text-2xl font-semibold">
+            <div class="text-f-lg font-semibold">
               <span class="border-b-4 border-green-600 font-display"
                 >What is this contact about?</span
               >
             </div>
 
             <div>
-              <label for="user_dept" class="text-sm font-medium"
-                >Department</label
-              >
+              <label for="user_dept" class="font-semibold">Department</label>
               <div>
                 <select
                   name="user_dept"
@@ -136,9 +134,7 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_subject" class="text-sm font-medium"
-                >Subject</label
-              >
+              <label for="user_subject" class="font-semibold">Subject</label>
               <div class="flex relative">
                 <div class="z-10 pl-3 pointer-events-none">
                   <Icon name="bx:hash" class="w-5 h-full fill-current" />
@@ -152,7 +148,7 @@ const meta = {
                   class="peer w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
                 />
                 <div
-                  class="absolute inset-y-0 right-0 text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                  class="absolute inset-y-0 right-0 text-f-sm text-slate-600 dark:text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
                 >
                   Required
                 </div>
@@ -160,9 +156,7 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_message" class="text-sm font-medium"
-                >Message</label
-              >
+              <label for="user_message" class="font-semibold">Message</label>
               <div class="flex relative">
                 <div class="z-10 pt-3 pl-3 pointer-events-none">
                   <Icon name="bx:edit-alt" class="w-5 h-5 fill-current" />
@@ -176,7 +170,7 @@ const meta = {
                   class="w-full peer h-64 pl-10 pt-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
                 ></textarea>
                 <div
-                  class="absolute inset-y-0 right-0 text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                  class="absolute inset-y-0 right-0 text-f-sm text-slate-600 dark:text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
                 >
                   Required
                 </div>
@@ -192,14 +186,14 @@ const meta = {
                 required
                 class="text-slate-500 w-5 h-5 focus:ring-slate-500 focus:ring-2 focus:ring-offset-white dark:bg-slate-500 dark:focus:ring-slate-500 dark:focus:ring-offset-dark-800"
               />
-              <label for="terms" class="ml-2 text-sm font-medium">
+              <label for="terms" class="ml-2 text-f-sm font-medium">
                 I understand that this form collects my name and email, so I can
                 be contacted.</label
               >
             </div>
 
             <button
-              class="flex items-center content-center px-6 h-12 text-sm font-semibold text-white dark:text-dark-700 rounded-md shadow-md hover:transition-all hover:duration-150 hover:ease focus:outline-none focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 focus:ring-offset-transparent bg-teal-700 hover:bg-teal-600 dark:bg-teal-400 dark:hover:bg-teal-500"
+              class="flex items-center content-center px-6 h-12 text-f-sm font-semibold text-white dark:text-dark-700 rounded-md shadow-md hover:transition-all hover:duration-150 hover:ease focus:outline-none focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 focus:ring-offset-transparent bg-teal-700 hover:bg-teal-600 dark:bg-teal-400 dark:hover:bg-teal-500"
               type="submit"
             >
               <Icon

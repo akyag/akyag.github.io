@@ -3,6 +3,7 @@ import Page from "../layouts/Page.astro";
 import Head from "../layouts/Head.astro";
 import Hero from "../layouts/LicenseHero.astro";
 import Link from "../components/Link.astro";
+import { Icon } from "astro-icon";
 
 const meta = {
   title: "License",
@@ -19,56 +20,83 @@ const meta = {
   >
     <div class="grid grid-cols-1 leading-relaxed place-items-center">
       <div class="space-y-12 max-w-prose">
-        <h3 class="mx-3 my-5 text-5xl font-bold text-center font-display">
+        <h3 class="mx-3 my-5 text-f-xl font-bold text-center font-display">
           License
         </h3>
         <div class="space-y-5">
           <p
-            class="first-letter:text-3xl first-letter:text-geraldine-500 first-letter:font-semibold"
+            class="first-letter:text-f-lg first-letter:text-geraldine-500 first-letter:font-semibold"
           >
             Licenses of all the plug-ins and software used in building
             Web-o-Reviews can be found through the links provided.
           </p>
           <ul class="ml-8 list-decimal list-outside">
             <li>
-              <Link href="https://tailwindcss.com/" target="_blank"
-                >TailwindCSS</Link
-              >: A utility-first CSS framework for rapidly building custom
+              <Link
+                extraclass="inline-flex items-center"
+                href="https://tailwindcss.com/"
+                target="_blank"
+                >TailwindCSS
+                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+              </Link>: A utility-first CSS framework for rapidly building custom
               designs.
             </li>
             <li>
-              <Link href="https://inkscape.org/about/license/" target="_blank"
-                >Inkscape</Link
-              >: Inkscape is a free and open-source vector graphics editor.
+              <Link
+                extraclass="inline-flex items-center"
+                href="https://inkscape.org/about/license/"
+                target="_blank"
+                >Inkscape
+                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+              </Link>: Inkscape is a free and open-source vector graphics
+              editor.
             </li>
             <li>
               <Link
+                extraclass="inline-flex items-center"
                 href="https://code.visualstudio.com/License/"
                 target="_blank"
-                rel="noopener">Visual Studio Code</Link
-              >: Visual Studio Code is a free source-code editor.
-            </li>
-            <li>
-              <Link href="https://heroicons.com/" target="_blank"
-                >Heroicons</Link
-              >: Beautiful hand-crafted SVG icons, by the makers of Tailwind
-              CSS. (MIT Licensed)
+                rel="noopener"
+                >Visual Studio Code
+                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+              </Link>: Visual Studio Code is a free source-code editor.
             </li>
             <li>
               <Link
+                extraclass="inline-flex items-center"
+                href="https://github.com/atisawd/boxicons"
+                target="_blank"
+                >Box Icons
+                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+              </Link>: High Quality web friendly icons. License - CC 4.0
+            </li>
+            <li>
+              <Link
+                extraclass="inline-flex items-center"
                 href="https://github.com/googlefonts/noto-emoji"
-                target="_blank">Noto Emoji</Link
-              >: Author - Google, License - Apache 2.0
+                target="_blank"
+                >Noto Emoji
+                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+              </Link>: Author - Google, License - Apache 2.0
             </li>
             <li>
               <Link
+                extraclass="inline-flex items-center"
                 href="https://github.com/tabler/tabler-icons"
-                target="_blank">Tabler Icons</Link
-              >: Author - Paweł Kuna, License - MIT
+                target="_blank"
+                >Tabler Icons
+                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+              </Link>: Author - Paweł Kuna, License - MIT
             </li>
             <li>
-              <Link href="https://undraw.co/" target="_blank">unDraw</Link>:
-              Open-source illustrations for any idea you can imagine and create.
+              <Link
+                extraclass="inline-flex items-center"
+                href="https://undraw.co/"
+                target="_blank"
+                >unDraw
+                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+              </Link>: Open-source illustrations for any idea you can imagine
+              and create.
             </li>
           </ul>
         </div>
