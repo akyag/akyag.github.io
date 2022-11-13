@@ -12,6 +12,9 @@
 			"editor.defaultFormatter": "esbenp.prettier-vscode",
 			"editor.formatOnSave": true
 		},
-		"nuxt.isNuxtApp": false
+		"nuxt.isNuxtApp": false,
+		"yaml.schemas": {
+			"https://json.schemastore.org/github-workflow.json": "file:///home/akya/code/website/current/astro/astro-wor/.github/workflows/deploy.yml"
+		}
 	}
 }
