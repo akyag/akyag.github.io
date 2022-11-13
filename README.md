@@ -1,11 +1,8 @@
-# Astro with Tailwind
+![alt text](https://raw.githubusercontent.com/akyag/akyag.github.io/master/mstile-144x144.png "Web-o-Reviews")
 
-```
-npm create astro@latest -- --template with-tailwindcss
-```
+# Web-o-Reviews
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
+Welcome to my Portfolio website, Web-o-Reviews. The website is built using Tailwind, HTML5, CSS3 and Astro.
+Feel free to explore the code!
 
-Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
-
-For complete setup instructions, please see our [Styling Guide](https://docs.astro.build/guides/styling#-tailwind).
+[Web-o-Reviews](https://weboreviews.com "Web-o-Reviews")
