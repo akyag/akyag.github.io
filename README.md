@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/akyag/akyag.github.io/master/mstile-144x144.png "Web-o-Reviews")
+![Logo](public/mstile-144x144.png "Web-o-Reviews")
 
 # Web-o-Reviews
 
