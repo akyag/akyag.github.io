@@ -4,33 +4,11 @@ import Head from "../layouts/Head.astro";
 import Hero from "../layouts/HomeHero.astro";
 import { Icon } from "astro-icon";
 import Bullet from "../components/Bullet.astro";
-// import HomeCard from "../components/HomeCard.astro";
 
 const meta = {
   title: "Web-o-Reviews",
   description: "Akshay Ghate's Portfolio and future blog.",
 };
-
-// const Process = [
-//   {
-//     title: "1. Discuss",
-//     description:
-//       "To define the goals. What objective does the website need to accomplish? What problem does it solve?.",
-//     iconName: "bx:comment-dots",
-//     bullets: ["Brainstorming", "Define a Problem", "Primary Aim", "Analysis"],
-//   },
-//   {
-//     title: "2. Planning",
-//     description:
-//       "To decide the technical aspects of the project, such as a selection of the tech stack to build the website, content strategy planning.",
-//     iconName: "bx:palette",
-//     bullets: [
-//       "Content Developement Strategy",
-//       "SEO Strategy",
-//       "Technology stacks",
-//     ],
-//   },
-// ];
 ---
 
 <Page>
@@ -83,30 +61,6 @@ const meta = {
         <ul
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-24 sm:gap-x-6 sm:gap-y-12 place-items-stretch"
         >
-          {
-            /*
-            Process.map((process, index) => (
-              <div
-                class="animate-pop"
-                style={`animation-delay: ${index * 0.2}s;`}
-              >
-                <HomeCard {...process} client:visible />
-              </div>
-            )) */
-          }
-          {
-            /*<HomeCard
-            load:lazy
-            iconName="bx:comment-dots"
-            title="1. Discuss"
-            description="To define the goals. What objective does the website need to accomplish? What problem does it solve?."
-            bullet1="Brainstorming"
-            bullet2="Define a Problem"
-            bullet3="Primary Aim"
-            bullet4="Analysis"
-          />*/
-          }
-
           <li
             class="px-6 py-4 bg-white border border-gray-200 rounded-md shadow-md lg:px-8 dark:border-dark-600 dark:bg-dark-500 animate-pop"
           >
