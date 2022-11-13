@@ -10,7 +10,7 @@ specifiers:
   '@iconify/json': ^2.1.136
   '@tailwindcss/forms': ^0.5.3
   astro: ^1.6.7
-  astro-compress: 1.1.4
+  astro-compress: 1.1.5
   astro-icon: https://gitpkg.now.sh/stramel/astro-icon/packages/core?main
   astro-robots-txt: ^0.3.10
   autoprefixer: ^10.4.13
@@ -31,7 +31,7 @@ dependencies:
   '@astrojs/tailwind': 2.1.2_tailwindcss@3.2.4
   '@iconify/json': 2.1.136
   astro: 1.6.7
-  astro-compress: 1.1.4
+  astro-compress: 1.1.5
   autoprefixer: 10.4.13_postcss@8.4.19
   canvas-confetti: 1.6.0
   postcss: 8.4.19
@@ -971,8 +971,8 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /astro-compress/1.1.4:
-    resolution: {integrity: sha512-ak64VDJ2lCj+54zgbSk4b3f0YY4SigFVQnEphi+AZ+gsvyd3NY0VJcNaVjUd3h6SBDQnc8UASmUrB9TxWVKMhA==}
+  /astro-compress/1.1.5:
+    resolution: {integrity: sha512-Lp1BvKivu2MsAk3dbnNOnrpTcsM0Pn0aNt9aWSLAxuFqsXT3bj2L0lCWaCNBgDQ2j7FJtM8CrN2wITBRmspFHQ==}
     dependencies:
       csso: 5.0.5
       deepmerge-ts: 4.2.2
