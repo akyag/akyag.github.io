@@ -1,9 +1,10 @@
 ---
 import archiveHero from "../images/archive.svg";
+import ScrollDown from "../components/ScrollDown.astro";
 ---
 
 <section class="relative z-10" id="hero">
-  <div class="container mx-auto py-20 2xl:py-36">
+  <div class="container mx-auto py-12 2xl:py-36">
     <div
       class="grid items-center grid-cols-1 gap-12 md:grid-cols-2 place-items-center"
     >
@@ -30,11 +31,12 @@ import archiveHero from "../images/archive.svg";
            />*/
         }
         <img
-          class="w-[250px] lg:w-[375px] 2xl:w-[500px] h-auto dark:filter dark:brightness-75 dark:contrast-125"
+          class="w-[200px] lg:w-[300px] 2xl:w-[400px] h-auto dark:filter dark:brightness-75 dark:contrast-125"
           src={archiveHero}
           alt="Archive"
         />
       </div>
     </div>
+    <ScrollDown />
   </div>
 </section>

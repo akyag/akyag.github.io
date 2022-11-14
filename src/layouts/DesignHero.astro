@@ -1,9 +1,10 @@
 ---
 import designHero from "../images/web-design.svg";
+import ScrollDown from "../components/ScrollDown.astro";
 ---
 
 <section class="relative z-10" id="hero">
-  <div class="container mx-auto py-24 2xl:py-40">
+  <div class="container mx-auto py-12 2xl:py-36">
     <div
       class="grid items-center grid-cols-1 gap-12 md:grid-cols-2 place-items-center"
     >
@@ -33,11 +34,12 @@ import designHero from "../images/web-design.svg";
                />  */
         }
         <img
-          class="w-[295px] lg:w-[442px] 2xl:w-[590px] h-auto dark:filter dark:brightness-75 dark:contrast-125"
+          class="w-[250px] lg:w-[375px] 2xl:w-[500px] h-auto dark:filter dark:brightness-75 dark:contrast-125"
           src={designHero}
           alt="Design"
         />
       </div>
     </div>
+    <ScrollDown />
   </div>
 </section>

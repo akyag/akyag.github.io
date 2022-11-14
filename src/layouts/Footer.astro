@@ -179,6 +179,12 @@ import { Icon } from "astro-icon";
         </div>
       </div>
       <Backtotop />
+      <script is:inline>
+        function ScrollDown() {
+          const element = document.getElementById("content-wrapper");
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      </script>
     </div>
   </div>
 </footer>

@@ -1,9 +1,10 @@
 ---
 import contactHero from "../images/contact.svg";
+import ScrollDown from "../components/ScrollDown.astro";
 ---
 
 <section class="relative z-10" id="hero">
-  <div class="container mx-auto py-28 2xl:py-44">
+  <div class="container mx-auto py-12 2xl:py-48">
     <div
       class="grid items-center grid-cols-1 gap-12 md:grid-cols-2 place-items-center"
     >
@@ -30,11 +31,12 @@ import contactHero from "../images/contact.svg";
               />  */
         }
         <img
-          class="w-[250px] lg:w-[375px] 2xl:w-[500px] h-auto dark:filter dark:brightness-75 dark:contrast-125"
+          class="w-[200px] lg:w-[350px] 2xl:w-[400px] h-auto dark:filter dark:brightness-75 dark:contrast-125"
           src={contactHero}
           alt="Contact Me"
         />
       </div>
     </div>
+    <ScrollDown />
   </div>
 </section>
