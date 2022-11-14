@@ -18,13 +18,13 @@ const meta = {
     id="content-wrapper"
     class="container mx-auto max-w-7xl px-8 py-12 dark:bg-dark-900 dark:text-white"
   >
-    <div class="grid space-y-24 leading-relaxed place-items-center">
+    <div class="grid place-items-center space-y-24 leading-relaxed">
       <div class="max-w-prose">
-        <h3 class="mx-3 my-5 text-f-xl font-bold text-center font-display">
+        <h3 class="text-f-xl mx-3 my-5 text-center font-display font-bold">
           What I do
         </h3>
         <p
-          class="first-letter:text-f-lg first-letter:text-geraldine-500 first-letter:font-semibold"
+          class="first-letter:text-f-lg first-letter:font-semibold first-letter:text-geraldine-500"
         >
           I offer web design services to businesses and individuals. I see that
           my service fits within your budget and/or time constraints. Once my
@@ -35,7 +35,7 @@ const meta = {
       </div>
       <div>
         <div
-          class="relative z-10 flex items-center justify-center w-16 h-16 p-3 ml-4 rounded-full ring-offset-4 dark:ring-offset-gray-800 ring-2 bg-rose-600 dark:bg-rose-400 ring-rose-600 dark:ring-rose-400"
+          class="relative z-10 ml-4 flex h-16 w-16 items-center justify-center rounded-full bg-rose-600 p-3 ring-2 ring-rose-600 ring-offset-4 dark:bg-rose-400 dark:ring-rose-400 dark:ring-offset-gray-800"
         >
           <Icon
             name="bx:code-alt"
@@ -43,9 +43,9 @@ const meta = {
           />
         </div>
         <div
-          class="px-4 py-8 -mt-8 bg-white border border-gray-200 rounded-md shadow-md dark:border-dark-600 dark:bg-dark-500 md:p-8"
+          class="-mt-8 rounded-md border border-gray-200 bg-white px-4 py-8 shadow-md dark:border-dark-600 dark:bg-dark-500 md:p-8"
         >
-          <div class="py-4 text-f-lg font-semibold">Web Developement</div>
+          <div class="text-f-lg py-4 font-semibold">Web Developement</div>
           <p>
             HTML / CSS, Javascript Animation, Responsive website, Support and
             Maintenance.
@@ -54,18 +54,18 @@ const meta = {
       </div>
       <div>
         <h3
-          class="mx-3 mt-5 text-f-xl font-bold text-center font-display mb-14"
+          class="text-f-xl mx-3 mt-5 mb-14 text-center font-display font-bold"
         >
           My Process
         </h3>
         <ul
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-24 sm:gap-x-6 sm:gap-y-12 place-items-stretch"
+          class="grid grid-cols-1 place-items-stretch gap-24 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3"
         >
           <li
-            class="px-6 py-4 bg-white border border-gray-200 rounded-md shadow-md lg:px-8 dark:border-dark-600 dark:bg-dark-500 animate-pop"
+            class="animate-pop rounded-md border border-gray-200 bg-white px-6 py-4 shadow-md dark:border-dark-600 dark:bg-dark-500 lg:px-8"
           >
             <div
-              class="z-10 flex items-center justify-center w-16 h-16 p-3 mx-auto -mt-12 bg-blue-600 rounded-full dark:ring-offset-gray-800 dark:bg-blue-400 ring-offset-4 ring-blue-600 dark:ring-blue-400 ring-2"
+              class="z-10 mx-auto -mt-12 flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 p-3 ring-2 ring-blue-600 ring-offset-4 dark:bg-blue-400 dark:ring-blue-400 dark:ring-offset-gray-800"
             >
               <Icon
                 name="bx:comment-dots"
@@ -73,7 +73,7 @@ const meta = {
               />
             </div>
             <h4
-              class="my-4 text-f-lg font-semibold border-b-2 border-blue-600 dark:border-blue-400"
+              class="text-f-lg my-4 border-b-2 border-blue-600 font-semibold dark:border-blue-400"
             >
               1. Discuss
             </h4>
@@ -81,7 +81,7 @@ const meta = {
               To define the goals. What objective does the website need to
               accomplish? What problem does it solve?.
             </p>
-            <p class="my-2 text-f-sm font-semibold uppercase">Key Process:</p>
+            <p class="text-f-sm my-2 font-semibold uppercase">Key Process:</p>
             <div class="flex flex-wrap justify-start p-1">
               <Bullet>Brainstorming</Bullet>
               <Bullet>Define a Problem</Bullet>
@@ -90,10 +90,10 @@ const meta = {
             </div>
           </li>
           <li
-            class="px-6 py-4 bg-white border border-gray-200 rounded-md shadow-md lg:px-8 dark:border-dark-600 dark:bg-dark-500 reveal"
+            class="reveal rounded-md border border-gray-200 bg-white px-6 py-4 shadow-md dark:border-dark-600 dark:bg-dark-500 lg:px-8"
           >
             <div
-              class="z-10 flex items-center justify-center w-16 h-16 p-3 mx-auto -mt-12 bg-purple-600 rounded-full dark:bg-purple-400 dark:ring-offset-gray-800 ring-offset-4 ring-purple-600 dark:ring-purple-400 ring-2"
+              class="z-10 mx-auto -mt-12 flex h-16 w-16 items-center justify-center rounded-full bg-purple-600 p-3 ring-2 ring-purple-600 ring-offset-4 dark:bg-purple-400 dark:ring-purple-400 dark:ring-offset-gray-800"
             >
               <Icon
                 name="bx:food-menu"
@@ -101,7 +101,7 @@ const meta = {
               />
             </div>
             <h4
-              class="my-4 text-f-lg font-semibold border-b-2 border-purple-600 dark:border-purple-400"
+              class="text-f-lg my-4 border-b-2 border-purple-600 font-semibold dark:border-purple-400"
             >
               2. Planning
             </h4>
@@ -110,7 +110,7 @@ const meta = {
               selection of the tech stack to build the website, content strategy
               planning.
             </p>
-            <p class="my-2 text-f-sm font-semibold uppercase">Key Process:</p>
+            <p class="text-f-sm my-2 font-semibold uppercase">Key Process:</p>
             <div class="flex flex-wrap justify-start p-1">
               <Bullet>Content Developement Strategy</Bullet>
               <Bullet>SEO Strategy</Bullet>
@@ -118,10 +118,10 @@ const meta = {
             </div>
           </li>
           <li
-            class="px-6 py-4 bg-white border border-gray-200 rounded-md shadow-md lg:px-8 dark:border-dark-600 dark:bg-dark-500 reveal"
+            class="reveal rounded-md border border-gray-200 bg-white px-6 py-4 shadow-md dark:border-dark-600 dark:bg-dark-500 lg:px-8"
           >
             <div
-              class="relative z-10 flex items-center justify-center w-16 h-16 p-3 mx-auto -mt-12 rounded-full bg-fuchsia-600 dark:bg-fuchsia-400 dark:ring-offset-gray-800 ring-offset-4 ring-fuchsia-600 dark:ring-fuchsia-400 ring-2"
+              class="relative z-10 mx-auto -mt-12 flex h-16 w-16 items-center justify-center rounded-full bg-fuchsia-600 p-3 ring-2 ring-fuchsia-600 ring-offset-4 dark:bg-fuchsia-400 dark:ring-fuchsia-400 dark:ring-offset-gray-800"
             >
               <Icon
                 name="bx:palette"
@@ -129,7 +129,7 @@ const meta = {
               />
             </div>
             <h4
-              class="my-4 text-f-lg font-semibold border-b-2 border-fuchsia-600 dark:border-fuchsia-400"
+              class="text-f-lg my-4 border-b-2 border-fuchsia-600 font-semibold dark:border-fuchsia-400"
             >
               3. Designing
             </h4>
@@ -138,7 +138,7 @@ const meta = {
               elements to be incorporated on the website and figuring out the
               structure.
             </p>
-            <p class="my-2 text-f-sm font-semibold uppercase">Key Process:</p>
+            <p class="text-f-sm my-2 font-semibold uppercase">Key Process:</p>
             <div class="flex flex-wrap justify-start p-1">
               <Bullet>Prototyping</Bullet>
               <Bullet>Designing</Bullet>
@@ -146,10 +146,10 @@ const meta = {
             </div>
           </li>
           <li
-            class="px-6 py-4 bg-white border border-gray-200 rounded-md shadow-md lg:px-8 dark:border-dark-600 dark:bg-dark-500 reveal2"
+            class="reveal2 rounded-md border border-gray-200 bg-white px-6 py-4 shadow-md dark:border-dark-600 dark:bg-dark-500 lg:px-8"
           >
             <div
-              class="relative z-10 flex items-center justify-center w-16 h-16 p-3 mx-auto -mt-12 bg-yellow-600 rounded-full ring-offset-4 dark:bg-yellow-400 dark:ring-yellow-400 dark:ring-offset-gray-800 ring-yellow-600 ring-2"
+              class="relative z-10 mx-auto -mt-12 flex h-16 w-16 items-center justify-center rounded-full bg-yellow-600 p-3 ring-2 ring-yellow-600 ring-offset-4 dark:bg-yellow-400 dark:ring-yellow-400 dark:ring-offset-gray-800"
             >
               <Icon
                 name="bx:bxs-flask"
@@ -157,7 +157,7 @@ const meta = {
               />
             </div>
             <h4
-              class="my-4 text-f-lg font-semibold border-b-2 border-yellow-600 dark:border-yellow-400"
+              class="text-f-lg my-4 border-b-2 border-yellow-600 font-semibold dark:border-yellow-400"
             >
               4. Testing
             </h4>
@@ -165,17 +165,17 @@ const meta = {
               Website testing consists of a number of different tests, including
               functionality, usability, interface, compatibility etc.
             </p>
-            <p class="my-2 text-f-sm font-semibold uppercase">Key Process:</p>
+            <p class="text-f-sm my-2 font-semibold uppercase">Key Process:</p>
             <div class="flex flex-wrap justify-start p-1">
               <Bullet>Testing</Bullet>
               <Bullet>Compatibility</Bullet>
             </div>
           </li>
           <li
-            class="px-6 py-4 bg-white border border-gray-200 rounded-md shadow-md sm:col-span-2 lg:px-8 dark:border-dark-600 dark:bg-dark-500"
+            class="rounded-md border border-gray-200 bg-white px-6 py-4 shadow-md dark:border-dark-600 dark:bg-dark-500 sm:col-span-2 lg:px-8"
           >
             <div
-              class="relative z-10 flex items-center justify-center w-16 h-16 p-3 mx-auto -mt-12 bg-green-600 rounded-full dark:bg-green-400 dark:ring-green-400 dark:ring-offset-gray-800 ring-offset-4 ring-green-600 ring-2"
+              class="relative z-10 mx-auto -mt-12 flex h-16 w-16 items-center justify-center rounded-full bg-green-600 p-3 ring-2 ring-green-600 ring-offset-4 dark:bg-green-400 dark:ring-green-400 dark:ring-offset-gray-800"
             >
               <Icon
                 name="bx:rocket"
@@ -183,7 +183,7 @@ const meta = {
               />
             </div>
             <h4
-              class="my-4 text-f-lg font-semibold border-b-2 border-green-600 dark:border-green-400"
+              class="text-f-lg my-4 border-b-2 border-green-600 font-semibold dark:border-green-400"
             >
               5. Launching and Maintenance
             </h4>
@@ -193,7 +193,7 @@ const meta = {
               journey. The Maintenance phase is what follows and is critical for
               the website to be successfully up and running.
             </p>
-            <p class="my-2 text-f-sm font-semibold uppercase">Key Process:</p>
+            <p class="text-f-sm my-2 font-semibold uppercase">Key Process:</p>
             <div class="flex flex-wrap justify-start p-1">
               <Bullet>Testing</Bullet>
               <Bullet>Maintenance</Bullet>

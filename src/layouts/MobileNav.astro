@@ -7,11 +7,11 @@ import { Icon } from "astro-icon";
 ---
 
 <header
-  class="fixed top-0 z-30 block w-screen shadow-md md:hidden bg-gray-100 dark:bg-dark-900"
+  class="fixed top-0 z-30 block w-screen bg-gray-100 shadow-md dark:bg-dark-900 md:hidden"
 >
   <nav>
-    <div class="px-4 mx-auto sm:px-6">
-      <div class="flex items-center justify-between h-24">
+    <div class="mx-auto px-4 sm:px-6">
+      <div class="flex h-24 items-center justify-between">
         <div class="flex items-center">
           <div class="pl-4">
             <a href="/" class="block">
@@ -24,7 +24,7 @@ import { Icon } from "astro-icon";
             </a>
           </div>
         </div>
-        <div class="flex items-center content-end">
+        <div class="flex content-end items-center">
           <div class="flex items-center">
             <div class="flex items-center space-x-4">
               <Icon
@@ -43,7 +43,7 @@ import { Icon } from "astro-icon";
                   toggle-color-scheme
                 />
                 <span
-                  class="absolute left-1 top-1 h-4/6 w-1/3 rounded-full bg-white transition-all duration-500 peer-checked:left-7 peer-checked:bg-dark-600 shadow-lg"
+                  class="absolute left-1 top-1 h-4/6 w-1/3 rounded-full bg-white shadow-lg transition-all duration-500 peer-checked:left-7 peer-checked:bg-dark-600"
                 ></span>
               </label>
               <Icon
@@ -54,7 +54,7 @@ import { Icon } from "astro-icon";
             <ToggleMenu />
             <div class="">
               <div
-                class="fixed hidden right-0 z-20 w-48 mr-4 h-auto py-0 mt-10 bg-white dark:bg-dark-500 rounded-lg"
+                class="fixed right-0 z-20 mr-4 mt-10 hidden h-auto w-48 rounded-lg bg-white py-0 dark:bg-dark-500"
                 id="menu"
               >
                 {

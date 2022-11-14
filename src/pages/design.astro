@@ -18,14 +18,14 @@ const meta = {
   <Hero />
   <div
     id="content-wrapper"
-    class="container px-8 md:px-0 py-12 mx-auto dark:bg-dark-900 dark:text-white"
+    class="container mx-auto px-8 py-12 dark:bg-dark-900 dark:text-white md:px-0"
   >
-    <div class="mx-auto space-y-16 leading-relaxed max-w-prose">
-      <h3 class="mx-3 my-5 text-f-xl font-bold text-center font-display">
+    <div class="mx-auto max-w-prose space-y-16 leading-relaxed">
+      <h3 class="text-f-xl mx-3 my-5 text-center font-display font-bold">
         Design
       </h3>
       <p
-        class="first-letter:text-f-lg first-letter:text-geraldine-500 first-letter:font-semibold"
+        class="first-letter:text-f-lg first-letter:font-semibold first-letter:text-geraldine-500"
       >
         Underneath are a few modern concepts generally used in web design
         process. These established standards and practices will offer you an
@@ -38,7 +38,7 @@ const meta = {
             name="ph:globe-hemisphere-west-fill"
             class="flex flex-shrink-0 w-12 h-12 mx-2 my-2 text-cyan-600 dark:text-cyan-400"
           />
-          <h4 class="text-f-lg font-semibold font-display">Web Standards</h4>
+          <h4 class="text-f-lg font-display font-semibold">Web Standards</h4>
         </div>
         <p>
           Web standards are the formal, non-proprietary standards and other
@@ -60,7 +60,7 @@ const meta = {
             name="bx:expand-alt"
             class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-indigo-600 dark:text-indigo-400"
           />
-          <h4 class="text-f-lg font-semibold font-display">Responsive</h4>
+          <h4 class="text-f-lg font-display font-semibold">Responsive</h4>
         </div>
         <p>
           Responsive web design is an approach to web design that makes web
@@ -75,7 +75,7 @@ const meta = {
         </p>
         <p>Want to see it live in action? Try re-sizing your browser window!</p>
         <img
-          class="dark:filter dark:brightness-75 dark:contrast-125"
+          class="dark:brightness-75 dark:contrast-125 dark:filter"
           src={responsive}
           alt="Responsive"
         />
@@ -87,7 +87,7 @@ const meta = {
             name="bx:check-shield"
             class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-green-600 dark:text-green-400"
           />
-          <h4 class="text-f-lg font-semibold font-display">Compatibility</h4>
+          <h4 class="text-f-lg font-display font-semibold">Compatibility</h4>
         </div>
         <p>
           Clean coding. Your website will function properly in all popular and
@@ -102,7 +102,7 @@ const meta = {
             class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-lime-600 dark:text-lime-400"
           />
 
-          <h4 class="text-f-lg font-semibold font-display">Accessibility</h4>
+          <h4 class="text-f-lg font-display font-semibold">Accessibility</h4>
         </div>
         <p>
           A website that is accessible is designed to function properly with
@@ -126,7 +126,7 @@ const meta = {
             class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-rose-600 dark:text-rose-400"
           />
 
-          <h4 class="text-f-lg font-semibold font-display">Contact Form</h4>
+          <h4 class="text-f-lg font-display font-semibold">Contact Form</h4>
         </div>
         <p>
           You will be provided a contact form with custom form fields, so your
@@ -142,7 +142,7 @@ const meta = {
             class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-purple-600 dark:text-purple-400"
           />
 
-          <h4 class="text-f-lg font-semibold font-display">Dark mode</h4>
+          <h4 class="text-f-lg font-display font-semibold">Dark mode</h4>
         </div>
         <p>
           The dark mode is a color scheme that uses light-colored text, icons
@@ -160,7 +160,7 @@ const meta = {
             class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-emerald-600 dark:text-emerald-400"
           />
 
-          <h4 class="text-f-lg font-semibold font-display">
+          <h4 class="text-f-lg font-display font-semibold">
             JS framework / CSS3 effects
           </h4>
         </div>
@@ -170,7 +170,7 @@ const meta = {
           out more about the build tool from the link in the footer. Astro
           ensures your website is lightweight and only loads what's needed on
           the page. <svg
-            class="inline-block w-6 h-6"
+            class="inline-block h-6 w-6"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 128 128"
@@ -249,7 +249,7 @@ const meta = {
             class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-yellow-600 dark:text-yellow-400"
           />
 
-          <h4 class="text-f-lg font-semibold font-display">No templates</h4>
+          <h4 class="text-f-lg font-display font-semibold">No templates</h4>
         </div>
         <p>
           I never use templates. Your website will be carefully crafted from
@@ -265,13 +265,13 @@ const meta = {
             class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-emerald-600 dark:text-emerald-400"
           />
 
-          <h4 class="text-f-lg font-semibold font-display">Optimization</h4>
+          <h4 class="text-f-lg font-display font-semibold">Optimization</h4>
         </div>
         <p>
           When optimizing a website for performance, there are three primary
           types of front end optimization techniques.
         </p>
-        <ul class="list-decimal list-inside">
+        <ul class="list-inside list-decimal">
           <li>Techniques that reduce the number of requests.</li>
           <li>Techniques that reduce the overall size of the content.</li>
           <li>
@@ -285,7 +285,7 @@ const meta = {
         </p>
         <div>
           You can check the performance audits of this website below.
-          <ul class="mt-4 list-decimal list-inside">
+          <ul class="mt-4 list-inside list-decimal">
             <li>
               <Link
                 href="/data/GTmetrix-report-weboreviews.com-20221113T043524-unorHqJA.pdf"
@@ -317,7 +317,7 @@ const meta = {
             class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-red-600 dark:text-red-400"
           />
 
-          <h4 class="text-f-lg font-semibold font-display">Pricing</h4>
+          <h4 class="text-f-lg font-display font-semibold">Pricing</h4>
         </div>
         <p>
           I charge on the basis of how much work I have to do. Fundamental
@@ -337,9 +337,9 @@ const meta = {
             class="flex items-center flex-shrink-0 w-12 h-12 mx-2 my-2 text-orange-600 dark:text-orange-400"
           />
 
-          <h4 class="text-f-lg font-semibold font-display">Value Add-on</h4>
+          <h4 class="text-f-lg font-display font-semibold">Value Add-on</h4>
         </div>
-        <ul class="list-decimal list-inside">
+        <ul class="list-inside list-decimal">
           <li>
             I personally see that my service fits within your budget and/or time
             constraints.

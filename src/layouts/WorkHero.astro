@@ -6,16 +6,16 @@ import ScrollDown from "../components/ScrollDown.astro";
 <section class="relative z-10" id="hero">
   <div class="container mx-auto py-12 lg:py-24 2xl:py-36">
     <div
-      class="grid items-center grid-cols-1 gap-12 md:grid-cols-2 place-items-center"
+      class="grid grid-cols-1 place-items-center items-center gap-12 md:grid-cols-2"
     >
-      <div class="grid items-center place-items-center">
+      <div class="grid place-items-center items-center">
         <h1
-          class="text-f-2xl font-display font-bold leading-relaxed text-center text-white mt-28 md:mt-0"
+          class="text-f-2xl mt-28 text-center font-display font-bold leading-relaxed text-white md:mt-0"
         >
           Work
         </h1>
         <h2
-          class="mt-2 text-f-lg font-semibold leading-snug text-center text-white"
+          class="text-f-lg mt-2 text-center font-semibold leading-snug text-white"
         >
           Some of my recent work.
         </h2>
@@ -31,7 +31,7 @@ import ScrollDown from "../components/ScrollDown.astro";
                />   */
         }
         <img
-          class="w-[300px] lg:w-[450px] 2xl:w-[600px] h-auto dark:filter dark:brightness-75 dark:contrast-125"
+          class="h-auto w-[300px] dark:brightness-75 dark:contrast-125 dark:filter lg:w-[450px] 2xl:w-[600px]"
           src={workHero}
           alt="Work"
         />

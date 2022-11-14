@@ -7,13 +7,13 @@ import Footer from "./Footer.astro";
 <html lang="en" class="motion-safe:scroll-smooth">
   <slot name="head" />
   <body
-    class="bg-gray-100 dark:bg-dark-900 text-gray-700 font-body text-f-base"
+    class="text-f-base bg-gray-100 font-body text-gray-700 dark:bg-dark-900"
   >
     <div
-      class="absolute inset-0 h-[700px] md:h-[600px] lg:h-[720px] 2xl:h-[960px] bg-center bg-no-repeat dark:bg-dark-900 bg-hero-img dark:bg-hero-img-dark"
+      class="absolute inset-0 h-[700px] bg-hero-img bg-center bg-no-repeat dark:bg-dark-900 dark:bg-hero-img-dark md:h-[600px] lg:h-[720px] 2xl:h-[960px]"
     >
       <div
-        class="absolute inset-0 bg-grid-gray-900/[0.05] bg-bottom border-b border-gray-100/5"
+        class="bg-grid-gray-900/[0.05] absolute inset-0 border-b border-gray-100/5 bg-bottom"
         style="
           mask-image: linear-gradient(to bottom, transparent, black);
           -webkit-mask-image: linear-gradient(to bottom, transparent, black);

@@ -24,15 +24,15 @@ const meta = {
   <Hero />
   <div
     id="content-wrapper"
-    class="container mx-auto px-8 md:px-0 py-12 dark:bg-dark-900 dark:text-white"
+    class="container mx-auto px-8 py-12 dark:bg-dark-900 dark:text-white md:px-0"
   >
-    <div class="max-w-7xl mx-auto">
+    <div class="mx-auto max-w-7xl">
       <div class="space-y-12">
-        <h3 class="mx-3 my-5 text-f-xl font-bold text-center font-display">
+        <h3 class="text-f-xl mx-3 my-5 text-center font-display font-bold">
           Projects
         </h3>
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-stretch gap-8 pt-12 place-content-center"
+          class="grid grid-cols-1 place-content-center place-items-stretch gap-8 pt-12 sm:grid-cols-2 lg:grid-cols-3"
         >
           <Card
             imagepath={captivatingJourneys}
@@ -65,13 +65,13 @@ const meta = {
         </div>
 
         <div
-          class="m-12 text-f-xl font-semibold border-b-4 font-display border-geraldine-600"
+          class="text-f-xl m-12 border-b-4 border-geraldine-600 font-display font-semibold"
         >
           Old Projects
         </div>
 
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-stretch gap-16 pt-12"
+          class="grid grid-cols-1 place-items-stretch gap-16 pt-12 sm:grid-cols-2 lg:grid-cols-3"
         >
           <OldCard
             imagepath={photoRetouch}

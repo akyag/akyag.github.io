@@ -3,16 +3,16 @@ const { triggerId, title, closeText = "Close" } = Astro.props;
 ---
 
 <div
-  class="modal fixed hidden -z-10 backdrop-brightness-50 backdrop-blur-md drop-shadow-md"
+  class="modal fixed -z-10 hidden drop-shadow-md backdrop-blur-md backdrop-brightness-50"
   role="dialog"
   aria-labelledby={triggerId}
 >
   <div
-    class="modal__inner opacity-1 transition-opacity duration-300 ease-in-out dark:bg-dark-900 bg-white dark:text-white"
+    class="modal__inner opacity-1 bg-white transition-opacity duration-300 ease-in-out dark:bg-dark-900 dark:text-white"
   >
-    <div class="flex flex-col gap-2 p-8 border-1 border-gray-600">
+    <div class="border-1 flex flex-col gap-2 border-gray-600 p-8">
       <h3
-        class="border-b-4 text-f-lg border-red-600 dark:border-red-400"
+        class="text-f-lg border-b-4 border-red-600 dark:border-red-400"
         tabindex="-1"
       >
         {title}
@@ -21,7 +21,7 @@ const { triggerId, title, closeText = "Close" } = Astro.props;
     </div>
     <div class="flex justify-end">
       <button
-        class="px-4 py-3 m-5 text-f-sm font-semibold text-white bg-red-600 rounded shadow-md cursor-pointer hover:bg-red-500 dark:bg-red-400 dark:hover:bg-red-500 dark:text-dark-700"
+        class="text-f-sm m-5 cursor-pointer rounded bg-red-600 px-4 py-3 font-semibold text-white shadow-md hover:bg-red-500 dark:bg-red-400 dark:text-dark-700 dark:hover:bg-red-500"
         >{closeText}</button
       >
     </div>

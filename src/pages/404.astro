@@ -15,12 +15,12 @@ const meta = {
   <!-- Full body element start -->
 
   <main
-    class="relative z-10 container px-8 py-24 lg:px-24 my-24 md:my-0 lg:my-12 2xl:my-32 mx-auto"
+    class="container relative z-10 my-24 mx-auto px-8 py-24 md:my-0 lg:my-12 lg:px-24 2xl:my-32"
   >
     <div
-      class="flex flex-col flex-shrink-0 md:flex-row gap-x-2 gap-y-4 items-center place-content-center mx-auto max-w-full text-white"
+      class="mx-auto flex max-w-full flex-shrink-0 flex-col place-content-center items-center gap-x-2 gap-y-4 text-white md:flex-row"
     >
-      <div class="flex items-center place-content-center">
+      <div class="flex place-content-center items-center">
         {
           /*   <img
                class="h-48 md:h-64 xl:h-72 dark:filter dark:brightness-75 dark:contrast-125"
@@ -31,15 +31,15 @@ const meta = {
              /> */
         }
         <img
-          class="w-[300px] lg:w-[450px] 2xl:w-[600px] h-auto dark:filter dark:brightness-75 dark:contrast-125"
+          class="h-auto w-[300px] dark:brightness-75 dark:contrast-125 dark:filter lg:w-[450px] 2xl:w-[600px]"
           src={notFound}
           alt="404 Page not found!"
         />
       </div>
       <div
-        class="flex flex-col items-center p-4 place-content-center space-y-4"
+        class="flex flex-col place-content-center items-center space-y-4 p-4"
       >
-        <div class="text-f-xl text-center font-bold font-display">
+        <div class="text-f-xl text-center font-display font-bold">
           <span>Sorry we couldn't find this page.</span>
         </div>
         <div class="text-center">

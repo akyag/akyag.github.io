@@ -7,7 +7,7 @@ import { Icon } from "astro-icon";
 ---
 
 <section
-  class="flex flex-col relative overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md dark:border-dark-600 dark:bg-dark-700 hover:filter hover:drop-shadow-xl hover:-translate-y-2 hover:duration-300 h-full"
+  class="relative flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md hover:-translate-y-2 hover:drop-shadow-xl hover:filter hover:duration-300 dark:border-dark-600 dark:bg-dark-700"
 >
   <div class="flex flex-initial">
     <Image
@@ -18,8 +18,8 @@ import { Icon } from "astro-icon";
       height="270"
     />
   </div>
-  <div class="flex flex-col grow py-4 gap-y-4">
-    <div class="text-f-lg font-semibold text-center font-display">{title}</div>
+  <div class="flex grow flex-col gap-y-4 py-4">
+    <div class="text-f-lg text-center font-display font-semibold">{title}</div>
     <ul class="pl-6">
       <li>{feature1}</li>
       <li>{feature2}</li>
@@ -27,7 +27,7 @@ import { Icon } from "astro-icon";
       <li>{feature4}</li>
     </ul>
 
-    <a href={target} class="self-end mr-5"
+    <a href={target} class="mr-5 self-end"
       >Details<Icon
         name="fe:arrow-right"
         size={24}

@@ -16,21 +16,21 @@ const meta = {
   <Hero />
   <main
     id="content-wrapper"
-    class="container mx-auto px-8 md:px-0 py-12 dark:bg-dark-900 dark:text-white"
+    class="container mx-auto px-8 py-12 dark:bg-dark-900 dark:text-white md:px-0"
   >
-    <div class="grid grid-cols-1 leading-relaxed place-items-center">
-      <div class="space-y-12 max-w-prose">
-        <h3 class="mx-3 my-5 text-f-xl font-bold text-center font-display">
+    <div class="grid grid-cols-1 place-items-center leading-relaxed">
+      <div class="max-w-prose space-y-12">
+        <h3 class="text-f-xl mx-3 my-5 text-center font-display font-bold">
           License
         </h3>
         <div class="space-y-5">
           <p
-            class="first-letter:text-f-lg first-letter:text-geraldine-500 first-letter:font-semibold"
+            class="first-letter:text-f-lg first-letter:font-semibold first-letter:text-geraldine-500"
           >
             Licenses of all the plug-ins and software used in building
             Web-o-Reviews can be found through the links provided.
           </p>
-          <ul class="ml-8 list-decimal list-outside">
+          <ul class="ml-8 list-outside list-decimal">
             <li>
               <Link
                 extraclass="inline-flex items-center"
@@ -105,13 +105,13 @@ const meta = {
             <p>And finally, this website is built using Astro,</p>
             <a
               href="https://astro.build"
-              class="hover:transition-all hover:duration-150 hover:ease-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 focus:ring-offset-transparent"
+              class="hover:scale-105 hover:transition-all hover:duration-150 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 focus:ring-offset-transparent"
               target="_blank"
               rel="noopener"
               tabindex="0"
             >
               <svg
-                class="w-auto h-10 ml-4 fill-black dark:fill-white"
+                class="ml-4 h-10 w-auto fill-black dark:fill-white"
                 viewBox="0 0 2712 894"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

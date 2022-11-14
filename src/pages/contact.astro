@@ -15,14 +15,14 @@ const meta = {
   <Hero />
   <main
     id="content-wrapper"
-    class="container mx-auto px-8 md:px-0 py-12 dark:bg-dark-900 dark:text-white"
+    class="container mx-auto px-8 py-12 dark:bg-dark-900 dark:text-white md:px-0"
   >
-    <div class="grid grid-cols-1 leading-relaxed place-items-center">
+    <div class="grid grid-cols-1 place-items-center leading-relaxed">
       <div class="grid max-w-prose">
-        <h3 class="my-5 text-f-xl font-bold text-center font-display">
+        <h3 class="text-f-xl my-5 text-center font-display font-bold">
           Contact Form
         </h3>
-        <div class="my-2 text-f-lg font-semibold">Hey, Got a question?</div>
+        <div class="text-f-lg my-2 font-semibold">Hey, Got a question?</div>
         <p>Send it to me and I will get back as soon as possible.</p>
 
         <form
@@ -44,8 +44,8 @@ const meta = {
 
             <div class="mt-4">
               <label for="user_name" class="font-semibold">Name</label>
-              <div class="flex relative">
-                <div class="z-10 pl-3 pointer-events-none">
+              <div class="relative flex">
+                <div class="pointer-events-none z-10 pl-3">
                   <Icon name="bx:user" class="w-5 h-full fill-current" />
                 </div>
                 <input
@@ -54,10 +54,10 @@ const meta = {
                   id="user_name"
                   aria-label="User Name"
                   required
-                  class="w-full peer pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
+                  class="peer -ml-8 w-full rounded-md border-gray-300 pl-10 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
                 />
                 <div
-                  class="absolute inset-y-0 text-f-sm right-0 text-slate-600 dark:text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                  class="text-f-sm absolute inset-y-0 right-0 border-y border-transparent py-2 pr-3 text-slate-600 peer-optional:hidden dark:text-slate-400"
                 >
                   Required
                 </div>
@@ -66,8 +66,8 @@ const meta = {
 
             <div>
               <label for="user_email" class="font-semibold">Email</label>
-              <div class="flex relative">
-                <div class="z-10 pl-3 pointer-events-none">
+              <div class="relative flex">
+                <div class="pointer-events-none z-10 pl-3">
                   <Icon name="bx:envelope" class="w-5 h-full fill-current" />
                 </div>
                 <input
@@ -76,10 +76,10 @@ const meta = {
                   id="user_email"
                   aria-label="User Email"
                   required
-                  class="w-full peer pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
+                  class="peer -ml-8 w-full rounded-md border-gray-300 pl-10 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
                 />
                 <div
-                  class="absolute inset-y-0 right-0 text-f-sm text-slate-600 dark:text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                  class="text-f-sm absolute inset-y-0 right-0 border-y border-transparent py-2 pr-3 text-slate-600 peer-optional:hidden dark:text-slate-400"
                 >
                   Required
                 </div>
@@ -88,8 +88,8 @@ const meta = {
 
             <div>
               <label for="user_phone" class="font-semibold">Phone</label>
-              <div class="flex relative">
-                <div class="z-10 pl-3 pointer-events-none">
+              <div class="relative flex">
+                <div class="pointer-events-none z-10 pl-3">
                   <Icon name="bx:phone" class="w-5 h-full fill-current" />
                 </div>
                 <input
@@ -97,10 +97,10 @@ const meta = {
                   name="user_phone"
                   id="user_phone"
                   aria-label="User Phone"
-                  class="w-full peer pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
+                  class="peer -ml-8 w-full rounded-md border-gray-300 pl-10 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
                 />
                 <div
-                  class="absolute inset-y-0 right-0 text-f-sm text-slate-600 dark:text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                  class="text-f-sm absolute inset-y-0 right-0 border-y border-transparent py-2 pr-3 text-slate-600 peer-optional:hidden dark:text-slate-400"
                 >
                   Required
                 </div>
@@ -120,7 +120,7 @@ const meta = {
                   name="user_dept"
                   id="user_dept"
                   required
-                  class="w-full border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
+                  class="w-full rounded-md border-gray-300 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
                 >
                   <option disabled selected>Select your option</option>
                   <option value="Website development"
@@ -135,8 +135,8 @@ const meta = {
 
             <div>
               <label for="user_subject" class="font-semibold">Subject</label>
-              <div class="flex relative">
-                <div class="z-10 pl-3 pointer-events-none">
+              <div class="relative flex">
+                <div class="pointer-events-none z-10 pl-3">
                   <Icon name="bx:hash" class="w-5 h-full fill-current" />
                 </div>
                 <input
@@ -145,10 +145,10 @@ const meta = {
                   id="user_subject"
                   aria-label="User Subject"
                   required
-                  class="peer w-full pl-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
+                  class="peer -ml-8 w-full rounded-md border-gray-300 pl-10 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
                 />
                 <div
-                  class="absolute inset-y-0 right-0 text-f-sm text-slate-600 dark:text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                  class="text-f-sm absolute inset-y-0 right-0 border-y border-transparent py-2 pr-3 text-slate-600 peer-optional:hidden dark:text-slate-400"
                 >
                   Required
                 </div>
@@ -157,8 +157,8 @@ const meta = {
 
             <div>
               <label for="user_message" class="font-semibold">Message</label>
-              <div class="flex relative">
-                <div class="z-10 pt-3 pl-3 pointer-events-none">
+              <div class="relative flex">
+                <div class="pointer-events-none z-10 pt-3 pl-3">
                   <Icon name="bx:edit-alt" class="w-5 h-5 fill-current" />
                 </div>
                 <textarea
@@ -167,33 +167,33 @@ const meta = {
                   aria-label="User Message"
                   placeholder="Explain how I can help you"
                   required
-                  class="w-full peer h-64 pl-10 pt-10 -ml-8 border-gray-300 rounded-md shadow-sm dark:text-white dark:bg-dark-700 dark:border-gray-700 caret-slate-500 accent-slate-500 focus:border-slate-500 focus:ring-2 focus:ring-slate-500"
+                  class="peer -ml-8 h-64 w-full rounded-md border-gray-300 pl-10 pt-10 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
                 ></textarea>
                 <div
-                  class="absolute inset-y-0 right-0 text-f-sm text-slate-600 dark:text-slate-400 border-y border-transparent py-2 pr-3 peer-optional:hidden"
+                  class="text-f-sm absolute inset-y-0 right-0 border-y border-transparent py-2 pr-3 text-slate-600 peer-optional:hidden dark:text-slate-400"
                 >
                   Required
                 </div>
               </div>
             </div>
 
-            <div class="flex items-center content-center space-x-4">
+            <div class="flex content-center items-center space-x-4">
               <input
                 id="terms"
                 name="terms"
                 aria-label="Terms"
                 type="checkbox"
                 required
-                class="text-slate-500 w-5 h-5 focus:ring-slate-500 focus:ring-2 focus:ring-offset-white dark:bg-slate-500 dark:focus:ring-slate-500 dark:focus:ring-offset-dark-800"
+                class="h-5 w-5 text-slate-500 focus:ring-2 focus:ring-slate-500 focus:ring-offset-white dark:bg-slate-500 dark:focus:ring-slate-500 dark:focus:ring-offset-dark-800"
               />
-              <label for="terms" class="ml-2 text-f-sm font-medium">
+              <label for="terms" class="text-f-sm ml-2 font-medium">
                 I understand that this form collects my name and email, so I can
                 be contacted.</label
               >
             </div>
 
             <button
-              class="flex items-center content-center px-6 h-12 text-f-sm font-semibold text-white dark:text-dark-700 rounded-md shadow-md hover:transition-all hover:duration-150 hover:ease focus:outline-none focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 focus:ring-offset-transparent bg-teal-700 hover:bg-teal-600 dark:bg-teal-400 dark:hover:bg-teal-500"
+              class="text-f-sm hover:ease flex h-12 content-center items-center rounded-md bg-teal-700 px-6 font-semibold text-white shadow-md hover:bg-teal-600 hover:transition-all hover:duration-150 focus:outline-none focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 focus:ring-offset-transparent dark:bg-teal-400 dark:text-dark-700 dark:hover:bg-teal-500"
               type="submit"
             >
               <Icon

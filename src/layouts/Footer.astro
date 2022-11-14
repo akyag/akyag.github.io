@@ -8,39 +8,39 @@ import { Icon } from "astro-icon";
 ---
 
 <footer
-  class="h-auto py-12 mt-12 text-white divide-y-2 divide-dark-50 bg-dark-800 dark:bg-dark-800"
+  class="mt-12 h-auto divide-y-2 divide-dark-50 bg-dark-800 py-12 text-white dark:bg-dark-800"
 >
   <div
-    class="flex flex-col items-center justify-center max-w-6xl mx-auto my-12 space-y-8 md:space-y-0 md:space-x-8 md:justify-around md:flex-row"
+    class="mx-auto my-12 flex max-w-6xl flex-col items-center justify-center space-y-8 md:flex-row md:justify-around md:space-y-0 md:space-x-8"
   >
-    <div class="text-f-xl font-bold font-display">
+    <div class="text-f-xl font-display font-bold">
       Interested in Collaboration?
     </div>
     <Button
       href="/contact/"
       color="bg-green-700 hover:bg-green-600 dark:bg-green-400 dark:hover:bg-green-500 relative"
     >
-      <span class="absolute top-0 right-0 flex w-3 h-3 -mt-1 -mr-1">
+      <span class="absolute top-0 right-0 -mt-1 -mr-1 flex h-3 w-3">
         <span
-          class="absolute inline-flex w-full h-full bg-green-400 rounded-full opacity-75 animate-ping"
+          class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"
         ></span>
         <span
-          class="relative inline-flex w-3 h-3 bg-green-300 rounded-full dark:bg-red-600"
+          class="relative inline-flex h-3 w-3 rounded-full bg-green-300 dark:bg-red-600"
         ></span>
       </span>
       Let's Talk
     </Button>
   </div>
   <div
-    class="flex flex-col items-center justify-around mx-auto max-w-6xl pt-12 mb-12 md:flex-row md:items-end md:px-6 lg:px-8"
+    class="mx-auto mb-12 flex max-w-6xl flex-col items-center justify-around pt-12 md:flex-row md:items-end md:px-6 lg:px-8"
   >
     <div class="flex flex-row">
       <div class="w-40">
-        <span class="font-semibold flex justify-center uppercase"
+        <span class="flex justify-center font-semibold uppercase"
           >Information</span
         >
         <div
-          class="mt-4 grid items-center grid-cols-6 leading-relaxed divide-x-2 divide-dark-50 group"
+          class="group mt-4 grid grid-cols-6 items-center divide-x-2 divide-dark-50 leading-relaxed"
         >
           <div class="col-span-2 ml-5">
             <Icon
@@ -51,13 +51,13 @@ import { Icon } from "astro-icon";
           <div class="col-span-4">
             <a
               href="/license/"
-              class="mx-4 text-gray-300 hover:transition-all hover:duration-200 hover:ease-out dark:text-white group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600 focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 focus:outline-none"
+              class="mx-4 text-gray-300 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:text-white dark:group-hover:text-geraldine-600"
               tabindex="0">License</a
             >
           </div>
         </div>
         <div
-          class="grid items-center grid-cols-6 leading-relaxed divide-x-2 divide-dark-50 group"
+          class="group grid grid-cols-6 items-center divide-x-2 divide-dark-50 leading-relaxed"
         >
           <div class="col-span-2 ml-5">
             <Icon
@@ -68,18 +68,18 @@ import { Icon } from "astro-icon";
           <div class="col-span-4">
             <a
               href="/archive/"
-              class="mx-4 text-gray-300 hover:transition-all hover:duration-200 hover:ease-out dark:text-white group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600 focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 focus:outline-none"
+              class="mx-4 text-gray-300 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:text-white dark:group-hover:text-geraldine-600"
               tabindex="0">Archive</a
             >
           </div>
         </div>
       </div>
       <div class="w-40">
-        <span class="font-semibold flex justify-center text-center uppercase"
+        <span class="flex justify-center text-center font-semibold uppercase"
           >Find me on</span
         >
         <div
-          class="mt-4 grid items-center grid-cols-6 leading-relaxed divide-x-2 divide-dark-50 group"
+          class="group mt-4 grid grid-cols-6 items-center divide-x-2 divide-dark-50 leading-relaxed"
         >
           <div class="col-span-2 ml-5">
             <Icon
@@ -89,7 +89,7 @@ import { Icon } from "astro-icon";
           </div>
           <div class="col-span-4">
             <a
-              class="inline-flex items-center mx-4 text-gray-300 hover:transition-all hover:duration-200 hover:ease-out dark:text-white group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600 focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 focus:outline-none"
+              class="mx-4 inline-flex items-center text-gray-300 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:text-white dark:group-hover:text-geraldine-600"
               href="https://github.com/akyag"
               target="_blank"
               rel="noopener"
@@ -100,7 +100,7 @@ import { Icon } from "astro-icon";
           </div>
         </div>
         <div
-          class="grid items-center grid-cols-6 leading-relaxed divide-x-2 divide-dark-50 group"
+          class="group grid grid-cols-6 items-center divide-x-2 divide-dark-50 leading-relaxed"
         >
           <div class="col-span-2 ml-5">
             <Icon
@@ -110,7 +110,7 @@ import { Icon } from "astro-icon";
           </div>
           <div class="col-span-4">
             <a
-              class="inline-flex items-center mx-4 text-gray-300 hover:transition-all hover:duration-200 hover:ease-out dark:text-white group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600 focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 focus:outline-none"
+              class="mx-4 inline-flex items-center text-gray-300 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:text-white dark:group-hover:text-geraldine-600"
               href="https://www.linkedin.com/in/akshayghate/"
               target="_blank"
               rel="noopener"
@@ -121,7 +121,7 @@ import { Icon } from "astro-icon";
           </div>
         </div>
         <div
-          class="grid items-center grid-cols-6 leading-relaxed divide-x-2 divide-dark-50 group"
+          class="group grid grid-cols-6 items-center divide-x-2 divide-dark-50 leading-relaxed"
         >
           <div class="col-span-2 ml-5">
             <Icon
@@ -131,7 +131,7 @@ import { Icon } from "astro-icon";
           </div>
           <div class="col-span-4">
             <a
-              class="inline-flex items-center mx-4 text-gray-300 hover:transition-all hover:duration-200 hover:ease-out dark:text-white group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600 focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 focus:outline-none"
+              class="mx-4 inline-flex items-center text-gray-300 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:text-white dark:group-hover:text-geraldine-600"
               href="https://twitter.com/akshayg"
               target="_blank"
               rel="noopener"
@@ -143,31 +143,31 @@ import { Icon } from "astro-icon";
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center mt-8">
+    <div class="mt-8 flex flex-col items-center">
       <div>
         <a
           href="/"
-          class="block hover:transition-all hover:duration-200 hover:ease-out hover:scale-105 focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 focus:outline-none"
+          class="block hover:scale-105 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800"
           tabindex="0"
         >
           <img src={footerLogo} alt="Web-o-Reviews" width="250" height="32" />
         </a>
       </div>
       <div
-        class="mt-4 flex flex-col items-center justify-center max-w-4xl grid-cols-1 gap-2 divide-y-2 divide-dark-50 lg:divide-y-0 lg:divide-x-2 lg:flex-row"
+        class="mt-4 flex max-w-4xl grid-cols-1 flex-col items-center justify-center gap-2 divide-y-2 divide-dark-50 lg:flex-row lg:divide-y-0 lg:divide-x-2"
       >
         <div>
           <Icon name="bx:copyright" class="inline-block w-5 h-5 -mt-1 mr-1" />
 
           2009 - {currentDate} - Built using <a
             href="https://astro.build"
-            class="focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 focus:outline-none"
+            class="focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800"
             target="_blank"
             rel="noopener"
             tabindex="0"
             ><img
               src={AstroDark}
-              class="w-16 h-6 inline-block mx-2"
+              class="mx-2 inline-block h-6 w-16"
               alt="Astro Dark Logo"
             />
           </a>
