@@ -18,13 +18,11 @@ specifiers:
   postcss: ^8.4.19
   prettier: ^2.7.1
   prettier-plugin-astro: ^0.7.0
-  prettier-plugin-organize-imports: ^3.2.0
   prettier-plugin-tailwindcss: 0.2.0-beta.1
   sharp: ^0.31.2
   svgo: 2.8.0
   tailwindcss: ^3.2.4
   taze: ^0.8.3
-  typescript: ^4.8.4
 
 dependencies:
   '@astrojs/image': 0.11.4_sharp@0.31.2
@@ -48,11 +46,9 @@ devDependencies:
   astro-robots-txt: 0.3.10
   prettier: 2.7.1
   prettier-plugin-astro: 0.7.0
-  prettier-plugin-organize-imports: 3.2.0_dmjzcauo3cshxeipj7bv64ktgm
   prettier-plugin-tailwindcss: 0.2.0-beta.1_prettier@2.7.1
   svgo: 2.8.0
   taze: 0.8.3
-  typescript: 4.8.4
 
 packages:
 
@@ -4163,23 +4159,6 @@ packages:
       sass-formatter: 0.7.5
       synckit: 0.8.4
 
-  /prettier-plugin-organize-imports/3.2.0_dmjzcauo3cshxeipj7bv64ktgm:
-    resolution: {integrity: sha512-jeZ13YVKgXYCzkuwnoR6saKxJmdRYWMxS2G/su1V3qDWqTo1Q5iSoTblBxsXXAmomXfPqa/uA7YCK0/S86KLOQ==}
-    peerDependencies:
-      '@volar/vue-language-plugin-pug': ^1.0.4
-      '@volar/vue-typescript': ^1.0.4
-      prettier: '>=2.0'
-      typescript: '>=2.9'
-    peerDependenciesMeta:
-      '@volar/vue-language-plugin-pug':
-        optional: true
-      '@volar/vue-typescript':
-        optional: true
-    dependencies:
-      prettier: 2.7.1
-      typescript: 4.8.4
-    dev: true
-
   /prettier-plugin-tailwindcss/0.2.0-beta.1_prettier@2.7.1:
     resolution: {integrity: sha512-u5tM3lF+fvJcXJL54UIIKu8onzCz3AqEnP57oIH61QHmbxHgsj7UdDO/OZ/bfbq53KRvOA6hBRtemwOInGBi+g==}
     engines: {node: '>=12.17.0'}
@@ -5045,6 +5024,7 @@ packages:
     resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+    dev: false
 
   /unconfig/0.3.7:
     resolution: {integrity: sha512-1589b7oGa8ILBYpta7TndM5mLHLzHUqBfhszeZxuUBrjO/RoQ52VGVWsS3w0C0GLNxO9RPmqkf6BmIvBApaRdA==}
