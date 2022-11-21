@@ -18,12 +18,10 @@ const meta = {
   <Hero />
   <main
     id="content-wrapper"
-    class="container mx-auto px-8 py-6 dark:bg-dark-900 dark:text-white md:px-0 md:py-12"
+    class="container mx-auto py-6 px-8 md:py-12 md:px-0 dark:bg-dark-900 dark:text-white"
   >
-    <div class="mx-auto max-w-6xl space-y-12 leading-relaxed">
-      <h3 class="text-f-xl mx-3 my-5 text-center font-display font-bold">
-        About
-      </h3>
+    <div class="mx-auto space-y-12 leading-relaxed max-w-6xl">
+      <h3 class="font-display fw700 my-5 mx-3 text-f-xl text-center">About</h3>
       <div
         class="flex flex-col space-y-12 md:flex-row md:space-x-12 md:space-y-0"
       >
@@ -31,20 +29,17 @@ const meta = {
           <Image
             src={Me}
             alt="Akshay Ghate"
-            class="w-32 h-32 mx-8 transition duration-200 ease-in-out border-4 border-gray-100 rounded-full shadow-lg dark:border-gray-800 hover:border-geraldine-400 dark:hover:border-geraldine-300"
+            class="rounded-full border-4 border-gray-100 h-32 shadow-lg mx-8 transition ease-in-out w-32 duration-200 dark:border-gray-800 hover:border-geraldine-400 dark:hover:border-geraldine-300"
           />
         </div>
         <div class="space-y-4">
-          <div class="text-f-lg font-semibold">
+          <div class="fw600 text-f-lg">
             Hi there,
-            <Icon
-              name="emojione:waving-hand-medium-light-skin-tone"
-              class="inline-block"
-              size={32}
-            />
+            <span class="h-8 w-8 i-emojione-waving-hand-medium-light-skin-tone"
+            ></span>
           </div>
           <p
-            class="first-letter:text-f-lg first-letter:font-semibold first-letter:text-geraldine-500"
+            class="first-letter:fw600 first-letter:text-f-lg first-letter:text-geraldine-500"
           >
             I am a frontend designer, freelance developer and a proud nerd. I
             work primarily in HTML, CSS and JS and have experience with CSS
@@ -65,123 +60,112 @@ const meta = {
               >public encryption key</Link
             >.
           </p>
-          <p class="mr-12 text-right font-medium">- Akshay Ghate</p>
+          <p class="font-medium mr-12 text-right">- Akshay Ghate</p>
         </div>
       </div>
-      <div class="text-f-xl font-display font-semibold uppercase">
+      <div class="font-display fw600 text-f-xl uppercase">
         <span class="border-b-4 border-geraldine-600">Tech Stack</span>
-        <div class="flex flex-wrap items-start gap-6 py-8">
+
+        <div class="flex flex-wrap py-8 gap-6 items-start">
           <div>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-              class="block grayscale filter hover:grayscale-0 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
+              class="inline-block grayscale filter hover:transition-all hover:ease-out hover:duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
               target="_blank"
               rel="noopener"
               title="HTML5"
             >
-              <Icon
-                name="logos:html-5"
-                class="h-10 w-auto fill-black dark:fill-white"
-              />
+              <span class="h-12 w-12 i-vscode-icons-file-type-html"></span>
             </a>
           </div>
           <div>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-              class="block grayscale filter hover:grayscale-0 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
+              class="block grayscale filter hover:transition-all hover:ease-out hover:duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
               target="_blank"
               rel="noopener"
               title="CSS3"
             >
-              <Icon
-                name="logos:css-3"
-                class="h-10 w-auto fill-black dark:fill-white"
-              />
+              <span class="h-12 w-12 i-vscode-icons-file-type-css"></span>
             </a>
           </div>
           <div>
             <a
               href="https://astro.build"
-              class="block grayscale filter hover:grayscale-0 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
+              class="block grayscale filter hover:transition-all hover:ease-out hover:duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
               target="_blank"
               rel="noopener"
               title="Astro"
             >
-              <Icon
-                name="icon-astro"
-                class="w-auto h-10 fill-black dark:fill-white"
-              />
+              <span class="h-12 w-12 i-vscode-icons-file-type-astro"></span>
             </a>
           </div>
           <div>
             <a
               href="https://nuxtjs.org"
-              class="block grayscale filter hover:grayscale-0 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
+              class="block grayscale filter hover:transition-all hover:ease-out hover:duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
               target="_blank"
               rel="noopener"
               title="NuxtJS"
             >
-              <Icon
-                name="logos:nuxt"
-                class="h-10 w-auto fill-black dark:fill-white"
-              />
+              <span class="h-12 w-12 i-vscode-icons-file-type-nuxt"></span>
             </a>
           </div>
           <div>
             <a
               href="https://v3.vuejs.org/"
-              class="block grayscale filter hover:grayscale-0 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
+              class="block grayscale filter hover:transition-all hover:ease-out hover:duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
               target="_blank"
               rel="noopener"
               title="Vue JS"
             >
-              <Icon name="logos:vue" class="h-10 w-auto" />
+              <span class="h-12 w-12 i-vscode-icons-file-type-vue"></span>
             </a>
           </div>
           <div>
             <a
               href="https://tailwindcss.com/"
-              class="block grayscale filter hover:grayscale-0 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
+              class="block grayscale filter hover:transition-all hover:ease-out hover:duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
               target="_blank"
               rel="noopener"
               title="TailwindCSS"
             >
-              <Icon name="logos:tailwindcss-icon" class="h-10 w-auto" />
+              <span class="h-12 w-12 i-vscode-icons-file-type-tailwind"></span>
             </a>
           </div>
 
           <div>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-              class="block grayscale filter hover:grayscale-0 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
+              class="block grayscale filter hover:transition-all hover:ease-out hover:duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
               target="_blank"
               rel="noopener"
               title="JavaScript"
             >
-              <Icon name="logos:javascript" class="h-10 w-auto" />
+              <span class="h-12 w-12 i-vscode-icons-file-type-js"></span>
             </a>
           </div>
 
           <div>
             <a
               href="https://git-scm.com/"
-              class="block grayscale filter hover:grayscale-0 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
+              class="block grayscale filter hover:transition-all hover:ease-out hover:duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-geraldine-500 focus:ring-offset-4 focus:grayscale-0 dark:focus:ring-offset-dark-900"
               target="_blank"
               rel="noopener"
               title="Git"
             >
-              <Icon name="logos:git" class="h-10 w-auto" />
+              <span class="h-12 w-12 i-vscode-icons-file-type-git"></span>
             </a>
           </div>
         </div>
       </div>
 
       <div>
-        <p class="text-f-lg font-display font-bold italic">
+        <p class="font-display fw700 text-f-lg italic">
           <span class="border-b-4 border-green-500">Special thanks:</span>
         </p>
         <div
-          class="container mt-8 border-l-8 border-gray-600 bg-gray-50 px-6 shadow-lg dark:border-teal-500 dark:bg-dark-700"
+          class="container bg-gray-50 border-l-8 border-gray-600 shadow-lg mt-8 px-6 dark:bg-dark-700 dark:border-teal-500"
         >
           <p class="py-6">
             Teresa Tafoya, Sushrut Joshi, Kshitij Limaye, Mangesh Thombare,

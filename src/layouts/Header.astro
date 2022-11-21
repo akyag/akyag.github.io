@@ -1,33 +1,36 @@
 ---
 import headerLogo from "../images/logo.svg";
-import ToggleTheme from "../core/ToggleTheme.astro";
-import { Icon } from "astro-icon";
 import ActiveLink from "../components/ActiveLink.astro";
 import MobileNav from "./MobileNav.astro";
 ---
 
 <header
-  class="relative z-10 mx-auto hidden max-w-7xl justify-between px-8 py-8 md:flex xl:px-10"
+  class="mx-auto max-w-7xl py-8 px-8 z-10 relative hidden justify-between md:flex xl:px-10"
 >
   <div class="items-center">
     <a
       href="/"
-      class="block focus:outline-none focus:ring-2 focus:ring-slate-700/50 focus:ring-offset-2 focus:ring-offset-transparent"
+      class="block focus:outline-none focus:ring-offset-transparent focus:ring-2 focus:ring-slate-700/50 focus:ring-offset-2"
       tabindex="0"
     >
       <img src={headerLogo} width="80" height="45" alt="Web-o-Reviews" />
     </a>
   </div>
-  <nav class="flex items-center space-x-4">
+  <nav class="flex space-x-4 items-center">
     <ActiveLink href={"/"}>Home</ActiveLink>
     <ActiveLink href={"/about/"}>About</ActiveLink>
     <ActiveLink href={"/design/"}>Design</ActiveLink>
     <ActiveLink href={"/work/"}>Work</ActiveLink>
     <ActiveLink href={"/contact/"}>Contact</ActiveLink>
-    <div class="inline-flex items-center space-x-1 pl-8">
-      <Icon name="bx:sun" size={32} class="text-dark-500 dark:text-white" />
-      <ToggleTheme />
-      <Icon name="bx:moon" size={32} class="text-dark-500 dark:text-white" />
+    <div>
+      <button
+        class="h-12 w-12 block focus:outline-none focus:ring-offset-transparent focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2"
+        toggle-color-scheme
+      >
+        <span
+          class="h-8 transition-all ease-in w-8 duration-200 i-bx-sun dark:h-8 dark:text-white dark:w-8 dark:i-bx-moon hover:text-geraldine-600 dark:hover:text-geraldine-400"
+        ></span>
+      </button>
     </div>
   </nav>
 </header>

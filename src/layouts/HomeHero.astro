@@ -4,27 +4,24 @@ import ButtonIcon from "../components/ButtonIcon.astro";
 import ScrollDown from "../components/ScrollDown.astro";
 ---
 
-<section class="relative z-10" id="hero">
+<section class="z-10 relative" id="hero">
   <div class="container mx-auto py-12 md:py-24 lg:py-36 2xl:py-48">
     <div
-      class="grid grid-cols-1 place-items-center items-center gap-12 md:grid-cols-2"
+      class="grid gap-12 grid-cols-1 place-items-center items-center md:grid-cols-2"
     >
       <div class="grid place-items-center items-center">
         <h1
-          class="text-f-2xl mt-28 text-center font-display font-bold leading-relaxed text-white md:mt-0"
+          class="font-display mt-28 text-center text-white leading-relaxed text-f-2xl fw700 md:mt-0"
         >
           Web-o-Reviews
         </h1>
-        <h2
-          class="text-f-lg mt-2 text-center font-semibold leading-snug text-white"
-        >
+        <h2 class="mt-2 text-f-lg text-center text-white leading-snug fw600">
           Engaging, purposeful, and creative.
         </h2>
-        <div class="mt-8 flex w-screen place-content-center">
+        <div class="flex mt-8 w-screen place-content-center">
           <ButtonIcon
             href="/work/"
-            iconName="icon-work"
-            iconClass="w-6 h-6 fill-current mr-2"
+            iconClass="w-6 h-6 fill-current mr-2 i-carbon-template"
             color="bg-geraldine-700 hover:bg-geraldine-600 dark:bg-geraldine-400 dark:hover:bg-geraldine-500"
             >Web Design</ButtonIcon
           >
@@ -60,7 +57,7 @@ import ScrollDown from "../components/ScrollDown.astro";
         />*/
         }
         <img
-          class="h-auto w-[350px] dark:brightness-75 dark:contrast-125 dark:filter lg:w-[525px] 2xl:w-[700px]"
+          class="h-auto w-[350px] lg:w-[525px] 2xl:w-[700px] dark:filter dark:brightness-75 dark:contrast-125"
           src={homeHero}
           alt="Welcome to Web-o-Reviews!"
         />

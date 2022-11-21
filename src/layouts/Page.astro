@@ -7,22 +7,22 @@ import Footer from "./Footer.astro";
 <html lang="en" class="motion-safe:scroll-smooth">
   <slot name="head" />
   <body
-    class="text-f-base bg-gray-100 font-body text-gray-700 dark:bg-dark-900"
+    class="font-body bg-gray-100 text-f-base text-gray-700 scrollbar scrollbar-w-3 scrollbar-radius-3 scrollbar-track-radius-3 scrollbar-thumb-radius-3 scrollbar-thumb-color-geraldine-600 scrollbar-track-color-dark-700 dark:bg-dark-900 dark:scrollbar-thumb-color-geraldine-300 dark:scrollbar-track-color-dark-900"
   >
     <div
-      class="absolute inset-0 h-[700px] bg-hero-img bg-center bg-no-repeat dark:bg-dark-900 dark:bg-hero-img-dark md:h-[600px] lg:h-[720px] 2xl:h-[960px]"
+      class="bg-[url(/bg.png)] bg-center bg-no-repeat h-[700px] inset-0 absolute md:h-[600px] lg:h-[720px] 2xl:h-[960px] dark:bg-[url(/bg-dark.png)] dark:bg-dark-900"
     >
       <div
-        class="bg-grid-gray-900/[0.05] absolute inset-0 border-b border-gray-100/5 bg-bottom"
-        style="
-          mask-image: linear-gradient(to bottom, transparent, black);
-          -webkit-mask-image: linear-gradient(to bottom, transparent, black);
-          "
+        class="bg-bottom border-b bg-dark-900 border-gray-100/5 inset-0 absolute custom-gradient"
       >
+        <div
+          class="bg-hero-circuit-board bg-dark-700 opacity-60 inset-0 absolute"
+        >
+        </div>
       </div>
     </div>
-    <Header />
-    <slot />
-    <Footer />
   </body>
+  <Header />
+  <slot />
+  <Footer />
 </html>

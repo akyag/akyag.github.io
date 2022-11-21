@@ -28,6 +28,10 @@
       elem.classList.toggle("expanded");
       document.body.classList.toggle("overflow-hidden");
       document.getElementById("menu")?.classList.toggle("hidden");
+      document
+        .getElementById("menu-icon")
+        ?.classList.toggle("i-mdi-hamburger-menu");
+      document.getElementById("menu-icon")?.classList.toggle("i-mdi-close");
     });
     attachEvent("[toggle-color-scheme]", "click", function () {
       document.documentElement.classList.toggle("dark");
@@ -35,17 +39,6 @@
         ? "dark"
         : "light";
     });
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.getElementById("check").checked = true;
-      document.getElementById("check2").checked = true;
-    } else {
-      document.getElementById("check").checked = false;
-      document.getElementById("check2").checked = false;
-    }
   };
   window.onpageshow = function () {
     const elem = document.querySelector("[toggle-menu]");
@@ -54,5 +47,7 @@
     }
     document.body.classList.remove("overflow-hidden");
     document.getElementById("menu")?.classList.add("hidden");
+    document.getElementById("menu-icon")?.classList.remove("i-mdi-close");
+    document.getElementById("menu-icon")?.classList.add("i-mdi-hamburger-menu");
   };
 </script>

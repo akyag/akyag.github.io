@@ -7,19 +7,19 @@ import { Icon } from "astro-icon";
 ---
 
 <section
-  class="relative flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md hover:-translate-y-2 hover:drop-shadow-xl hover:filter hover:duration-300 dark:border-dark-600 dark:bg-dark-700"
+  class="bg-white border rounded-xl flex flex-col h-full border-gray-200 shadow-md relative overflow-hidden group dark:bg-dark-700 dark:border-dark-600 hover:-translate-y-2 hover:duration-300 hover:drop-shadow-xl hover:filter"
 >
   <div class="flex flex-initial">
     <Image
-      class="object-cover w-full h-auto border-b-2 shadow-lg dark:filter dark:brightness-75 dark:contrast-125"
+      class="h-auto object-cover border-b-2 shadow-lg w-full dark:filter dark:brightness-75 dark:contrast-125"
       src={imagepath}
       alt={title}
       width="480"
       height="270"
     />
   </div>
-  <div class="flex grow flex-col gap-y-4 py-4">
-    <div class="text-f-lg text-center font-display font-semibold">{title}</div>
+  <div class="flex flex-col py-4 gap-y-4 grow">
+    <div class="font-display fw600 text-f-lg text-center">{title}</div>
     <ul class="pl-6">
       <li>{feature1}</li>
       <li>{feature2}</li>
@@ -27,13 +27,12 @@ import { Icon } from "astro-icon";
       <li>{feature4}</li>
     </ul>
 
-    <a href={target} class="mr-5 self-end"
-      >Details<Icon
-        name="fe:arrow-right"
-        size={24}
-        class="inline mr-2 text-current"
-      />
-      <span class="absolute top-0 right-0 bottom-0 left-0"></span>
+    <a
+      href={target}
+      class="mr-5 self-end group-hover:border-emerald group-hover:border-b-4"
+      >Details
+      <span class="h-7 mr-2 text-current w-7 i-bx-chevron-right-circle"></span>
+      <span class="top-0 right-0 bottom-0 left-0 absolute"></span>
     </a>
   </div>
 </section>

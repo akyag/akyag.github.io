@@ -1,13 +1,11 @@
 ---
 import headerLogo from "../images/logo.svg";
-import ToggleMenu from "../core/ToggleMenu.astro";
-import ToggleTheme from "../core/ToggleTheme.astro";
 import MobileActiveLink from "../components/MobileActiveLink.astro";
 import { Icon } from "astro-icon";
 ---
 
 <header
-  class="fixed top-0 z-30 block w-screen bg-gray-100 shadow-md dark:bg-dark-900 md:hidden"
+  class="bg-gray-100 shadow-md w-screen top-0 z-30 fixed block md:hidden dark:bg-dark-900"
 >
   <nav>
     <div class="mx-auto px-4 sm:px-6">
@@ -25,77 +23,71 @@ import { Icon } from "astro-icon";
           </div>
         </div>
         <div class="flex content-end items-center">
-          <div class="flex items-center">
-            <div class="flex items-center space-x-4">
-              <Icon
-                name="icon-sun"
-                class="w-6 h-6 text-dark-700 dark:text-white"
-              />
-              <label
-                for="check2"
-                class="relative h-6 w-12 cursor-pointer rounded-full bg-geraldine-500"
+          <div class="flex gap-x-4 items-center">
+            <div>
+              <button
+                class="h-12 w-12 block &focus:ring-offset-transparent &focus:ring-2 &focus:ring-slate-500/50 focus:outline-none focus:ring-offset-2"
+                toggle-color-scheme
               >
-                <input
-                  class="peer sr-only"
-                  type="checkbox"
-                  id="check2"
-                  title="Dark Mode Toggle"
-                  toggle-color-scheme
-                />
                 <span
-                  class="absolute left-1 top-1 h-4/6 w-1/3 rounded-full bg-white shadow-lg transition-all duration-500 peer-checked:left-7 peer-checked:bg-dark-600"
+                  class="h-8 transition-all ease-in w-8 duration-200 i-bx-sun &hover:text-geraldine-600 dark:h-8 dark:text-white dark:w-8 dark:i-bx-moon dark:&hover:text-geraldine-400"
                 ></span>
-              </label>
-              <Icon
-                name="icon-moon"
-                class="w-6 h-6 text-dark-700 dark:text-white"
-              />
+              </button>
             </div>
-            <ToggleMenu />
+            <div>
+              <button
+                class="dark:text-white"
+                aria-label="Toggle Menu"
+                toggle-menu
+              >
+                <span class="h-8 w-8 i-mdi-hamburger-menu" id="menu-icon"
+                ></span>
+              </button>
+            </div>
             <div class="">
               <div
-                class="fixed right-0 z-20 mr-4 mt-10 hidden h-auto w-48 rounded-lg bg-white py-0 dark:bg-dark-500"
+                class="bg-white rounded-lg h-auto mt-10 mr-4 py-0 right-0 w-48 z-20 fixed hidden dark:bg-dark-500"
                 id="menu"
               >
                 {
-                  /* class="absolute right-0 z-20 w-48 py-2 mt-2 bg-white rounded-md shadow-xl dark:bg-gray-900" */
+                  /* class="bg-white rounded-md shadow-xl mt-2 py-2 right-0 w-48 z-20 absolute dark:bg-gray-900" */
                 }
                 <MobileActiveLink href={"/"}>
-                  <Icon name="bx:home" class="inline-block w-6 h-6 mb-1 mr-2" />
+                  <Icon name="bx:home" class="h-6 mr-2 mb-1 w-6 inline-block" />
                   Home</MobileActiveLink
                 >
                 <MobileActiveLink href={"/about/"}>
-                  <Icon name="bx:user" class="inline-block w-6 h-6 mb-1 mr-2" />
+                  <Icon name="bx:user" class="h-6 mr-2 mb-1 w-6 inline-block" />
                   About
                 </MobileActiveLink>
                 <MobileActiveLink href={"/design/"}>
                   <Icon
                     name="bx:palette"
-                    class="inline-block w-6 h-6 mb-1 mr-2"
+                    class="h-6 mr-2 mb-1 w-6 inline-block"
                   />Design
                 </MobileActiveLink>
                 <MobileActiveLink href={"/work/"}>
                   <Icon
                     name="bx:briefcase"
-                    class="inline-block w-6 h-6 mb-1 mr-2"
+                    class="h-6 mr-2 mb-1 w-6 inline-block"
                   />
                   Work
                 </MobileActiveLink>
                 <MobileActiveLink href={"/archive/"}>
-                  <Icon name="bx:box" class="inline-block w-6 h-6 mb-1 mr-2" />
+                  <Icon name="bx:box" class="h-6 mr-2 mb-1 w-6 inline-block" />
                   Archive
                 </MobileActiveLink>
                 <MobileActiveLink href={"/license/"}>
                   <Icon
                     name="bx:credit-card-front"
-                    class="inline-block w-6 h-6 mb-1 mr-2"
+                    class="h-6 mr-2 mb-1 w-6 inline-block"
                   />
                   License
                 </MobileActiveLink>
                 <MobileActiveLink href={"/contact/"}>
                   <Icon
                     name="bx:envelope"
-                    class="inline-block w-6 h-6 mb-1 mr-2"
+                    class="h-6 mr-2 mb-1 w-6 inline-block"
                   />
                   Contact
                 </MobileActiveLink>

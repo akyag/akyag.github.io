@@ -7,7 +7,6 @@ import mangesh from "../images/mangesh.png";
 import mangeshFull from "../images/mangesh-lg.png";
 import Modal from "../components/Modal.astro";
 import ButtonIcon from "../components/ButtonIcon.astro";
-import { Icon } from "astro-icon";
 import { Image, Picture } from "@astrojs/image/components";
 
 const meta = {
@@ -21,47 +20,47 @@ const meta = {
   <Hero />
   <main
     id="content-wrapper"
-    class="container mx-auto px-8 py-6 dark:bg-dark-900 dark:text-white md:px-0 md:py-24"
+    class="container mx-auto py-6 px-8 md:py-24 md:px-0 dark:bg-dark-900 dark:text-white"
   >
     <div
-      class="container my-2 min-h-full space-y-5 px-4 text-left leading-relaxed lg:px-8"
+      class="container min-h-full space-y-5 my-2 text-left leading-relaxed px-4 lg:px-8"
     >
-      <div id="pagination" class="flex flex-wrap items-center space-x-4">
+      <div id="pagination" class="flex flex-wrap space-x-2 items-center">
         <a
           href="/"
-          class="hover:ease hover:text-geraldine-500 hover:transition-all hover:duration-200 focus:border-b-4 focus:border-slate-500 focus:outline-none"
+          class="hover:transition-all hover:ease hover:text-geraldine-500 hover:duration-200 focus:outline-none focus:border-b-4 focus:border-slate-500"
           tabindex="0">Home</a
         >
-        <Icon name="icon-arrow" class="w-4 h-4" />
+        <span class="h-6 w-6 i-mdi:chevron-double-right"></span>
         <a
           href="/work/#content-wrapper"
-          class="hover:ease hover:text-geraldine-500 hover:transition-all hover:duration-200 focus:border-b-4 focus:border-slate-500 focus:outline-none"
+          class="hover:transition-all hover:ease hover:text-geraldine-500 hover:duration-200 focus:outline-none focus:border-b-4 focus:border-slate-500"
           tabindex="0">Work</a
         >
-        <Icon name="icon-arrow" class="w-4 h-4" />
+        <span class="h-6 w-6 i-mdi:chevron-double-right"></span>
         <a
           href="#"
-          class="focus:border-b-4 focus:border-slate-500 focus:outline-none"
+          class="focus:outline-none focus:border-b-4 focus:border-slate-500"
           tabindex="0">Mangesh Thombare</a
         >
       </div>
 
-      <div class="text-f-xl my-6 font-display font-semibold">
+      <div class="font-display fw600 my-6 text-f-xl">
         Mangesh
         <span class="text-cyan-600 dark:text-cyan-300">Thombare</span>
       </div>
       <div class="flex flex-col items-start md:flex-row">
         <div
-          class="mx-2 my-4 flex flex-shrink-0 border-2 border-gray-200 shadow-lg hover:border-geraldine-400 dark:border-gray-800 dark:hover:border-geraldine-400 md:w-1/2 lg:w-auto"
+          class="flex border-2 border-gray-200 flex-shrink-0 shadow-lg my-4 mx-2 md:w-1/2 lg:w-auto dark:border-gray-800 hover:border-geraldine-400 dark:hover:border-geraldine-400"
         >
           <Image
-            class="object-contain w-full h-auto dark:filter dark:brightness-75 dark:contrast-125"
+            class="h-auto object-contain w-full dark:filter dark:brightness-75 dark:contrast-125"
             src={mangesh}
             alt="Mangesh Thombare"
           />
         </div>
 
-        <div class="mb-8 flex flex-col space-y-3 px-2 md:pl-6">
+        <div class="flex flex-col space-y-3 mb-8 px-2 md:pl-6">
           <p>
             This was a portfolio website project for a game designer. His
             requirements were a responsive website which showcased his CV,
@@ -80,25 +79,20 @@ const meta = {
               <ButtonIcon
                 id="modal3-trigger"
                 color="bg-cyan-700 hover:bg-cyan-600 dark:bg-cyan-400 dark:hover:bg-cyan-500 cursor-pointer py-3"
-                iconName="icon-picture"
-                iconClass="w-5 h-5 mr-2 text-current">Screenshot</ButtonIcon
+                iconClass="w-5 h-5 mr-2 text-current i-icon-park-twotone:screenshot-one"
+                >Screenshot</ButtonIcon
               >
             </div>
           </div>
         </div>
       </div>
-      <div class="flex py-10">
-        <div class="flex items-start">
-          <svg
-            class="inline-block h-5 w-5 fill-current text-geraldine-600 md:h-10 md:w-10"
-            aria-label="Quotes"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
-            ></path>
-          </svg>
-        </div>
+      <div
+        class="bg-white border rounded-md flex flex-col border-gray-200 shadow-md p-6 gap-4 justify-around sm:flex-row dark:bg-dark-700 dark:border-dark-600"
+      >
+        <span
+          class="flex-shrink-0 h-10 text-geraldine-600 w-10 i-bxs-quote-alt-left md:h-12 md:w-12"
+        ></span>
+
         <div class="space-y-3 px-4 md:px-8">
           <p>
             Akshay designed my portfolio website. The best part about working
@@ -111,18 +105,12 @@ const meta = {
             pleasure working with Akshay.
           </p>
 
-          <p class="text-right font-semibold">- Mangesh Thombare</p>
+          <p class="fw600 text-right">- Mangesh Thombare</p>
         </div>
-        <div class="flex items-end">
-          <svg
-            class="inline-block h-5 w-5 fill-current text-geraldine-600 md:h-10 md:w-10"
-            aria-label="Quotes"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"
-            ></path>
-          </svg>
+        <div class="flex flex-shrink-0 items-end place-content-end">
+          <span
+            class="h-10 text-geraldine-600 w-10 i-bxs-quote-alt-right md:h-12 md:w-12"
+          ></span>
         </div>
       </div>
     </div>

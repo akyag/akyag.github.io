@@ -4,160 +4,150 @@ import Backtotop from "../components/BackToTop.astro";
 import footerLogo from "../images/logo-white.svg";
 import AstroDark from "../images/astro-dark.svg";
 import Button from "../components/Button.astro";
-import { Icon } from "astro-icon";
 ---
 
 <footer
-  class="mt-12 h-auto divide-y-2 divide-dark-50 bg-dark-800 py-12 text-white dark:bg-dark-800"
+  class="h-auto divide-y-2 divide-dark-50 bg-dark-800 mt-12 text-white py-12 dark:bg-dark-800"
 >
   <div
-    class="mx-auto my-12 flex max-w-6xl flex-col items-center justify-center space-y-8 md:flex-row md:justify-around md:space-y-0 md:space-x-8"
+    class="flex flex-col mx-auto space-y-8 my-12 max-w-6xl items-center justify-center md:flex-row md:space-y-0 md:space-x-8 md:justify-around"
   >
-    <div class="text-f-xl font-display font-bold">
-      Interested in Collaboration?
-    </div>
+    <div class="font-display fw700 text-f-xl">Interested in Collaboration?</div>
     <Button
       href="/contact/"
       color="bg-green-700 hover:bg-green-600 dark:bg-green-400 dark:hover:bg-green-500 relative"
     >
-      <span class="absolute top-0 right-0 -mt-1 mr-1 flex h-3 w-3">
+      <span class="flex h-3 -mt-1 mr-1 top-0 right-0 w-3 absolute">
         <span
-          class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"
+          class="rounded-full h-full bg-green-400 w-full opacity-75 animate-ping absolute inline-flex"
         ></span>
         <span
-          class="relative inline-flex h-3 w-3 rounded-full bg-green-300 dark:bg-red-600"
+          class="rounded-full bg-green-300 h-3 w-3 relative inline-flex dark:bg-red-600"
         ></span>
       </span>
       Let's Talk
     </Button>
   </div>
   <div
-    class="mx-auto mb-12 flex max-w-6xl flex-col items-center justify-around pt-12 md:flex-row md:items-end md:px-6 lg:px-8"
+    class="flex flex-col mx-auto mb-12 max-w-6xl pt-12 items-center justify-around md:flex-row md:px-6 md:items-end lg:px-8"
   >
     <div class="flex flex-row">
       <div class="w-40">
-        <span class="flex justify-center font-semibold uppercase"
-          >Information</span
-        >
+        <span class="flex fw600 justify-center uppercase">Information</span>
         <div
-          class="group mt-4 grid grid-cols-6 items-center divide-x-2 divide-dark-50 leading-relaxed"
+          class="divide-x-2 divide-dark-50 mt-4 leading-relaxed grid grid-cols-6 group items-center"
         >
-          <div class="col-span-2 ml-5">
-            <Icon
-              name="bx:credit-card-front"
-              class="w-6 h-6 text-teal-500 transition-colors duration-200 ease-out group-hover:text-geraldine-600"
-            />
+          <div class="ml-5 col-span-2">
+            <span
+              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-bx-credit-card-front group-hover:text-geraldine-600"
+            ></span>
           </div>
           <div class="col-span-4">
             <a
               href="/license/"
-              class="mx-4 text-gray-300 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:text-white dark:group-hover:text-geraldine-600"
+              class="mx-4 text-gray-300 dark:text-white hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600"
               tabindex="0">License</a
             >
           </div>
         </div>
         <div
-          class="group grid grid-cols-6 items-center divide-x-2 divide-dark-50 leading-relaxed"
+          class="divide-x-2 divide-dark-50 leading-relaxed grid grid-cols-6 group items-center"
         >
-          <div class="col-span-2 ml-5">
-            <Icon
-              name="bx:box"
-              class="w-6 h-6 text-teal-500 transition-colors duration-200 ease-out group-hover:text-geraldine-600"
-            />
+          <div class="ml-5 col-span-2">
+            <span
+              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-bx-archive group-hover:text-geraldine-600"
+            ></span>
           </div>
           <div class="col-span-4">
             <a
               href="/archive/"
-              class="mx-4 text-gray-300 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:text-white dark:group-hover:text-geraldine-600"
+              class="mx-4 text-gray-300 dark:text-white hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600"
               tabindex="0">Archive</a
             >
           </div>
         </div>
       </div>
       <div class="w-40">
-        <span class="flex justify-center text-center font-semibold uppercase"
+        <span class="flex fw600 text-center justify-center uppercase"
           >Find me on</span
         >
         <div
-          class="group mt-4 grid grid-cols-6 items-center divide-x-2 divide-dark-50 leading-relaxed"
+          class="divide-x-2 divide-dark-50 mt-4 leading-relaxed grid grid-cols-6 group items-center"
         >
-          <div class="col-span-2 ml-5">
-            <Icon
-              name="uil:github-alt"
-              class="w-6 h-6 text-teal-500 transition-colors duration-200 ease-out group-hover:text-geraldine-600"
-            />
+          <div class="ml-5 col-span-2">
+            <span
+              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-uil-github-alt group-hover:text-geraldine-600"
+            ></span>
           </div>
           <div class="col-span-4">
             <a
-              class="mx-4 inline-flex items-center text-gray-300 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:text-white dark:group-hover:text-geraldine-600"
+              class="mx-4 text-gray-300 inline-flex items-center dark:text-white hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600"
               href="https://github.com/akyag"
               target="_blank"
               rel="noopener"
               tabindex="0"
               >GitHub
-              <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+              <span class="h-4 ml-1 w-4 i-bx-link-external"></span>
             </a>
           </div>
         </div>
         <div
-          class="group grid grid-cols-6 items-center divide-x-2 divide-dark-50 leading-relaxed"
+          class="divide-x-2 divide-dark-50 leading-relaxed grid grid-cols-6 group items-center"
         >
-          <div class="col-span-2 ml-5">
-            <Icon
-              name="ph:linkedin-logo"
-              class="w-6 h-6 text-teal-500 transition-colors duration-200 ease-out group-hover:text-geraldine-600"
-            />
+          <div class="ml-5 col-span-2">
+            <span
+              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-ph-linkedin-logo group-hover:text-geraldine-600"
+            ></span>
           </div>
           <div class="col-span-4">
             <a
-              class="mx-4 inline-flex items-center text-gray-300 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:text-white dark:group-hover:text-geraldine-600"
+              class="mx-4 text-gray-300 inline-flex items-center dark:text-white hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600"
               href="https://www.linkedin.com/in/akshayghate/"
               target="_blank"
               rel="noopener"
               tabindex="0"
               >LinkedIn
-              <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+              <span class="h-4 ml-1 w-4 i-bx-link-external"></span>
             </a>
           </div>
         </div>
         <div
-          class="group grid grid-cols-6 items-center divide-x-2 divide-dark-50 leading-relaxed"
+          class="divide-x-2 divide-dark-50 leading-relaxed grid grid-cols-6 group items-center"
         >
-          <div class="col-span-2 ml-5">
-            <Icon
-              name="radix-icons:twitter-logo"
-              class="w-6 h-6 text-teal-500 transition-colors duration-200 ease-out group-hover:text-geraldine-600"
-            />
+          <div class="ml-5 col-span-2">
+            <span
+              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-radix-icons-twitter-logo group-hover:text-geraldine-600"
+            ></span>
           </div>
           <div class="col-span-4">
             <a
-              class="mx-4 inline-flex items-center text-gray-300 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:text-white dark:group-hover:text-geraldine-600"
+              class="mx-4 text-gray-300 inline-flex items-center dark:text-white hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600"
               href="https://twitter.com/akshayg"
               target="_blank"
               rel="noopener"
               tabindex="0"
               >Twitter
-              <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+              <span class="h-4 ml-1 w-4 i-bx-link-external"></span>
             </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="mt-8 flex flex-col items-center">
+    <div class="flex flex-col mt-8 items-center">
       <div>
         <a
           href="/"
-          class="block hover:scale-105 hover:transition-all hover:duration-200 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800"
+          class="block hover:transition-all hover:ease-out hover:scale-105 hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800"
           tabindex="0"
         >
           <img src={footerLogo} alt="Web-o-Reviews" width="250" height="32" />
         </a>
       </div>
       <div
-        class="mt-4 flex max-w-4xl grid-cols-1 flex-col items-center justify-center gap-2 divide-y-2 divide-dark-50 lg:flex-row lg:divide-y-0 lg:divide-x-2"
+        class="flex flex-col divide-y-2 divide-dark-50 mt-4 max-w-4xl gap-2 grid-cols-1 items-center justify-center lg:flex-row lg:divide-y-0 lg:divide-x-2"
       >
         <div>
-          <Icon name="bx:copyright" class="inline-block w-5 h-5 -mt-1 mr-1" />
+          <span class="h-5 -mt-1 mr-1 w-5 i-bx-copyright"></span>
 
           2009 - {currentDate} - Built using <a
             href="https://astro.build"
@@ -167,14 +157,14 @@ import { Icon } from "astro-icon";
             tabindex="0"
             ><img
               src={AstroDark}
-              class="mx-2 inline-block h-6 w-16"
+              class="h-6 mx-2 w-16 inline-block"
               alt="Astro Dark Logo"
             />
           </a>
         </div>
         <div class="pt-2 pl-2 lg:pt-0">
           Designed with
-          <Icon name="fe:heart" size={32} class="text-red-600 inline-block" />
+          <span class="h-8 text-red-600 w-8 i-fe-heart"></span>
           by Akshay Ghate.
         </div>
       </div>

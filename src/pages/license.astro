@@ -3,7 +3,6 @@ import Page from "../layouts/Page.astro";
 import Head from "../layouts/Head.astro";
 import Hero from "../layouts/LicenseHero.astro";
 import Link from "../components/Link.astro";
-import { Icon } from "astro-icon";
 
 const meta = {
   title: "License",
@@ -16,30 +15,29 @@ const meta = {
   <Hero />
   <main
     id="content-wrapper"
-    class="container mx-auto px-8 py-12 dark:bg-dark-900 dark:text-white md:px-0"
+    class="container mx-auto py-12 px-8 md:px-0 dark:bg-dark-900 dark:text-white"
   >
-    <div class="grid grid-cols-1 place-items-center leading-relaxed">
+    <div class="leading-relaxed grid grid-cols-1 place-items-center">
       <div class="max-w-prose space-y-12">
-        <h3 class="text-f-xl mx-3 my-5 text-center font-display font-bold">
+        <h3 class="font-display fw700 my-5 mx-3 text-f-xl text-center">
           License
         </h3>
         <div class="space-y-5">
           <p
-            class="first-letter:text-f-lg first-letter:font-semibold first-letter:text-geraldine-500"
+            class="first-letter:fw600 first-letter:text-f-lg first-letter:text-geraldine-500"
           >
             Licenses of all the plug-ins and software used in building
             Web-o-Reviews can be found through the links provided.
           </p>
-          <ul class="ml-8 list-outside list-decimal">
+          <ul class="list-outside list-decimal ml-8">
             <li>
               <Link
                 extraclass="inline-flex items-center"
-                href="https://tailwindcss.com/"
+                href="https://github.com/unocss/unocss"
                 target="_blank"
-                >TailwindCSS
-                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
-              </Link>: A utility-first CSS framework for rapidly building custom
-              designs.
+                >UnoCSS
+                <span class="h-4 ml-1 w-4 i-bx-link-external"></span>
+              </Link>: The instant on-demand Atomic CSS engine.
             </li>
             <li>
               <Link
@@ -47,7 +45,7 @@ const meta = {
                 href="https://inkscape.org/about/license/"
                 target="_blank"
                 >Inkscape
-                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+                <span class="h-4 ml-1 w-4 i-bx-link-external"></span>
               </Link>: Inkscape is a free and open-source vector graphics
               editor.
             </li>
@@ -58,35 +56,18 @@ const meta = {
                 target="_blank"
                 rel="noopener"
                 >Visual Studio Code
-                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+                <span class="h-4 ml-1 w-4 i-bx-link-external"></span>
               </Link>: Visual Studio Code is a free source-code editor.
             </li>
             <li>
               <Link
                 extraclass="inline-flex items-center"
-                href="https://github.com/atisawd/boxicons"
+                href="https://iconify.design/"
                 target="_blank"
-                >Box Icons
-                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
-              </Link>: High Quality web friendly icons. License - CC 4.0
-            </li>
-            <li>
-              <Link
-                extraclass="inline-flex items-center"
-                href="https://github.com/googlefonts/noto-emoji"
-                target="_blank"
-                >Noto Emoji
-                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
-              </Link>: Author - Google, License - Apache 2.0
-            </li>
-            <li>
-              <Link
-                extraclass="inline-flex items-center"
-                href="https://github.com/tabler/tabler-icons"
-                target="_blank"
-                >Tabler Icons
-                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
-              </Link>: Author - Paweł Kuna, License - MIT
+                >Iconify Icons
+                <span class="h-4 ml-1 w-4 i-bx-link-external"></span>
+              </Link>: Iconify is an open source project. Almost all parts of
+              the project use MIT license.
             </li>
             <li>
               <Link
@@ -94,24 +75,24 @@ const meta = {
                 href="https://undraw.co/"
                 target="_blank"
                 >unDraw
-                <Icon name="bx:link-external" class="w-4 h-4 ml-1" />
+                <span class="h-4 ml-1 w-4 i-bx-link-external"></span>
               </Link>: Open-source illustrations for any idea you can imagine
               and create.
             </li>
           </ul>
         </div>
         <div>
-          <div class="flex flex-wrap items-center gap-4">
+          <div class="flex flex-wrap gap-4 items-center">
             <p>And finally, this website is built using Astro,</p>
             <a
               href="https://astro.build"
-              class="hover:scale-105 hover:transition-all hover:duration-150 hover:ease-out focus:outline-none focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 focus:ring-offset-transparent"
+              class="hover:transition-all hover:ease-out hover:scale-105 hover:duration-150 focus:outline-none focus:ring-offset-transparent focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2"
               target="_blank"
               rel="noopener"
               tabindex="0"
             >
               <svg
-                class="ml-4 h-10 w-auto fill-black dark:fill-white"
+                class="h-10 fill-black ml-4 w-auto dark:fill-white"
                 viewBox="0 0 2712 894"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

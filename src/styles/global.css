@@ -1,38 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  *::-webkit-scrollbar {
-    @apply w-3 h-3 bg-slate-100 dark:bg-slate-900;
-  }
-  *::-webkit-scrollbar-thumb {
-    @apply w-3 h-3 rounded bg-slate-300 dark:bg-slate-700;
-  }
-}
-/* :root {
-  --user-font-scale: 1rem - 16px;
-  font-size: clamp(
-    0.875rem,
-    0.4626rem + 1.0309vw + var(--user-font-scale),
-    1.125rem
-  );
-} */
-/* @link https://utopia.fyi/type/calculator?c=320,20,1.2,1536,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
-
-/* @link https://utopia.fyi/type/calculator?c=320,19,1.2,1536,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
-
-/* @link https://utopia.fyi/type/calculator?c=320,19,1.2,1536,21,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
-
-/* @link https://utopia.fyi/type/calculator?c=320,19,1.2,1536,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
-
 /* @link https://utopia.fyi/type/calculator?c=320,19,1.2,1536,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 
-:root {
+/* :root {
   --step--2: clamp(0.63rem, calc(0.88rem + -0.26vw), 0.82rem);
   --step--1: clamp(0.88rem, calc(1.02rem + -0.14vw), 0.99rem);
   --step-0: clamp(1.19rem, calc(1.17rem + 0.08vw), 1.25rem);
@@ -41,53 +9,51 @@
   --step-3: clamp(2.05rem, calc(1.66rem + 1.95vw), 3.53rem);
   --step-4: clamp(2.46rem, calc(1.8rem + 3.33vw), 5rem);
   --step-5: clamp(2.96rem, calc(1.87rem + 5.41vw), 7.07rem);
-}
-@layer components {
-  .text-f-xs {
-    font-size: var(--step--2);
-  }
-
-  .text-f-sm {
-    font-size: var(--step--1);
-  }
-
-  .text-f-base {
-    font-size: var(--step-0);
-  }
-
-  .text-f-lg {
-    font-size: var(--step-1);
-  }
-
-  .text-f-xl {
-    font-size: var(--step-2);
-  }
-
-  .text-f-2xl {
-    font-size: var(--step-3);
-  }
-
-  .text-f-3xl {
-    font-size: var(--step-4);
-  }
-
-  .text-f-4xl {
-    font-size: var(--step-5);
-  }
-}
-.bg-grid-gray-900\/\[0\.05\] {
-  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e"); */
-  background-color: #111b1b;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23242e2e' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M5 3.59L1.46.05.05 1.46 3.59 5 .05 8.54l1.41 1.41L5 6.41l3.54 3.54 1.41-1.41L6.41 5l3.54-3.54L8.54.05 5 3.59zM17 2h24v2H17V2zm0 4h24v2H17V6zM2 17h2v24H2V17zm4 0h2v24H6V17z'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-/* .bg-hero-img {
-  background-image: url(../images/bg.png);
-}
-
-.bg-hero-img-dark {
-  background-image: url(../images/bg-dark.png);
 } */
+
+/* .text-f-xs {
+  font-size: var(--step--2);
+}
+
+.text-f-sm {
+  font-size: var(--step--1);
+}
+
+.text-f-base {
+  font-size: var(--step-0);
+}
+
+.text-f-lg {
+  font-size: var(--step-1);
+}
+
+.text-f-xl {
+  font-size: var(--step-2);
+}
+
+.text-f-2xl {
+  font-size: var(--step-3);
+}
+
+.text-f-3xl {
+  font-size: var(--step-4);
+}
+
+.text-f-4xl {
+  font-size: var(--step-5);
+} */
+/* .font-body {
+  font-family: "Mulish", sans-serif;
+}
+
+.font-display {
+  font-family: "Montserrat", sans-serif;
+} */
+
+.custom-gradient {
+  mask-image: linear-gradient(to bottom, transparent, black);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+}
 
 @keyframes leftslide {
   0% {

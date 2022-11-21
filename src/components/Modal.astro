@@ -3,16 +3,16 @@ const { triggerId, title, closeText = "Close" } = Astro.props;
 ---
 
 <div
-  class="modal fixed -z-10 hidden drop-shadow-md backdrop-blur-md backdrop-brightness-50"
+  class="-z-10 modal fixed hidden drop-shadow-md backdrop-blur-md backdrop-brightness-50"
   role="dialog"
   aria-labelledby={triggerId}
 >
   <div
-    class="modal__inner opacity-1 bg-white transition-opacity duration-300 ease-in-out dark:bg-dark-900 dark:text-white"
+    class="bg-white opacity-1 transition-opacity ease-in duration-500 modal__inner dark:bg-dark-900 dark:text-white"
   >
-    <div class="border-1 flex flex-col gap-2 border-gray-600 p-8">
+    <div class="flex flex-col border-1 border-gray-600 p-8 gap-2">
       <h3
-        class="text-f-lg border-b-4 border-red-600 dark:border-red-400"
+        class="border-b-4 border-red-600 text-f-lg dark:border-red-400"
         tabindex="-1"
       >
         {title}
@@ -21,7 +21,7 @@ const { triggerId, title, closeText = "Close" } = Astro.props;
     </div>
     <div class="flex justify-end">
       <button
-        class="text-f-sm m-5 cursor-pointer rounded-full bg-red-600 px-6 py-3 font-semibold text-white shadow-md hover:bg-red-500 dark:bg-red-400 dark:text-dark-700 dark:hover:bg-red-500"
+        class="rounded-full cursor-pointer fw600 bg-red-600 m-5 shadow-md text-f-sm text-white py-3 px-6 dark:bg-red-400 dark:text-dark-700 hover:bg-red-500 dark:hover:bg-red-500"
         >{closeText}</button
       >
     </div>
@@ -129,6 +129,8 @@ const { triggerId, title, closeText = "Close" } = Astro.props;
     height: auto;
     inset: 0;
     z-index: 10;
+    opacity: 1;
+    transition: opacity 3s ease-in;
   }
   .modal.show .modal__inner {
     opacity: 1;
@@ -138,9 +140,9 @@ const { triggerId, title, closeText = "Close" } = Astro.props;
     /* overflow: scroll;
     color: black;
     border: 0.5rem solid black;
-    border-radius: 1rem;
+    border-radius: 1rem;*/
     opacity: 0;
-    transition: opacity 0.3s ease-in-out; */
+    transition: opacity 0.3s ease-in-out;
   }
   /* .modal__content {
     display: flex;

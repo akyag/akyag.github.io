@@ -4,7 +4,6 @@ import Head from "../layouts/Head.astro";
 import Hero from "../layouts/ArchiveHero.astro";
 import nextGen from "../images/nextgen.svg";
 import ButtonIcon from "../components/ButtonIcon.astro";
-import { Icon } from "astro-icon";
 
 const meta = {
   title: "Archive",
@@ -17,16 +16,14 @@ const meta = {
   <Hero />
   <main
     id="content-wrapper"
-    class="container mx-auto px-8 py-12 dark:bg-dark-900 dark:text-white md:px-0"
+    class="container mx-auto py-12 px-8 md:px-0 dark:bg-dark-900 dark:text-white"
   >
-    <div class="grid grid-cols-1 place-items-center leading-relaxed">
+    <div class="leading-relaxed grid grid-cols-1 place-items-center">
       <div class="max-w-prose space-y-12">
-        <h3
-          class="text-f-xl reveal mx-3 my-5 text-center font-display font-bold"
-        >
+        <h3 class="font-display fw700 my-5 mx-3 text-f-xl text-center">
           Archive
         </h3>
-        <div class="text-f-lg font-display font-semibold">
+        <div class="font-display fw600 text-f-lg">
           <span class="border-b-4 border-teal-600">NExtGen ROM</span>
         </div>
         <div class="italic">
@@ -43,7 +40,7 @@ const meta = {
           it out.
         </p>
         <div
-          class="container border-l-8 border-gray-600 bg-gray-50 px-6 shadow-lg dark:border-teal-500 dark:bg-dark-700"
+          class="container bg-gray-50 border-l-8 border-gray-600 shadow-lg px-6 dark:bg-dark-700 dark:border-teal-500"
         >
           <p class="font-mono py-6">
             https://forum.xda-developers.com/showthread.php?t=1812624
@@ -55,7 +52,7 @@ const meta = {
           blew my mind that so many people used my ROM. I will always be
           thankful for the overwhelming support. Thank you!!!
         </p>
-        <div class="text-f-lg font-display font-semibold">
+        <div class="font-display fw600 text-f-lg">
           <span class="border-b-4 border-green-600"
             >Forum Signatures & Wallpapers</span
           >
@@ -64,20 +61,20 @@ const meta = {
           These are some forum signatures and wallpapers I made in Photoshop.
           You can view the gallery at deviantart.
         </p>
-        <div class="flex items-center gap-x-4">
+        <div class="flex gap-x-4 items-center">
           <ButtonIcon
             href="https://www.deviantart.com/akyag/gallery/37760236/signatures"
             target="_blank"
-                color="bg-white hover:bg-slate-300 text-green-700 dark:bg-slate-400 dark:hover:bg-slate-500"
-            iconName="icon-deviantart"
-            iconClass="w-5 h-5 mr-2 fill-current">signatures</ButtonIcon
+            color="bg-white hover:bg-slate-300 text-green-700 dark:bg-slate-400 dark:hover:bg-slate-500"
+            iconClass="w-6 h-6 mr-2 fill-current i-bxl-deviantart"
+            >signatures</ButtonIcon
           >
           <ButtonIcon
             href="https://www.deviantart.com/akyag/gallery/37773265/wallpapers"
             target="_blank"
             color="bg-green-700 hover:bg-green-600 dark:bg-green-400 dark:hover:bg-green-500"
-            iconName="icon-deviantart"
-            iconClass="w-5 h-5 mr-2 fill-current">Wallpapers</ButtonIcon
+            iconClass="w-6 h-6 mr-2 fill-current i-bxl-deviantart"
+            >Wallpapers</ButtonIcon
           >
         </div>
       </div>

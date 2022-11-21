@@ -2,7 +2,6 @@
 import Page from "../layouts/Page.astro";
 import Head from "../layouts/ContactHead.astro";
 import Hero from "../layouts/ContactHero.astro";
-import { Icon } from "astro-icon";
 
 const meta = {
   title: "Contact",
@@ -15,14 +14,14 @@ const meta = {
   <Hero />
   <main
     id="content-wrapper"
-    class="container mx-auto px-8 py-12 dark:bg-dark-900 dark:text-white md:px-0"
+    class="container mx-auto py-12 px-8 md:px-0 dark:bg-dark-900 dark:text-white"
   >
-    <div class="grid grid-cols-1 place-items-center leading-relaxed">
-      <div class="grid max-w-prose">
-        <h3 class="text-f-xl my-5 text-center font-display font-bold">
+    <div class="leading-relaxed grid grid-cols-1 place-items-center">
+      <div class="max-w-prose grid">
+        <h3 class="font-display my-5 text-f-xl text-center fw700">
           Contact Form
         </h3>
-        <div class="text-f-lg my-2 font-semibold">Hey, Got a question?</div>
+        <div class="my-2 text-f-lg fw600">Hey, Got a question?</div>
         <p>Send it to me and I will get back as soon as possible.</p>
 
         <form
@@ -43,10 +42,10 @@ const meta = {
             {/* <input type="hidden" name="contact_number" /> */}
 
             <div class="mt-4">
-              <label for="user_name" class="font-semibold">Name</label>
-              <div class="relative flex">
-                <div class="pointer-events-none z-10 pl-3">
-                  <Icon name="bx:user" class="w-5 h-full fill-current" />
+              <label for="user_name" class="fw600">Name</label>
+              <div class="flex relative items-center">
+                <div class="pl-3 z-10 pointer-events-none">
+                  <span class="h-5 fill-current w-5 i-bx-user"></span>
                 </div>
                 <input
                   type="text"
@@ -54,10 +53,10 @@ const meta = {
                   id="user_name"
                   aria-label="User Name"
                   required
-                  class="peer -ml-8 w-full rounded-md border-gray-300 pl-10 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
+                  class="rounded-md border-gray-300 shadow-sm -ml-8 w-full pl-10 peer caret-slate-500 accent-slate-500 dark:bg-dark-700 dark:border-gray-700 dark:text-white focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50"
                 />
                 <div
-                  class="text-f-sm absolute inset-y-0 right-0 border-y border-transparent py-2 pr-3 text-slate-600 peer-optional:hidden dark:text-slate-400"
+                  class="border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-slate-600 absolute peer-optional:hidden dark:text-slate-400"
                 >
                   Required
                 </div>
@@ -65,10 +64,10 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_email" class="font-semibold">Email</label>
-              <div class="relative flex">
-                <div class="pointer-events-none z-10 pl-3">
-                  <Icon name="bx:envelope" class="w-5 h-full fill-current" />
+              <label for="user_email" class="fw600">Email</label>
+              <div class="flex relative items-center">
+                <div class="pl-3 z-10 pointer-events-none">
+                  <span class="h-5 fill-current w-5 i-bx-envelope"></span>
                 </div>
                 <input
                   type="email"
@@ -76,10 +75,10 @@ const meta = {
                   id="user_email"
                   aria-label="User Email"
                   required
-                  class="peer -ml-8 w-full rounded-md border-gray-300 pl-10 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
+                  class="rounded-md border-gray-300 shadow-sm -ml-8 w-full pl-10 peer caret-slate-500 accent-slate-500 dark:bg-dark-700 dark:border-gray-700 dark:text-white focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50"
                 />
                 <div
-                  class="text-f-sm absolute inset-y-0 right-0 border-y border-transparent py-2 pr-3 text-slate-600 peer-optional:hidden dark:text-slate-400"
+                  class="border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-slate-600 absolute peer-optional:hidden dark:text-slate-400"
                 >
                   Required
                 </div>
@@ -87,46 +86,46 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_phone" class="font-semibold">Phone</label>
-              <div class="relative flex">
-                <div class="pointer-events-none z-10 pl-3">
-                  <Icon name="bx:phone" class="w-5 h-full fill-current" />
+              <label for="user_phone" class="fw600">Phone</label>
+              <div class="flex relative items-center">
+                <div class="pl-3 z-10 pointer-events-none">
+                  <span class="h-5 fill-current w-5 i-bx-phone"></span>
                 </div>
                 <input
                   type="tel"
                   name="user_phone"
                   id="user_phone"
                   aria-label="User Phone"
-                  class="peer -ml-8 w-full rounded-md border-gray-300 pl-10 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
+                  class="rounded-md border-gray-300 shadow-sm -ml-8 w-full pl-10 peer caret-slate-500 accent-slate-500 dark:bg-dark-700 dark:border-gray-700 dark:text-white focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50"
                 />
                 <div
-                  class="text-f-sm absolute inset-y-0 right-0 border-y border-transparent py-2 pr-3 text-slate-600 peer-optional:hidden dark:text-slate-400"
+                  class="border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-slate-600 absolute peer-optional:hidden dark:text-slate-400"
                 >
                   Required
                 </div>
               </div>
             </div>
 
-            <div class="text-f-lg font-semibold">
-              <span class="border-b-4 border-green-600 font-display"
+            <div class="text-f-lg fw600">
+              <span class="font-display border-b-4 border-green-600"
                 >What is this contact about?</span
               >
             </div>
 
             <div>
-              <label for="user_dept" class="font-semibold">Department</label>
+              <label for="user_dept" class="fw600">Department</label>
               <div>
                 <select
                   name="user_dept"
                   id="user_dept"
                   required
-                  class="w-full rounded-md border-gray-300 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
+                  class="rounded-md border-gray-300 shadow-sm w-full caret-slate-500 accent-slate-500 dark:bg-dark-700 dark:border-gray-700 dark:text-white focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50"
                 >
                   <option disabled selected>Select your option</option>
                   <option value="Website development"
                     >Website development</option
                   >
-                  <option value="Enquiry">Inquiry</option>
+                  <option value="Enquiry">Enquiry</option>
                   <option value="Chat">Chat</option>
                   <option value="Other">Other</option>
                 </select>
@@ -134,10 +133,10 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_subject" class="font-semibold">Subject</label>
-              <div class="relative flex">
-                <div class="pointer-events-none z-10 pl-3">
-                  <Icon name="bx:hash" class="w-5 h-full fill-current" />
+              <label for="user_subject" class="fw600">Subject</label>
+              <div class="flex relative items-center">
+                <div class="pl-3 z-10 pointer-events-none">
+                  <span class="h-5 fill-current w-5 i-bx-hash"></span>
                 </div>
                 <input
                   type="text"
@@ -145,10 +144,10 @@ const meta = {
                   id="user_subject"
                   aria-label="User Subject"
                   required
-                  class="peer -ml-8 w-full rounded-md border-gray-300 pl-10 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
+                  class="rounded-md border-gray-300 shadow-sm -ml-8 w-full pl-10 peer caret-slate-500 accent-slate-500 dark:bg-dark-700 dark:border-gray-700 dark:text-white focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50"
                 />
                 <div
-                  class="text-f-sm absolute inset-y-0 right-0 border-y border-transparent py-2 pr-3 text-slate-600 peer-optional:hidden dark:text-slate-400"
+                  class="border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-slate-600 absolute peer-optional:hidden dark:text-slate-400"
                 >
                   Required
                 </div>
@@ -156,10 +155,10 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_message" class="font-semibold">Message</label>
-              <div class="relative flex">
-                <div class="pointer-events-none z-10 pt-3 pl-3">
-                  <Icon name="bx:edit-alt" class="w-5 h-5 fill-current" />
+              <label for="user_message" class="fw600">Message</label>
+              <div class="flex relative">
+                <div class="pt-3 pl-3 z-10 pointer-events-none">
+                  <span class="h-5 fill-current w-5 i-bx-edit-alt"></span>
                 </div>
                 <textarea
                   name="user_message"
@@ -167,39 +166,37 @@ const meta = {
                   aria-label="User Message"
                   placeholder="Explain how I can help you"
                   required
-                  class="peer -ml-8 h-64 w-full rounded-md border-gray-300 pl-10 pt-10 caret-slate-500 accent-slate-500 shadow-sm focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50 dark:border-gray-700 dark:bg-dark-700 dark:text-white"
+                  class="rounded-md border-gray-300 h-64 shadow-sm -ml-8 w-full pt-10 pl-10 peer caret-slate-500 accent-slate-500 dark:bg-dark-700 dark:border-gray-700 dark:text-white focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50"
                 ></textarea>
                 <div
-                  class="text-f-sm absolute inset-y-0 right-0 border-y border-transparent py-2 pr-3 text-slate-600 peer-optional:hidden dark:text-slate-400"
+                  class="border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-slate-600 absolute peer-optional:hidden dark:text-slate-400"
                 >
                   Required
                 </div>
               </div>
             </div>
 
-            <div class="flex content-center items-center space-x-4">
+            <div class="flex space-x-4 content-center items-center">
               <input
                 id="terms"
                 name="terms"
                 aria-label="Terms"
                 type="checkbox"
                 required
-                class="h-5 w-5 text-slate-500 focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-white dark:bg-slate-500 dark:focus:ring-slate-500/50 dark:focus:ring-offset-dark-800"
+                class="h-5 text-green-500 w-5 focus:ring-offset-white focus:ring-2 focus:ring-slate-500/50 dark:focus:ring-slate-500/50 dark:focus:ring-offset-dark-800"
               />
-              <label for="terms" class="text-f-sm ml-2 font-medium">
+              <label for="terms" class="font-medium text-f-sm ml-2">
                 I understand that this form collects my name and email, so I can
                 be contacted.</label
               >
             </div>
 
             <button
-              class="text-f-sm hover:ease flex place-content-center items-center rounded-full bg-geraldine-700 py-3 pl-4 pr-6 font-semibold text-white shadow-md hover:bg-geraldine-600 hover:transition-all hover:duration-150 focus:outline-none focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 focus:ring-offset-transparent dark:bg-geraldine-400 dark:text-dark-700 dark:hover:bg-geraldine-500"
+              class="rounded-full flex bg-green-700 shadow-md text-f-sm text-white py-3 pr-6 pl-4 place-content-center items-center fw600 dark:bg-green-400 dark:text-dark-700 hover:bg-green-600 hover:transition-all hover:ease hover:duration-150 focus:outline-none focus:ring-offset-transparent focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 dark:hover:bg-green-500"
               type="submit"
             >
-              <Icon
-                name="bx:chevrons-right"
-                class="w-7 h-7 mr-2 text-current"
-              />
+              <span class="h-6 mr-2 text-current w-6 i-bx-chevrons-right"
+              ></span>
               <span>Send Message</span>
             </button>
           </div>
