@@ -3,18 +3,18 @@ import licenseHero from "../images/license.svg";
 import ScrollDown from "../components/ScrollDown.astro";
 ---
 
-<section class="relative z-10" id="hero">
+<section class="z-10 relative" id="hero">
   <div class="container mx-auto py-12 md:py-24 lg:py-36 2xl:py-48">
     <div
-      class="grid grid-cols-1 place-items-center items-center gap-12 md:grid-cols-2"
+      class="grid gap-12 grid-cols-1 place-items-center items-center md:grid-cols-2"
     >
       <div class="grid place-items-center items-center">
         <h1
-          class="text-f-2xl mt-28 text-center font-display fw700 leading-relaxed text-white md:mt-0"
+          class="font-display mt-28 text-center text-white leading-relaxed text-f-2xl fw700 md:mt-0"
         >
           License
         </h1>
-        <h2 class="text-f-lg mt-2 text-center fw600 leading-snug text-white">
+        <h2 class="mt-2 text-f-lg text-center text-white leading-snug fw600">
           Licenses of all the plug-ins.
         </h2>
       </div>
@@ -29,12 +29,23 @@ import ScrollDown from "../components/ScrollDown.astro";
                 />  */
         }
         <img
-          class="h-auto w-[300px] dark:brightness-75 dark:contrast-125 dark:filter lg:w-[475px] 2xl:w-[600px]"
+          class="h-auto transform w-[300px] translate-x-25 op0 lg:w-[475px] 2xl:w-[600px] dark:filter dark:brightness-75 dark:contrast-125"
           src={licenseHero}
           alt="License"
+          id="LicenseHero"
         />
       </div>
     </div>
     <ScrollDown />
   </div>
 </section>
+<script>
+  import { animate, inView } from "motion";
+  inView("#LicenseHero", (info) => {
+    animate(
+      info.target,
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
+    );
+  });
+</script>

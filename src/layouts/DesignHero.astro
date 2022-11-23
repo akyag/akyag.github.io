@@ -3,20 +3,20 @@ import designHero from "../images/web-design.svg";
 import ScrollDown from "../components/ScrollDown.astro";
 ---
 
-<section class="relative z-10" id="hero">
+<section class="z-10 relative" id="hero">
   <div class="container mx-auto py-12 2xl:py-36">
     <div
-      class="grid grid-cols-1 place-items-center items-center gap-12 md:grid-cols-2"
+      class="grid gap-12 grid-cols-1 place-items-center items-center md:grid-cols-2"
     >
       <div class="grid place-items-center items-center">
         <h1
-          class="text-f-2xl mt-28 text-center font-display fw700 leading-relaxed text-white md:mt-0"
+          class="font-display mt-28 text-center text-white leading-relaxed text-f-2xl fw700 md:mt-0"
         >
           Web Design
         </h1>
-        <h2 class="text-f-lg mt-2 text-center fw600 leading-snug text-white">
+        <h2 class="mt-2 text-f-lg text-center text-white leading-snug fw600">
           <span
-            class="rounded bg-geraldine-700 px-1 text-white dark:bg-teal-700"
+            class="rounded bg-geraldine-700 text-white px-1 dark:bg-teal-700"
             >Why choose me</span
           >? It's simple.
         </h2>
@@ -32,12 +32,23 @@ import ScrollDown from "../components/ScrollDown.astro";
                />  */
         }
         <img
-          class="h-auto w-[250px] dark:brightness-75 dark:contrast-125 dark:filter lg:w-[375px] 2xl:w-[500px]"
+          class="h-auto transform w-[250px] translate-x-25 op0 lg:w-[375px] 2xl:w-[500px] dark:filter dark:brightness-75 dark:contrast-125"
           src={designHero}
           alt="Design"
+          id="DesignHero"
         />
       </div>
     </div>
     <ScrollDown />
   </div>
 </section>
+<script>
+  import { animate, inView } from "motion";
+  inView("#DesignHero", (info) => {
+    animate(
+      info.target,
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
+    );
+  });
+</script>

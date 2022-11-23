@@ -1,9 +1,7 @@
 ---
 const { imagepath, title, feature1, feature2, feature3, feature4, target } =
   Astro.props;
-import ButtonIcon from "./ButtonIcon.astro";
 import { Image } from "@astrojs/image/components";
-import { Icon } from "astro-icon";
 ---
 
 <section
@@ -11,7 +9,7 @@ import { Icon } from "astro-icon";
 >
   <div class="flex flex-initial">
     <Image
-      class="h-auto object-cover border-b-2 shadow-lg w-full dark:filter dark:brightness-75 dark:contrast-125"
+      class="h-auto object-cover border-b-2 w-full dark:filter dark:brightness-75 dark:contrast-125"
       src={imagepath}
       alt={title}
       width="480"
@@ -19,7 +17,7 @@ import { Icon } from "astro-icon";
     />
   </div>
   <div class="flex flex-col py-4 gap-y-4 grow">
-    <div class="font-display fw600 text-f-lg text-center">{title}</div>
+    <div class="font-display text-f-lg text-center fw600">{title}</div>
     <ul class="pl-6">
       <li>{feature1}</li>
       <li>{feature2}</li>

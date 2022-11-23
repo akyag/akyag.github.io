@@ -57,12 +57,23 @@ import ScrollDown from "../components/ScrollDown.astro";
         />*/
         }
         <img
-          class="h-auto w-[350px] lg:w-[525px] 2xl:w-[700px] dark:filter dark:brightness-75 dark:contrast-125"
+          class="h-auto transform w-[350px] translate-x-25 op0 lg:w-[525px] 2xl:w-[700px] dark:filter dark:brightness-75 dark:contrast-125"
           src={homeHero}
           alt="Welcome to Web-o-Reviews!"
+          id="HomeHero"
         />
       </div>
     </div>
     <ScrollDown />
   </div>
 </section>
+<script>
+  import { animate, inView } from "motion";
+  inView("#HomeHero", (info) => {
+    animate(
+      info.target,
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
+    );
+  });
+</script>

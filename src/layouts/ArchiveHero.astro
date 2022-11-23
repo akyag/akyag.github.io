@@ -3,18 +3,18 @@ import archiveHero from "../images/archive.svg";
 import ScrollDown from "../components/ScrollDown.astro";
 ---
 
-<section class="relative z-10" id="hero">
+<section class="z-10 relative" id="hero">
   <div class="container mx-auto py-12 2xl:py-36">
     <div
-      class="grid grid-cols-1 place-items-center items-center gap-12 md:grid-cols-2"
+      class="grid gap-12 grid-cols-1 place-items-center items-center md:grid-cols-2"
     >
       <div class="grid place-items-center items-center">
         <h1
-          class="text-f-2xl mt-28 text-center font-display fw700 leading-relaxed text-white md:mt-0 lg:text-5xl 2xl:text-7xl"
+          class="font-display mt-28 text-center text-white leading-relaxed text-f-2xl fw700 md:mt-0 lg:text-5xl 2xl:text-7xl"
         >
           Archive
         </h1>
-        <h2 class="text-f-lg mt-2 text-center fw600 leading-snug text-white">
+        <h2 class="mt-2 text-f-lg text-center text-white leading-snug fw600">
           Stuff that's not so new anymore.
         </h2>
       </div>
@@ -29,12 +29,23 @@ import ScrollDown from "../components/ScrollDown.astro";
            />*/
         }
         <img
-          class="h-auto w-[200px] dark:brightness-75 dark:contrast-125 dark:filter lg:w-[300px] 2xl:w-[400px]"
+          class="h-auto transform w-[200px] translate-x-25 op0 lg:w-[300px] 2xl:w-[400px] dark:filter dark:brightness-75 dark:contrast-125"
           src={archiveHero}
           alt="Archive"
+          id="ArchiveHero"
         />
       </div>
     </div>
     <ScrollDown />
   </div>
 </section>
+<script>
+  import { animate, inView } from "motion";
+  inView("#ArchiveHero", (info) => {
+    animate(
+      info.target,
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
+    );
+  });
+</script>

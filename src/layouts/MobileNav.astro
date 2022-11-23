@@ -1,7 +1,6 @@
 ---
 import headerLogo from "../images/logo.svg";
 import MobileActiveLink from "../components/MobileActiveLink.astro";
-import { Icon } from "astro-icon";
 ---
 
 <header
@@ -46,49 +45,38 @@ import { Icon } from "astro-icon";
             </div>
             <div class="">
               <div
-                class="bg-white rounded-lg h-auto mt-10 mr-4 py-0 right-0 w-48 z-20 fixed hidden dark:bg-dark-500"
+                class="bg-white rounded-lg h-auto divide-y-2 divide-gray-200 shadow-md mt-10 mr-4 grid py-0 right-0 w-48 z-20 grid-cols-1 fixed hidden dark:divide-dark-300 dark:bg-dark-500"
                 id="menu"
               >
                 {
                   /* class="bg-white rounded-md shadow-xl mt-2 py-2 right-0 w-48 z-20 absolute dark:bg-gray-900" */
                 }
                 <MobileActiveLink href={"/"}>
-                  <Icon name="bx:home" class="h-6 mr-2 mb-1 w-6 inline-block" />
+                  <span class="h-6 w-6 i-bx-home"></span>
                   Home</MobileActiveLink
                 >
                 <MobileActiveLink href={"/about/"}>
-                  <Icon name="bx:user" class="h-6 mr-2 mb-1 w-6 inline-block" />
+                  <span class="h-6 w-6 i-bx-user"></span>
                   About
                 </MobileActiveLink>
                 <MobileActiveLink href={"/design/"}>
-                  <Icon
-                    name="bx:palette"
-                    class="h-6 mr-2 mb-1 w-6 inline-block"
-                  />Design
+                  <span class="h-6 w-6 i-bx-palette"></span>
+                  Design
                 </MobileActiveLink>
                 <MobileActiveLink href={"/work/"}>
-                  <Icon
-                    name="bx:briefcase"
-                    class="h-6 mr-2 mb-1 w-6 inline-block"
-                  />
+                  <span class="h-6 w-6 i-bx-briefcase"></span>
                   Work
                 </MobileActiveLink>
                 <MobileActiveLink href={"/archive/"}>
-                  <Icon name="bx:box" class="h-6 mr-2 mb-1 w-6 inline-block" />
+                  <span class="h-6 w-6 i-bx-archive"></span>
                   Archive
                 </MobileActiveLink>
                 <MobileActiveLink href={"/license/"}>
-                  <Icon
-                    name="bx:credit-card-front"
-                    class="h-6 mr-2 mb-1 w-6 inline-block"
-                  />
+                  <span class="h-6 w-6 i-bx-credit-card-front"></span>
                   License
                 </MobileActiveLink>
                 <MobileActiveLink href={"/contact/"}>
-                  <Icon
-                    name="bx:envelope"
-                    class="h-6 mr-2 mb-1 w-6 inline-block"
-                  />
+                  <span class="h-6 w-6 i-bx-envelope"></span>
                   Contact
                 </MobileActiveLink>
               </div>

@@ -5,7 +5,6 @@ import Hero from "../layouts/AboutHero.astro";
 import Me from "../images/me.png";
 import Link from "../components/Link.astro";
 import { Image } from "@astrojs/image/components";
-import { Icon } from "astro-icon";
 
 const meta = {
   title: "About",
@@ -21,7 +20,7 @@ const meta = {
     class="container mx-auto py-6 px-8 md:py-12 md:px-0 dark:bg-dark-900 dark:text-white"
   >
     <div class="mx-auto space-y-12 leading-relaxed max-w-6xl">
-      <h3 class="font-display fw700 my-5 mx-3 text-f-xl text-center">About</h3>
+      <h3 class="font-display my-5 mx-3 text-f-xl text-center fw700">About</h3>
       <div
         class="flex flex-col space-y-12 md:flex-row md:space-x-12 md:space-y-0"
       >
@@ -33,13 +32,13 @@ const meta = {
           />
         </div>
         <div class="space-y-4">
-          <div class="fw600 text-f-lg">
+          <div class="text-f-lg fw600">
             Hi there,
             <span class="h-8 w-8 i-emojione-waving-hand-medium-light-skin-tone"
             ></span>
           </div>
           <p
-            class="first-letter:fw600 first-letter:text-f-lg first-letter:text-geraldine-500"
+            class="first-letter:text-f-lg first-letter:text-geraldine-500 first-letter:fw600"
           >
             I am a frontend designer, freelance developer and a proud nerd. I
             work primarily in HTML, CSS and JS and have experience with CSS
@@ -63,7 +62,7 @@ const meta = {
           <p class="font-medium mr-12 text-right">- Akshay Ghate</p>
         </div>
       </div>
-      <div class="font-display fw600 text-f-xl uppercase">
+      <div class="font-display text-f-xl uppercase fw600">
         <span class="border-b-4 border-geraldine-600">Tech Stack</span>
 
         <div class="flex flex-wrap py-8 gap-6 items-start">
@@ -161,7 +160,7 @@ const meta = {
       </div>
 
       <div>
-        <p class="font-display fw700 text-f-lg italic">
+        <p class="font-display text-f-lg italic fw700">
           <span class="border-b-4 border-green-500">Special thanks:</span>
         </p>
         <div
