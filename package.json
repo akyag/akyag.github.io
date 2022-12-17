@@ -17,7 +17,7 @@
     "@iconify/json": "^2.1.153",
     "@julr/unocss-preset-forms": "^0.0.2",
     "@unocss/reset": "^0.47.6",
-    "astro": "^1.7.1",
+    "astro": "1.6.14",
     "astro-compress": "1.1.22",
     "canvas-confetti": "^1.6.0",
     "sharp": "^0.31.2"
