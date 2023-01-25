@@ -11,14 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.12.1",
+    "@astrojs/image": "^0.13.0",
     "@astrojs/prefetch": "^0.1.1",
     "@astrojs/sitemap": "^1.0.0",
-    "@iconify/json": "^2.2.9",
+    "@iconify/json": "^2.2.12",
     "@julr/unocss-preset-forms": "^0.0.2",
-    "@unocss/reset": "^0.48.4",
-    "astro": "1.9.2",
-    "astro-compress": "1.1.27",
+    "@unocss/reset": "^0.48.5",
+    "astro": "2.0.1",
+    "astro-compress": "1.1.28",
     "canvas-confetti": "^1.6.0",
     "sharp": "^0.31.3"
   },
@@ -26,14 +26,14 @@
     "@fontsource/montserrat": "^4.5.14",
     "@fontsource/mulish": "^4.5.14",
     "@julr/unocss-preset-heropatterns": "^0.0.2",
-    "@unocss/astro": "^0.48.4",
+    "@unocss/astro": "^0.48.5",
     "astro-robots-txt": "^0.3.11",
     "motion": "^10.15.5",
     "prettier": "^2.8.3",
     "prettier-plugin-astro": "^0.7.2",
     "svgo": "3.0.2",
     "taze": "^0.8.5",
-    "unocss": "^0.48.4",
+    "unocss": "^0.48.5",
     "unocss-preset-scrollbar": "^0.2.1",
     "vite": "^4.0.4"
   }

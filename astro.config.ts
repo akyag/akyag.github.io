@@ -17,8 +17,7 @@ import "@unocss/reset/tailwind.css";
 import "./src/styles/global.css";
 
 export default defineConfig({
-  site: "https://weboreviews.com",
-  trailingSlash: "always",
+  site: "https://weboreviews.com/",
   integrations: [
     UnoCSS(),
     sitemap(),
