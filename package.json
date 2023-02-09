@@ -11,14 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.13.0",
-    "@astrojs/prefetch": "^0.1.1",
-    "@astrojs/sitemap": "^1.0.0",
-    "@iconify/json": "^2.2.12",
+    "@astrojs/image": "^0.14.1",
+    "@astrojs/prefetch": "^0.1.2",
+    "@astrojs/sitemap": "^1.0.1",
+    "@iconify/json": "^2.2.19",
     "@julr/unocss-preset-forms": "^0.0.2",
-    "@unocss/reset": "^0.48.5",
-    "astro": "2.0.1",
-    "astro-compress": "1.1.28",
+    "@unocss/reset": "^0.49.4",
+    "astro": "2.0.9",
+    "astro-compress": "1.1.31",
     "canvas-confetti": "^1.6.0",
     "sharp": "^0.31.3"
   },
@@ -26,15 +26,15 @@
     "@fontsource/montserrat": "^4.5.14",
     "@fontsource/mulish": "^4.5.14",
     "@julr/unocss-preset-heropatterns": "^0.0.2",
-    "@unocss/astro": "^0.48.5",
+    "@unocss/astro": "^0.49.4",
     "astro-robots-txt": "^0.3.11",
     "motion": "^10.15.5",
-    "prettier": "^2.8.3",
-    "prettier-plugin-astro": "^0.7.2",
+    "prettier": "^2.8.4",
+    "prettier-plugin-astro": "^0.8.0",
     "svgo": "3.0.2",
     "taze": "^0.8.5",
-    "unocss": "^0.48.5",
+    "unocss": "^0.49.4",
     "unocss-preset-scrollbar": "^0.2.1",
-    "vite": "^4.0.4"
+    "vite": "^4.1.1"
   }
 }
