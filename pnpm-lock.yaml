@@ -6,14 +6,14 @@ specifiers:
   '@astrojs/sitemap': ^1.0.1
   '@fontsource/montserrat': ^4.5.14
   '@fontsource/mulish': ^4.5.14
-  '@iconify/json': ^2.2.19
-  '@julr/unocss-preset-forms': ^0.0.2
+  '@iconify/json': ^2.2.20
+  '@julr/unocss-preset-forms': ^0.0.3
   '@julr/unocss-preset-heropatterns': ^0.0.2
   '@unocss/astro': ^0.49.4
   '@unocss/reset': ^0.49.4
-  astro: 2.0.9
-  astro-compress: 1.1.31
-  astro-robots-txt: ^0.3.11
+  astro: 2.0.10
+  astro-compress: 1.1.32
+  astro-robots-txt: ^0.3.12
   canvas-confetti: ^1.6.0
   motion: ^10.15.5
   prettier: ^2.8.4
@@ -26,14 +26,14 @@ specifiers:
   vite: ^4.1.1
 
 dependencies:
-  '@astrojs/image': 0.14.1_astro@2.0.9+sharp@0.31.3
+  '@astrojs/image': 0.14.1_astro@2.0.10+sharp@0.31.3
   '@astrojs/prefetch': 0.1.2
   '@astrojs/sitemap': 1.0.1
-  '@iconify/json': 2.2.19
-  '@julr/unocss-preset-forms': 0.0.2_unocss@0.49.4
+  '@iconify/json': 2.2.20
+  '@julr/unocss-preset-forms': 0.0.3_unocss@0.49.4
   '@unocss/reset': 0.49.4
-  astro: 2.0.9
-  astro-compress: 1.1.31
+  astro: 2.0.10
+  astro-compress: 1.1.32
   canvas-confetti: 1.6.0
   sharp: 0.31.3
 
@@ -42,7 +42,7 @@ devDependencies:
   '@fontsource/mulish': 4.5.14
   '@julr/unocss-preset-heropatterns': 0.0.2_unocss@0.49.4
   '@unocss/astro': 0.49.4_vite@4.1.1
-  astro-robots-txt: 0.3.11
+  astro-robots-txt: 0.3.12
   motion: 10.15.5
   prettier: 2.8.4
   prettier-plugin-astro: 0.8.0
@@ -94,7 +94,7 @@ packages:
     resolution: {integrity: sha512-C4kTwirys+HafufMqaxCbML2wqkGaXJM+5AekXh/v1IIOnMIdcEON9GBYsG6qa8aAmLhZ58aUZGPhzcA3Dx7Uw==}
     dev: false
 
-  /@astrojs/image/0.14.1_astro@2.0.9+sharp@0.31.3:
+  /@astrojs/image/0.14.1_astro@2.0.10+sharp@0.31.3:
     resolution: {integrity: sha512-tRswPnPJVqStGXh+5mWtvh7+qi+jABcGkm9BFdP2Hh8Ya8KAgO0ICPjDG3Fppcz5G2JIZ50B3ajXiyWuuRIQJw==}
     peerDependencies:
       astro: ^2.0.7
@@ -104,7 +104,7 @@ packages:
         optional: true
     dependencies:
       '@altano/tiny-async-pool': 1.0.2
-      astro: 2.0.9
+      astro: 2.0.10
       http-cache-semantics: 4.1.0
       image-size: 1.0.2
       kleur: 4.1.5
@@ -131,13 +131,13 @@ packages:
       vscode-uri: 3.0.6
     dev: false
 
-  /@astrojs/markdown-remark/2.0.1_astro@2.0.9:
+  /@astrojs/markdown-remark/2.0.1_astro@2.0.10:
     resolution: {integrity: sha512-xQF1rXGJN18m+zZucwRRtmNehuhPMMhZhi6HWKrtpEAKnHSPk8lqf1GXgKH7/Sypglu8ivdECZ+EGs6kOYVasQ==}
     peerDependencies:
       astro: ^2.0.2
     dependencies:
       '@astrojs/prism': 2.0.0
-      astro: 2.0.9
+      astro: 2.0.10
       github-slugger: 1.5.0
       import-meta-resolve: 2.1.0
       rehype-raw: 6.1.1
@@ -629,8 +629,8 @@ packages:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
     dev: true
 
-  /@iconify/json/2.2.19:
-    resolution: {integrity: sha512-u9GEiedZRmDAqbYa2A43KG5BQ6lYrFtwpoBm9CJuA7FyN4UUrf3qyaNvEaD9R+dfie8KXqqTa2hKEAoJ7F1McA==}
+  /@iconify/json/2.2.20:
+    resolution: {integrity: sha512-mi7rXIc+/un3+GuIZkHJrfgLL5jjrfG0UidRybYj8LLh2bdUV3P5mz0+a2O+bwE9V5hvbFGBekgt5rvSnQYGHQ==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.0.0
@@ -691,8 +691,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
-  /@julr/unocss-preset-forms/0.0.2_unocss@0.49.4:
-    resolution: {integrity: sha512-mg1SNeeKbLpP5GNtuRqKVuiaHkhjJW6Xto+PSoWrcKcIZwhWxCpoC1g7uEgPSM3iFrBBzD2aTT1NS6zr5+a77g==}
+  /@julr/unocss-preset-forms/0.0.3_unocss@0.49.4:
+    resolution: {integrity: sha512-/DD9WO1FIQM2JHBQNmwn1AClII8UwvY07jqUN3A2Y3WB2x4Ks7Ni2fPmHH+82COSQdqSaPYz9Aw/XdwIuxtuCA==}
     engines: {node: '>=16'}
     peerDependencies:
       unocss: '>= 0.31.13 < 1'
@@ -1306,8 +1306,8 @@ packages:
     resolution: {integrity: sha512-sNRaPGh9nnmdC8Zf+pT3UqP8rnWj5Hf9wiFGsX3wUQ2yVSIhO2ShFwCoceIPpB41QF6i2OEmrHmCo36xronCVA==}
     dev: false
 
-  /astro-compress/1.1.31:
-    resolution: {integrity: sha512-Kr87S0+N32S+56KPRZ9uMiYK1rhBv6YIkBIps2bC5nhj4f1ustUHYffxvG83AcRl4XtQrSlVg/Uz+jufabbBQg==}
+  /astro-compress/1.1.32:
+    resolution: {integrity: sha512-JzaQqydjM3cWhYn5vAAcQpqHjhd7YECoHXY2oXoBZfyaOKncfvcoyW4VbZX8qI6CdA9tQ1n2lib46/TLfZgltg==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
@@ -1320,22 +1320,22 @@ packages:
       terser: 5.16.3
     dev: false
 
-  /astro-robots-txt/0.3.11:
-    resolution: {integrity: sha512-UmIOU6zLusFSPBQjl8vozlfE1fkxLuXDhaT7ZOalsE8Ee4c/ua8OWexcx9Z4d2rZZ8/pywuL28LeG0Sjaq5m3w==}
+  /astro-robots-txt/0.3.12:
+    resolution: {integrity: sha512-ydVbhyzxhoCzVCn0eqUdqCMaADG+GOBYE2YGk2unQ4EpqNlvy4HIGOy/XiAHu/n46suXUkYuxHFIOVd3r1zJvA==}
     dependencies:
-      deepmerge: 4.2.2
+      deepmerge: 4.3.0
       valid-filename: 4.0.0
-      zod: 3.20.2
+      zod: 3.20.6
     dev: true
 
-  /astro/2.0.9:
-    resolution: {integrity: sha512-awZEZ61kiMNJMda+dUunz87DSWV0eV72P4ulpEsNpA6im2WysZ3svm+wlOP2XfLwsA/MDpOyAYWFxvh2PZK5ug==}
+  /astro/2.0.10:
+    resolution: {integrity: sha512-Jg2JYPA6Nlip27So1+O0p9VFL98H+LiDLEt+F65e6536LkWE5oiV0fDSbK8aI8hKeCvOQzLiEZiD21eXbug0XQ==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
       '@astrojs/compiler': 1.1.0
       '@astrojs/language-server': 0.28.3
-      '@astrojs/markdown-remark': 2.0.1_astro@2.0.9
+      '@astrojs/markdown-remark': 2.0.1_astro@2.0.10
       '@astrojs/telemetry': 2.0.0
       '@astrojs/webapi': 2.0.0
       '@babel/core': 7.19.6
@@ -1384,7 +1384,7 @@ packages:
       vite: 4.1.1
       vitefu: 0.2.4_vite@4.1.1
       yargs-parser: 21.1.1
-      zod: 3.20.2
+      zod: 3.20.6
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -1820,8 +1820,8 @@ packages:
     engines: {node: '>=12.4.0'}
     dev: false
 
-  /deepmerge/4.2.2:
-    resolution: {integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==}
+  /deepmerge/4.3.0:
+    resolution: {integrity: sha512-z2wJZXrmeHdvYJp/Ux55wIjqo81G5Bp4c+oELTW+7ar6SogWHajt5a9gO3s3IDaGSAXjDk0vlQKN3rms8ab3og==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -4921,6 +4921,10 @@ packages:
 
   /zod/3.20.2:
     resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
+    dev: false
+
+  /zod/3.20.6:
+    resolution: {integrity: sha512-oyu0m54SGCtzh6EClBVqDDlAYRz4jrVtKwQ7ZnsEmMI9HnzuZFj8QFwAY1M5uniIYACdGvv0PBWPF2kO0aNofA==}
 
   /zwitch/2.0.2:
     resolution: {integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==}
