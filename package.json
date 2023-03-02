@@ -11,14 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.14.1",
+    "@astrojs/image": "^0.15.1",
     "@astrojs/prefetch": "^0.1.2",
-    "@astrojs/sitemap": "^1.0.1",
-    "@iconify/json": "^2.2.20",
+    "@astrojs/sitemap": "^1.1.0",
+    "@iconify/json": "^2.2.29",
     "@julr/unocss-preset-forms": "^0.0.3",
-    "@unocss/reset": "^0.49.4",
-    "astro": "2.0.10",
-    "astro-compress": "1.1.32",
+    "@unocss/reset": "^0.50.3",
+    "astro": "2.0.16",
+    "astro-compress": "1.1.35",
     "canvas-confetti": "^1.6.0",
     "sharp": "^0.31.3"
   },
@@ -26,15 +26,15 @@
     "@fontsource/montserrat": "^4.5.14",
     "@fontsource/mulish": "^4.5.14",
     "@julr/unocss-preset-heropatterns": "^0.0.2",
-    "@unocss/astro": "^0.49.4",
-    "astro-robots-txt": "^0.3.12",
+    "@unocss/astro": "^0.50.3",
+    "astro-robots-txt": "^0.4.0",
     "motion": "^10.15.5",
     "prettier": "^2.8.4",
     "prettier-plugin-astro": "^0.8.0",
     "svgo": "3.0.2",
-    "taze": "^0.8.5",
-    "unocss": "^0.49.4",
+    "taze": "^0.9.0",
+    "unocss": "^0.50.3",
     "unocss-preset-scrollbar": "^0.2.1",
-    "vite": "^4.1.1"
+    "vite": "^4.1.4"
   }
 }
