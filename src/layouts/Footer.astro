@@ -4,6 +4,7 @@ import Backtotop from "../components/BackToTop.astro";
 import footerLogo from "../images/logo-white.svg";
 import AstroDark from "../images/astro-dark.svg";
 import Button from "../components/Button.astro";
+import { Image } from "@astrojs/image/components";
 ---
 
 <footer
@@ -12,7 +13,7 @@ import Button from "../components/Button.astro";
   <div
     class="flex flex-col mx-auto space-y-8 my-12 max-w-6xl items-center justify-center md:flex-row md:space-y-0 md:space-x-8 md:justify-around"
   >
-    <div class="font-display fw700 text-f-xl">Interested in Collaboration?</div>
+    <div class="font-display text-f-xl fw700">Interested in Collaboration?</div>
     <Button
       href="/contact/"
       color="bg-green-700 hover:bg-green-600 dark:bg-green-400 dark:hover:bg-green-500 relative"
@@ -33,7 +34,7 @@ import Button from "../components/Button.astro";
   >
     <div class="flex flex-row">
       <div class="w-40">
-        <span class="flex fw600 justify-center uppercase">Information</span>
+        <span class="flex justify-center uppercase fw600">Information</span>
         <div
           class="divide-x-2 divide-dark-50 mt-4 leading-relaxed grid grid-cols-6 group items-center"
         >
@@ -68,7 +69,7 @@ import Button from "../components/Button.astro";
         </div>
       </div>
       <div class="w-40">
-        <span class="flex fw600 text-center justify-center uppercase"
+        <span class="flex text-center justify-center uppercase fw600"
           >Find me on</span
         >
         <div
@@ -140,7 +141,7 @@ import Button from "../components/Button.astro";
           class="block hover:transition-all hover:ease-out hover:scale-105 hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800"
           tabindex="0"
         >
-          <img src={footerLogo} alt="Web-o-Reviews" width="250" height="32" />
+          <Image src={footerLogo} alt="Web-o-Reviews" width={250} height={32} />
         </a>
       </div>
       <div
@@ -156,7 +157,7 @@ import Button from "../components/Button.astro";
             rel="noopener"
             tabindex="0"
             ><img
-              src={AstroDark}
+              src={AstroDark.src}
               class="h-6 mx-2 w-16 inline-block"
               alt="Astro Dark Logo"
             />

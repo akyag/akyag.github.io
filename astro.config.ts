@@ -25,11 +25,7 @@ export default defineConfig({
     image({
       serviceEntryPoint: "@astrojs/image/sharp",
     }),
-    compress(),
     prefetch(),
+    compress(),
   ],
-  experimental: {
-    prerender: true,
-    errorOverlay: true,
-  },
 });

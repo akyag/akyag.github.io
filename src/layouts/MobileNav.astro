@@ -1,6 +1,7 @@
 ---
 import headerLogo from "../images/logo.svg";
 import MobileActiveLink from "../components/MobileActiveLink.astro";
+import { Image } from "@astrojs/image/components";
 ---
 
 <header
@@ -12,10 +13,10 @@ import MobileActiveLink from "../components/MobileActiveLink.astro";
         <div class="flex items-center">
           <div class="pl-4">
             <a href="/" class="block">
-              <img
+              <Image
                 src={headerLogo}
-                width="80"
-                height="45"
+                width={80}
+                height={45}
                 alt="Web-o-Reviews"
               />
             </a>
@@ -54,8 +55,8 @@ import MobileActiveLink from "../components/MobileActiveLink.astro";
                 }
                 <MobileActiveLink href={"/"}>
                   <span class="h-6 w-6 i-bx-home"></span>
-                  Home</MobileActiveLink
-                >
+                  Home
+                </MobileActiveLink>
                 <MobileActiveLink href={"/about/"}>
                   <span class="h-6 w-6 i-bx-user"></span>
                   About

@@ -3,6 +3,7 @@ import Page from "../layouts/Page.astro";
 import Head from "../layouts/Head.astro";
 import Thanks from "../images/mail.svg";
 import Button from "../components/Button.astro";
+import { Picture } from "@astrojs/image/components";
 
 const meta = {
   title: "Thanks",
@@ -22,17 +23,20 @@ const meta = {
     >
       <div class="flex py-24 px-8 place-content-center items-center">
         {
-          /*  <img
-          class="h-40 md:h-56 xl:h-72 dark:filter dark:brightness-75 dark:contrast-125"
-          src={Thanks}
-          alt="Message Sent"
-          width="361"
-          height="324"
-        />  */
-        }
-        <img
+          /*
+         <img
           class="h-auto w-[200px] lg:w-[300px] 2xl:w-[400px] dark:filter dark:brightness-75 dark:contrast-125"
           src={Thanks}
+          alt="Message Sent"
+        /> 
+        */
+        }
+        <Picture
+          class={"h-auto dark:filter dark:brightness-75 dark:contrast-125"}
+          src={Thanks}
+          widths={[200, 300, 400]}
+          sizes="(max-width:768px) 200px, (max-width:1024px) 300px, 400px"
+          aspectRatio={1.11}
           alt="Message Sent"
         />
       </div>
@@ -47,8 +51,9 @@ const meta = {
         <Button
           href="/"
           color="bg-geraldine-700 hover:bg-geraldine-600 dark:bg-geraldine-400 dark:hover:bg-geraldine-500 mt-4"
-          >Back to Home</Button
         >
+          Back to Home
+        </Button>
       </div>
     </div>
   </main>

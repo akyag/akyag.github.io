@@ -2,6 +2,7 @@
 import homeHero from "../images/home.svg";
 import ButtonIcon from "../components/ButtonIcon.astro";
 import ScrollDown from "../components/ScrollDown.astro";
+import { Picture } from "@astrojs/image/components";
 ---
 
 <section class="z-10 relative" id="hero">
@@ -23,8 +24,9 @@ import ScrollDown from "../components/ScrollDown.astro";
             href="/work/"
             iconClass="w-6 h-6 fill-current mr-2 i-carbon-template"
             color="bg-geraldine-700 hover:bg-geraldine-600 dark:bg-geraldine-400 dark:hover:bg-geraldine-500"
-            >Web Design</ButtonIcon
           >
+            Web Design
+          </ButtonIcon>
         </div>
       </div>
       <div>
@@ -56,9 +58,23 @@ import ScrollDown from "../components/ScrollDown.astro";
           alt="Welcome to Web-o-Reviews!"
         />*/
         }
+
+        {
+          /*
         <img
           class="h-auto transform w-[350px] translate-x-25 op0 lg:w-[525px] 2xl:w-[700px] dark:filter dark:brightness-75 dark:contrast-125"
+          src={homeHero.src}
+          alt="Welcome to Web-o-Reviews!"
+          id="HomeHero"
+        />
+        */
+        }
+        <Picture
+          class={"h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
           src={homeHero}
+          widths={[350, 525, 700]}
+          sizes="(max-width: 768px) 350px, (max-width: 1024px) 525px, 700px"
+          aspectRatio={2.33}
           alt="Welcome to Web-o-Reviews!"
           id="HomeHero"
         />

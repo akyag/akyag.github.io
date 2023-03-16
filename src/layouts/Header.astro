@@ -2,6 +2,7 @@
 import headerLogo from "../images/logo.svg";
 import ActiveLink from "../components/ActiveLink.astro";
 import MobileNav from "./MobileNav.astro";
+import { Image } from "@astrojs/image/components";
 ---
 
 <header
@@ -13,7 +14,7 @@ import MobileNav from "./MobileNav.astro";
       class="block focus:outline-none focus:ring-offset-transparent focus:ring-2 focus:ring-slate-700/50 focus:ring-offset-2"
       tabindex="0"
     >
-      <img src={headerLogo} width="80" height="45" alt="Web-o-Reviews" />
+      <Image src={headerLogo} width={80} height={45} alt="Web-o-Reviews" />
     </a>
   </div>
   <nav class="flex space-x-4 items-center">
