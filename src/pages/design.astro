@@ -4,7 +4,7 @@ import Page from "../layouts/Page.astro";
 import Head from "../layouts/Head.astro";
 import Hero from "../layouts/DesignHero.astro";
 import Link from "../components/Link.astro";
-import responsive from "../images/responsive.svg";
+import responsive from "../images/responsive.svg?url";
 
 const meta = {
   title: "Design",
@@ -20,7 +20,7 @@ const meta = {
     class="container mx-auto py-12 px-8 md:px-0 dark:bg-dark-900 dark:text-white"
   >
     <div class="mx-auto max-w-prose space-y-16 leading-relaxed">
-      <h3 class="font-display my-5 mx-3 text-f-xl text-center fw700">Design</h3>
+      <h3 class="font-display my-5 mx-3 text-f-2xl text-center fw700">Design</h3>
       <p
         class="first-letter:text-f-xl first-letter:text-geraldine-500 first-letter:fw600"
       >
@@ -73,7 +73,7 @@ const meta = {
         <p>Want to see it live in action? Try resizing your browser window!</p>
         <img
           class={"dark:filter dark:brightness-75 dark:contrast-125"}
-          src={responsive.src}
+          src={responsive}
           width={600}
           alt="Responsive"
         />

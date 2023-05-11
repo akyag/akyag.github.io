@@ -23,9 +23,12 @@ const meta = {
     class="container mx-auto py-6 px-8 md:py-24 md:px-0 lg:py-12 dark:bg-dark-900 dark:text-white"
   >
     <div
-      class="container min-h-full space-y-5 my-2 text-left leading-relaxed px-4 lg:px-8"
+      class="container min-h-full space-y-12 my-2 text-left leading-relaxed px-4 lg:px-8"
     >
-      <div id="pagination" class="flex flex-wrap space-x-2 items-center">
+      <div
+        id="pagination"
+        class="flex flex-wrap space-x-2 items-center bg-white rounded-1 shadow-md p-4"
+      >
         <a
           href="/"
           class="hover:transition-all hover:ease hover:text-geraldine-500 hover:duration-200 focus:outline-none focus:border-b-4 focus:border-slate-500"
@@ -62,7 +65,7 @@ const meta = {
           />
         </div>
 
-        <div class="flex flex-col space-y-3 mb-8 px-2 md:pl-6">
+        <div class="flex flex-col space-y-4 my-4 px-2 md:pl-6">
           <p>
             This was a portfolio website project for a game designer. His
             requirements were a responsive website that showcased his CV,
@@ -80,7 +83,7 @@ const meta = {
             <div>
               <ButtonIcon
                 id="modal3-trigger"
-                color="bg-cyan-700 hover:bg-cyan-600 dark:bg-cyan-400 dark:hover:bg-cyan-500 cursor-pointer py-3"
+                color="bg-cyan-700 hover:bg-cyan-600 dark:bg-cyan-400 dark:hover:bg-cyan-500 cursor-pointer"
                 iconClass="w-5 h-5 mr-2 text-current i-icon-park-twotone:screenshot-one"
               >
                 Screenshot
@@ -92,28 +95,36 @@ const meta = {
       <div
         class="bg-white border rounded-md flex flex-col border-gray-200 shadow-md p-6 gap-4 justify-around sm:flex-row dark:bg-dark-700 dark:border-dark-600"
       >
-        <span
-          class="flex-shrink-0 h-10 text-geraldine-600 w-10 i-bxs-quote-alt-left md:h-12 md:w-12"
-        ></span>
+        <div>
+          <div
+            class="rounded-full border-gray-300 border-2 w-28 h-28 flex items-center justify-center mx-auto md:ml-12 md:mb-8"
+          >
+            <span class="i-uim-user-md w-16 h-16"></span>
+          </div>
 
-        <div class="space-y-3 px-4 md:px-8">
-          <p>
-            Akshay designed my portfolio website. The best part about working
-            with him was that, I got a site fully customized and tailored to my
-            needs. It is easy to navigate and works seamlessly on all platforms
-            mobiles, tablets or PCs. When certain changes had to be made, they
-            were delivered with precision within 24 hours of request. He has the
-            patience to work at your pace every step of the way. You can have a
-            fully personalized experience at an affordable price. It has been a
-            pleasure working with Akshay.
-          </p>
-
-          <p class="text-right fw600">- Mangesh Thombare</p>
-        </div>
-        <div class="flex flex-shrink-0 items-end place-content-end">
           <span
-            class="h-10 text-geraldine-600 w-10 i-bxs-quote-alt-right md:h-12 md:w-12"
+            class="flex-shrink-0 h-10 text-geraldine-600 w-10 i-bxs-quote-alt-left md:h-12 md:w-12"
           ></span>
+
+          <div class="space-y-3 px-4 md:px-8">
+            <p>
+              Akshay designed my portfolio website. The best part about working
+              with him was that, I got a site fully customized and tailored to
+              my needs. It is easy to navigate and works seamlessly on all
+              platforms mobiles, tablets or PCs. When certain changes had to be
+              made, they were delivered with precision within 24 hours of
+              request. He has the patience to work at your pace every step of
+              the way. You can have a fully personalized experience at an
+              affordable price. It has been a pleasure working with Akshay.
+            </p>
+
+            <p class="text-right fw600">- Mangesh Thombare</p>
+          </div>
+          <div class="flex flex-shrink-0 items-end place-content-end">
+            <span
+              class="h-10 text-geraldine-600 w-10 i-bxs-quote-alt-right md:h-12 md:w-12"
+            ></span>
+          </div>
         </div>
       </div>
     </div>

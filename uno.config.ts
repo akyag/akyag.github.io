@@ -23,15 +23,15 @@ export default defineConfig({
     presetScrollbar(),
   ],
   rules: [
-    ["font-display", { "font-family": '"Montserrat", sans-serif;' }],
-    ["font-body", { "font-family": '"Mulish", sans-serif;' }],
+    ["font-display", { "font-family": '"Mulish", sans-serif;' }],
+    ["font-body", { "font-family": '"Atkinson Hyperlegible", sans-serif;' }],
     [
       "text-f-xs",
-      { "font-size": "clamp(0.63rem, calc(0.88rem + -0.26vw), 0.82rem);" },
+      { "font-size": "clamp(0.80rem, calc(0.97rem + -0.18vw), 0.94rem);" },
     ],
     [
       "text-f-sm",
-      { "font-size": "clamp(0.88rem, calc(1.02rem + -0.14vw), 0.99rem);" },
+      { "font-size": "clamp(1.00rem, calc(1.07rem + -0.07vw), 1.06rem);" },
     ],
     [
       "text-f-base",
@@ -39,23 +39,23 @@ export default defineConfig({
     ],
     [
       "text-f-lg",
-      { "font-size": "clamp(1.43rem, calc(1.33rem + 0.45vw), 1.77rem);" },
+      { "font-size": "clamp(1.34rem, calc(1.28rem + 0.30vw), 1.56rem);" },
     ],
     [
       "text-f-xl",
-      { "font-size": "clamp(1.71rem, calc(1.5rem + 1.04vw), 2.5rem);" },
+      { "font-size": "clamp(1.50rem, calc(1.38rem + 0.59vw), 1.95rem);" },
     ],
     [
       "text-f-2xl",
-      { "font-size": "clamp(2.05rem, calc(1.66rem + 1.95vw), 3.53rem);" },
+      { "font-size": "clamp(1.69rem, calc(1.49rem + 0.99vw), 2.44rem);" },
     ],
     [
       "text-f-3xl",
-      { "font-size": "clamp(2.46rem, calc(1.8rem + 3.33vw), 5rem);" },
+      { "font-size": "clamp(1.90rem, calc(1.60rem + 1.51vw), 3.05rem);" },
     ],
     [
       "text-f-4xl",
-      { "font-size": "clamp(2.96rem, calc(1.87rem + 5.41vw), 7.07rem);" },
+      { "font-size": "clamp(2.14rem, calc(1.70rem + 2.20vw), 3.82rem);" },
     ],
   ],
   theme: {
