@@ -18,7 +18,7 @@ const meta = {
   >
     <div class="leading-relaxed grid grid-cols-1 place-items-center">
       <div class="max-w-prose grid">
-        <h3 class="font-display my-5 text-f-2xl text-center fw700">
+        <h3 class="font-display my-5 text-center text-f-2xl fw700">
           Contact Form
         </h3>
         <div class="my-2 text-f-lg fw600">Hey, got a question?</div>
@@ -45,7 +45,8 @@ const meta = {
               <label for="user_name" class="fw600">Name</label>
               <div class="flex relative items-center">
                 <div class="pl-3 z-10 pointer-events-none">
-                  <span class="h-5 fill-current w-5 i-bx-user"></span>
+                  <span class="h-5 fill-current w-5 i-solar:user-line-duotone"
+                  ></span>
                 </div>
                 <input
                   type="text"
@@ -67,7 +68,9 @@ const meta = {
               <label for="user_email" class="fw600">Email</label>
               <div class="flex relative items-center">
                 <div class="pl-3 z-10 pointer-events-none">
-                  <span class="h-5 fill-current w-5 i-bx-envelope"></span>
+                  <span
+                    class="h-5 fill-current w-5 i-solar:mention-circle-line-duotone"
+                  ></span>
                 </div>
                 <input
                   type="email"
@@ -89,7 +92,9 @@ const meta = {
               <label for="user_phone" class="fw600">Phone</label>
               <div class="flex relative items-center">
                 <div class="pl-3 z-10 pointer-events-none">
-                  <span class="h-5 fill-current w-5 i-bx-phone"></span>
+                  <span
+                    class="h-5 fill-current w-5 i-solar:phone-rounded-line-duotone"
+                  ></span>
                 </div>
                 <input
                   type="tel"
@@ -119,7 +124,7 @@ const meta = {
                   name="user_dept"
                   id="user_dept"
                   required
-                  class="rounded-md pl-3 py-1 border-gray-300 shadow-sm w-full caret-slate-500 accent-slate-500 dark:bg-dark-700 dark:border-gray-700 dark:text-white focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50"
+                  class="rounded-md border-gray-300 shadow-sm w-full py-1 pl-3 caret-slate-500 accent-slate-500 dark:bg-dark-700 dark:border-gray-700 dark:text-white focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50"
                 >
                   <option disabled selected>Select your option</option>
                   <option value="Website development"
@@ -136,7 +141,9 @@ const meta = {
               <label for="user_subject" class="fw600">Subject</label>
               <div class="flex relative items-center">
                 <div class="pl-3 z-10 pointer-events-none">
-                  <span class="h-5 fill-current w-5 i-bx-hash"></span>
+                  <span
+                    class="h-5 fill-current w-5 i-solar:hashtag-line-duotone"
+                  ></span>
                 </div>
                 <input
                   type="text"
@@ -158,7 +165,9 @@ const meta = {
               <label for="user_message" class="fw600">Message</label>
               <div class="flex relative">
                 <div class="pt-3 pl-3 z-10 pointer-events-none">
-                  <span class="h-5 fill-current w-5 i-bx-edit-alt"></span>
+                  <span
+                    class="h-5 fill-current w-5 i-solar:chat-round-dots-line-duotone"
+                  ></span>
                 </div>
                 <textarea
                   name="user_message"
@@ -191,11 +200,13 @@ const meta = {
               >
             </div>
 
-            <button class="
-text-f-sm hover:ease flex place-content-center items-center rounded-full pl-4 pr-6 py-2 fw600 text-white shadow-md hover:transition-all hover:duration-150 focus:outline-none focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 focus:ring-offset-transparent w-5/6 sm:w-auto bg-gray-100 border-1 border-gray-300 hover:bg-gray-200 text-gray-700 dark:bg-slate-700 dark:border-gray-700 dark:text-white dark:hover:bg-slate-500 cursor-pointer",
+            <button
+              class="rounded-full cursor-pointer flex bg-gray-100 border-1 border-gray-300 shadow-md text-f-sm text-white py-2 pr-6 pl-4 text-gray-700 w-5/6 place-content-center items-center fw600 sm:w-auto dark:bg-slate-700 dark:border-gray-700 dark:text-white hover:bg-gray-200 hover:transition-all hover:ease hover:duration-150 focus:outline-none focus:ring-offset-transparent focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2 dark:hover:bg-slate-500"
+              ,
               type="submit"
             >
-              <span class="h-6 mr-2 text-current w-6 i-bx-chevrons-right"
+              <span
+                class="h-6 mr-2 text-current w-6 i-solar:check-circle-line-duotone"
               ></span>
               <span>Send Message</span>
             </button>

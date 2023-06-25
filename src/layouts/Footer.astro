@@ -13,7 +13,9 @@ import { Image } from "@astrojs/image/components";
   <div
     class="flex flex-col mx-auto space-y-8 my-12 max-w-6xl items-center justify-center md:flex-row md:space-y-0 md:space-x-8 md:justify-around"
   >
-    <div class="font-display text-f-3xl fw700">Interested in Collaboration?</div>
+    <div class="font-display text-f-3xl fw700">
+      Interested in Collaboration?
+    </div>
     <Button
       href="/contact/"
       color="bg-green-700 hover:bg-green-600 text-white dark:text-white dark:hover:bg-green-500 relative"
@@ -40,7 +42,7 @@ import { Image } from "@astrojs/image/components";
         >
           <div class="ml-5 col-span-2">
             <span
-              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-bx-credit-card-front group-hover:text-geraldine-600"
+              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-solar:card-2-line-duotone group-hover:text-geraldine-600"
             ></span>
           </div>
           <div class="col-span-4">
@@ -56,7 +58,7 @@ import { Image } from "@astrojs/image/components";
         >
           <div class="ml-5 col-span-2">
             <span
-              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-bx-archive group-hover:text-geraldine-600"
+              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-solar:archive-line-duotone group-hover:text-geraldine-600"
             ></span>
           </div>
           <div class="col-span-4">
@@ -77,7 +79,7 @@ import { Image } from "@astrojs/image/components";
         >
           <div class="ml-5 col-span-2">
             <span
-              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-uil-github-alt group-hover:text-geraldine-600"
+              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-ph:github-logo-duotone group-hover:text-geraldine-600"
             ></span>
           </div>
           <div class="col-span-4">
@@ -88,7 +90,7 @@ import { Image } from "@astrojs/image/components";
               rel="noopener"
               tabindex="0"
               >GitHub
-              <span class="h-4 ml-1 w-4 i-bx-link-external"></span>
+              <span class="h-4 ml-1 w-4 i-solar:square-top-down-linear"></span>
             </a>
           </div>
         </div>
@@ -97,7 +99,7 @@ import { Image } from "@astrojs/image/components";
         >
           <div class="ml-5 col-span-2">
             <span
-              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-ph-linkedin-logo group-hover:text-geraldine-600"
+              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-ph:linkedin-logo-duotone group-hover:text-geraldine-600"
             ></span>
           </div>
           <div class="col-span-4">
@@ -108,7 +110,7 @@ import { Image } from "@astrojs/image/components";
               rel="noopener"
               tabindex="0"
               >LinkedIn
-              <span class="h-4 ml-1 w-4 i-bx-link-external"></span>
+              <span class="h-4 ml-1 w-4 i-solar:square-top-down-linear"></span>
             </a>
           </div>
         </div>
@@ -117,7 +119,7 @@ import { Image } from "@astrojs/image/components";
         >
           <div class="ml-5 col-span-2">
             <span
-              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-radix-icons-twitter-logo group-hover:text-geraldine-600"
+              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-ph:twitter-logo-duotone group-hover:text-geraldine-600"
             ></span>
           </div>
           <div class="col-span-4">
@@ -128,7 +130,7 @@ import { Image } from "@astrojs/image/components";
               rel="noopener"
               tabindex="0"
               >Twitter
-              <span class="h-4 ml-1 w-4 i-bx-link-external"></span>
+              <span class="h-4 ml-1 w-4 i-solar:square-top-down-linear"></span>
             </a>
           </div>
         </div>
@@ -147,8 +149,8 @@ import { Image } from "@astrojs/image/components";
       <div
         class="flex flex-col divide-y-2 divide-dark-50 mt-4 max-w-4xl gap-2 grid-cols-1 items-center justify-center lg:flex-row lg:divide-y-0 lg:divide-x-2"
       >
-        <div>
-          <span class="h-5 -mt-1 mr-1 w-5 i-bx-copyright"></span>
+        <div class="flex gap-2 items-center justify-center">
+          <span class="h-5 w-5 i-solar:copyright-line-duotone"></span>
 
           2009 - {currentDate} - Built using <a
             href="https://astro.build"
@@ -156,16 +158,17 @@ import { Image } from "@astrojs/image/components";
             target="_blank"
             rel="noopener"
             tabindex="0"
-            ><img
-              src={AstroDark.src}
-              class="h-6 mx-2 w-16 inline-block"
+            ><Image
+              src={AstroDark}
+              height={24}
+              width={64}
               alt="Astro Dark Logo"
             />
           </a>
         </div>
         <div class="pt-2 pl-2 lg:pt-0">
           Designed with
-          <span class="h-8 text-red-600 w-8 i-fe-heart"></span>
+          <span class="h-6 text-red-600 w-6 i-solar:heart-angle-bold"></span>
           by Akshay Ghate.
         </div>
       </div>

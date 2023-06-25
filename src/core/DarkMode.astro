@@ -30,8 +30,10 @@
       document.getElementById("menu")?.classList.toggle("hidden");
       document
         .getElementById("menu-icon")
-        ?.classList.toggle("i-mdi-hamburger-menu");
-      document.getElementById("menu-icon")?.classList.toggle("i-mdi-close");
+        ?.classList.toggle("i-solar:hamburger-menu-line-duotone");
+      document
+        .getElementById("menu-icon")
+        ?.classList.toggle("i-solar:close-circle-line-duotone");
     });
     attachEvent("[toggle-color-scheme]", "click", function () {
       document.documentElement.classList.toggle("dark");
@@ -47,7 +49,11 @@
     }
     document.body.classList.remove("overflow-hidden");
     document.getElementById("menu")?.classList.add("hidden");
-    document.getElementById("menu-icon")?.classList.remove("i-mdi-close");
-    document.getElementById("menu-icon")?.classList.add("i-mdi-hamburger-menu");
+    document
+      .getElementById("menu-icon")
+      ?.classList.remove("i-solar:close-circle-line-duotone");
+    document
+      .getElementById("menu-icon")
+      ?.classList.add("i-solar:hamburger-menu-line-duotone");
   };
 </script>

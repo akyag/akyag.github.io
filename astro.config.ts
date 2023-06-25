@@ -31,5 +31,5 @@ export default defineConfig({
     prefetch(),
     compress(),
   ],
- compressHTML: true,
+  compressHTML: true,
 });

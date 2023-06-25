@@ -17,6 +17,18 @@ export default defineConfig({
         display: "inline-block",
         "vertical-align": "middle",
       },
+      collections: {
+        "simple-icons": () =>
+          import("@iconify-json/simple-icons/icons.json").then(
+            (i) => i.default
+          ),
+        phosphor: () =>
+          import("@iconify-json/ph/icons.json").then((i) => i.default),
+        solar: () =>
+          import("@iconify-json/solar/icons.json").then(
+            (i) => i.default as any
+          ),
+      },
     }),
     presetForms(),
     presetHeroPatterns(),

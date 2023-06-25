@@ -31,7 +31,7 @@ import { Image } from "@astrojs/image/components";
                 toggle-color-scheme
               >
                 <span
-                  class="h-8 transition-all ease-in w-8 duration-200 i-bx-sun &hover:text-geraldine-600 dark:h-8 dark:text-white dark:w-8 dark:i-bx-moon dark:&hover:text-geraldine-400"
+                  class="h-8 transition-all ease-in w-8 duration-200 i-solar:sun-2-line-duotone &hover:text-geraldine-600 dark:h-8 dark:text-white dark:w-8 dark:i-solar:moon-sleep-line-duotone dark:&hover:text-geraldine-400"
                 ></span>
               </button>
             </div>
@@ -41,8 +41,9 @@ import { Image } from "@astrojs/image/components";
                 aria-label="Toggle Menu"
                 toggle-menu
               >
-                <span class="h-8 w-8 i-mdi-hamburger-menu" id="menu-icon"
-                ></span>
+                <span
+                  class="h-8 w-8 i-solar:hamburger-menu-line-duotone"
+                  id="menu-icon"></span>
               </button>
             </div>
             <div class="">
@@ -54,31 +55,31 @@ import { Image } from "@astrojs/image/components";
                   /* class="bg-white rounded-md shadow-xl mt-2 py-2 right-0 w-48 z-20 absolute dark:bg-gray-900" */
                 }
                 <MobileActiveLink href={"/"}>
-                  <span class="h-6 w-6 i-bx-home"></span>
+                  <span class="h-6 w-6 i-solar:home-line-duotone"></span>
                   Home
                 </MobileActiveLink>
                 <MobileActiveLink href={"/about/"}>
-                  <span class="h-6 w-6 i-bx-user"></span>
+                  <span class="h-6 w-6 i-solar:user-line-duotone"></span>
                   About
                 </MobileActiveLink>
                 <MobileActiveLink href={"/design/"}>
-                  <span class="h-6 w-6 i-bx-palette"></span>
+                  <span class="h-6 w-6 i-solar:pallete-2-line-duotone"></span>
                   Design
                 </MobileActiveLink>
                 <MobileActiveLink href={"/work/"}>
-                  <span class="h-6 w-6 i-bx-briefcase"></span>
+                  <span class="h-6 w-6 i-solar:folder-open-line-duotone"></span>
                   Work
                 </MobileActiveLink>
                 <MobileActiveLink href={"/archive/"}>
-                  <span class="h-6 w-6 i-bx-archive"></span>
+                  <span class="h-6 w-6 i-solar:archive-line-duotone"></span>
                   Archive
                 </MobileActiveLink>
                 <MobileActiveLink href={"/license/"}>
-                  <span class="h-6 w-6 i-bx-credit-card-front"></span>
+                  <span class="h-6 w-6 i-solar:card-2-line-duotone"></span>
                   License
                 </MobileActiveLink>
                 <MobileActiveLink href={"/contact/"}>
-                  <span class="h-6 w-6 i-bx-envelope"></span>
+                  <span class="h-6 w-6 i-solar:mailbox-line-duotone"></span>
                   Contact
                 </MobileActiveLink>
               </div>
