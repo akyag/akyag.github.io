@@ -1,6 +1,7 @@
 ---
 import headerLogo from "../images/logo.svg";
 import MobileActiveLink from "../components/MobileActiveLink.astro";
+import MobileThemeToggle from "../components/MobileThemeToggle.astro";
 import { Image } from "@astrojs/image/components";
 ---
 
@@ -24,17 +25,7 @@ import { Image } from "@astrojs/image/components";
         </div>
         <div class="flex content-end items-center">
           <div class="flex gap-x-4 items-center">
-            <div>
-              <button
-                class="h-12 w-12 block &focus:ring-offset-transparent &focus:ring-2 &focus:ring-slate-500/50 focus:outline-none focus:ring-offset-2"
-                title="Select Dark or Light Mode"
-                toggle-color-scheme
-              >
-                <span
-                  class="h-8 transition-all ease-in w-8 duration-200 i-solar:sun-2-line-duotone &hover:text-geraldine-600 dark:h-8 dark:text-white dark:w-8 dark:i-solar:moon-sleep-line-duotone dark:&hover:text-geraldine-400"
-                ></span>
-              </button>
-            </div>
+            <MobileThemeToggle />
             <div>
               <button
                 class="dark:text-white"

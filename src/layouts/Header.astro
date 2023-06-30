@@ -3,6 +3,7 @@ import headerLogo from "../images/logo.svg";
 import ActiveLink from "../components/ActiveLink.astro";
 import MobileNav from "./MobileNav.astro";
 import { Image } from "@astrojs/image/components";
+import ThemeToggle from "../components/ThemeToggle.astro";
 ---
 
 <header
@@ -23,17 +24,7 @@ import { Image } from "@astrojs/image/components";
     <ActiveLink href={"/design/"}>Design</ActiveLink>
     <ActiveLink href={"/work/"}>Work</ActiveLink>
     <ActiveLink href={"/contact/"}>Contact</ActiveLink>
-    <div>
-      <button
-        class="h-12 w-12 block focus:outline-none focus:ring-offset-transparent focus:ring-2 focus:ring-slate-500/50 focus:ring-offset-2"
-        title="Select Dark or Light Mode"
-        toggle-color-scheme
-      >
-        <span
-          class="h-8 transition-all ease-in w-8 duration-200 i-solar:sun-2-line-duotone dark:h-8 dark:text-white dark:w-8 dark:i-solar:moon-sleep-line-duotone hover:text-geraldine-600 dark:hover:text-geraldine-400"
-        ></span>
-      </button>
-    </div>
+    <ThemeToggle />
   </nav>
 </header>
 <MobileNav />

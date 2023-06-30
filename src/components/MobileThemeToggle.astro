@@ -1,0 +1,92 @@
+---
+---
+
+<mobile-theme-toggle>
+  <input
+    type="checkbox"
+    id="mobileswitch"
+    role="switch"
+    class="mobilethemeToggle"
+    toggle-color-scheme
+  />
+  <label for="mobileswitch">
+    <span class="i-solar:sun-2-bold absolute z-1 left-2" id="sun1"></span>
+    <span class="i-solar:moon-bold absolute z-1 left-9" id="moon1"></span>
+  </label>
+
+  <!-- <button class="flex rounded-full shadow-md bg-gray-2 p-0 cursor-pointer">
+    <span class="sr-only">Dark Theme</span>
+    <span
+      class="i-solar:sun-2-line-duotone z-1 w-6 h-6 relative p-2 before:bg-teal-6 before:absolute before:inset-0 before:rounded-full before:z--1 before:content-empty"
+    ></span>
+    <span class="i-solar:moon-sleep-line-duotone w-6 h-6"></span></button
+  > -->
+</mobile-theme-toggle>
+
+<style>
+  input[type="checkbox"].mobilethemeToggle {
+    opacity: 0;
+    position: absolute;
+    left: -101vw;
+  }
+  input[type="checkbox"].mobilethemeToggle + label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  input[type="checkbox"].mobilethemeToggle + label::before {
+    content: "";
+    width: 4rem;
+    height: 2rem;
+    background-color: #e0e0e0;
+    border-radius: 2rem;
+    transition: background-color 200ms ease-in-out;
+  }
+  input[type="checkbox"].mobilethemeToggle:focus + label::before {
+    outline: 2px solid rgba(100, 116, 139, 0.5);
+  }
+  input[type="checkbox"].mobilethemeToggle + label::after {
+    content: "";
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: rgba(221, 113, 113);
+    border-radius: 2rem;
+    margin-right: 1rem;
+    position: absolute;
+    left: 0.2rem;
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+  }
+  input[type="checkbox"].mobilethemeToggle:checked + label::before {
+    background-color: #26b3b3;
+  }
+  input[type="checkbox"].mobilethemeToggle:checked + label::after {
+    background-color: #333d3d;
+    transform: translateX(100%);
+  }
+  input[type="checkbox"].mobilethemeToggle + label > span#sun1 {
+    color: rgb(255, 255, 255);
+    transition: background-color 200ms ease-in-out;
+  }
+  input[type="checkbox"].mobilethemeToggle:checked + label > span#sun1 {
+    display: none;
+  }
+  input[type="checkbox"].mobilethemeToggle + label > span#moon1 {
+    display: none;
+  }
+  input[type="checkbox"].mobilethemeToggle:checked + label > span#moon1 {
+    color: white;
+    display: block;
+    transition: background-color 200ms ease-in-out;
+  }
+</style>
+
+<script is:inline>
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.getElementById("mobileswitch").checked = true;
+  }
+</script>
