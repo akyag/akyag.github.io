@@ -5,13 +5,15 @@ import MobileThemeToggle from "../components/MobileThemeToggle.astro";
 import { Image } from "@astrojs/image/components";
 ---
 
-<header class="bg-gray-2 shadow-md w-screen top-0 z-30 fixed block md:hidden">
+<header
+  class=":uno: bg-gray-2 shadow-md w-screen top-0 z-30 fixed block md:hidden"
+>
   <nav>
-    <div class="mx-auto px-4 sm:px-6">
-      <div class="flex h-24 items-center justify-between">
-        <div class="flex items-center">
-          <div class="pl-4">
-            <a href="/" class="block">
+    <div class=":uno: mx-auto px-4 sm:px-6">
+      <div class=":uno: flex h-24 items-center justify-between">
+        <div class=":uno: flex items-center">
+          <div class=":uno: pl-4">
+            <a href="/" class=":uno: block">
               <Image
                 src={headerLogo}
                 width={80}
@@ -21,50 +23,52 @@ import { Image } from "@astrojs/image/components";
             </a>
           </div>
         </div>
-        <div class="flex content-end items-center">
-          <div class="flex gap-x-4 items-center">
+        <div class=":uno: flex content-end items-center">
+          <div class=":uno: flex gap-x-4 items-center">
             <MobileThemeToggle />
             <div>
-              <button class="" aria-label="Toggle Menu" toggle-menu>
+              <button class=":uno:" aria-label="Toggle Menu" toggle-menu>
                 <span
-                  class="h-8 w-8 i-solar:hamburger-menu-line-duotone"
+                  class=":uno: h-8 w-8 i-solar:hamburger-menu-line-duotone"
                   id="menu-icon"></span>
               </button>
             </div>
-            <div class="">
+            <div class=":uno:">
               <div
-                class="bg-gray-2 rounded-lg h-auto divide-y-2 divide-gray-6 shadow-md mt-10 mr-4 grid py-0 right-0 w-48 z-20 grid-cols-1 fixed hidden"
+                class=":uno: bg-gray-2 rounded-lg h-auto divide-y-2 divide-gray-6 shadow-md mt-10 mr-4 grid py-0 right-0 w-48 z-20 grid-cols-1 fixed hidden"
                 id="menu"
               >
-                {
-                  /* class="bg-white rounded-md shadow-xl mt-2 py-2 right-0 w-48 z-20 absolute dark:bg-gray-900" */
-                }
                 <MobileActiveLink href={"/"}>
-                  <span class="h-6 w-6 i-solar:home-line-duotone"></span>
+                  <span class=":uno: h-6 w-6 i-solar:home-line-duotone"></span>
                   Home
                 </MobileActiveLink>
                 <MobileActiveLink href={"/about/"}>
-                  <span class="h-6 w-6 i-solar:user-line-duotone"></span>
+                  <span class=":uno: h-6 w-6 i-solar:user-line-duotone"></span>
                   About
                 </MobileActiveLink>
                 <MobileActiveLink href={"/design/"}>
-                  <span class="h-6 w-6 i-solar:pallete-2-line-duotone"></span>
+                  <span class=":uno: h-6 w-6 i-solar:pallete-2-line-duotone"
+                  ></span>
                   Design
                 </MobileActiveLink>
                 <MobileActiveLink href={"/work/"}>
-                  <span class="h-6 w-6 i-solar:folder-open-line-duotone"></span>
+                  <span class=":uno: h-6 w-6 i-solar:folder-open-line-duotone"
+                  ></span>
                   Work
                 </MobileActiveLink>
                 <MobileActiveLink href={"/archive/"}>
-                  <span class="h-6 w-6 i-solar:archive-line-duotone"></span>
+                  <span class=":uno: h-6 w-6 i-solar:archive-line-duotone"
+                  ></span>
                   Archive
                 </MobileActiveLink>
                 <MobileActiveLink href={"/license/"}>
-                  <span class="h-6 w-6 i-solar:card-2-line-duotone"></span>
+                  <span class=":uno: h-6 w-6 i-solar:card-2-line-duotone"
+                  ></span>
                   License
                 </MobileActiveLink>
                 <MobileActiveLink href={"/contact/"}>
-                  <span class="h-6 w-6 i-solar:mailbox-line-duotone"></span>
+                  <span class=":uno: h-6 w-6 i-solar:mailbox-line-duotone"
+                  ></span>
                   Contact
                 </MobileActiveLink>
               </div>
