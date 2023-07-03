@@ -13,17 +13,14 @@ const meta = {
 <Page>
   <Head slot="head" {meta} />
   <Hero />
-  <main
-    id="content-wrapper"
-    class="mx-auto max-w-7xl py-12 px-8 dark:bg-dark-900 dark:text-white"
-  >
+  <main id="content-wrapper" class="mx-auto max-w-7xl py-12 px-8">
     <div class="space-y-24 leading-relaxed grid place-items-center">
       <div class="max-w-prose">
         <h3 class="font-display my-5 mx-3 text-center text-f-2xl fw700">
           What I do
         </h3>
         <p
-          class="first-letter:text-f-xl first-letter:text-geraldine-500 first-letter:fw600"
+          class="first-letter:text-f-xl first-letter:fw600 first-letter:text-crimson-11"
         >
           I offer web design services to businesses and individuals. I see that
           my service fits within your budget and/or time constraints. Once my
@@ -34,14 +31,12 @@ const meta = {
       </div>
       <div>
         <div
-          class="rounded-full flex bg-rose-100 h-16 ml-4 p-3 ring-2 ring-rose-50 ring-offset-rose-50 ring-offset-8 w-16 z-10 relative items-center justify-center dark:bg-rose-300 dark:ring-rose-200 dark:ring-offset-rose-200"
+          class="rounded-full flex bg-teal-3 h-16 ml-4 p-3 ring-2 ring-teal-7 ring-offset-teal-7 ring-offset-8 w-16 z-10 relative items-center justify-center"
         >
-          <span
-            class="h-12 text-rose-600 w-12 i-solar:code-line-duotone dark:text-gray-800"
-          ></span>
+          <span class="h-12 text-teal-12 w-12 i-solar:code-line-duotone"></span>
         </div>
         <div
-          class="bg-white border rounded-md border-gray-200 shadow-md -mt-8 py-8 px-4 md:p-8 dark:bg-dark-500 dark:border-dark-600"
+          class="bg-teal-2 border rounded-md border-teal-6 text-teal-11 shadow-md -mt-8 py-8 px-4 md:p-8"
         >
           <div class="text-f-lg py-4 fw600">Web Developement</div>
           <p>
@@ -58,18 +53,15 @@ const meta = {
           class="grid gap-24 grid-cols-1 place-items-stretch sm:gap-x-6 sm:gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
         >
           <li
-            class="bg-white border rounded-md border-gray-200 shadow-md py-4 px-6 lg:px-8 dark:bg-dark-500 dark:border-dark-600"
+            class="bg-gray-2 border rounded-md border-gray-6 shadow-md py-4 px-6 lg:px-8"
           >
             <div
-              class="rounded-full flex mx-auto bg-blue-100 h-16 -mt-12 p-3 ring-2 ring-blue-50 ring-offset-blue-50 ring-offset-8 w-16 z-10 items-center justify-center dark:bg-blue-300 dark:ring-blue-200 dark:ring-offset-blue-200"
+              class="rounded-full flex mx-auto bg-blue-3 h-16 -mt-12 p-3 ring-2 ring-blue-7 ring-offset-blue-7 ring-offset-8 w-16 z-10 items-center justify-center"
             >
-              <span
-                class="h-12 text-blue w-12 i-solar:chat-line-linear dark:text-gray-800"
+              <span class="h-12 text-blue-12 w-12 i-solar:chat-line-linear"
               ></span>
             </div>
-            <h4
-              class="border-b-2 border-blue-600 my-4 text-f-lg fw600 dark:border-blue-400"
-            >
+            <h4 class="border-b-2 border-blue-6 my-4 text-f-lg fw600">
               1. Discuss
             </h4>
             <p>
@@ -78,25 +70,31 @@ const meta = {
             </p>
             <p class="my-2 text-f-sm uppercase fw600">Key Process:</p>
             <div class="flex flex-wrap p-1 justify-start">
-              <Bullet>Brainstorming</Bullet>
-              <Bullet>Define a Problem</Bullet>
-              <Bullet>Primary Aim</Bullet>
-              <Bullet>Analysis</Bullet>
+              <Bullet color="bg-cyan-1 border-cyan-6 text-cyan-11">
+                Brainstorming
+              </Bullet>
+              <Bullet color="bg-cyan-1 border-cyan-6 text-cyan-11">
+                Define a Problem
+              </Bullet>
+              <Bullet color="bg-cyan-1 border-cyan-6 text-cyan-11">
+                Primary Aim
+              </Bullet>
+              <Bullet color="bg-cyan-1 border-cyan-6 text-cyan-11">
+                Analysis
+              </Bullet>
             </div>
           </li>
           <li
-            class="bg-white border rounded-md border-gray-200 shadow-md py-4 px-6 lg:px-8 dark:bg-dark-500 dark:border-dark-600"
+            class="bg-gray-2 border rounded-md border-gray-6 shadow-md py-4 px-6 lg:px-8"
           >
             <div
-              class="rounded-full flex mx-auto bg-purple-100 h-16 -mt-12 p-3 ring-2 ring-purple-50 ring-offset-purple-50 ring-offset-8 w-16 z-10 items-center justify-center dark:bg-purple-300 dark:ring-purple-200 dark:ring-offset-purple-200"
+              class="rounded-full flex mx-auto bg-purple-3 h-16 -mt-12 p-3 ring-2 ring-purple-7 ring-offset-purple-7 ring-offset-8 w-16 z-10 items-center justify-center"
             >
               <span
-                class="h-12 text-purple w-12 i-solar:checklist-bold-duotone dark:text-gray-800"
+                class="h-12 text-purple-12 w-12 i-solar:checklist-bold-duotone"
               ></span>
             </div>
-            <h4
-              class="border-b-2 border-purple-600 my-4 text-f-lg fw600 dark:border-purple-400"
-            >
+            <h4 class="border-b-2 border-purple-6 my-4 text-f-lg fw600">
               2. Planning
             </h4>
             <p>
@@ -106,24 +104,27 @@ const meta = {
             </p>
             <p class="my-2 text-f-sm uppercase fw600">Key Process:</p>
             <div class="flex flex-wrap p-1 justify-start">
-              <Bullet>Content Developement Strategy</Bullet>
-              <Bullet>SEO Strategy</Bullet>
-              <Bullet>Technology stacks</Bullet>
+              <Bullet color="bg-purple-1 border-purple-6 text-purple-11">
+                Content Developement Strategy
+              </Bullet>
+              <Bullet color="bg-purple-1 border-purple-6 text-purple-11">
+                SEO Strategy
+              </Bullet>
+              <Bullet color="bg-purple-1 border-purple-6 text-purple-11">
+                Technology stacks
+              </Bullet>
             </div>
           </li>
           <li
-            class="bg-white border rounded-md border-gray-200 shadow-md py-4 px-6 lg:px-8 dark:bg-dark-500 dark:border-dark-600"
+            class="bg-gray-2 border rounded-md border-gray-6 shadow-md py-4 px-6 lg:px-8"
           >
             <div
-              class="rounded-full flex mx-auto bg-teal-100 h-16 -mt-12 p-3 ring-2 ring-teal-50 ring-offset-teal-50 ring-offset-8 w-16 z-10 relative items-center justify-center dark:bg-teal-300 dark:ring-teal-200 dark:ring-offset-teal-200"
+              class="rounded-full flex mx-auto bg-tomato-3 h-16 -mt-12 p-3 ring-2 ring-tomato-7 ring-offset-tomato-7 ring-offset-8 w-16 z-10 relative items-center justify-center"
             >
-              <span
-                class="h-12 text-teal w-12 i-solar:pallete-2-outline dark:text-gray-800"
+              <span class="h-12 text-tomato-12 w-12 i-solar:pallete-2-outline"
               ></span>
             </div>
-            <h4
-              class="border-b-2 border-teal-600 my-4 text-f-lg fw600 dark:border-teal-400"
-            >
+            <h4 class="border-b-2 border-tomato-6 my-4 text-f-lg fw600">
               3. Designing
             </h4>
             <p>
@@ -133,24 +134,28 @@ const meta = {
             </p>
             <p class="my-2 text-f-sm uppercase fw600">Key Process:</p>
             <div class="flex flex-wrap p-1 justify-start">
-              <Bullet>Prototyping</Bullet>
-              <Bullet>Designing</Bullet>
-              <Bullet>Developement</Bullet>
+              <Bullet color="bg-tomato-1 border-tomato-6 text-tomato-11">
+                Prototyping
+              </Bullet>
+              <Bullet color="bg-tomato-1 border-tomato-6 text-tomato-11">
+                Designing
+              </Bullet>
+              <Bullet color="bg-tomato-1 border-tomato-6 text-tomato-11">
+                Developement
+              </Bullet>
             </div>
           </li>
           <li
-            class="bg-white border rounded-md border-gray-200 shadow-md py-4 px-6 lg:px-8 dark:bg-dark-500 dark:border-dark-600"
+            class="bg-gray-2 border rounded-md border-gray-6 shadow-md py-4 px-6 lg:px-8"
           >
             <div
-              class="rounded-full flex mx-auto bg-lime-100 h-16 -mt-12 p-3 ring-2 ring-lime-50 ring-offset-lime-50 ring-offset-8 w-16 z-10 relative items-center justify-center dark:bg-lime-300 dark:ring-lime-200 dark:ring-offset-lime-200"
+              class="rounded-full flex mx-auto bg-yellow-3 h-16 -mt-12 p-3 ring-2 ring-yellow-7 ring-offset-yellow-7 ring-offset-8 w-16 z-10 relative items-center justify-center"
             >
               <span
-                class="h-12 text-lime w-12 i-solar:test-tube-minimalistic-line-duotone dark:text-gray-800"
+                class="h-12 text-yellow-12 w-12 i-solar:test-tube-minimalistic-line-duotone"
               ></span>
             </div>
-            <h4
-              class="border-b-2 border-lime-600 my-4 text-f-lg fw600 dark:border-lime-400"
-            >
+            <h4 class="border-b-2 border-yellow-6 my-4 text-f-lg fw600">
               4. Testing
             </h4>
             <p>
@@ -159,23 +164,24 @@ const meta = {
             </p>
             <p class="my-2 text-f-sm uppercase fw600">Key Process:</p>
             <div class="flex flex-wrap p-1 justify-start">
-              <Bullet>Testing</Bullet>
-              <Bullet>Compatibility</Bullet>
+              <Bullet color="bg-yellow-1 border-yellow-6 text-yellow-11">
+                Testing
+              </Bullet>
+              <Bullet color="bg-yellow-1 border-yellow-6 text-yellow-11">
+                Compatibility
+              </Bullet>
             </div>
           </li>
           <li
-            class="bg-white border rounded-md border-gray-200 shadow-md py-4 px-6 sm:col-span-2 lg:px-8 dark:bg-dark-500 dark:border-dark-600"
+            class="bg-gray-2 border rounded-md border-gray-6 shadow-md py-4 px-6 sm:col-span-2 lg:px-8"
           >
             <div
-              class="rounded-full flex mx-auto bg-orange-100 h-16 -mt-12 p-3 ring-2 ring-orange-50 ring-offset-orange-50 ring-offset-8 w-16 z-10 relative items-center justify-center dark:bg-orange-300 dark:ring-orange-200 dark:ring-offset-orange-200"
+              class="rounded-full flex mx-auto bg-green-3 h-16 -mt-12 p-3 ring-2 ring-green-7 ring-offset-green-7 ring-offset-8 w-16 z-10 relative items-center justify-center"
             >
-              <span
-                class="h-12 text-orange w-12 i-solar:rocket-line-duotone dark:text-gray-800"
+              <span class="h-12 text-green-12 w-12 i-solar:rocket-line-duotone"
               ></span>
             </div>
-            <h4
-              class="border-b-2 border-orange-600 my-4 text-f-lg fw600 dark:border-orange-400"
-            >
+            <h4 class="border-b-2 border-green-6 my-4 text-f-lg fw600">
               5. Launching and Maintenance
             </h4>
             <p>
@@ -186,8 +192,12 @@ const meta = {
             </p>
             <p class="my-2 text-f-sm uppercase fw600">Key Process:</p>
             <div class="flex flex-wrap p-1 justify-start">
-              <Bullet>Testing</Bullet>
-              <Bullet>Maintenance</Bullet>
+              <Bullet color="bg-green-1 border-green-6 text-green-11">
+                Testing
+              </Bullet>
+              <Bullet color="bg-green-1 border-green-6 text-green-11">
+                Maintenance
+              </Bullet>
             </div>
           </li>
         </ul>

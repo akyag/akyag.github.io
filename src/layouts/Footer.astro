@@ -5,10 +5,11 @@ import footerLogo from "../images/logo-white.svg";
 import AstroDark from "../images/astro-dark.svg";
 import Button from "../components/Button.astro";
 import { Image } from "@astrojs/image/components";
+import Link from "../components/Link.astro";
 ---
 
 <footer
-  class="h-auto divide-y-2 divide-dark-50 bg-dark-800 mt-12 text-white py-12 dark:bg-dark-800"
+  class="h-auto divide-y-2 border-t border-gray-6 divide-gray-6 bg-gray-2 mt-12 text-gray-12 py-12"
 >
   <div
     class="flex flex-col mx-auto space-y-8 my-12 max-w-6xl items-center justify-center md:flex-row md:space-y-0 md:space-x-8 md:justify-around"
@@ -16,16 +17,12 @@ import { Image } from "@astrojs/image/components";
     <div class="font-display text-f-3xl fw700">
       Interested in Collaboration?
     </div>
-    <Button
-      href="/contact/"
-      color="bg-green-700 hover:bg-green-600 text-white dark:text-white dark:hover:bg-green-500 relative"
-    >
+    <Button href="/contact/" color="bg-teal-9 hover:bg-teal-10 relative">
       <span class="flex h-3 -mt-1 mr-1 top-0 right-0 w-3 absolute">
         <span
-          class="rounded-full h-full bg-green-400 w-full opacity-75 animate-ping absolute inline-flex"
+          class="rounded-full h-full bg-green-9 w-full opacity-75 animate-ping absolute inline-flex"
         ></span>
-        <span
-          class="rounded-full bg-green-300 h-3 w-3 relative inline-flex dark:bg-geraldine-600"
+        <span class="rounded-full bg-mint-9 h-3 w-3 relative inline-flex"
         ></span>
       </span>
       Let's Talk
@@ -36,55 +33,58 @@ import { Image } from "@astrojs/image/components";
   >
     <div class="flex flex-row">
       <div class="w-40">
-        <span class="flex justify-center uppercase fw600">Information</span>
+        <span class="flex justify-center text-teal-11 uppercase fw600"
+          >Information</span
+        >
         <div
-          class="divide-x-2 divide-dark-50 mt-4 leading-relaxed grid grid-cols-6 group items-center"
+          class="divide-x-2 divide-gray-6 mt-4 leading-relaxed grid grid-cols-6 group items-center"
         >
           <div class="ml-5 col-span-2">
             <span
-              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-solar:card-2-line-duotone group-hover:text-geraldine-600"
+              class="h-6 transition-colors ease-out text-teal-12 w-6 duration-200 i-solar:card-2-line-duotone group-hover:text-teal-11"
             ></span>
           </div>
           <div class="col-span-4">
             <a
               href="/license/"
-              class="mx-4 text-gray-300 dark:text-white hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600"
+              class="mx-4 text-gray-11 hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-gray-7/50 focus:ring-offset-2 focus:ring-offset-gray-7 group-hover:text-teal-11"
               tabindex="0">License</a
             >
           </div>
         </div>
         <div
-          class="divide-x-2 divide-dark-50 leading-relaxed grid grid-cols-6 group items-center"
+          class="divide-x-2 divide-gray-6 leading-relaxed grid grid-cols-6 group items-center"
         >
           <div class="ml-5 col-span-2">
             <span
-              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-solar:archive-line-duotone group-hover:text-geraldine-600"
+              class="h-6 transition-colors ease-out text-teal-12 w-6 duration-200 i-solar:archive-line-duotone group-hover:text-teal-11"
             ></span>
           </div>
           <div class="col-span-4">
             <a
               href="/archive/"
-              class="mx-4 text-gray-300 dark:text-white hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600"
+              class="mx-4 text-gray-11 hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-gray-7/50 focus:ring-offset-2 focus:ring-offset-gray-7 group-hover:text-teal-11"
               tabindex="0">Archive</a
             >
           </div>
         </div>
       </div>
       <div class="w-40">
-        <span class="flex text-center justify-center uppercase fw600"
+        <span
+          class="flex text-center text-teal-11 justify-center uppercase fw600"
           >Find me on</span
         >
         <div
-          class="divide-x-2 divide-dark-50 mt-4 leading-relaxed grid grid-cols-6 group items-center"
+          class="divide-x-2 divide-gray-6 mt-4 leading-relaxed grid grid-cols-6 group items-center"
         >
           <div class="ml-5 col-span-2">
             <span
-              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-ph:github-logo-duotone group-hover:text-geraldine-600"
+              class="h-6 transition-colors ease-out text-teal-12 w-6 duration-200 i-ph:github-logo-duotone group-hover:text-teal-11"
             ></span>
           </div>
           <div class="col-span-4">
             <a
-              class="mx-4 text-gray-300 inline-flex items-center dark:text-white hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600"
+              class="mx-4 text-gray-11 inline-flex items-center hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-gray-7/50 focus:ring-offset-2 focus:ring-offset-gray-7 group-hover:text-teal-11"
               href="https://github.com/akyag"
               target="_blank"
               rel="noopener"
@@ -95,16 +95,16 @@ import { Image } from "@astrojs/image/components";
           </div>
         </div>
         <div
-          class="divide-x-2 divide-dark-50 leading-relaxed grid grid-cols-6 group items-center"
+          class="divide-x-2 divide-gray-6 leading-relaxed grid grid-cols-6 group items-center"
         >
           <div class="ml-5 col-span-2">
             <span
-              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-ph:linkedin-logo-duotone group-hover:text-geraldine-600"
+              class="h-6 transition-colors ease-out text-teal-12 w-6 duration-200 i-ph:linkedin-logo-duotone group-hover:text-teal-11"
             ></span>
           </div>
           <div class="col-span-4">
             <a
-              class="mx-4 text-gray-300 inline-flex items-center dark:text-white hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600"
+              class="mx-4 text-gray-11 inline-flex items-center hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-gray-7/50 focus:ring-offset-2 focus:ring-offset-gray-7 group-hover:text-teal-11"
               href="https://www.linkedin.com/in/akshayghate/"
               target="_blank"
               rel="noopener"
@@ -115,16 +115,16 @@ import { Image } from "@astrojs/image/components";
           </div>
         </div>
         <div
-          class="divide-x-2 divide-dark-50 leading-relaxed grid grid-cols-6 group items-center"
+          class="divide-x-2 divide-gray-6 leading-relaxed grid grid-cols-6 group items-center"
         >
           <div class="ml-5 col-span-2">
             <span
-              class="h-6 transition-colors ease-out text-teal-500 w-6 duration-200 i-ph:twitter-logo-duotone group-hover:text-geraldine-600"
+              class="h-6 transition-colors ease-out text-teal-12 w-6 duration-200 i-ph:twitter-logo-duotone group-hover:text-teal-11"
             ></span>
           </div>
           <div class="col-span-4">
             <a
-              class="mx-4 text-gray-300 inline-flex items-center dark:text-white hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800 group-hover:text-geraldine-600 dark:group-hover:text-geraldine-600"
+              class="mx-4 text-gray-11 inline-flex items-center hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-gray-7/50 focus:ring-offset-2 focus:ring-offset-gray-7 group-hover:text-teal-11"
               href="https://twitter.com/akshayg"
               target="_blank"
               rel="noopener"
@@ -140,35 +140,52 @@ import { Image } from "@astrojs/image/components";
       <div>
         <a
           href="/"
-          class="block hover:transition-all hover:ease-out hover:scale-105 hover:duration-200 focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800"
+          class="block hover:transition-all hover:ease-out hover:scale-105 hover:duration-200 focus:outline-none focus:ring-2 focus:ring-gray-7/50 focus:ring-offset-2 focus:ring-offset-gray-7"
           tabindex="0"
         >
-          <Image src={footerLogo} alt="Web-o-Reviews" width={250} height={32} />
+          <!-- <Image src={footerLogo} alt="Web-o-Reviews" width={250} height={32} /> -->
+          <div>
+            <span class="sr-only">Web-o-Reviews</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="32.089" width="250"
+              ><g fill-rule="evenodd"
+                ><path
+                  d="M0 .42 12.413.19 28.39 31.913H15.516zM14.256.312 26.67.082c5.469 10.737 18.143 20.712 15.976 31.722H29.772z"
+                  fill="#00989b"></path><path
+                  d="M43.243 24.23 53.97 0H27.882c3.22 6.823 6.992 9.967 11.356 16.531 1.425 2.145 2.506 4.633 4.005 7.7z"
+                  fill="#006565"></path></g
+              ><g class="fill-gray-12"
+                ><path
+                  d="M64.549 15.111c0-4.72-2.984-5.789-5.923-5.789-6.413 0-8.506 7.482-8.506 12.47 0 7.615 3.964 10.287 8.06 10.287 4.543 0 8.774-3.875 10.288-8.24h-1.425c-1.559 3.475-4.23 4.855-7.036 4.855-2.539 0-4.676-1.069-5.121-5.79 6.012-.667 9.663-3.65 9.663-7.793zm-9.708 6.057c0-4.364 1.514-9.664 4.631-9.664 1.425 0 2.227.935 2.227 3.162 0 3.34-2.672 5.834-6.858 6.502z"
+                ></path><path
+                  d="M66.962 23.84c0 6.19 2.716 8.24 6.412 8.24 6.502 0 9.753-6.235 9.753-13.005 0-7.704-4.275-9.619-7.437-9.619-1.915 0-3.25.713-4.23 1.737V.639l-4.454.623-.044 22.58zm12.202-3.74c0 4.631-1.693 8.906-5.077 8.906-1.826 0-2.628-1.291-2.628-4.008V13.286c.802-.89 1.826-1.514 3.029-1.514 2.983 0 4.676 3.74 4.676 8.328zM95.062 18.416h-8.906v3.118h8.906zM107.903 9.318c-6.68 0-8.684 7.17-8.684 12.38 0 7.66 4.365 10.376 8.328 10.376 4.81 0 7.615-4.408 7.615-11.712 0-.712 0-1.38-.089-2.093 1.96-.98 2.984-3.34 3.474-5.3h-1.291c-.312.891-.847 2.227-2.539 2.227-.757-3.384-2.627-5.878-6.814-5.878zm.446 19.372c-2.004 0-4.32-1.38-4.32-7.17 0-4.364 1.336-9.753 5.032-9.753 1.247 0 2.36.624 3.073 2.36-.98.134-1.648.802-1.648 2.004 0 1.693.757 2.672 2.405 2.672 0 .312.044.624.044.936 0 5.655-1.47 8.95-4.587 8.95zM129.94 18.416h-8.906v3.118h8.906zM134.631 9.551v22.266h4.454V15.43c1.024-1.069 2.315-2.227 3.651-2.227 1.292 0 1.47 1.114 2.494 1.114.713 0 2.049-.535 2.049-2.316 0-1.47-.935-2.672-2.94-2.672-2.538 0-3.874 1.87-5.254 3.964V9.55h-4.454zM163.531 15.111c0-4.72-2.983-5.789-5.923-5.789-6.412 0-8.505 7.482-8.505 12.47 0 7.615 3.963 10.287 8.06 10.287 4.542 0 8.773-3.875 10.287-8.24h-1.425c-1.558 3.475-4.23 4.855-7.036 4.855-2.538 0-4.676-1.069-5.121-5.79 6.012-.667 9.664-3.65 9.664-7.793zm-9.708 6.057c0-4.364 1.514-9.664 4.631-9.664 1.426 0 2.227.935 2.227 3.162 0 3.34-2.672 5.834-6.858 6.502z"
+                ></path><path
+                  d="M180.284 16.803c0-6.012-1.692-8.194-3.74-8.194-1.47 0-2.272 1.113-2.272 2.27 0 1.114.713 2.36 2.138 2.36.267 0 .89-.044 1.157-.355.268 1.291.401 3.028.401 4.676 0 5.255-1.336 11.133-4.987 11.133-2.183 0-2.583-2.049-2.583-4.008V9.544h-4.454v16.432c0 3.964 3.029 6.101 6.101 6.101 6.146 0 8.24-8.55 8.24-15.275zM183.733 9.551v16.077c0 2.894 1.024 6.457 5.121 6.457 1.96 0 4.854-.802 6.19-8.239h-1.648c-.668 3.206-1.78 4.854-3.206 4.854-1.915 0-2.004-2.85-2.004-4.008V9.551h-4.453zm-.802-6.413a2.908 2.908 0 0 0 2.94 2.94c1.603 0 2.983-1.292 2.983-2.94 0-1.603-1.38-2.983-2.984-2.983-1.647 0-2.939 1.38-2.939 2.983z"
+                ></path><path
+                  d="M207.282 15.111c0-4.72-2.983-5.789-5.923-5.789-6.412 0-8.505 7.482-8.505 12.47 0 7.615 3.963 10.287 8.06 10.287 4.542 0 8.773-3.875 10.287-8.24h-1.425c-1.558 3.475-4.23 4.855-7.036 4.855-2.538 0-4.676-1.069-5.121-5.79 6.012-.667 9.664-3.65 9.664-7.793zm-9.708 6.057c0-4.364 1.514-9.664 4.631-9.664 1.426 0 2.227.935 2.227 3.162 0 3.34-2.672 5.834-6.858 6.502z"
+                ></path><path
+                  d="M209.695 9.551v15.631c0 5.077 2.806 6.903 6.28 6.903 1.825 0 3.65-1.069 4.809-3.474 1.024 2.271 3.295 3.474 5.61 3.474 6.147 0 8.24-8.55 8.24-15.275 0-6.012-1.693-8.194-3.741-8.194-1.47 0-2.271 1.113-2.271 2.27 0 1.114.712 2.361 2.137 2.361.268 0 .891-.044 1.158-.356.267 1.291.401 3.028.401 4.676 0 5.255-1.336 11.133-4.988 11.133-2.182 0-2.583-2.048-2.583-4.008V9.551h-4.453v14.295c0 3.073-1.781 4.854-3.474 4.854-1.558 0-2.672-1.113-2.672-4.008V9.551h-4.453zM241.806 9.065c-.445 4.364-2.182 8.773-3.74 13.182-.892.49-1.604 1.692-1.604 3.25 0 2.896 1.425 6.592 6.635 6.592 2.539 0 6.903-1.559 6.903-5.968 0-4.676-.846-6.501-3.696-17.947l-4.498.891zm3.473 16.566c0 2.183-1.246 3.118-3.117 3.118-1.96 0-3.162-1.203-3.607-3.296.356.446.757.624 1.202.624.713 0 1.426-.624 1.426-1.737 0-.98-.446-1.603-.98-1.96.89-3.206 2.226-6.145 2.583-9.44 1.648 7.748 2.494 9.04 2.494 12.691z"
+                ></path></g
+              ></svg
+            >
+          </div>
         </a>
       </div>
       <div
-        class="flex flex-col divide-y-2 divide-dark-50 mt-4 max-w-4xl gap-2 grid-cols-1 items-center justify-center lg:flex-row lg:divide-y-0 lg:divide-x-2"
+        class="flex flex-col divide-y-2 divide-gray-6 mt-4 max-w-4xl gap-2 grid-cols-1 items-center justify-center lg:flex-row lg:divide-y-0 lg:divide-x-2"
       >
         <div class="flex gap-2 items-center justify-center">
           <span class="h-5 w-5 i-solar:copyright-line-duotone"></span>
 
-          2009 - {currentDate} - Built using <a
+          2009 - {currentDate} - Built using <Link
             href="https://astro.build"
-            class="focus:outline-none focus:ring-2 focus:ring-slate-200/50 focus:ring-offset-2 focus:ring-offset-dark-800"
             target="_blank"
-            rel="noopener"
-            tabindex="0"
-            ><Image
-              src={AstroDark}
-              height={24}
-              width={64}
-              alt="Astro Dark Logo"
-            />
-          </a>
+          >
+            Astro
+          </Link>
         </div>
         <div class="pt-2 pl-2 lg:pt-0">
           Designed with
-          <span class="h-6 text-red-600 w-6 i-solar:heart-angle-bold"></span>
+          <span class="h-6 text-red-9 w-6 i-solar:heart-angle-bold"></span>
           by Akshay Ghate.
         </div>
       </div>

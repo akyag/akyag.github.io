@@ -8,20 +8,17 @@ const { triggerId, title, closeText = "Close" } = Astro.props;
   aria-labelledby={triggerId}
 >
   <div
-    class="bg-white opacity-1 transition-opacity ease-in duration-500 modal__inner dark:bg-dark-900 dark:text-white"
+    class="bg-gray-2 opacity-1 transition-opacity ease-in duration-500 modal__inner"
   >
-    <div class="flex flex-col border-1 border-gray-600 p-8 gap-2">
-      <h3
-        class="border-b-4 border-red-600 text-f-lg dark:border-red-400"
-        tabindex="-1"
-      >
+    <div class="flex flex-col border-1 border-gray-6 p-8 gap-2">
+      <h3 class="border-b-4 border-red-6 text-f-lg" tabindex="-1">
         {title}
       </h3>
       <slot>Modal description.</slot>
     </div>
     <div class="flex justify-end">
       <button
-        class="rounded-full cursor-pointer fw600 bg-geraldine-700 m-5 shadow-md text-f-sm text-white py-2 px-6 hover:bg-geraldine-500 dark:hover:bg-geraldine-500"
+        class="rounded-full cursor-pointer fw600 bg-crimson-9 text-white m-5 shadow-md text-f-sm py-2 px-6 hover:bg-crimson-10"
         >{closeText}</button
       >
     </div>

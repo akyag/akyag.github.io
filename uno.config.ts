@@ -4,14 +4,42 @@ import {
   presetIcons,
   presetUno,
 } from "unocss";
-import { presetForms } from "@julr/unocss-preset-forms";
+
 import { presetHeroPatterns } from "@julr/unocss-preset-heropatterns";
 import { presetScrollbar } from "unocss-preset-scrollbar";
+import { presetRadix } from "unocss-preset-radix";
+import transformerCompileClass from "@unocss/transformer-compile-class";
 
 export default defineConfig({
   shortcuts: [],
   presets: [
     presetUno(),
+    presetRadix({
+      palette: [
+        "blue",
+        "crimson",
+        "cyan",
+        "grass",
+        "green",
+        "indigo",
+        "lime",
+        "mint",
+        "orange",
+        "pink",
+        "plum",
+        "purple",
+        "red",
+        "sage",
+        "sky",
+        "teal",
+        "tomato",
+        "yellow",
+      ],
+      aliases: {
+        gray: "sage",
+      },
+      darkSelector: ".dark",
+    }),
     presetIcons({
       extraProperties: {
         display: "inline-block",
@@ -24,13 +52,14 @@ export default defineConfig({
           ),
         phosphor: () =>
           import("@iconify-json/ph/icons.json").then((i) => i.default),
+        remix: () =>
+          import("@iconify-json/ri/icons.json").then((i) => i.default),
         solar: () =>
           import("@iconify-json/solar/icons.json").then(
             (i) => i.default as any
           ),
       },
     }),
-    presetForms(),
     presetHeroPatterns(),
     presetScrollbar(),
   ],
@@ -70,32 +99,5 @@ export default defineConfig({
       { "font-size": "clamp(2.14rem, calc(1.70rem + 2.20vw), 3.82rem);" },
     ],
   ],
-  theme: {
-    colors: {
-      geraldine: {
-        "50": "#fff9f9",
-        "100": "#fef2f2",
-        "200": "#fddfdf",
-        "300": "#fbcbcb",
-        "400": "#f8a5a5",
-        "500": "#f57e7e",
-        "600": "#dd7171",
-        "700": "#b95a58",
-        "800": "#934c4c",
-        "900": "#783e3e",
-      },
-      dark: {
-        "50": "#333d3d",
-        "100": "#313b3b",
-        "200": "#2f3939",
-        "300": "#2a3434",
-        "400": "#293333",
-        "500": "#242e2e",
-        "600": "#222c2c",
-        "700": "#1f2929",
-        "800": "#1b2525",
-        "900": "#111b1b",
-      },
-    },
-  },
+  transformers: [transformerCompileClass()],
 });
