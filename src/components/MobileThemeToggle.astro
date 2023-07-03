@@ -6,12 +6,19 @@
     type="checkbox"
     id="mobileswitch"
     role="switch"
+    aria-label="switch"
     class="mobilethemeToggle"
     toggle-color-scheme
   />
   <label for="mobileswitch">
-    <span class=":uno: i-solar:sun-2-bold absolute z-1 left-2" id="sun1"></span>
-    <span class=":uno: i-solar:moon-bold absolute z-1 left-9" id="moon1"></span>
+    <span
+      aria-hidden="true"
+      class=":uno: i-solar:sun-2-bold absolute z-1 left-2"
+      id="sun1"></span>
+    <span
+      aria-hidden="true"
+      class=":uno: i-solar:moon-bold absolute z-1 left-9"
+      id="moon1"></span>
   </label>
 </mobile-theme-toggle>
 
@@ -31,7 +38,7 @@
     content: "";
     width: 4rem;
     height: 2rem;
-    background-color: hsl(150, 16.7%, 97.6%);
+    background-color: hsl(151, 8.8%, 93%);
     border-radius: 2rem;
     transition: background-color 200ms ease-in-out;
   }
