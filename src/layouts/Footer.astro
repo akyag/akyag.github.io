@@ -1,10 +1,10 @@
 ---
 let currentDate = new Date().getFullYear();
 import Backtotop from "../components/BackToTop.astro";
-import footerLogo from "../images/logo-white.svg";
-import AstroDark from "../images/astro-dark.svg";
+// import footerLogo from "../images/logo-white.svg";
+// import AstroDark from "../images/astro-dark.svg";
 import Button from "../components/Button.astro";
-import { Image } from "@astrojs/image/components";
+// import { Image } from "@astrojs/image/components";
 import Link from "../components/Link.astro";
 ---
 
@@ -12,11 +12,11 @@ import Link from "../components/Link.astro";
   class=":uno: h-auto divide-y-2 border-t border-gray-6 divide-gray-6 bg-gray-2 mt-12 text-gray-12 py-12"
 >
   <div
-    class=":uno: flex flex-col mx-auto space-y-8 my-12 max-w-6xl items-center justify-center md:flex-row md:space-y-0 md:space-x-8 md:justify-around"
+    class=":uno: flex flex-col mxa space-y-8 my-12 max-w-6xl items-center justify-center md:flex-row md:space-y-0 md:space-x-8 md:justify-around"
   >
-    <div class=":uno: font-display text-f-3xl fw700">
+    <h4 class=":uno: font-display text-f-3xl fw700">
       Interested in Collaboration?
-    </div>
+    </h4>
     <Button href="/contact/" color="bg-teal-9 hover:bg-teal-10 relative">
       <span class=":uno: flex h-3 -mt-1 mr-1 top-0 right-0 w-3 absolute">
         <span
@@ -29,20 +29,20 @@ import Link from "../components/Link.astro";
     </Button>
   </div>
   <div
-    class=":uno: flex flex-col mx-auto mb-12 max-w-6xl pt-12 items-center justify-around md:flex-row md:px-6 md:items-end lg:px-8"
+    class=":uno: flex flex-col mxa mb-12 max-w-6xl pt-12 items-center justify-around md:flex-row md:px-6 md:items-end lg:px-8"
   >
     <div class=":uno: flex flex-row">
       <div class=":uno: w-40">
-        <span class=":uno: flex justify-center text-teal-11 uppercase fw600"
-          >Information</span
-        >
+        <h5 class=":uno: flex justify-center text-teal-11 uppercase fw600">
+          Information
+        </h5>
         <div
           class=":uno: divide-x-2 divide-gray-6 mt-4 leading-relaxed grid grid-cols-6 group items-center"
         >
           <div class=":uno: ml-5 col-span-2">
             <span
               class=":uno: h-6 transition-colors ease-out text-teal-12 w-6 duration-200 i-solar:card-2-line-duotone group-hover:text-teal-11"
-            ></span>
+              role="none"></span>
           </div>
           <div class=":uno: col-span-4">
             <a
@@ -58,7 +58,7 @@ import Link from "../components/Link.astro";
           <div class=":uno: ml-5 col-span-2">
             <span
               class=":uno: h-6 transition-colors ease-out text-teal-12 w-6 duration-200 i-solar:archive-line-duotone group-hover:text-teal-11"
-            ></span>
+              role="none"></span>
           </div>
           <div class=":uno: col-span-4">
             <a
@@ -70,17 +70,18 @@ import Link from "../components/Link.astro";
         </div>
       </div>
       <div class=":uno: w-40">
-        <span
+        <h5
           class=":uno: flex text-center text-teal-11 justify-center uppercase fw600"
-          >Find me on</span
         >
+          Find me on
+        </h5>
         <div
           class=":uno: divide-x-2 divide-gray-6 mt-4 leading-relaxed grid grid-cols-6 group items-center"
         >
           <div class=":uno: ml-5 col-span-2">
             <span
               class=":uno: h-6 transition-colors ease-out text-teal-12 w-6 duration-200 i-ph:github-logo-duotone group-hover:text-teal-11"
-            ></span>
+              role="none"></span>
           </div>
           <div class=":uno: col-span-4">
             <a
@@ -88,10 +89,12 @@ import Link from "../components/Link.astro";
               href="https://github.com/akyag"
               target="_blank"
               rel="noopener"
+              aria-label="Opens in new tab."
               tabindex="0"
               >GitHub
-              <span class=":uno: h-4 ml-1 w-4 i-solar:square-top-down-linear"
-              ></span>
+              <span
+                class=":uno: h-4 ml-1 w-4 i-solar:square-top-down-linear"
+                role="none"></span>
             </a>
           </div>
         </div>
@@ -101,7 +104,7 @@ import Link from "../components/Link.astro";
           <div class=":uno: ml-5 col-span-2">
             <span
               class=":uno: h-6 transition-colors ease-out text-teal-12 w-6 duration-200 i-ph:linkedin-logo-duotone group-hover:text-teal-11"
-            ></span>
+              role="none"></span>
           </div>
           <div class=":uno: col-span-4">
             <a
@@ -109,10 +112,12 @@ import Link from "../components/Link.astro";
               href="https://www.linkedin.com/in/akshayghate/"
               target="_blank"
               rel="noopener"
+              aria-label="Opens in new tab."
               tabindex="0"
               >LinkedIn
-              <span class=":uno: h-4 ml-1 w-4 i-solar:square-top-down-linear"
-              ></span>
+              <span
+                class=":uno: h-4 ml-1 w-4 i-solar:square-top-down-linear"
+                role="none"></span>
             </a>
           </div>
         </div>
@@ -122,7 +127,7 @@ import Link from "../components/Link.astro";
           <div class=":uno: ml-5 col-span-2">
             <span
               class=":uno: h-6 transition-colors ease-out text-teal-12 w-6 duration-200 i-ph:twitter-logo-duotone group-hover:text-teal-11"
-            ></span>
+              role="none"></span>
           </div>
           <div class=":uno: col-span-4">
             <a
@@ -130,10 +135,12 @@ import Link from "../components/Link.astro";
               href="https://twitter.com/akshayg"
               target="_blank"
               rel="noopener"
+              aria-label="Opens in new tab."
               tabindex="0"
               >Twitter
-              <span class=":uno: h-4 ml-1 w-4 i-solar:square-top-down-linear"
-              ></span>
+              <span
+                class=":uno: h-4 ml-1 w-4 i-solar:square-top-down-linear"
+                role="none"></span>
             </a>
           </div>
         </div>
@@ -147,8 +154,8 @@ import Link from "../components/Link.astro";
           tabindex="0"
         >
           <!-- <Image src={footerLogo} alt="Web-o-Reviews" width={250} height={32} /> -->
-          <div>
-            <span class=":uno: sr-only">Web-o-Reviews</span>
+          <div role="img" aria-label="Web-o-Reviews">
+            <span class="sr-only">Web-o-Reviews</span>
             <svg xmlns="http://www.w3.org/2000/svg" height="32.089" width="250"
               ><g fill-rule="evenodd"
                 ><path
@@ -177,19 +184,23 @@ import Link from "../components/Link.astro";
         class=":uno: flex flex-col divide-y-2 divide-gray-6 mt-4 max-w-4xl gap-2 grid-cols-1 items-center justify-center lg:flex-row lg:divide-y-0 lg:divide-x-2"
       >
         <div class=":uno: flex gap-2 items-center justify-center">
-          <span class=":uno: h-5 w-5 i-solar:copyright-line-duotone"></span>
+          <span class=":uno: h-5 w-5 i-solar:copyright-line-duotone" role="none"
+          ></span>
 
           2009 - {currentDate} - Built using <Link
             href="https://astro.build"
             target="_blank"
+            rel="noopener"
+            aria-label="Opens in new tab."
           >
             Astro
           </Link>
         </div>
         <div class=":uno: pt-2 pl-2 lg:pt-0">
           Designed with
-          <span class=":uno: h-6 text-red-9 w-6 i-solar:heart-angle-bold"
-          ></span>
+          <span
+            class=":uno: h-6 text-red-9 w-6 i-solar:heart-angle-bold"
+            role="none"></span>
           by Akshay Ghate.
         </div>
       </div>

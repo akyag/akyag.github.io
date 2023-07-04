@@ -13,7 +13,7 @@ const meta = {
 <Page>
   <Head slot="head" {meta} />
   <Hero />
-  <main id="content-wrapper" class=":uno: container mx-auto py-12 px-8 md:px-0">
+  <main id="content-wrapper" class=":uno: container mxa py-12 px-8 md:px-0">
     <div class=":uno: leading-relaxed grid grid-cols-1 place-items-center">
       <div class=":uno: max-w-prose space-y-12">
         <h3 class=":uno: font-display my-5 mx-3 text-center text-f-2xl fw700">
@@ -98,6 +98,9 @@ const meta = {
               rel="noopener"
               tabindex="0"
             >
+              <span class="sr-only"
+                >Astro is the all-in-one web framework designed for speed.</span
+              >
               <svg
                 class=":uno: h-10 fill-black ml-4 w-auto dark:fill-white"
                 viewBox="0 0 2712 894"

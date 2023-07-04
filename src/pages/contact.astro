@@ -12,7 +12,7 @@ const meta = {
 <Page>
   <Head slot="head" {meta} />
   <Hero />
-  <main id="content-wrapper" class=":uno: container mx-auto py-12 px-8 md:px-0">
+  <main id="content-wrapper" class=":uno: container mxa py-12 px-8 md:px-0">
     <div class=":uno: leading-relaxed grid grid-cols-1 place-items-center">
       <div class=":uno: max-w-prose grid">
         <h3 class=":uno: font-display my-5 text-center text-f-2xl fw700">
@@ -44,7 +44,7 @@ const meta = {
                 <div class=":uno: pl-3 z-10 pointer-events-none">
                   <span
                     class=":uno: h-5 fill-current w-5 i-solar:user-line-duotone"
-                  ></span>
+                    role="none"></span>
                 </div>
                 <input
                   type="text"
@@ -68,7 +68,7 @@ const meta = {
                 <div class=":uno: pl-3 z-10 pointer-events-none">
                   <span
                     class=":uno: h-5 fill-current w-5 i-solar:mention-circle-line-duotone"
-                  ></span>
+                    role="none"></span>
                 </div>
                 <input
                   type="email"
@@ -92,7 +92,7 @@ const meta = {
                 <div class=":uno: pl-3 z-10 pointer-events-none">
                   <span
                     class=":uno: h-5 fill-current w-5 i-solar:phone-rounded-line-duotone"
-                  ></span>
+                    role="none"></span>
                 </div>
                 <input
                   type="tel"
@@ -141,7 +141,7 @@ const meta = {
                 <div class=":uno: pl-3 z-10 pointer-events-none">
                   <span
                     class=":uno: h-5 fill-current w-5 i-solar:hashtag-line-duotone"
-                  ></span>
+                    role="none"></span>
                 </div>
                 <input
                   type="text"
@@ -165,7 +165,7 @@ const meta = {
                 <div class=":uno: pt-3 pl-3 z-10 pointer-events-none">
                   <span
                     class=":uno: h-5 fill-current w-5 i-solar:chat-round-dots-line-duotone"
-                  ></span>
+                    role="none"></span>
                 </div>
                 <textarea
                   name="user_message"
@@ -188,6 +188,7 @@ const meta = {
                 id="terms"
                 name="terms"
                 aria-label="Terms"
+                role="checkbox"
                 type="checkbox"
                 required
                 class=":uno: appearance-none shrink-0 focus:border-none focus:outline-none focus:ring-8 focus:ring-offset-2 focus:ring-gray-7 i-ri:checkbox-blank-circle-line checked:transition-all checked:transition-400 checked:i-ri:checkbox-circle-fill checked:h-6 checked:w-6 checked:text-teal-9 h-6 text-teal-9 w-6 focus:ring-offset-teal-7 focus:ring-2 focus:ring-teal-7/50"
@@ -205,10 +206,11 @@ const meta = {
               <button
                 class=":uno: text-f-sm cursor-pointer hover:ease important-bg-teal-9 hover:important-bg-teal-10 flex place-content-center items-center rounded-full pl-4 pr-6 py-2 fw600 text-white shadow-md hover:transition-all hover:duration-150 focus:outline-none focus:ring-2 focus:ring-gray-7/50 focus:ring-offset-2 focus:ring-offset-transparent w-2/3 sm:w-auto"
                 type="submit"
+                role="button"
               >
                 <span
                   class=":uno: h-6 mr-2 text-white w-6 i-ri:checkbox-circle-fill"
-                ></span>
+                  role="none"></span>
                 <span>Send Message</span>
               </button>
             </div>

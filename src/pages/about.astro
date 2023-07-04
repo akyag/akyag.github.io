@@ -17,9 +17,9 @@ const meta = {
   <Hero />
   <main
     id="content-wrapper"
-    class=":uno: container mx-auto py-6 px-8 md:py-12 md:px-0"
+    class=":uno: container mxa py-6 px-8 md:py-12 md:px-0"
   >
-    <div class=":uno: mx-auto space-y-12 leading-relaxed max-w-6xl">
+    <div class=":uno: mxa space-y-12 leading-relaxed max-w-6xl">
       <h3 class=":uno: font-display my-5 mx-3 text-center text-f-2xl fw700">
         About
       </h3>
@@ -30,6 +30,7 @@ const meta = {
           <Image
             src={Me}
             alt="Akshay Ghate"
+            aria-role="img"
             width={128}
             height={128}
             class=":uno: rounded-full border-4 border-crimson-8 h-32 shadow-lg mx-8 transition ease-in-out w-32 duration-200"
@@ -38,8 +39,9 @@ const meta = {
         <div class=":uno: space-y-4">
           <div class=":uno: text-f-lg fw600">
             Hi there,
-            <span class=":uno: h-8 text-crimson-11 w-8 i-ph:hand-waving-duotone"
-            ></span>
+            <span
+              class=":uno: h-8 text-crimson-11 w-8 i-ph:hand-waving-duotone"
+              role="none"></span>
           </div>
           <p
             class=":uno: first-letter:text-f-xl first-letter:text-crimson-11 first-letter:fw600"
@@ -81,6 +83,7 @@ const meta = {
             >
               <span
                 class=":uno: h-12 opacity-75 w-12 inline-block i-simple-icons:html5"
+                role="none"
               >
               </span>
             </a>
@@ -95,6 +98,7 @@ const meta = {
             >
               <span
                 class=":uno: h-12 opacity-75 w-12 inline-block i-simple-icons:css3"
+                role="none"
               >
               </span>
             </a>
@@ -109,6 +113,7 @@ const meta = {
             >
               <span
                 class=":uno: h-12 opacity-75 w-12 i-simple-icons:astro inline-block"
+                role="none"
               >
               </span>
             </a>
@@ -121,7 +126,10 @@ const meta = {
               rel="noopener"
               title="NuxtJS"
             >
-              <span class=":uno: h-12 opacity-75 w-12 i-simple-icons:nuxtdotjs">
+              <span
+                class=":uno: h-12 opacity-75 w-12 i-simple-icons:nuxtdotjs"
+                role="none"
+              >
               </span>
             </a>
           </div>
@@ -135,6 +143,7 @@ const meta = {
             >
               <span
                 class=":uno: h-12 opacity-75 w-12 i-simple-icons:vuedotjs inline-block"
+                role="none"
               >
               </span>
             </a>
@@ -149,6 +158,7 @@ const meta = {
             >
               <span
                 class=":uno: h-12 opacity-75 w-12 i-simple-icons:tailwindcss inline-block"
+                role="none"
               >
               </span>
             </a>
@@ -163,6 +173,7 @@ const meta = {
             >
               <span
                 class=":uno: h-12 opacity-75 w-12 i-simple-icons:unocss inline-block"
+                role="none"
               >
               </span></a
             >
@@ -177,6 +188,7 @@ const meta = {
             >
               <span
                 class=":uno: h-12 opacity-75 w-12 i-simple-icons:javascript inline-block"
+                role="none"
               >
               </span>
             </a>
@@ -192,6 +204,7 @@ const meta = {
             >
               <span
                 class=":uno: h-12 opacity-75 w-12 i-simple-icons:git inline-block"
+                role="none"
               >
               </span>
             </a>

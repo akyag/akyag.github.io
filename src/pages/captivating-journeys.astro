@@ -20,7 +20,7 @@ const meta = {
   <Hero />
   <main
     id="content-wrapper"
-    class=":uno: container mx-auto py-6 px-8 md:py-24 md:px-0 lg:py-12"
+    class=":uno: container mxa py-6 px-8 md:py-24 md:px-0 lg:py-12"
   >
     <div
       class=":uno: h-auto min-h-full space-y-12 my-2 text-left leading-relaxed px-4 lg:px-8"
@@ -34,15 +34,17 @@ const meta = {
           class=":uno: hover:transition-all hover:ease hover:text-crimson-11 hover:duration-200 focus:outline-none focus:border-b-4 focus:border-gray-7"
           tabindex="0">Home</a
         >
-        <span class=":uno: h-6 w-6 i-solar:double-alt-arrow-right-line-duotone"
-        ></span>
+        <span
+          class=":uno: h-6 w-6 i-solar:double-alt-arrow-right-line-duotone"
+          role="none"></span>
         <a
           href="/work/#content-wrapper"
           class=":uno: hover:transition-all hover:ease hover:text-crimson-11 hover:duration-200 focus:outline-none focus:border-b-4 focus:border-gray-7"
           tabindex="0">Work</a
         >
-        <span class=":uno: h-6 w-6 i-solar:double-alt-arrow-right-line-duotone"
-        ></span>
+        <span
+          class=":uno: h-6 w-6 i-solar:double-alt-arrow-right-line-duotone"
+          role="none"></span>
         <a
           href="#"
           class=":uno: focus:outline-none focus:border-b-4 focus:border-gray-7"
@@ -50,9 +52,9 @@ const meta = {
         >
       </div>
 
-      <div class=":uno: font-display text-f-xl fw600">
+      <div class=":uno: font-display my-6 text-f-xl fw600">
         Captivating
-        <span class=":uno: text-crimson-11">Journeys</span>
+        <span class=":uno: text-crimson-11"> Journeys</span>
       </div>
       <div class=":uno: flex flex-col items-start md:flex-row">
         <div
@@ -64,6 +66,7 @@ const meta = {
             height={270}
             src={captivatingJourneys}
             alt="Captivating Journeys"
+            role="img"
           />
         </div>
 
@@ -72,8 +75,9 @@ const meta = {
             This is a responsive layout for a one-page travel website. The
             slideshow is full-screen, draggable, autoplaying, and responsive.
           </p>
-          <div class=":uno: flex flex-items-start flex-wrap">
-            <div class=":uno: p-2">
+
+          <div class=":uno: flex items-start flex-wrap gap-x-2">
+            <div>
               <ButtonIcon
                 href="/data/design-1/"
                 target="_blank"
@@ -83,7 +87,8 @@ const meta = {
                 Demo
               </ButtonIcon>
             </div>
-            <div class=":uno: p-2">
+
+            <div>
               <ButtonIcon
                 id="modal1-trigger"
                 color="bg-gray-9 hover:bg-gray-10 cursor-pointer"
@@ -103,6 +108,7 @@ const meta = {
         class=":uno: dark:filter dark:brightness-75 dark:contrast-125"
         src={captivatingJourneysFull}
         alt="Captivating Journeys Full Image"
+        role="img"
         widths={[250, 375, 500]}
         sizes="(max-width: 768px) 250px, (max-width: 1024px) 375px, 500px"
         aspectRatio={0.8}

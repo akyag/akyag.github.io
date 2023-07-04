@@ -9,7 +9,7 @@ import { Image } from "@astrojs/image/components";
   class=":uno: bg-gray-2 shadow-md w-screen top-0 z-30 fixed block md:hidden"
 >
   <nav>
-    <div class=":uno: mx-auto px-4 sm:px-6">
+    <div class=":uno: mxa px-4 sm:px-6">
       <div class=":uno: flex h-24 items-center justify-between">
         <div class=":uno: flex items-center">
           <div class=":uno: pl-4">
@@ -19,6 +19,8 @@ import { Image } from "@astrojs/image/components";
                 width={80}
                 height={45}
                 alt="Web-o-Reviews"
+                role="img"
+                aria-label="Web-o-Reviews"
               />
             </a>
           </div>
@@ -39,31 +41,40 @@ import { Image } from "@astrojs/image/components";
                 id="menu"
               >
                 <MobileActiveLink href={"/"}>
-                  <span class="h-6 w-6 i-solar:home-line-duotone"></span>
+                  <span class="h-6 w-6 i-solar:home-line-duotone" role="none"
+                  ></span>
                   Home
                 </MobileActiveLink>
                 <MobileActiveLink href={"/about/"}>
-                  <span class="h-6 w-6 i-solar:user-line-duotone"></span>
+                  <span class="h-6 w-6 i-solar:user-line-duotone" role="none"
+                  ></span>
                   About
                 </MobileActiveLink>
                 <MobileActiveLink href={"/design/"}>
-                  <span class="h-6 w-6 i-solar:pallete-2-line-duotone"></span>
+                  <span
+                    class="h-6 w-6 i-solar:pallete-2-line-duotone"
+                    role="none"></span>
                   Design
                 </MobileActiveLink>
                 <MobileActiveLink href={"/work/"}>
-                  <span class="h-6 w-6 i-solar:folder-open-line-duotone"></span>
+                  <span
+                    class="h-6 w-6 i-solar:folder-open-line-duotone"
+                    role="none"></span>
                   Work
                 </MobileActiveLink>
                 <MobileActiveLink href={"/archive/"}>
-                  <span class="h-6 w-6 i-solar:archive-line-duotone"></span>
+                  <span class="h-6 w-6 i-solar:archive-line-duotone" role="none"
+                  ></span>
                   Archive
                 </MobileActiveLink>
                 <MobileActiveLink href={"/license/"}>
-                  <span class="h-6 w-6 i-solar:card-2-line-duotone"></span>
+                  <span class="h-6 w-6 i-solar:card-2-line-duotone" role="none"
+                  ></span>
                   License
                 </MobileActiveLink>
                 <MobileActiveLink href={"/contact/"}>
-                  <span class="h-6 w-6 i-solar:mailbox-line-duotone"></span>
+                  <span class="h-6 w-6 i-solar:mailbox-line-duotone" role="none"
+                  ></span>
                   Contact
                 </MobileActiveLink>
               </div>

@@ -20,7 +20,7 @@ const meta = {
   <Hero />
   <main
     id="content-wrapper"
-    class=":uno: container mx-auto py-6 px-8 md:py-24 md:px-0 lg:py-12"
+    class=":uno: container mxa py-6 px-8 md:py-24 md:px-0 lg:py-12"
   >
     <div
       class=":uno: container min-h-full space-y-12 my-2 text-left leading-relaxed px-4 lg:px-8"
@@ -34,15 +34,17 @@ const meta = {
           class=":uno: hover:transition-all hover:ease hover:text-crimson-11 hover:duration-200 focus:outline-none focus:border-b-4 focus:border-gray-7"
           tabindex="0">Home</a
         >
-        <span class=":uno: h-6 w-6 i-solar:double-alt-arrow-right-line-duotone"
-        ></span>
+        <span
+          class=":uno: h-6 w-6 i-solar:double-alt-arrow-right-line-duotone"
+          role="none"></span>
         <a
           href="/work/#content-wrapper"
           class=":uno: hover:transition-all hover:ease hover:text-crimson-11 hover:duration-200 focus:outline-none focus:border-b-4 focus:border-gray-7"
           tabindex="0">Work</a
         >
-        <span class=":uno: h-6 w-6 i-solar:double-alt-arrow-right-line-duotone"
-        ></span>
+        <span
+          class=":uno: h-6 w-6 i-solar:double-alt-arrow-right-line-duotone"
+          role="none"></span>
         <a
           href="#"
           class=":uno: focus:outline-none focus:border-b-4 focus:border-gray-7"
@@ -52,7 +54,7 @@ const meta = {
 
       <div class=":uno: font-display my-6 text-f-xl fw600" id="anchor">
         Ensys
-        <span class=":uno: text-blue-11">Engineers</span>
+        <span class=":uno: text-blue-11"> Engineers</span>
       </div>
       <div class=":uno: flex flex-col items-start md:flex-row">
         <div
@@ -62,6 +64,7 @@ const meta = {
             class=":uno: h-auto object-contain w-full dark:filter dark:brightness-75 dark:contrast-125"
             src={ensys}
             alt="Ensys"
+            role="img"
             width={480}
             height={270}
           />
@@ -83,8 +86,9 @@ const meta = {
             <li>Image slider.</li>
             <li>Contact form with map.</li>
           </ul>
-          <div class=":uno: flex flex-items-start flex-wrap">
-            <div class=":uno: p-2">
+
+          <div class=":uno: flex items-start flex-wrap gap-x-2">
+            <div>
               <ButtonIcon
                 href="http://ensys.in"
                 target="_blank"
@@ -94,7 +98,7 @@ const meta = {
                 Website
               </ButtonIcon>
             </div>
-            <div class=":uno: p-2">
+            <div>
               <ButtonIcon
                 id="modal2-trigger"
                 color="bg-gray-9 hover:bg-gray-10 cursor-pointer"
@@ -107,18 +111,22 @@ const meta = {
         </div>
       </div>
       <div
-        class=":uno: bg-gray-2 border rounded-md flex flex-col border-gray-7 shadow-md p-6 gap-4 justify-around sm:flex-row"
+        class=":uno: bg-gray-2 border rounded-md border-gray-7 shadow-md p-6 gap-4"
       >
-        <div>
-          <div
-            class=":uno: rounded-full flex mx-auto border-gray-6 border-2 h-28 w-28 items-center justify-center md:mb-8 md:ml-12"
-          >
-            <span class=":uno: h-16 w-16 i-solar:user-hand-up-bold-duotone"
-            ></span>
+        <div class="flex flex-col items-center md:items-start gap-6">
+          <div class="md:ml-6">
+            <div
+              class=":uno: rounded-full flex self-start shrink-0 mxa border-gray-6 border-2 h-28 w-28 items-center justify-center"
+            >
+              <span
+                class=":uno: h-16 w-16 i-solar:user-hand-up-bold-duotone"
+                role="none"></span>
+            </div>
           </div>
+
           <span
-            class=":uno: flex-shrink-0 h-10 text-crimson-9 w-10 i-ph:quotes-duotone md:h-12 md:w-12"
-          ></span>
+            class=":uno: shrink-0 self-start h-10 text-crimson-9 w-10 i-ph:quotes-duotone md:h-12 md:w-12"
+            role="none"></span>
 
           <div class=":uno: space-y-3 px-4 md:px-8">
             <p>
@@ -142,11 +150,11 @@ const meta = {
 
             <p class=":uno: text-right fw600">- Ensys Engineers</p>
           </div>
-        </div>
-        <div class=":uno: flex flex-shrink-0 items-end place-content-end">
-          <span
-            class=":uno: h-10 text-crimson-9 w-10 i-ph:quotes-duotone md:h-12 md:w-12"
-          ></span>
+          <div class=":uno: shrink-0 self-end">
+            <span
+              class=":uno: h-10 text-crimson-9 w-10 i-ph:quotes-duotone md:h-12 md:w-12"
+              role="none"></span>
+          </div>
         </div>
       </div>
     </div>

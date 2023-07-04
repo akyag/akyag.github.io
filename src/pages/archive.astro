@@ -15,7 +15,7 @@ const meta = {
 <Page>
   <Head slot="head" {meta} />
   <Hero />
-  <main id="content-wrapper" class=":uno: container mx-auto py-12 px-8 md:px-0">
+  <main id="content-wrapper" class=":uno: container mxa py-12 px-8 md:px-0">
     <div class=":uno: leading-relaxed grid grid-cols-1 place-items-center">
       <div class=":uno: max-w-prose space-y-12">
         <h3 class=":uno: font-display my-5 mx-3 text-center text-f-2xl fw700">
@@ -28,7 +28,13 @@ const meta = {
           A Custom ROM based on Android Gingerbread 2.3.x for HTC Explorer
           (Pico)
         </div>
-        <Image src={nextGen} alt="NExtGen" width={830} height={200} />
+        <Image
+          src={nextGen}
+          alt="NExtGen"
+          role="img"
+          width={830}
+          height={200}
+        />
         <p>
           Back in 2012, I created an Android ROM for the HTC Explorer that was
           based on the HTC Pico Europe 1.28.401.1 stock ROM. Now it's outdated,
