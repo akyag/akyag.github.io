@@ -4,7 +4,7 @@ import Backtotop from "../components/BackToTop.astro";
 // import footerLogo from "../images/logo-white.svg";
 // import AstroDark from "../images/astro-dark.svg";
 import Button from "../components/Button.astro";
-// import { Image } from "@astrojs/image/components";
+// import { Image } from "astro:assets";
 import Link from "../components/Link.astro";
 ---
 
@@ -197,11 +197,11 @@ import Link from "../components/Link.astro";
           </Link>
         </div>
         <div class=":uno: pt-2 pl-2 lg:pt-0">
-          Designed with
-          <span
+          Designed with <span
             class=":uno: h-6 text-red-9 w-6 i-solar:heart-angle-bold"
-            role="none"></span>
-          by Akshay Ghate.
+            role="none"
+          >
+          </span> by Akshay Ghate.
         </div>
       </div>
       <Backtotop />

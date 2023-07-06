@@ -1,7 +1,7 @@
 ---
 const { imagepath, title, feature1, feature2, feature3, feature4, target } =
   Astro.props;
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 ---
 
 <section
@@ -13,8 +13,6 @@ import { Image } from "@astrojs/image/components";
       src={imagepath}
       alt={title}
       role="img"
-      width={480}
-      height={270}
     />
   </div>
   <div class=":uno: flex flex-col py-4 gap-y-4 grow">

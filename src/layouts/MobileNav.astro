@@ -1,8 +1,7 @@
 ---
-import headerLogo from "../images/logo.svg";
 import MobileActiveLink from "../components/MobileActiveLink.astro";
 import MobileThemeToggle from "../components/MobileThemeToggle.astro";
-import { Image } from "@astrojs/image/components";
+import headerLogo from "../assets/images/logo.svg";
 ---
 
 <header
@@ -14,8 +13,8 @@ import { Image } from "@astrojs/image/components";
         <div class=":uno: flex items-center">
           <div class=":uno: pl-4">
             <a href="/" class=":uno: block">
-              <Image
-                src={headerLogo}
+              <img
+                src={headerLogo.src}
                 width={80}
                 height={45}
                 alt="Web-o-Reviews"

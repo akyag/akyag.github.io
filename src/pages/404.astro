@@ -1,9 +1,8 @@
 ---
 import Page from "../layouts/Page.astro";
 import Head from "../layouts/Head.astro";
-import notFound from "../images/not-found.svg";
+import notFound from "../assets/images/not-found.svg";
 import Button from "../components/Button.astro";
-import { Picture } from "@astrojs/image/components";
 
 const meta = {
   title: "404 error",
@@ -22,7 +21,7 @@ const meta = {
       class=":uno: flex flex-col mxa max-w-full flex-shrink-0 gap-x-2 gap-y-4 place-content-center items-center md:flex-row"
     >
       <div class=":uno: flex place-content-center items-center">
-        <Picture
+        <!-- <Picture
           class={"h-auto dark:filter dark:brightness-75 dark:contrast-125"}
           src={notFound}
           widths={[300, 450, 600]}
@@ -30,7 +29,22 @@ const meta = {
           aspectRatio={1.83}
           alt="404 Page not found!"
           role="img"
-        />
+        /> -->
+        <picture>
+          <source media="(max-width:768px)" srcset={notFound.src} width="300" />
+          <source
+            media="(max-width:1024px)"
+            srcset={notFound.src}
+            width="450"
+          />
+          <img
+            src={notFound.src}
+            class={":uno: h-auto dark:filter dark:brightness-75 dark:contrast-125"}
+            width="600"
+            alt="404 Page not found!"
+            role="img"
+          />
+        </picture>
       </div>
       <div
         class=":uno: flex flex-col space-y-4 p-4 place-content-center items-center"

@@ -2,9 +2,9 @@
 import Page from "../layouts/Page.astro";
 import Head from "../layouts/Head.astro";
 import Hero from "../layouts/AboutHero.astro";
-import Me from "../images/me.png";
 import Link from "../components/Link.astro";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
+import cover_photo from "../assets/images/me.png";
 
 const meta = {
   title: "About",
@@ -28,7 +28,7 @@ const meta = {
       >
         <div class=":uno: flex flex-shrink-0 justify-center">
           <Image
-            src={Me}
+            src={cover_photo}
             alt="Akshay Ghate"
             aria-role="img"
             width={128}
@@ -58,10 +58,12 @@ const meta = {
             particularly science fiction and fantasy genres.
           </p>
           <p>
-            If you have any questions or just want to say hi, feel free to
-            <Link href="/contact/#content-wrapper">contact me</Link> or through the
-            social media networks listed in the footer. If you use Open PGP, here
-            is my
+            If you have any questions or just want to say hi, feel free to <Link
+              href="/contact/#content-wrapper"
+            >
+              contact me
+            </Link> or through the social media networks listed in the footer. If
+            you use Open PGP, here is my
             <Link href="/public_key.asc" target="_blank" rel="noopener">
               public encryption key
             </Link>.

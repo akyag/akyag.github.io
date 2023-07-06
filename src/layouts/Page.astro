@@ -1,7 +1,8 @@
 ---
 import Header from "./Header.astro";
 import Footer from "./Footer.astro";
-// import "@fontsource/montserrat";
+import "../components/GlobalStyles.astro";
+
 import "@fontsource/mulish";
 import "@fontsource/atkinson-hyperlegible";
 ---
@@ -10,7 +11,7 @@ import "@fontsource/atkinson-hyperlegible";
 <html lang="en" class=":uno: motion-safe:scroll-smooth">
   <slot name="head" />
   <body
-    class=":uno: font-body bg-gray-1 text-f-base text-gray-12 scrollbar scrollbar-w-3 scrollbar-radius-3 scrollbar-track-radius-3 scrollbar-thumb-radius-3 scrollbar-thumb-color-crimson-9 scrollbar-track-color-gray-1"
+    class=":uno: font-body bg-gray-1 text-f-base text-gray-12 scrollbar scrollbar-w-3 scrollbar-radius-3 scrollbar-track-radius-3 scrollbar-thumb-radius-3 scrollbar-thumb-color-crimson-9 scrollbar-track-color-gray-1 fw400"
   >
     <div
       class=":uno: bg-[url(/bg.png)] bg-center bg-no-repeat h-[700px] inset-0 absolute md:h-[600px] lg:h-[720px] 2xl:h-[960px] dark:bg-[url(/bg-dark.png)] dark:bg-teal-1"

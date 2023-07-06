@@ -1,7 +1,6 @@
 ---
-import licenseHero from "../images/license.svg";
+import licenseHero from "../assets/images/license.svg";
 import ScrollDown from "../components/ScrollDown.astro";
-import { Picture } from "@astrojs/image/components";
 ---
 
 <section class=":uno: z-10 relative" id="hero">
@@ -20,7 +19,7 @@ import { Picture } from "@astrojs/image/components";
         </h2>
       </div>
       <div>
-        <Picture
+        <!-- <Picture
           class={":uno: h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
           src={licenseHero}
           widths={[300, 475, 600]}
@@ -29,7 +28,27 @@ import { Picture } from "@astrojs/image/components";
           alt="License"
           role="presentation"
           id="LicenseHero"
-        />
+        /> -->
+        <picture>
+          <source
+            media="(max-width:768px)"
+            srcset={licenseHero.src}
+            width="300"
+          />
+          <source
+            media="(max-width:1024px)"
+            srcset={licenseHero.src}
+            width="475"
+          />
+          <img
+            src={licenseHero.src}
+            class={":uno: h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
+            width="600"
+            alt="License"
+            role="presentation"
+            id="LicenseHero"
+          />
+        </picture>
       </div>
     </div>
     <ScrollDown />

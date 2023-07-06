@@ -1,7 +1,6 @@
 ---
-import contactHero from "../images/contact.svg";
+import contactHero from "../assets/images/contact.svg";
 import ScrollDown from "../components/ScrollDown.astro";
-import { Picture } from "@astrojs/image/components";
 ---
 
 <section class=":uno: z-10 relative" id="hero">
@@ -20,7 +19,7 @@ import { Picture } from "@astrojs/image/components";
         </h2>
       </div>
       <div>
-        <Picture
+        <!-- <Picture
           class={":uno: h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
           src={contactHero}
           widths={[200, 350, 400]}
@@ -29,7 +28,27 @@ import { Picture } from "@astrojs/image/components";
           alt="Contact Me"
           role="presentation"
           id="ContactHero"
-        />
+        /> -->
+        <picture>
+          <source
+            media="(max-width:768px)"
+            srcset={contactHero.src}
+            width="200"
+          />
+          <source
+            media="(max-width:1024px)"
+            srcset={contactHero.src}
+            width="350"
+          />
+          <img
+            src={contactHero.src}
+            class={":uno: h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
+            width="400"
+            alt="Contact Me"
+            role="presentation"
+            id="ContactHero"
+          />
+        </picture>
       </div>
     </div>
     <ScrollDown />

@@ -2,9 +2,9 @@
 import Page from "../layouts/Page.astro";
 import Head from "../layouts/Head.astro";
 import Hero from "../layouts/ArchiveHero.astro";
-import nextGen from "../images/nextgen.svg";
+import nextGen from "../assets/images/nextgen.svg";
 import ButtonIcon from "../components/ButtonIcon.astro";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 const meta = {
   title: "Archive",
@@ -28,8 +28,8 @@ const meta = {
           A Custom ROM based on Android Gingerbread 2.3.x for HTC Explorer
           (Pico)
         </div>
-        <Image
-          src={nextGen}
+        <img
+          src={nextGen.src}
           alt="NExtGen"
           role="img"
           width={830}

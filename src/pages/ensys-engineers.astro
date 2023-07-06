@@ -3,11 +3,11 @@
 import Page from "../layouts/Page.astro";
 import Head from "../layouts/Head.astro";
 import Hero from "../layouts/WorkHero.astro";
-import ensys from "../images/ensys.png";
-import ensysFull from "../images/ensys-lg.png";
+import ensys from "../assets/images/ensys.png";
+import ensysFull from "../assets//images/ensys-lg.png";
 import Modal from "../components/Modal.astro";
 import ButtonIcon from "../components/ButtonIcon.astro";
-import { Image, Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 const meta = {
   title: "Ensys Engineers",
@@ -90,7 +90,7 @@ const meta = {
           <div class=":uno: flex items-start flex-wrap gap-x-2">
             <div>
               <ButtonIcon
-                href="http://ensys.in"
+                href="https://ensys.in"
                 target="_blank"
                 color="bg-blue-9 hover:bg-blue-10"
                 iconClass="w-5 h-5 mr-2 text-current i-solar:square-top-down-linear"
@@ -141,7 +141,7 @@ const meta = {
 
             <p>
               He is young but very professional, committed to focusing on the
-              customer’s needs and showing a genuine interest in helping the
+              customer's needs and showing a genuine interest in helping the
               customer to achieve the required results. From the first moment we
               felt that our project was in good hands and that the experience,
               knowledge and enthusiasm of this young man would show in our new
@@ -161,14 +161,25 @@ const meta = {
   </main>
   <Modal triggerId="modal2-trigger" title="Ensys Engineers">
     <div class=":uno: mt-3 grid place-content-center">
-      <Picture
+      <!-- <Picture
         class=":uno: dark:filter dark:brightness-75 dark:contrast-125"
         src={ensysFull}
         alt="Ensys Engineers Full Image"
         widths={[300, 450, 600]}
         sizes="(max-width: 768px) 300px, (max-width: 1024px) 450px, 600px"
         aspectRatio={1}
-      />
+      /> -->
+      <picture>
+        <source media="(max-width:768px)" srcset={ensysFull.src} width="300" />
+        <source media="(max-width:1024px)" srcset={ensysFull.src} width="450" />
+        <img
+          src={ensysFull.src}
+          class={":uno: h-auto dark:filter dark:brightness-75 dark:contrast-125"}
+          width="600"
+          alt="Ensys Engineers Full Image"
+          role="img"
+        />
+      </picture>
     </div>
   </Modal>
 </Page>

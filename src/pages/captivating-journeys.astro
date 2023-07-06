@@ -3,11 +3,11 @@
 import Page from "../layouts/Page.astro";
 import Head from "../layouts/Head.astro";
 import Hero from "../layouts/WorkHero.astro";
-import captivatingJourneys from "../images/captivating-journeys.png";
-import captivatingJourneysFull from "../images/captivating-journeys-lg.png";
+import captivatingJourneys from "../assets/images/captivating-journeys.png";
+import captivatingJourneysFull from "../assets/images/captivating-journeys-lg.png";
 import Modal from "../components/Modal.astro";
 import ButtonIcon from "../components/ButtonIcon.astro";
-import { Image, Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 const meta = {
   title: "Captivating Journeys",
@@ -104,7 +104,7 @@ const meta = {
   </main>
   <Modal triggerId="modal1-trigger" title="Captivating Journeys">
     <div class=":uno: mt-3 grid place-content-center">
-      <Picture
+      <!-- <Picture
         class=":uno: dark:filter dark:brightness-75 dark:contrast-125"
         src={captivatingJourneysFull}
         alt="Captivating Journeys Full Image"
@@ -112,7 +112,26 @@ const meta = {
         widths={[250, 375, 500]}
         sizes="(max-width: 768px) 250px, (max-width: 1024px) 375px, 500px"
         aspectRatio={0.8}
-      />
+      /> -->
+      <picture>
+        <source
+          media="(max-width:768px)"
+          srcset={captivatingJourneysFull.src}
+          width="250"
+        />
+        <source
+          media="(max-width:1024px)"
+          srcset={captivatingJourneysFull.src}
+          width="375"
+        />
+        <img
+          src={captivatingJourneysFull.src}
+          class={":uno: h-auto dark:filter dark:brightness-75 dark:contrast-125"}
+          width="500"
+          alt="Captivating Journeys Full Image"
+          role="img"
+        />
+      </picture>
     </div>
   </Modal>
 </Page>

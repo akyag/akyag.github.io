@@ -1,9 +1,8 @@
 ---
 import Page from "../layouts/Page.astro";
 import Head from "../layouts/Head.astro";
-import Mail from "../images/mail.svg";
+import message from "../assets/images/mail.svg";
 import Button from "../components/Button.astro";
-import { Picture } from "@astrojs/image/components";
 
 const meta = {
   title: "Thanks",
@@ -24,7 +23,7 @@ const meta = {
       <div
         class=":uno: flex py-12 md:py-24 px-8 place-content-center items-center"
       >
-        <Picture
+        <!-- <Picture
           class={":uno: h-auto dark:filter dark:brightness-75 dark:contrast-125"}
           src={Mail}
           widths={[200, 300, 400]}
@@ -32,7 +31,18 @@ const meta = {
           aspectRatio={1.11}
           alt="Message Sent"
           role="img"
-        />
+        /> -->
+        <picture>
+          <source media="(max-width:768px)" srcset={message.src} width="200" />
+          <source media="(max-width:1024px)" srcset={message.src} width="300" />
+          <img
+            src={message.src}
+            class={":uno: h-auto dark:filter dark:brightness-75 dark:contrast-125"}
+            width="400"
+            alt="Message Sent"
+            role="img"
+          />
+        </picture>
       </div>
       <div class=":uno: flex flex-col p-4 place-content-center items-center">
         <div class=":uno: font-display text-f-3xl fw700">

@@ -1,7 +1,6 @@
 ---
-import aboutHero from "../images/about-me.svg";
+import aboutHero from "../assets/images/about-me.svg";
 import ScrollDown from "../components/ScrollDown.astro";
-import { Picture } from "@astrojs/image/components";
 ---
 
 <section class=":uno: z-10 relative" id="hero">
@@ -23,7 +22,7 @@ import { Picture } from "@astrojs/image/components";
         </h2>
       </div>
       <div>
-        <Picture
+        <!-- <Picture
           class={":uno: h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
           src={aboutHero}
           widths={[300, 450, 600]}
@@ -32,7 +31,27 @@ import { Picture } from "@astrojs/image/components";
           alt="About Me"
           role="presentation"
           id="AboutHero"
-        />
+        /> -->
+        <picture>
+          <source
+            media="(max-width:768px)"
+            srcset={aboutHero.src}
+            width="300"
+          />
+          <source
+            media="(max-width:1024px)"
+            srcset={aboutHero.src}
+            width="450"
+          />
+          <img
+            src={aboutHero.src}
+            class={":uno: h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
+            width="600"
+            alt="About Me"
+            role="presentation"
+            id="AboutHero"
+          />
+        </picture>
       </div>
     </div>
     <ScrollDown />

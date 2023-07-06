@@ -1,7 +1,6 @@
 ---
-import archiveHero from "../images/archive.svg";
+import archiveHero from "../assets/images/archive.svg";
 import ScrollDown from "../components/ScrollDown.astro";
-import { Picture } from "@astrojs/image/components";
 ---
 
 <section class=":uno: z-10 relative" id="hero">
@@ -20,7 +19,7 @@ import { Picture } from "@astrojs/image/components";
         </h2>
       </div>
       <div>
-        <Picture
+        <!-- <Picture
           class={":uno: h-auto transform w-[200px] translate-x-25 op0 lg:w-[300px] 2xl:w-[400px] dark:filter dark:brightness-75 dark:contrast-125"}
           src={archiveHero}
           widths={[200, 300, 400]}
@@ -29,7 +28,27 @@ import { Picture } from "@astrojs/image/components";
           alt="Archive"
           role="presentation"
           id="ArchiveHero"
-        />
+        /> -->
+        <picture>
+          <source
+            media="(max-width:768px)"
+            srcset={archiveHero.src}
+            width="200"
+          />
+          <source
+            media="(max-width:1024px)"
+            srcset={archiveHero.src}
+            width="300"
+          />
+          <img
+            src={archiveHero.src}
+            class={":uno: h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
+            width="400"
+            alt="Archive"
+            role="presentation"
+            id="ArchiveHero"
+          />
+        </picture>
       </div>
     </div>
     <ScrollDown />

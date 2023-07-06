@@ -4,7 +4,7 @@ import Page from "../layouts/Page.astro";
 import Head from "../layouts/Head.astro";
 import Hero from "../layouts/DesignHero.astro";
 import Link from "../components/Link.astro";
-import responsive from "../images/responsive.svg?url";
+import responsive from "../assets/images/responsive.svg";
 
 const meta = {
   title: "Design",
@@ -74,7 +74,7 @@ const meta = {
         <p>Want to see it live in action? Try resizing your browser window!</p>
         <img
           class={"dark:filter dark:brightness-75 dark:contrast-125"}
-          src={responsive}
+          src={responsive.src}
           width={600}
           alt="Responsive"
         />
