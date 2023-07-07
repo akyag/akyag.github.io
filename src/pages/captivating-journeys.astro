@@ -7,6 +7,7 @@ import captivatingJourneys from "../assets/images/captivating-journeys.png";
 import captivatingJourneysFull from "../assets/images/captivating-journeys-lg.png";
 import Modal from "../components/Modal.astro";
 import ButtonIcon from "../components/ButtonIcon.astro";
+import ButtonSecondary from "../components/ButtonSecondary.astro";
 import { Image } from "astro:assets";
 
 const meta = {
@@ -78,10 +79,9 @@ const meta = {
 
           <div class=":uno: flex items-start flex-wrap gap-x-2">
             <div>
-              <ButtonIcon
+              <ButtonIcon hue="hue-crimson"
                 href="/data/design-1/"
                 target="_blank"
-                color="bg-crimson-9 hover:bg-crimson-10"
                 iconClass="w-5 h-5 mr-2 text-current i-solar:square-top-down-linear"
               >
                 Demo
@@ -89,13 +89,12 @@ const meta = {
             </div>
 
             <div>
-              <ButtonIcon
+              <ButtonSecondary hue="hue-crimson"
                 id="modal1-trigger"
-                color="bg-gray-9 hover:bg-gray-10 cursor-pointer"
                 iconClass="w-5 h-5 mr-2 text-current i-solar:full-screen-square-line-duotone"
               >
                 Screenshot
-              </ButtonIcon>
+              </ButtonSecondary>
             </div>
           </div>
         </div>

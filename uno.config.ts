@@ -48,7 +48,7 @@ export default defineConfig({
       collections: {
         "simple-icons": () =>
           import("@iconify-json/simple-icons/icons.json").then(
-            (i) => i.default
+            (i) => i.default,
           ),
         phosphor: () =>
           import("@iconify-json/ph/icons.json").then((i) => i.default),
@@ -56,7 +56,7 @@ export default defineConfig({
           import("@iconify-json/ri/icons.json").then((i) => i.default),
         solar: () =>
           import("@iconify-json/solar/icons.json").then(
-            (i) => i.default as any
+            (i) => i.default as any,
           ),
       },
     }),

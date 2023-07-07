@@ -3,7 +3,7 @@ let currentDate = new Date().getFullYear();
 import Backtotop from "../components/BackToTop.astro";
 // import footerLogo from "../images/logo-white.svg";
 // import AstroDark from "../images/astro-dark.svg";
-import Button from "../components/Button.astro";
+import ButtonSecondary from "../components/ButtonSecondary.astro";
 // import { Image } from "astro:assets";
 import Link from "../components/Link.astro";
 ---
@@ -17,16 +17,16 @@ import Link from "../components/Link.astro";
     <h4 class=":uno: font-display text-f-3xl fw700">
       Interested in Collaboration?
     </h4>
-    <Button href="/contact/" color="bg-teal-9 hover:bg-teal-10 relative">
+    <ButtonSecondary href="/contact/" hue="hue-crimson relative">
       <span class=":uno: flex h-3 -mt-1 mr-1 top-0 right-0 w-3 absolute">
         <span
-          class=":uno: rounded-full h-full bg-green-9 w-full opacity-75 animate-ping absolute inline-flex"
+          class=":uno: rounded-full h-full bg-crimson-11 w-full opacity-75 animate-ping absolute inline-flex"
         ></span>
-        <span class=":uno: rounded-full bg-mint-9 h-3 w-3 relative inline-flex"
+        <span class=":uno: rounded-full bg-crimson-9 h-3 w-3 relative inline-flex"
         ></span>
       </span>
       Let's Talk
-    </Button>
+    </ButtonSecondary>
   </div>
   <div
     class=":uno: flex flex-col mxa mb-12 max-w-6xl pt-12 items-center justify-around md:flex-row md:px-6 md:items-end lg:px-8"

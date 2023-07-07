@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import UnoCSS from "unocss/astro";
+import "@unocss/reset/tailwind-compat.css";
 
 // Plugins
 import sitemap from "@astrojs/sitemap";
@@ -11,7 +12,7 @@ export default defineConfig({
   site: "https://weboreviews.com/",
   integrations: [
     UnoCSS({
-      injectReset: true, // or a path to the reset file
+      injectReset: "@unocss/reset/tailwind-compat.css", // or a path to the reset file
     }),
     sitemap(),
     robotsTxt(),
