@@ -18,10 +18,7 @@ import Button from "./Button.astro";
       <slot>Modal description.</slot>
     </div>
     <div class=":uno: flex justify-end">
-      <Button hue="hue-crimson m-5">
-        Close
-      </Button>
-      
+      <Button hue="hue-crimson m-5">Close</Button>
     </div>
   </div>
 </div>
@@ -110,7 +107,7 @@ import Button from "./Button.astro";
   window.closeModal = closeModal;
 </script>
 
-<style is:global>
+<style>
   /* body.modal-is-active > *:not(.modal) {
     filter: blur(6px);
   } */
