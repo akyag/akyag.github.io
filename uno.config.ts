@@ -99,5 +99,5 @@ export default defineConfig({
       { "font-size": "clamp(2.14rem, calc(1.70rem + 2.20vw), 3.82rem);" },
     ],
   ],
-  // transformers: [transformerCompileClass()],
+  transformers: [transformerCompileClass()],
 });
