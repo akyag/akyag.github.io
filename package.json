@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@astrojs/prefetch": "^0.2.3",
-    "@astrojs/sitemap": "^1.4.0",
+    "@astrojs/sitemap": "^2.0.1",
     "@fontsource/atkinson-hyperlegible": "^5.0.5",
     "@fontsource/mulish": "^5.0.5",
     "@julr/unocss-preset-heropatterns": "^1.0.2",

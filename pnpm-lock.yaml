@@ -9,8 +9,8 @@ dependencies:
     specifier: ^0.2.3
     version: 0.2.3
   '@astrojs/sitemap':
-    specifier: ^1.4.0
-    version: 1.4.0
+    specifier: ^2.0.1
+    version: 2.0.1
   '@fontsource/atkinson-hyperlegible':
     specifier: ^5.0.5
     version: 5.0.5
@@ -40,7 +40,7 @@ dependencies:
     version: 0.5.0
   unocss:
     specifier: ^0.53.6
-    version: 0.53.6(postcss@8.4.25)(vite@4.4.7)
+    version: 0.53.6(postcss@8.4.27)(vite@4.4.7)
   unocss-preset-radix:
     specifier: ^2.5.1
     version: 2.5.1
@@ -181,8 +181,8 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/sitemap@1.4.0:
-    resolution: {integrity: sha512-uTK77kcg7iTiik+u7rTGG6vK4ZWTfYMaVnFndOVQrLzaE5xivmQgIbVLtlN+xRcME5n/m6vYQFJmogFR+elGCw==}
+  /@astrojs/sitemap@2.0.1:
+    resolution: {integrity: sha512-unoaSEyHuR8IApsPN467SD5FMm4PBnaQSHbtvt4dVS3PMDObZV5/lKIbjlfSad7ENzuvpBSLCGyLDOykXUNu6w==}
     dependencies:
       sitemap: 7.1.1
       zod: 3.21.4
@@ -939,7 +939,7 @@ packages:
       unocss: '>= 0.31.13 < 1'
     dependencies:
       '@unocss/preset-mini': 0.52.7
-      unocss: 0.53.6(postcss@8.4.25)(vite@4.4.7)
+      unocss: 0.53.6(postcss@8.4.27)(vite@4.4.7)
     dev: false
 
   /@motionone/animation@10.15.1:
@@ -1385,7 +1385,7 @@ packages:
       sirv: 2.0.3
     dev: false
 
-  /@unocss/postcss@0.53.6(postcss@8.4.25):
+  /@unocss/postcss@0.53.6(postcss@8.4.27):
     resolution: {integrity: sha512-/Xi1f32uWgvlGqW7YejV5gJQYOFKKHU3TxQSrqUHVtHmtG5ZS8Ow6ZIumcReWnazpI/grq0H0O/ZPrXsUvPcpg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1396,7 +1396,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.0
       magic-string: 0.30.1
-      postcss: 8.4.25
+      postcss: 8.4.27
     dev: false
 
   /@unocss/preset-attributify@0.53.6:
@@ -4204,15 +4204,6 @@ packages:
       find-up: 4.1.0
     dev: false
 
-  /postcss@8.4.25:
-    resolution: {integrity: sha512-7taJ/8t2av0Z+sQEvNzCkpDynl0tX3uJMCODi6nT3PfASC7dYCWV9aQ+uiCf+KBD4SEFcu+GvJdGdwzQ6OSjCw==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.6
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
-    dev: false
-
   /postcss@8.4.27:
     resolution: {integrity: sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==}
     engines: {node: ^10 || ^12 || >=14}
@@ -5139,10 +5130,10 @@ packages:
       unocss: '>= 0.31.13 < 1'
     dependencies:
       '@unocss/preset-mini': 0.31.17
-      unocss: 0.53.6(postcss@8.4.25)(vite@4.4.7)
+      unocss: 0.53.6(postcss@8.4.27)(vite@4.4.7)
     dev: false
 
-  /unocss@0.53.6(postcss@8.4.25)(vite@4.4.7):
+  /unocss@0.53.6(postcss@8.4.27)(vite@4.4.7):
     resolution: {integrity: sha512-yZeSaa3ulfDyU7WaOeN5AZN/ciopY+f9GPuME4hgzxZmUnCSJmuwBW+5UHud2BSRKdem+mLIpBzNXTOsDP8gFA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -5155,7 +5146,7 @@ packages:
       '@unocss/cli': 0.53.6
       '@unocss/core': 0.53.6
       '@unocss/extractor-arbitrary-variants': 0.53.6
-      '@unocss/postcss': 0.53.6(postcss@8.4.25)
+      '@unocss/postcss': 0.53.6(postcss@8.4.27)
       '@unocss/preset-attributify': 0.53.6
       '@unocss/preset-icons': 0.53.6
       '@unocss/preset-mini': 0.53.6
