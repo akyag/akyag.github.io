@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@astrojs/prefetch':
-    specifier: ^0.2.3
-    version: 0.2.3
+    specifier: ^0.3.0
+    version: 0.3.0
   '@astrojs/sitemap':
     specifier: ^2.0.1
     version: 2.0.1
@@ -168,8 +168,8 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/prefetch@0.2.3:
-    resolution: {integrity: sha512-r51t4fkGcePA6FHFVDD5vC/whhoKWFSaKNug/4Z2FSKZZga9yjb2qDcrul7u32nVDN+30ywZ/RQAmBMrHOmLiw==}
+  /@astrojs/prefetch@0.3.0:
+    resolution: {integrity: sha512-LPKpbcnTwonkgNeLvVEQ1SXEyjkjsCm/o77Leg6/9725Cpn+rAIHiWMwFwigqf366VuvdvEYsG86nH8d1kSoNA==}
     dependencies:
       throttles: 1.0.1
     dev: false
