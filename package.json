@@ -11,7 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/prefetch": "^0.2.3",
+    "@astrojs/prefetch": "^0.3.0",
     "@astrojs/sitemap": "^2.0.1",
     "@fontsource/atkinson-hyperlegible": "^5.0.5",
     "@fontsource/mulish": "^5.0.5",
