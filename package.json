@@ -31,7 +31,7 @@
     "@iconify-json/ri": "^1.1.10",
     "@iconify-json/simple-icons": "^1.1.62",
     "@iconify-json/solar": "^1.1.1",
-    "@unocss/transformer-compile-class": "^0.53.6",
+    "@unocss/transformer-compile-class": "^0.54.0",
     "canvas-confetti": "^1.6.0",
     "motion": "^10.16.2",
     "prettier": "^3.0.0",
