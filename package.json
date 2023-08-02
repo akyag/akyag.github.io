@@ -17,21 +17,21 @@
     "@fontsource/mulish": "^5.0.5",
     "@julr/unocss-preset-heropatterns": "^1.0.2",
     "@radix-ui/colors": "^1.0.1",
-    "@unocss/astro": "^0.53.6",
-    "@unocss/reset": "^0.53.6",
-    "astro": "2.9.3",
-    "astro-compress": "1.1.49",
+    "@unocss/astro": "^0.54.1",
+    "@unocss/reset": "^0.54.1",
+    "astro": "2.9.7",
+    "astro-compress": "1.1.50",
     "astro-robots-txt": "^0.5.0",
-    "unocss": "^0.53.6",
+    "unocss": "^0.54.1",
     "unocss-preset-radix": "^2.5.1",
     "unocss-preset-scrollbar": "^0.2.1"
   },
   "devDependencies": {
     "@iconify-json/ph": "^1.1.5",
-    "@iconify-json/ri": "^1.1.10",
-    "@iconify-json/simple-icons": "^1.1.62",
+    "@iconify-json/ri": "^1.1.11",
+    "@iconify-json/simple-icons": "^1.1.63",
     "@iconify-json/solar": "^1.1.1",
-    "@unocss/transformer-compile-class": "^0.53.6",
+    "@unocss/transformer-compile-class": "^0.54.1",
     "canvas-confetti": "^1.6.0",
     "motion": "^10.16.2",
     "prettier": "^3.0.0",
@@ -39,6 +39,6 @@
     "svgo": "3.0.2",
     "taze": "^0.11.2",
     "typescript": "^5.1.6",
-    "vite": "^4.4.7"
+    "vite": "^4.4.8"
   }
 }
