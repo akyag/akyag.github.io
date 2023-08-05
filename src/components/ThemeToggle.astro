@@ -1,5 +1,6 @@
 ---
-
+import "@radix-ui/colors/teal.css";
+import "@radix-ui/colors/sage-dark.css";
 ---
 
 <theme-toggle>
@@ -40,19 +41,19 @@
     content: "";
     width: 4rem;
     height: 2rem;
-    background-color: hsl(150, 16.7%, 97.6%);
+    background-color: var(--teal-4);
     border-radius: 2rem;
     transition: background-color 200ms ease-in-out;
   }
   input[type="checkbox"].themeToggle:focus + label::before {
-    outline: 2px solid hsl(155, 3.5%, 55.5%);
+    outline: 2px solid var(--teal-6);
   }
 
   input[type="checkbox"].themeToggle + label::after {
     content: "";
     width: 1.8rem;
     height: 1.8rem;
-    background-color: hsl(336, 80%, 57.8%);
+    background-color: var(--lightCoral);
     border-radius: 2rem;
     margin-right: 1rem;
     position: absolute;
@@ -62,14 +63,14 @@
       transform 200ms ease-in-out;
   }
   input[type="checkbox"].themeToggle:checked + label::before {
-    background-color: hsl(150, 5.8%, 19.9%);
+    background-color: var(--sage-1);
   }
   input[type="checkbox"].themeToggle:checked + label::after {
-    background-color: hsl(173, 80%, 36%);
+    background-color: var(--teal-9);
     transform: translateX(100%);
   }
   input[type="checkbox"].themeToggle + label > span#sun {
-    color: rgb(255, 255, 255);
+    color: white;
     transition: background-color 200ms ease-in-out;
   }
   input[type="checkbox"].themeToggle:checked + label > span#sun {
@@ -86,11 +87,11 @@
 </style>
 
 <script is:inline>
-  if (
-    localStorage.theme === "dark" ||
-    (!("theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches)
-  ) {
-    document.getElementById("switch").checked = true;
-  }
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.getElementById("switch").checked = true;
+}
 </script>

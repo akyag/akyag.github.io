@@ -11,16 +11,17 @@ import ScrollDown from "../components/ScrollDown.astro";
     >
       <div class=":uno: grid place-items-center items-center">
         <h1
-          class=":uno: font-display mt-28 text-center leading-relaxed text-f-4xl fw700 md:mt-0"
+          class=":uno: font-display mt-28 text-center leading-relaxed text-f-4xl fw800 md:mt-0"
         >
           Web-o-Reviews
         </h1>
-        <h2 class=":uno: mt-2 text-f-lg text-center leading-snug fw600">
+        <h2 class=":uno: mt-2 text-f-lg text-center leading-snug fw500">
           Engaging, purposeful, and creative
         </h2>
         <div class=":uno: flex mt-8 w-screen place-content-center">
           <ButtonIcon
             href="/work/"
+            hue="hue-radixteal"
             iconClass="w-6 h-6 fill-current mr-2 i-solar:palette-round-bold-duotone"
           >
             Web Design
@@ -65,7 +66,7 @@ import ScrollDown from "../components/ScrollDown.astro";
     animate(
       info.target,
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] },
     );
   });
 </script>

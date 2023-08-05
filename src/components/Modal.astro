@@ -9,16 +9,16 @@ import Button from "./Button.astro";
   aria-labelledby={triggerId}
 >
   <div
-    class=":uno: bg-gray-2 opacity-1 transition-opacity ease-in duration-500 modal__inner"
+    class=":uno: bg-radixgray-2 opacity-1 transition-opacity ease-in duration-500 modal__inner"
   >
-    <div class=":uno: flex flex-col border-1 border-gray-6 p-8 gap-2">
-      <h3 class=":uno: border-b-4 border-red-6 text-f-lg" tabindex="-1">
+    <div class=":uno: flex flex-col border-1 border-radixgray-6 p-8 gap-2">
+      <h3 class=":uno: border-b-4 border-radixred-6 text-f-lg" tabindex="-1">
         {title}
       </h3>
       <slot>Modal description.</slot>
     </div>
     <div class=":uno: flex justify-end">
-      <Button hue="hue-crimson m-5">Close</Button>
+      <Button hue="hue-radixcrimson m-5">Close</Button>
     </div>
   </div>
 </div>
@@ -40,7 +40,7 @@ import Button from "./Button.astro";
   const getKeyboardFocusableElements = (element) => {
     return [
       ...element.querySelectorAll(
-        'a, button, input, textarea, select, details,[tabindex]:not([tabindex="-1"])'
+        'a, button, input, textarea, select, details,[tabindex]:not([tabindex="-1"])',
       ),
     ].filter((el) => !el.hasAttribute("disabled"));
   };

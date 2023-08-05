@@ -1,14 +1,14 @@
 import {
   defineConfig,
-  presetAttributify,
+  // presetAttributify,
   presetIcons,
   presetUno,
 } from "unocss";
 
-import { presetHeroPatterns } from "@julr/unocss-preset-heropatterns";
+// import { presetHeroPatterns } from "@julr/unocss-preset-heropatterns";
 import { presetScrollbar } from "unocss-preset-scrollbar";
 import { presetRadix } from "unocss-preset-radix";
-import transformerCompileClass from "@unocss/transformer-compile-class";
+// import transformerCompileClass from "@unocss/transformer-compile-class";
 
 export default defineConfig({
   shortcuts: [],
@@ -36,9 +36,27 @@ export default defineConfig({
         "yellow",
       ],
       aliases: {
-        gray: "sage",
+        radixgray: "sage",
+        radixblue: "blue",
+        radixcrimson: "crimson",
+        radixcyan: "cyan",
+        radixgrass: "grass",
+        radixgreen: "green",
+        radixindigo: "indigo",
+        radixlime: "lime",
+        radixmint: "mint",
+        radixorange: "orange",
+        radixpink: "pink",
+        radixplum: "plum",
+        radixpurple: "purple",
+        radixred: "red",
+        radixsky: "sky",
+        radixteal: "teal",
+        radixtomtato: "tomato",
+        radixyellow: "yellow",
       },
       darkSelector: ".dark",
+      extend: true,
     }),
     presetIcons({
       extraProperties: {
@@ -60,12 +78,12 @@ export default defineConfig({
           ),
       },
     }),
-    presetHeroPatterns(),
+    // presetHeroPatterns(),
     presetScrollbar(),
   ],
   rules: [
-    ["font-display", { "font-family": '"Mulish", sans-serif;' }],
-    ["font-body", { "font-family": '"Atkinson Hyperlegible", sans-serif;' }],
+    // ["font-display", { "font-family": '"Mulish", sans-serif;' }],
+    // ["font-body", { "font-family": '"Atkinson Hyperlegible", sans-serif;' }],
     [
       "text-f-xs",
       { "font-size": "clamp(0.80rem, calc(0.97rem + -0.18vw), 0.94rem);" },
@@ -99,5 +117,11 @@ export default defineConfig({
       { "font-size": "clamp(2.14rem, calc(1.70rem + 2.20vw), 3.82rem);" },
     ],
   ],
-  transformers: [transformerCompileClass()],
+  theme: {
+    colors: {
+      lightRose: "#fbcbcb",
+      lightCoral: "#f57e7e",
+    },
+  },
+  // transformers: [transformerCompileClass()],
 });

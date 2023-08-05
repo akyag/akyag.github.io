@@ -11,18 +11,26 @@ import "@fontsource/atkinson-hyperlegible";
 <html lang="en" class=":uno: motion-safe:scroll-smooth">
   <slot name="head" />
   <body
-    class=":uno: font-body bg-gray-1 text-f-base text-gray-12 scrollbar scrollbar-w-3 scrollbar-radius-3 scrollbar-track-radius-3 scrollbar-thumb-radius-3 scrollbar-thumb-color-crimson-9 scrollbar-track-color-gray-1 fw400"
+    class=":uno: font-body bg-radixgray-1 text-f-base text-radixgray-12 scrollbar scrollbar-w-3 scrollbar-radius-3 scrollbar-track-radius-3 scrollbar-thumb-radius-3 scrollbar-thumb-color-radixcrimson-9 scrollbar-track-color-radixgray-1 fw400 bg-cover lg:bg-contain"
   >
-    <div
-      class=":uno: bg-[url(/bg.png)] bg-center bg-no-repeat h-[700px] inset-0 absolute md:h-[600px] lg:h-[720px] 2xl:h-[960px] dark:bg-[url(/bg-dark.png)] dark:bg-teal-1"
-    >
-      <div
-        class=":uno: bg-bottom border-b bg-gray-1 border-gray-6 inset-0 absolute op-50 bg-mask-hero-circuit-board"
-      >
-      </div>
-    </div>
+    <!-- <div -->
+    <!--   class=":uno: bg-[url(/bg.png)] bg-center bg-no-repeat h-[700px] inset-0 absolute md:h-[600px] lg:h-[720px] 2xl:h-[960px] dark:bg-[url(/bg-dark.png)] dark:bg-radixteal-1" -->
+    <!-- > -->
+    <!-- </div> -->
+    <Header />
+    <slot />
+    <Footer />
   </body>
-  <Header />
-  <slot />
-  <Footer />
 </html>
+<style>
+  body {
+    background-image: url("../assets/images/lightbg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  :global(.dark) body {
+    background-image: url("../assets/images/darkbg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+</style>
