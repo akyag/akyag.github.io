@@ -8,8 +8,8 @@ const { href, id, target, hue, iconClass } = Astro.props;
   target={target}
   rel="prefetch"
   class:list={[
-    ":uno: text-f-sm hover:ease flex justify-center items-center rounded-full pl-4 pr-6 py-2 fw600 text-white shadow-md hover:transition-all hover:duration-150 focus:outline-none focus:ring-2 focus:ring-radixgray-7/50 focus:ring-offset-2 focus:ring-offset-transparent bg-hue9 hover:bg-hue10",
-    hue || "hue-radixteal",
+    "text-f-sm hover:ease-out ease-in flex justify-center items-center rounded-full pl-4 pr-6 py-2 fw600 text-white shadow-md transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-sage-7/50 focus:ring-offset-2 focus:ring-offset-transparent",
+    hue || "bg-teal-9 hover:bg-teal-10 dark:hover:bg-tealDark-10",
   ]}
   tabindex="0"
   role="button"

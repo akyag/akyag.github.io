@@ -1,6 +1,5 @@
 ---
-import "@radix-ui/colors/teal.css";
-import "@radix-ui/colors/sage-dark.css";
+
 ---
 
 <theme-toggle>
@@ -16,11 +15,11 @@ import "@radix-ui/colors/sage-dark.css";
   <label for="switch" role="switch">
     <span
       aria-hidden="true"
-      class=":uno: i-solar:sun-2-bold absolute z-1 left-2"
+      class="i-solar-sun-2-bold absolute z-1 left-2"
       id="sun"></span>
     <span
       aria-hidden="true"
-      class=":uno: i-solar:moon-bold absolute z-1 left-9"
+      class="i-solar-moon-bold absolute z-1 left-9"
       id="moon"></span>
   </label>
 </theme-toggle>
@@ -41,19 +40,19 @@ import "@radix-ui/colors/sage-dark.css";
     content: "";
     width: 4rem;
     height: 2rem;
-    background-color: var(--teal-4);
+    background-color: theme("colors.teal.4");
     border-radius: 2rem;
     transition: background-color 200ms ease-in-out;
   }
   input[type="checkbox"].themeToggle:focus + label::before {
-    outline: 2px solid var(--teal-6);
+    outline: 2px solid theme("colors.teal.7");
   }
 
   input[type="checkbox"].themeToggle + label::after {
     content: "";
     width: 1.8rem;
     height: 1.8rem;
-    background-color: var(--lightCoral);
+    background-color: theme("colors.brand.9");
     border-radius: 2rem;
     margin-right: 1rem;
     position: absolute;
@@ -63,10 +62,10 @@ import "@radix-ui/colors/sage-dark.css";
       transform 200ms ease-in-out;
   }
   input[type="checkbox"].themeToggle:checked + label::before {
-    background-color: var(--sage-1);
+    background-color: theme("colors.sageDark.1");
   }
   input[type="checkbox"].themeToggle:checked + label::after {
-    background-color: var(--teal-9);
+    background-color: theme("colors.tealDark.9");
     transform: translateX(100%);
   }
   input[type="checkbox"].themeToggle + label > span#sun {
@@ -87,11 +86,11 @@ import "@radix-ui/colors/sage-dark.css";
 </style>
 
 <script is:inline>
-if (
-  localStorage.theme === "dark" ||
-  (!("theme" in localStorage) &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-  document.getElementById("switch").checked = true;
-}
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.getElementById("switch").checked = true;
+  }
 </script>

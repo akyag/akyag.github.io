@@ -4,20 +4,20 @@ import Button from "./Button.astro";
 ---
 
 <div
-  class=":uno: -z-10 modal fixed hidden drop-shadow-md backdrop-blur-md backdrop-brightness-50"
+  class="-z-10 modal fixed hidden drop-shadow-md backdrop-blur-md backdrop-brightness-50"
   role="dialog"
   aria-labelledby={triggerId}
 >
   <div
-    class=":uno: bg-radixgray-2 opacity-1 transition-opacity ease-in duration-500 modal__inner"
+    class="bg-radixgray-2 opacity-1 transition-opacity ease-in duration-500 modal__inner"
   >
-    <div class=":uno: flex flex-col border-1 border-radixgray-6 p-8 gap-2">
-      <h3 class=":uno: border-b-4 border-radixred-6 text-f-lg" tabindex="-1">
+    <div class="flex flex-col border-1 border-radixgray-6 p-8 gap-2">
+      <h3 class="border-b-4 border-radixred-6 text-f-lg" tabindex="-1">
         {title}
       </h3>
       <slot>Modal description.</slot>
     </div>
-    <div class=":uno: flex justify-end">
+    <div class="flex justify-end">
       <Button hue="hue-radixcrimson m-5">Close</Button>
     </div>
   </div>

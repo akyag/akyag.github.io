@@ -4,60 +4,22 @@ import {
   presetIcons,
   presetUno,
 } from "unocss";
+import myColors from "./my-colors";
 
-// import { presetHeroPatterns } from "@julr/unocss-preset-heropatterns";
 import { presetScrollbar } from "unocss-preset-scrollbar";
-import { presetRadix } from "unocss-preset-radix";
-// import transformerCompileClass from "@unocss/transformer-compile-class";
+import transformerDirectives from "@unocss/transformer-directives";
 
 export default defineConfig({
-  shortcuts: [],
+  shortcuts: [
+    [
+      /^btn-(.*)$/,
+      ([, c]) =>
+        `text-f-sm hover:ease-out transition-all ease-in duration-150 flex justify-center items-center rounded-full px-4 py-2 fw600 text-${c}-11 dark:text-${c}Dark-11 shadow-md focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent bg-${c}-3 dark:bg-${c}Dark-6 hover:bg-${c}-5 dark:hover:bg-${c}Dark-7 border-2 border-${c}-6 dark:border-${c}Dark-5 hover:border-${c}-8 dark:hover:border-${c}Dark-5`,
+    ],
+  ],
   presets: [
     presetUno(),
-    presetRadix({
-      palette: [
-        "blue",
-        "crimson",
-        "cyan",
-        "grass",
-        "green",
-        "indigo",
-        "lime",
-        "mint",
-        "orange",
-        "pink",
-        "plum",
-        "purple",
-        "red",
-        "sage",
-        "sky",
-        "teal",
-        "tomato",
-        "yellow",
-      ],
-      aliases: {
-        radixgray: "sage",
-        radixblue: "blue",
-        radixcrimson: "crimson",
-        radixcyan: "cyan",
-        radixgrass: "grass",
-        radixgreen: "green",
-        radixindigo: "indigo",
-        radixlime: "lime",
-        radixmint: "mint",
-        radixorange: "orange",
-        radixpink: "pink",
-        radixplum: "plum",
-        radixpurple: "purple",
-        radixred: "red",
-        radixsky: "sky",
-        radixteal: "teal",
-        radixtomtato: "tomato",
-        radixyellow: "yellow",
-      },
-      darkSelector: ".dark",
-      extend: true,
-    }),
+    myColors(),
     presetIcons({
       extraProperties: {
         display: "inline-block",
@@ -117,11 +79,5 @@ export default defineConfig({
       { "font-size": "clamp(2.14rem, calc(1.70rem + 2.20vw), 3.82rem);" },
     ],
   ],
-  theme: {
-    colors: {
-      lightRose: "#fbcbcb",
-      lightCoral: "#f57e7e",
-    },
-  },
-  // transformers: [transformerCompileClass()],
+  transformers: [transformerDirectives()],
 });

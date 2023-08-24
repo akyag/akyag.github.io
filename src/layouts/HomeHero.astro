@@ -1,36 +1,35 @@
 ---
 import homeHero from "../assets/images/home.svg";
-import ButtonIcon from "../components/ButtonIcon.astro";
 import ScrollDown from "../components/ScrollDown.astro";
 ---
 
-<section class=":uno: z-10 relative" id="hero">
-  <div class=":uno: container mxa py-12 md:py-24 lg:py-36 2xl:py-48">
+<section class="z-10 relative" id="hero">
+  <div class="container mxa py-12 md:py-24 lg:py-36 2xl:py-48">
     <div
-      class=":uno: grid gap-12 grid-cols-1 place-items-center items-center md:grid-cols-2"
+      class="grid gap-12 grid-cols-1 place-items-center items-center md:grid-cols-2"
     >
-      <div class=":uno: grid place-items-center items-center">
+      <div class="grid place-items-center items-center">
         <h1
-          class=":uno: font-display mt-28 text-center leading-relaxed text-f-4xl fw800 md:mt-0"
+          class="font-display mt-28 text-center tracking-tight text-f-4xl fw800 md:mt-0 text-teal-11 dark:text-tealDark-11"
         >
           Web-o-Reviews
         </h1>
-        <h2 class=":uno: mt-2 text-f-lg text-center leading-snug fw500">
+        <h2
+          class="mt-2 text-f-lg text-center tracking-tight text-teal-10 dark:text-tealDark-10 fw500"
+        >
           Engaging, purposeful, and creative
         </h2>
-        <div class=":uno: flex mt-8 w-screen place-content-center">
-          <ButtonIcon
-            href="/work/"
-            hue="hue-radixteal"
-            iconClass="w-6 h-6 fill-current mr-2 i-solar:palette-round-bold-duotone"
+        <div class="flex mt-8 w-screen place-content-center">
+          <a href="/work/" class="btn-teal"
+            ><span
+              class="w-6 h-6 fill-current mr2 i-solar-palette-round-bold-duotone"
+            ></span>Web Design</a
           >
-            Web Design
-          </ButtonIcon>
         </div>
       </div>
       <div>
         <!-- <Picture
-          class={":uno: h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
+          class={"h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
           src={homeHero}
           widths={[350, 525, 700]}
           sizes="(max-width: 768px) 350px, (max-width: 1024px) 525px, 700px"
@@ -48,7 +47,7 @@ import ScrollDown from "../components/ScrollDown.astro";
           />
           <img
             src={homeHero.src}
-            class={":uno: h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
+            class={"h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
             width="700"
             alt="Welcome to Web-o-Reviews!"
             role="presentation"

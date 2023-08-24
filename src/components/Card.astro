@@ -5,19 +5,19 @@ import { Image } from "astro:assets";
 ---
 
 <section
-  class=":uno: bg-radixgray-2 border rounded-xl flex flex-col h-full border-radixgray-6 shadow-md relative overflow-hidden group hover:-translate-y-2 hover:duration-300 hover:drop-shadow-xl hover:filter"
+  class="bg-radixgray-2 border rounded-xl flex flex-col h-full border-radixgray-6 shadow-md relative overflow-hidden group hover:-translate-y-2 hover:duration-300 hover:drop-shadow-xl hover:filter"
 >
-  <div class=":uno: flex flex-initial">
+  <div class="flex flex-initial">
     <Image
-      class=":uno: h-auto object-cover border-b-2 w-full dark:filter dark:brightness-75 dark:contrast-125"
+      class="h-auto object-cover border-b-2 w-full dark:filter dark:brightness-75 dark:contrast-125"
       src={imagepath}
       alt={title}
       role="img"
     />
   </div>
-  <div class=":uno: flex flex-col py-4 gap-y-4 grow">
-    <h4 class=":uno: font-display text-f-lg text-center fw600">{title}</h4>
-    <ul class=":uno: pl-6">
+  <div class="flex flex-col py-4 gap-y-4 grow">
+    <h4 class="font-display text-f-lg text-center fw600">{title}</h4>
+    <ul class="pl-6">
       <li>{feature1}</li>
       <li>{feature2}</li>
       <li>{feature3}</li>
@@ -26,12 +26,11 @@ import { Image } from "astro:assets";
 
     <a
       href={target}
-      class=":uno: mr-5 self-end group hover:ring-4 hover:ring-radixcrimson-6 hover:ring-offset-2 hover:ring-offset-radixgray-2 rounded-md focus:outline-none focus:ring-4 focus:ring-radixcrimson-6 focus:ring-offset-radixgray-2 focus:ring-offset-4"
+      class="mr-5 self-end group hover:ring-4 hover:ring-radixcrimson-6 hover:ring-offset-2 hover:ring-offset-radixgray-2 rounded-md focus:outline-none focus:ring-4 focus:ring-radixcrimson-6 focus:ring-offset-radixgray-2 focus:ring-offset-4"
       >Details
-      <span
-        class=":uno: h-7 mr-2 text-current w-7 i-solar:recive-square-line-duotone"
+      <span class="h-7 mr-2 text-current w-7 i-solar:recive-square-line-duotone"
       ></span>
-      <span class=":uno: top-0 right-0 bottom-0 left-0 absolute"></span>
+      <span class="top-0 right-0 bottom-0 left-0 absolute"></span>
     </a>
   </div>
 </section>

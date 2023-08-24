@@ -5,8 +5,8 @@ import "@unocss/reset/tailwind-compat.css";
 // Plugins
 import sitemap from "@astrojs/sitemap";
 import robotsTxt from "astro-robots-txt";
-import compress from "astro-compress";
 import prefetch from "@astrojs/prefetch";
+import Compress from "astro-compress";
 
 export default defineConfig({
   site: "https://weboreviews.com/",
@@ -17,7 +17,7 @@ export default defineConfig({
     sitemap(),
     robotsTxt(),
     prefetch(),
-    compress(),
+    Compress(),
   ],
   compressHTML: true,
   experimental: {

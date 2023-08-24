@@ -10,9 +10,10 @@ const isActive = href === Astro.url.pathname;
   href={href}
   rel="prefetch"
   class:list={[
-    ":uno: text-f-base font-display text-radixgray-12 hover:text-lightCoral dark:hover:text-lightRose transition duration-300 ease-in hover:ease-out focus:border-b-4 focus:border-lightCoral focus:outline-none",
+    "text-f-base font-display hover:bg-teal-4 dark:hover:bg-tealDark-4 rounded-2 px2 box-border py0.5 transition duration-300 ease-in hover:ease-out",
     {
-      "border-b-4 border-lightCoral": isActive,
+      "bg-teal-3 dark:bg-tealDark-5 text-teal-11 dark:text-tealDark-11":
+        isActive,
     },
   ]}
   tabindex="0"

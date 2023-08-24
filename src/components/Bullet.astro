@@ -2,8 +2,6 @@
 const { color } = Astro.props;
 ---
 
-<span
-  class:list={[":uno: text-f-xs m-1 rounded-2xl border  px-4 py-1 ", color]}
->
+<span class:list={["text-f-xs m-1 rounded-2xl border  px-4 py-1 ", color]}>
   <slot />
 </span>

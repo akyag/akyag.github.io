@@ -12,13 +12,13 @@ const meta = {
 <Page>
   <Head slot="head" {meta} />
   <Hero />
-  <main id="content-wrapper" class=":uno: container mxa py-12 px-8 md:px-0">
-    <div class=":uno: leading-relaxed grid grid-cols-1 place-items-center">
-      <div class=":uno: max-w-prose grid">
-        <h3 class=":uno: font-display my-5 text-center text-f-2xl fw700">
+  <main id="content-wrapper" class="container mxa py-12 px-8 md:px-0">
+    <div class="leading-relaxed grid grid-cols-1 place-items-center">
+      <div class="max-w-prose grid">
+        <h3 class="font-display my-5 text-center text-f-2xl fw700">
           Contact Form
         </h3>
-        <div class=":uno: my-2 text-f-lg fw600">Hey, got a question?</div>
+        <div class="my-2 text-f-lg fw600">Hey, got a question?</div>
         <p>Send it to me, and I will get back to you as soon as possible.</p>
 
         <form
@@ -35,15 +35,15 @@ const meta = {
           />
           <input type="hidden" name="_email.subject" value="Web-o-Reviews" />
 
-          <div class=":uno: space-y-4">
+          <div class="space-y-4">
             {/* <input type="hidden" name="contact_number" /> */}
 
-            <div class=":uno: mt-4">
-              <label for="user_name" class=":uno: fw600">Name</label>
-              <div class=":uno: flex relative items-center">
-                <div class=":uno: pl-3 z-10 pointer-events-none">
+            <div class="mt-4">
+              <label for="user_name" class="fw600">Name</label>
+              <div class="flex relative items-center">
+                <div class="pl-3 z-10 pointer-events-none">
                   <span
-                    class=":uno: h-5 fill-current w-5 i-solar:user-line-duotone"
+                    class="h-5 fill-current w-5 i-solar:user-line-duotone"
                     role="none"></span>
                 </div>
                 <input
@@ -52,10 +52,10 @@ const meta = {
                   id="user_name"
                   aria-label="User Name"
                   required
-                  class=":uno: rounded-md bg-radixgray-3 p-2 border-radixgray-6 shadow-sm -ml-8 w-full pl-10 peer caret-radixteal-11 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
+                  class="rounded-md bg-radixgray-3 p-2 border-radixgray-6 shadow-sm -ml-8 w-full pl-10 peer caret-radixteal-11 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
                 />
                 <div
-                  class=":uno: border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-radixgray-11 absolute peer-optional:hidden"
+                  class="border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-radixgray-11 absolute peer-optional:hidden"
                 >
                   Required
                 </div>
@@ -63,11 +63,11 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_email" class=":uno: fw600">Email</label>
-              <div class=":uno: flex relative items-center">
-                <div class=":uno: pl-3 z-10 pointer-events-none">
+              <label for="user_email" class="fw600">Email</label>
+              <div class="flex relative items-center">
+                <div class="pl-3 z-10 pointer-events-none">
                   <span
-                    class=":uno: h-5 fill-current w-5 i-solar:mention-circle-line-duotone"
+                    class="h-5 fill-current w-5 i-solar:mention-circle-line-duotone"
                     role="none"></span>
                 </div>
                 <input
@@ -76,10 +76,10 @@ const meta = {
                   id="user_email"
                   aria-label="User Email"
                   required
-                  class=":uno: rounded-md bg-radixgray-3 p-2 border-radixgray-6 shadow-sm -ml-8 w-full pl-10 peer caret-radixteal-11 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
+                  class="rounded-md bg-radixgray-3 p-2 border-radixgray-6 shadow-sm -ml-8 w-full pl-10 peer caret-radixteal-11 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
                 />
                 <div
-                  class=":uno: border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-radixgray-11 absolute peer-optional:hidden"
+                  class="border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-radixgray-11 absolute peer-optional:hidden"
                 >
                   Required
                 </div>
@@ -87,11 +87,11 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_phone" class=":uno: fw600">Phone</label>
-              <div class=":uno: flex relative items-center">
-                <div class=":uno: pl-3 z-10 pointer-events-none">
+              <label for="user_phone" class="fw600">Phone</label>
+              <div class="flex relative items-center">
+                <div class="pl-3 z-10 pointer-events-none">
                   <span
-                    class=":uno: h-5 fill-current w-5 i-solar:phone-rounded-line-duotone"
+                    class="h-5 fill-current w-5 i-solar:phone-rounded-line-duotone"
                     role="none"></span>
                 </div>
                 <input
@@ -99,30 +99,30 @@ const meta = {
                   name="user_phone"
                   id="user_phone"
                   aria-label="User Phone"
-                  class=":uno: rounded-md bg-radixgray-3 p-2 border-radixgray-6 shadow-sm -ml-8 w-full pl-10 peer caret-radixteal-11 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
+                  class="rounded-md bg-radixgray-3 p-2 border-radixgray-6 shadow-sm -ml-8 w-full pl-10 peer caret-radixteal-11 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
                 />
                 <div
-                  class=":uno: border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-radixgray-11 absolute peer-optional:hidden"
+                  class="border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-radixgray-11 absolute peer-optional:hidden"
                 >
                   Required
                 </div>
               </div>
             </div>
 
-            <div class=":uno: text-f-lg fw600">
-              <span class=":uno: font-display border-b-4 border-radixgreen-9"
+            <div class="text-f-lg fw600">
+              <span class="font-display border-b-4 border-radixgreen-9"
                 >What is this contact about?</span
               >
             </div>
 
             <div>
-              <label for="user_dept" class=":uno: fw600">Department</label>
+              <label for="user_dept" class="fw600">Department</label>
               <div>
                 <select
                   name="user_dept"
                   id="user_dept"
                   required
-                  class=":uno: rounded-md bg-radixgray-3 border-radixgray-6 shadow-sm w-full p-3 pl-3 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
+                  class="rounded-md bg-radixgray-3 border-radixgray-6 shadow-sm w-full p-3 pl-3 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
                 >
                   <option disabled selected>Select your option</option>
                   <option value="Website development"
@@ -136,11 +136,11 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_subject" class=":uno: fw600">Subject</label>
-              <div class=":uno: flex relative items-center">
-                <div class=":uno: pl-3 z-10 pointer-events-none">
+              <label for="user_subject" class="fw600">Subject</label>
+              <div class="flex relative items-center">
+                <div class="pl-3 z-10 pointer-events-none">
                   <span
-                    class=":uno: h-5 fill-current w-5 i-solar:hashtag-line-duotone"
+                    class="h-5 fill-current w-5 i-solar:hashtag-line-duotone"
                     role="none"></span>
                 </div>
                 <input
@@ -149,10 +149,10 @@ const meta = {
                   id="user_subject"
                   aria-label="User Subject"
                   required
-                  class=":uno: rounded-md bg-radixgray-3 p-2 border-radixgray-6 shadow-sm -ml-8 w-full pl-10 peer caret-radixteal-11 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
+                  class="rounded-md bg-radixgray-3 p-2 border-radixgray-6 shadow-sm -ml-8 w-full pl-10 peer caret-radixteal-11 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
                 />
                 <div
-                  class=":uno: border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-radixgray-11 absolute peer-optional:hidden"
+                  class="border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-radixgray-11 absolute peer-optional:hidden"
                 >
                   Required
                 </div>
@@ -160,11 +160,11 @@ const meta = {
             </div>
 
             <div>
-              <label for="user_message" class=":uno: fw600">Message</label>
-              <div class=":uno: flex relative">
-                <div class=":uno: pt-3 pl-3 z-10 pointer-events-none">
+              <label for="user_message" class="fw600">Message</label>
+              <div class="flex relative">
+                <div class="pt-3 pl-3 z-10 pointer-events-none">
                   <span
-                    class=":uno: h-5 fill-current w-5 i-solar:chat-round-dots-line-duotone"
+                    class="h-5 fill-current w-5 i-solar:chat-round-dots-line-duotone"
                     role="none"></span>
                 </div>
                 <textarea
@@ -173,17 +173,17 @@ const meta = {
                   aria-label="User Message"
                   placeholder="Explain how I can help you"
                   required
-                  class=":uno: rounded-md bg-radixgray-3 border-radixgray-6 h-64 shadow-sm -ml-8 w-full pt-10 pl-10 peer caret-radixteal-11 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
+                  class="rounded-md bg-radixgray-3 border-radixgray-6 h-64 shadow-sm -ml-8 w-full pt-10 pl-10 peer caret-radixteal-11 focus:border-none focus:outline-none focus:ring-4 focus:ring-radixteal-7/50"
                 ></textarea>
                 <div
-                  class=":uno: border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-radixgray-11 absolute peer-optional:hidden"
+                  class="border-y border-transparent text-f-sm py-2 pr-3 inset-y-0 right-0 text-radixgray-11 absolute peer-optional:hidden"
                 >
                   Required
                 </div>
               </div>
             </div>
 
-            <div class=":uno: flex space-x-4 content-center items-center">
+            <div class="flex space-x-4 content-center items-center">
               <input
                 id="terms"
                 name="terms"
@@ -191,11 +191,11 @@ const meta = {
                 role="checkbox"
                 type="checkbox"
                 required
-                class=":uno: appearance-none shrink-0 focus:border-none focus:outline-none i-ri:checkbox-blank-circle-line checked:transition-all checked:transition-400 checked:i-ri:checkbox-circle-fill checked:h-6 checked:w-6 checked:text-radixteal-9 h-6 text-radixgray-9 w-6 focus:text-radixteal-9"
+                class="appearance-none shrink-0 focus:border-none focus:outline-none i-ri:checkbox-blank-circle-line checked:transition-all checked:transition-400 checked:i-ri:checkbox-circle-fill checked:h-6 checked:w-6 checked:text-radixteal-9 h-6 text-radixgray-9 w-6 focus:text-radixteal-9"
               />
               <label
                 for="terms"
-                class=":uno: font-medium text-f-sm ml-2 fill-radixteal-9"
+                class="font-medium text-f-sm ml-2 fill-radixteal-9"
               >
                 I understand that this form collects my name and email, so I can
                 be contacted.</label
@@ -204,12 +204,12 @@ const meta = {
 
             <div class="flex items-center justify-center">
               <button
-                class=":uno: appearance-none text-f-sm cursor-pointer hover:ease bg-radixteal-9 hover:bg-radixteal-10 flex place-content-center items-center rounded-full pl-4 pr-6 py-2 fw600 text-white shadow-md hover:transition-all hover:duration-150 focus:outline-none focus:ring-2 focus:ring-radixgray-7/50 focus:ring-offset-2 focus:ring-offset-transparent w-2/3 sm:w-auto"
+                class="appearance-none text-f-sm cursor-pointer hover:ease bg-radixteal-9 hover:bg-radixteal-10 flex place-content-center items-center rounded-full pl-4 pr-6 py-2 fw600 text-white shadow-md hover:transition-all hover:duration-150 focus:outline-none focus:ring-2 focus:ring-radixgray-7/50 focus:ring-offset-2 focus:ring-offset-transparent w-2/3 sm:w-auto"
                 type="submit"
                 role="button"
               >
                 <span
-                  class=":uno: h-6 mr-2 text-white w-6 i-ri:checkbox-circle-fill"
+                  class="h-6 mr-2 text-white w-6 i-ri:checkbox-circle-fill"
                   role="none"></span>
                 <span>Send Message</span>
               </button>

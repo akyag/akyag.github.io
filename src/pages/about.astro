@@ -15,36 +15,31 @@ const meta = {
 <Page>
   <Head slot="head" {meta} />
   <Hero />
-  <main
-    id="content-wrapper"
-    class=":uno: container mxa py-6 px-8 md:py-12 md:px-0"
-  >
-    <div class=":uno: mxa space-y-12 leading-relaxed max-w-6xl">
-      <h3 class=":uno: font-display my-5 mx-3 text-center text-f-2xl fw700">
-        About
-      </h3>
+  <main id="content-wrapper" class="container mxa py-6 px-8 md:py-12 md:px-0">
+    <div class="mxa space-y-12 leading-relaxed max-w-6xl">
+      <h3 class="font-display my-5 mx-3 text-center text-f-2xl fw700">About</h3>
       <div
-        class=":uno: flex flex-col space-y-12 md:flex-row md:space-x-12 md:space-y-0"
+        class="flex flex-col space-y-12 md:flex-row md:space-x-12 md:space-y-0"
       >
-        <div class=":uno: flex flex-shrink-0 justify-center">
+        <div class="flex flex-shrink-0 justify-center">
           <Image
             src={cover_photo}
             alt="Akshay Ghate"
             aria-role="img"
             width={128}
             height={128}
-            class=":uno: rounded-full border-4 border-radixcrimson-8 h-32 shadow-lg mx-8 transition ease-in-out w-32 duration-200"
+            class="rounded-full border-4 border-radixcrimson-8 h-32 shadow-lg mx-8 transition ease-in-out w-32 duration-200"
           />
         </div>
-        <div class=":uno: space-y-4">
-          <div class=":uno: text-f-lg fw600">
+        <div class="space-y-4">
+          <div class="text-f-lg fw600">
             Hi there,
             <span
-              class=":uno: h-8 text-radixcrimson-11 w-8 i-ph:hand-waving-duotone"
+              class="h-8 text-radixcrimson-11 w-8 i-ph:hand-waving-duotone"
               role="none"></span>
           </div>
           <p
-            class=":uno: first-letter:text-f-xl first-letter:text-radixcrimson-11 first-letter:fw600"
+            class="first-letter:text-f-xl first-letter:text-radixcrimson-11 first-letter:fw600"
           >
             I am a front-end designer, freelance developer, and self-proclaimed
             nerd. My expertise lies primarily in HTML, CSS, and JS, and I have
@@ -68,23 +63,23 @@ const meta = {
               public encryption key
             </Link>.
           </p>
-          <p class=":uno: font-medium mr-12 text-right">- Akshay Ghate</p>
+          <p class="font-medium mr-12 text-right">- Akshay Ghate</p>
         </div>
       </div>
-      <div class=":uno: font-display text-f-lg uppercase fw600">
-        <span class=":uno: border-b-4 border-radixcrimson-9">Tech Stack</span>
+      <div class="font-display text-f-lg uppercase fw600">
+        <span class="border-b-4 border-radixcrimson-9">Tech Stack</span>
 
-        <div class=":uno: flex flex-wrap py-8 gap-6 items-start">
+        <div class="flex flex-wrap py-8 gap-6 items-start">
           <div>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-              class=":uno: inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#E34F26] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#E34F26] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="HTML5"
             >
               <span
-                class=":uno: h-12 opacity-75 w-12 inline-block i-simple-icons:html5"
+                class="h-12 opacity-75 w-12 inline-block i-simple-icons:html5"
                 role="none"
               >
               </span>
@@ -93,13 +88,13 @@ const meta = {
           <div>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-              class=":uno: inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#1572B6] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#1572B6] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="CSS3"
             >
               <span
-                class=":uno: h-12 opacity-75 w-12 inline-block i-simple-icons:css3"
+                class="h-12 opacity-75 w-12 inline-block i-simple-icons:css3"
                 role="none"
               >
               </span>
@@ -108,13 +103,13 @@ const meta = {
           <div>
             <a
               href="https://astro.build"
-              class=":uno: inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#FF5D01] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#FF5D01] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="Astro"
             >
               <span
-                class=":uno: h-12 opacity-75 w-12 i-simple-icons:astro inline-block"
+                class="h-12 opacity-75 w-12 i-simple-icons:astro inline-block"
                 role="none"
               >
               </span>
@@ -123,13 +118,13 @@ const meta = {
           <div>
             <a
               href="https://nuxtjs.org"
-              class=":uno: inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#00DC82] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#00DC82] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="NuxtJS"
             >
               <span
-                class=":uno: h-12 opacity-75 w-12 i-simple-icons:nuxtdotjs"
+                class="h-12 opacity-75 w-12 i-simple-icons:nuxtdotjs"
                 role="none"
               >
               </span>
@@ -138,13 +133,13 @@ const meta = {
           <div>
             <a
               href="https://v3.vuejs.org/"
-              class=":uno: inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#4FC08D] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#4FC08D] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="Vue JS"
             >
               <span
-                class=":uno: h-12 opacity-75 w-12 i-simple-icons:vuedotjs inline-block"
+                class="h-12 opacity-75 w-12 i-simple-icons:vuedotjs inline-block"
                 role="none"
               >
               </span>
@@ -153,13 +148,13 @@ const meta = {
           <div>
             <a
               href="https://tailwindcss.com/"
-              class=":uno: inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#06B6D4] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#06B6D4] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="TailwindCSS"
             >
               <span
-                class=":uno: h-12 opacity-75 w-12 i-simple-icons:tailwindcss inline-block"
+                class="h-12 opacity-75 w-12 i-simple-icons:tailwindcss inline-block"
                 role="none"
               >
               </span>
@@ -168,13 +163,13 @@ const meta = {
           <div>
             <a
               href="https://unocss.dev/"
-              class=":uno: inline-block grayscale filter hover:transition-all hover:ease-in-out text-radixgray-11 hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-radixgray-11 hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="UnoCSS"
             >
               <span
-                class=":uno: h-12 opacity-75 w-12 i-simple-icons:unocss inline-block"
+                class="h-12 opacity-75 w-12 i-simple-icons:unocss inline-block"
                 role="none"
               >
               </span></a
@@ -183,13 +178,13 @@ const meta = {
           <div>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-              class=":uno: inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#F7DF1E] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#F7DF1E] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="JavaScript"
             >
               <span
-                class=":uno: h-12 opacity-75 w-12 i-simple-icons:javascript inline-block"
+                class="h-12 opacity-75 w-12 i-simple-icons:javascript inline-block"
                 role="none"
               >
               </span>
@@ -199,13 +194,13 @@ const meta = {
           <div>
             <a
               href="https://git-scm.com/"
-              class=":uno: inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#F05032] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#F05032] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="Git"
             >
               <span
-                class=":uno: h-12 opacity-75 w-12 i-simple-icons:git inline-block"
+                class="h-12 opacity-75 w-12 i-simple-icons:git inline-block"
                 role="none"
               >
               </span>
@@ -215,15 +210,13 @@ const meta = {
       </div>
 
       <div>
-        <p class=":uno: font-display text-f-lg italic fw700">
-          <span class=":uno: border-b-4 border-radixtomatos-9"
-            >Special thanks:</span
-          >
+        <p class="font-display text-f-lg italic fw700">
+          <span class="border-b-4 border-radixtomatos-9">Special thanks:</span>
         </p>
         <div
-          class=":uno: container bg-radixteal-2 border-l-8 border border-radixteal-6 shadow-lg mt-8 px-6"
+          class="container bg-radixteal-2 border-l-8 border border-radixteal-6 shadow-lg mt-8 px-6"
         >
-          <p class=":uno: py-6 text-radixteal-11">
+          <p class="py-6 text-radixteal-11">
             Teresa Tafoya, Sushrut Joshi, Kshitij Limaye, Mangesh Thombare,
             Sohan Zambare, Arturo Guzman, Meghana Gokhale, Tejas Gokhale.
           </p>

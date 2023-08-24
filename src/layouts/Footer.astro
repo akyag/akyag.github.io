@@ -3,90 +3,85 @@ let currentDate = new Date().getFullYear();
 import Backtotop from "../components/BackToTop.astro";
 // import footerLogo from "../images/logo-white.svg";
 // import AstroDark from "../images/astro-dark.svg";
-import ButtonSecondary from "../components/ButtonSecondary.astro";
 // import { Image } from "astro:assets";
 import Link from "../components/Link.astro";
 ---
 
 <footer
-  class=":uno: h-auto divide-y-2 border-t border-radixgray-6 divide-radixgray-6 bg-radixgray-2 mt-12 text-radixgray-12 py-12"
+  class="h-auto divide-y-2 border-t border-sage-6 dark:border-sageDark-6 divide-sage-6 dark:divide-sageDark-6 bg-sage-2 dark:bg-sageDark-2 mt-12 text-sage-12 dark:text-sageDark-12 py-12"
 >
   <div
-    class=":uno: flex flex-col mxa space-y-8 my-12 max-w-6xl items-center justify-center md:flex-row md:space-y-0 md:space-x-8 md:justify-around"
+    class="flex flex-col mxa space-y-8 my-12 max-w-6xl items-center justify-center md:flex-row md:space-y-0 md:space-x-8 md:justify-around"
   >
-    <h4 class=":uno: font-display text-f-3xl fw700">
-      Interested in Collaboration?
-    </h4>
-    <ButtonSecondary href="/contact/" hue="hue-radixcrimson relative">
-      <span class=":uno: flex h-3 -mt-1 mr-1 top-0 right-0 w-3 absolute">
-        <span
-          class=":uno: rounded-full h-full bg-radixcrimson-11 w-full opacity-75 animate-ping absolute inline-flex"
-        ></span>
-        <span
-          class=":uno: rounded-full bg-radixcrimson-9 h-3 w-3 relative inline-flex"
-        ></span>
-      </span>
-       Let's Talk
-    </ButtonSecondary>
+    <h4 class="font-display text-f-3xl fw700">Interested in Collaboration?</h4>
+    <a
+      href="/contact/"
+      class="btn-jade"
+      rel="prefetch"
+      tabindex="0"
+      role="button">Let's Talk</a
+    >
   </div>
   <div
-    class=":uno: flex flex-col mxa mb-12 max-w-6xl pt-12 items-center justify-around md:flex-row md:px-6 md:items-end lg:px-8"
+    class="flex flex-col mxa mb-12 max-w-6xl pt-12 items-center justify-around md:flex-row md:px-6 md:items-end lg:px-8"
   >
-    <div class=":uno: flex flex-row">
-      <div class=":uno: w-40">
-        <h5 class=":uno: flex justify-center text-radixteal-11 uppercase fw600">
+    <div class="flex flex-row">
+      <div class="w-40">
+        <h5
+          class="flex justify-center text-teal-11 dark:text-tealDark-11 uppercase fw600"
+        >
           Information
         </h5>
         <div
-          class=":uno: divide-x-2 divide-radixgray-6 mt-4 leading-relaxed grid grid-cols-6 group items-center"
+          class="divide-x-2 divide-sage-6 dark:divide-sageDark-6 mt-4 leading-relaxed grid grid-cols-6 group items-center"
         >
-          <div class=":uno: ml-5 col-span-2">
+          <div class="ml-5 col-span-2">
             <span
-              class=":uno: h-6 transition-colors ease-out text-radixteal-12 w-6 duration-200 i-solar:card-2-line-duotone group-hover:text-radixteal-11"
+              class="h-6 transition-colors ease-in hover:ease-out duration-200 text-teal-12 dark:text-tealDark-12 w-6 i-solar-card-2-line-duotone group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               role="none"></span>
           </div>
-          <div class=":uno: col-span-4">
+          <div class="col-span-4">
             <a
               href="/license/"
-              class=":uno: mx-4 text-radixgray-11 hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-radixgray-7/50 focus:ring-offset-2 focus:ring-offset-radixgray-7 group-hover:text-radixteal-11"
+              class="mx-4 text-sage-11 dark:text-sageDark-11 transition-all ease-in hover:ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               tabindex="0">License</a
             >
           </div>
         </div>
         <div
-          class=":uno: divide-x-2 divide-radixgray-6 leading-relaxed grid grid-cols-6 group items-center"
+          class="divide-x-2 divide-sage-6 dark:divide-sageDark-6 leading-relaxed grid grid-cols-6 group items-center"
         >
-          <div class=":uno: ml-5 col-span-2">
+          <div class="ml-5 col-span-2">
             <span
-              class=":uno: h-6 transition-colors ease-out text-radixteal-12 w-6 duration-200 i-solar:archive-line-duotone group-hover:text-radixteal-11"
+              class="h-6 transition-colors ease-in hover:ease-out duration-200 text-teal-12 dark:text-tealDark-12 w-6 i-solar-archive-line-duotone group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               role="none"></span>
           </div>
-          <div class=":uno: col-span-4">
+          <div class="col-span-4">
             <a
               href="/archive/"
-              class=":uno: mx-4 text-radixgray-11 hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-radixgray-7/50 focus:ring-offset-2 focus:ring-offset-radixgray-7 group-hover:text-radixteal-11"
+              class="mx-4 text-sage-11 dark:text-sageDark-11 transition-all ease-in hover:ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               tabindex="0">Archive</a
             >
           </div>
         </div>
       </div>
-      <div class=":uno: w-40">
+      <div class="w-40">
         <h5
-          class=":uno: flex text-center text-radixteal-11 justify-center uppercase fw600"
+          class="flex text-center text-teal-11 dark:text-tealDark-11 justify-center uppercase fw600"
         >
           Find me on
         </h5>
         <div
-          class=":uno: divide-x-2 divide-radixgray-6 mt-4 leading-relaxed grid grid-cols-6 group items-center"
+          class="divide-x-2 divide-sage-6 dark:divide-sageDark-6 mt-4 leading-relaxed grid grid-cols-6 group items-center"
         >
-          <div class=":uno: ml-5 col-span-2">
+          <div class="ml-5 col-span-2">
             <span
-              class=":uno: h-6 transition-colors ease-out text-radixteal-12 w-6 duration-200 i-ph:github-logo-duotone group-hover:text-radixteal-11"
+              class="h-6 transition-colors ease-in hover:ease-out duration-200 text-teal-12 dark:text-tealDark-12 w-6 i-ph-github-logo-duotone group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               role="none"></span>
           </div>
-          <div class=":uno: col-span-4">
+          <div class="col-span-4">
             <a
-              class=":uno: mx-4 text-radixgray-11 inline-flex items-center hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-radixgray-7/50 focus:ring-offset-2 focus:ring-offset-radixgray-7 group-hover:text-radixteal-11"
+              class="mx-4 text-sage-11 dark:text-sageDark-11 inline-flex items-center transition-all ease-in hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               href="https://github.com/akyag"
               target="_blank"
               rel="noopener"
@@ -94,22 +89,22 @@ import Link from "../components/Link.astro";
               tabindex="0"
               >GitHub
               <span
-                class=":uno: h-4 ml-1 w-4 i-solar:square-top-down-linear"
+                class="h-4 ml-1 w-4 i-solar-square-top-down-linear"
                 role="none"></span>
             </a>
           </div>
         </div>
         <div
-          class=":uno: divide-x-2 divide-radixgray-6 leading-relaxed grid grid-cols-6 group items-center"
+          class="divide-x-2 divide-sage-6 dark:divide-sageDark-6 leading-relaxed grid grid-cols-6 group items-center"
         >
-          <div class=":uno: ml-5 col-span-2">
+          <div class="ml-5 col-span-2">
             <span
-              class=":uno: h-6 transition-colors ease-out text-radixteal-12 w-6 duration-200 i-ph:linkedin-logo-duotone group-hover:text-radixteal-11"
+              class="h-6 transition-colors ease-in hover:ease-out text-teal-12 dark:text-tealDark-12 w-6 duration-200 i-ph-linkedin-logo-duotone group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               role="none"></span>
           </div>
-          <div class=":uno: col-span-4">
+          <div class="col-span-4">
             <a
-              class=":uno: mx-4 text-radixgray-11 inline-flex items-center hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-radixgray-7/50 focus:ring-offset-2 focus:ring-offset-radixgray-7 group-hover:text-radixteal-11"
+              class="mx-4 text-sage-11 dark:text-sageDark-11 inline-flex items-center transition-all ease-in hover:ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               href="https://www.linkedin.com/in/akshayghate/"
               target="_blank"
               rel="noopener"
@@ -117,22 +112,22 @@ import Link from "../components/Link.astro";
               tabindex="0"
               >LinkedIn
               <span
-                class=":uno: h-4 ml-1 w-4 i-solar:square-top-down-linear"
+                class="h-4 ml-1 w-4 i-solar-square-top-down-linear"
                 role="none"></span>
             </a>
           </div>
         </div>
         <div
-          class=":uno: divide-x-2 divide-radixgray-6 leading-relaxed grid grid-cols-6 group items-center"
+          class="divide-x-2 divide-sage-6 dark:divide-sageDark-6 leading-relaxed grid grid-cols-6 group items-center"
         >
-          <div class=":uno: ml-5 col-span-2">
+          <div class="ml-5 col-span-2">
             <span
-              class=":uno: h-6 transition-colors ease-out text-radixteal-12 w-6 duration-200 i-ph:twitter-logo-duotone group-hover:text-radixteal-11"
+              class="h-6 transition-colors ease-in hover:ease-out text-teal-12 dark:text-tealDark-12 w-6 duration-200 i-ph-twitter-logo-duotone group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               role="none"></span>
           </div>
-          <div class=":uno: col-span-4">
+          <div class="col-span-4">
             <a
-              class=":uno: mx-4 text-radixgray-11 inline-flex items-center hover:transition-all hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-radixgray-7/50 focus:ring-offset-2 focus:ring-offset-radixgray-7 group-hover:text-radixteal-11"
+              class="mx-4 text-sage-11 dark:text-sageDark-11 inline-flex items-center transition-all ease-in hover:ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               href="https://twitter.com/akshayg"
               target="_blank"
               rel="noopener"
@@ -140,18 +135,18 @@ import Link from "../components/Link.astro";
               tabindex="0"
               >Twitter
               <span
-                class=":uno: h-4 ml-1 w-4 i-solar:square-top-down-linear"
+                class="h-4 ml-1 w-4 i-solar-square-top-down-linear"
                 role="none"></span>
             </a>
           </div>
         </div>
       </div>
     </div>
-    <div class=":uno: flex flex-col mt-8 items-center">
+    <div class="flex flex-col mt-8 items-center">
       <div>
         <a
           href="/"
-          class=":uno: block hover:transition-all hover:ease-out hover:scale-105 hover:duration-200 focus:outline-none focus:ring-2 focus:ring-radixgray-7/50 focus:ring-offset-2 focus:ring-offset-radixgray-7"
+          class="block hover:transition-all ease-in hover:ease-out hover:scale-105 duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent"
           tabindex="0"
         >
           <!-- <Image src={footerLogo} alt="Web-o-Reviews" width={250} height={32} /> -->
@@ -164,7 +159,7 @@ import Link from "../components/Link.astro";
                   fill="#00989b"></path><path
                   d="M43.243 24.23 53.97 0H27.882c3.22 6.823 6.992 9.967 11.356 16.531 1.425 2.145 2.506 4.633 4.005 7.7z"
                   fill="#006565"></path></g
-              ><g class=":uno: fill-radixgray-12"
+              ><g class="fill-sage-12 dark:fill-sageDark-12"
                 ><path
                   d="M64.549 15.111c0-4.72-2.984-5.789-5.923-5.789-6.413 0-8.506 7.482-8.506 12.47 0 7.615 3.964 10.287 8.06 10.287 4.543 0 8.774-3.875 10.288-8.24h-1.425c-1.559 3.475-4.23 4.855-7.036 4.855-2.539 0-4.676-1.069-5.121-5.79 6.012-.667 9.663-3.65 9.663-7.793zm-9.708 6.057c0-4.364 1.514-9.664 4.631-9.664 1.425 0 2.227.935 2.227 3.162 0 3.34-2.672 5.834-6.858 6.502z"
                 ></path><path
@@ -182,10 +177,10 @@ import Link from "../components/Link.astro";
         </a>
       </div>
       <div
-        class=":uno: flex flex-col divide-y-2 divide-radixgray-6 mt-4 max-w-4xl gap-2 grid-cols-1 items-center justify-center lg:flex-row lg:divide-y-0 lg:divide-x-2"
+        class="flex flex-col divide-y-2 divide-sage-6 dark:divide-sageDark-6 mt-4 max-w-4xl gap-2 grid-cols-1 items-center justify-center lg:flex-row lg:divide-y-0 lg:divide-x-2"
       >
-        <div class=":uno: flex gap-2 items-center justify-center">
-          <span class=":uno: h-5 w-5 i-solar:copyright-line-duotone" role="none"
+        <div class="flex gap-2 items-center justify-center">
+          <span class="h-5 w-5 i-solar-copyright-line-duotone" role="none"
           ></span>
 
            2009 - {currentDate} - Built using <Link
@@ -197,9 +192,9 @@ import Link from "../components/Link.astro";
             Astro
           </Link>
         </div>
-        <div class=":uno: pt-2 pl-2 lg:pt-0">
+        <div class="pt-2 pl-2 lg:pt-0">
           Designed with <span
-            class=":uno: h-6 text-radixred-9 w-6 i-solar:heart-angle-bold"
+            class="h-6 text-red-9 w-6 i-solar-heart-angle-bold"
             role="none"
           >
           </span> by Akshay Ghate.

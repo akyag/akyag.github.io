@@ -13,21 +13,21 @@ import { Image } from "astro:assets";
 ---
 
 <section>
-  <div class=":uno: relative min-w-fit">
+  <div class="relative min-w-fit">
     <Image
       src={imagepath}
       alt={fulltitle}
       role="img"
-      class=":uno: object-cover w-full h-full border border-radixgray-6 rounded-xl shadow-md dark:filter dark:brightness-75 dark:contrast-125 hover:filter hover:drop-shadow-lg"
+      class="object-cover w-full h-full border border-radixgray-6 rounded-xl shadow-md dark:filter dark:brightness-75 dark:contrast-125 hover:filter hover:drop-shadow-lg"
     />
   </div>
-  <div class=":uno: relative -mt-16 px-8">
-    <div class=":uno: rounded-lg bg-radixgray-2 px-6 py-3 shadow-lg">
-      <div class=":uno: font-display fw600">
-        {title}<span class=":uno: text-radixcrimson-11"> {subtitle}</span>
+  <div class="relative -mt-16 px-8">
+    <div class="rounded-lg bg-radixgray-2 px-6 py-3 shadow-lg">
+      <div class="font-display fw600">
+        {title}<span class="text-radixcrimson-11"> {subtitle}</span>
       </div>
       <div>
-        <ul class=":uno: text-f-sm mt-2 ml-2 list-inside">
+        <ul class="text-f-sm mt-2 ml-2 list-inside">
           <li>{feature1}</li>
           <li>{feature2}</li>
           <li>{feature3}</li>

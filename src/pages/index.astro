@@ -13,14 +13,14 @@ const meta = {
 <Page>
   <Head slot="head" {meta} />
   <Hero />
-  <main id="content-wrapper" class=":uno: mxa max-w-7xl py-12 px-8">
-    <div class=":uno: space-y-24 leading-relaxed grid place-items-center">
-      <div class=":uno: max-w-prose">
-        <h3 class=":uno: font-display my-5 mx-3 text-center text-f-2xl fw700">
+  <main id="content-wrapper" class="mxa py-12">
+    <section id="A" class="space-y-48 grid place-items-center">
+      <div class="max-w-prose">
+        <h3 class="font-display my-5 mx-3 text-center text-f-2xl fw700">
           What I do
         </h3>
         <p
-          class=":uno: first-letter:text-f-xl first-letter:fw600 first-letter:text-radixcrimson-11"
+          class="first-letter:text-f-xl first-letter:fw600 first-letter:text-brand-9 max-w-prose"
         >
           I offer web design services to businesses and individuals. I see that
           my service fits within your budget and/or time constraints. Once my
@@ -31,222 +31,242 @@ const meta = {
       </div>
       <div>
         <div
-          class=":uno: rounded-full flex bg-radixteal-3 h-16 ml-4 p-3 ring-2 ring-radixteal-7 ring-offset-radixteal-7 ring-offset-8 w-16 z-10 relative items-center justify-center"
+          class="rounded-full flex bg-teal-3 dark:bg-tealDark-3 h-16 ml-4 p-3 ring-2 ring-teal-7 dark:ring-tealDark-7 ring-offset-teal-7 ring-offset-8 w-16 z-10 relative items-center justify-center dark:ring-offset-tealDark-7"
         >
           <span
-            class=":uno: h-12 text-radixteal-12 w-12 i-solar:code-line-duotone"
+            class="h-12 text-teal-12 dark:text-tealDark-12 w-12 i-solar-code-line-duotone"
             role="none"></span>
         </div>
         <div
-          class=":uno: bg-radixteal-2 border rounded-md border-radixteal-6 text-radixteal-11 shadow-md -mt-8 py-8 px-4 md:p-8"
+          class="bg-teal-2 dark:bg-tealDark-2 border rounded-md border-teal-6 dark:border-tealDark-6 dark:text-tealDark-11 text-teal-11 shadow-md -mt-8 py-8 px-4 md:p-8"
         >
-          <div class=":uno: text-f-lg py-4 fw600">Web Developement</div>
+          <div class="text-f-lg font-display py-4 fw600">Web Developement</div>
           <p>
             HTML / CSS, Javascript Animation, Responsive website, Support and
             Maintenance.
           </p>
         </div>
       </div>
-      <div>
-        <h3
-          class=":uno: font-display mx-3 mt-5 text-f-xl text-center mb-14 fw700"
-        >
-          Our Process
-        </h3>
-        <ul
-          class=":uno: grid gap-24 grid-cols-1 place-items-stretch sm:gap-x-6 sm:gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
-        >
-          <li
-            class=":uno: bg-radixgray-2 border rounded-md border-radixgray-6 shadow-md py-4 px-6 lg:px-8"
+      <div class="bg-sage-2 dark:bg-sageDark-3 w-full">
+        <div class="max-w-7xl mxa py-24">
+          <h3 class="font-display mx-3 mt-5 text-f-xl text-center mb-14 fw700">
+            Our Process
+          </h3>
+          <ul
+            class="grid gap-24 grid-cols-1 place-items-stretch sm:gap-x-6 sm:gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
           >
-            <div
-              class=":uno: rounded-full flex mxa bg-radixblue-3 h-16 -mt-12 p-3 ring-2 ring-radixblue-7 ring-offset-radixblue-7 ring-offset-8 w-16 z-10 items-center justify-center"
+            <li
+              class="bg-white dark:bg-sageDark-2 dark:border-sageDark-6 border rounded-md border-sage-6 shadow-md py-4 px-6 lg:px-8 hover:shadow-lg ease-out hover:ease-in duration-300"
             >
-              <span
-                class=":uno: h-12 text-radixblue-12 w-12 i-solar:chat-line-linear"
-                role="none"></span>
-            </div>
-            <h4
-              class=":uno: border-b-2 border-radixblue-6 my-4 text-f-lg fw600"
+              <div
+                class="rounded-full flex mxa bg-blue-3 dark:bg-blueDark-3 h-16 -mt-12 p-3 ring-2 ring-blue-7 dark:ring-blueDark-7 ring-offset-blue-7 dark:ring-offset-blueDark-7 ring-offset-8 w-16 z-10 items-center justify-center"
+              >
+                <span
+                  class="h-12 text-blue-12 dark:text-blueDark-12 w-12 i-solar-chat-line-linear"
+                  role="none"></span>
+              </div>
+              <h4
+                class="border-b-2 border-blue-6 dark:border-blueDark-6 my-4 text-f-lg fw700 tracking-wider font-display"
+              >
+                1. Discuss
+              </h4>
+              <p>
+                To define the goals. What objective does the website need to
+                accomplish? What problem does it solve?
+              </p>
+              <p
+                class="my-2 text-f-sm uppercase tracking-wider text-sage-11 dark:text-sageDark-11 fw600"
+              >
+                Key Process:
+              </p>
+              <div class="flex flex-wrap p-1 justify-start">
+                <Bullet
+                  color="bg-blue-1 border-blue-6 text-blue-11 dark:bg-blueDark-1 dark:border-blueDark-6 dark:text-blueDark-11"
+                >
+                  Brainstorming
+                </Bullet>
+                <Bullet
+                  color="bg-blue-1 border-blue-6 text-blue-11 dark:bg-blueDark-1 dark:border-blueDark-6 dark:text-blueDark-11"
+                >
+                  Define a Problem
+                </Bullet>
+                <Bullet
+                  color="bg-blue-1 border-blue-6 text-blue-11 dark:bg-blueDark-1 dark:border-blueDark-6 dark:text-blueDark-11"
+                >
+                  Primary Aim
+                </Bullet>
+                <Bullet
+                  color="bg-blue-1 border-blue-6 text-blue-11 dark:bg-blueDark-1 dark:border-blueDark-6 dark:text-blueDark-11"
+                >
+                  Analysis
+                </Bullet>
+              </div>
+            </li>
+            <li
+              class="bg-white dark:bg-sageDark-2 border rounded-md border-sage-6 dark:border-sageDark-6 shadow-md py-4 px-6 lg:px-8 hover:shadow-lg ease-out hover:ease-in duration-300"
             >
-              1. Discuss
-            </h4>
-            <p>
-              To define the goals. What objective does the website need to
-              accomplish? What problem does it solve?
-            </p>
-            <p class=":uno: my-2 text-f-sm uppercase fw600">Key Process:</p>
-            <div class=":uno: flex flex-wrap p-1 justify-start">
-              <Bullet
-                color="bg-radixblue-1 border-radixblue-6 text-radixblue-11"
+              <div
+                class="rounded-full flex mxa bg-purple-3 dark:bg-purpleDark-3 h-16 -mt-12 p-3 ring-2 ring-purple-7 dark:ring-purpleDark-7 ring-offset-purple-7 dark:ring-offset-purpleDark-7 ring-offset-8 w-16 z-10 items-center justify-center"
               >
-                Brainstorming
-              </Bullet>
-              <Bullet
-                color="bg-radixblue-1 border-radixblue-6 text-radixblue-11"
+                <span
+                  class="h-12 text-purple-12 dark:text-purpleDark-12 w-12 i-solar-checklist-bold-duotone"
+                  role="none"></span>
+              </div>
+              <h4
+                class="border-b-2 border-purple-6 dark:border-purpleDark-6 my-4 text-f-lg fw700 tracking-wider font-display"
               >
-                Define a Problem
-              </Bullet>
-              <Bullet
-                color="bg-radixblue-1 border-radixblue-6 text-radixblue-11"
+                2. Planning
+              </h4>
+              <p>
+                To decide the technical aspects of the project, such as the
+                selection of the tech stack to build the website and content
+                strategy planning.
+              </p>
+              <p
+                class="my-2 text-f-sm uppercase tracking-wider text-sage-11 dark:text-sageDark-11 fw600"
               >
-                Primary Aim
-              </Bullet>
-              <Bullet
-                color="bg-radixblue-1 border-radixblue-6 text-radixblue-11"
-              >
-                Analysis
-              </Bullet>
-            </div>
-          </li>
-          <li
-            class=":uno: bg-radixgray-2 border rounded-md border-radixgray-6 shadow-md py-4 px-6 lg:px-8"
-          >
-            <div
-              class=":uno: rounded-full flex mxa bg-radixpurple-3 h-16 -mt-12 p-3 ring-2 ring-radixpurple-7 ring-offset-radixpurple-7 ring-offset-8 w-16 z-10 items-center justify-center"
+                Key Process:
+              </p>
+              <div class="flex flex-wrap p-1 justify-start">
+                <Bullet
+                  color="bg-purple-1 dark:bg-purpleDark-1 border-purple-6 dark:border-purpleDark-6 text-purple-11 dark:text-purpleDark-11"
+                >
+                  Content Developement Strategy
+                </Bullet>
+                <Bullet
+                  color="bg-purple-1 dark:bg-purpleDark-1 border-purple-6 dark:border-purpleDark-6 text-purple-11 dark:text-purpleDark-11"
+                >
+                  SEO Strategy
+                </Bullet>
+                <Bullet
+                  color="bg-purple-1 dark:bg-purpleDark-1 border-purple-6 dark:border-purpleDark-6 text-purple-11 dark:text-purpleDark-11"
+                >
+                  Technology stacks
+                </Bullet>
+              </div>
+            </li>
+            <li
+              class="bg-white dark:bg-sageDark-2 border rounded-md border-sage-6 dark:border-sageDark-6 shadow-md py-4 px-6 lg:px-8 hover:shadow-lg ease-out hover:ease-in duration-300"
             >
-              <span
-                class=":uno: h-12 text-radixpurple-12 w-12 i-solar:checklist-bold-duotone"
-                role="none"></span>
-            </div>
-            <h4
-              class=":uno: border-b-2 border-radixpurple-6 my-4 text-f-lg fw600"
+              <div
+                class="rounded-full flex mxa bg-tomato-3 dark:bg-tomatoDark-3 h-16 -mt-12 p-3 ring-2 ring-tomato-7 dark:ring-tomatoDark-7 ring-offset-tomato-7 dark:ring-offset-tomatoDark-7 ring-offset-8 w-16 z-10 relative items-center justify-center"
+              >
+                <span
+                  class="h-12 text-tomato-12 dark:text-tomatoDark-12 w-12 i-solar-pallete-2-outline"
+                  role="none"></span>
+              </div>
+              <h4
+                class="border-b-2 border-tomato-6 dark:border-tomatoDark-6 my-4 text-f-lg fw700 tracking-wider font-display"
+              >
+                3. Designing
+              </h4>
+              <p>
+                To design the color scheme, logo design, and other interactive
+                design elements to be incorporated on the website and figure out
+                the structure.
+              </p>
+              <p
+                class="my-2 text-f-sm uppercase tracking-wider text-sage-11 dark:text-sageDark-11 fw600"
+              >
+                Key Process:
+              </p>
+              <div class="flex flex-wrap p-1 justify-start">
+                <Bullet
+                  color="bg-tomato-1 dark:bg-tomatoDark-1 border-tomato-6 dark:border-tomatoDark-6 text-tomato-11 dark:text-tomatoDark-11"
+                >
+                  Prototyping
+                </Bullet>
+                <Bullet
+                  color="bg-tomato-1 dark:bg-tomatoDark-1 border-tomato-6 dark:border-tomatoDark-6 text-tomato-11 dark:text-tomatoDark-11"
+                >
+                  Designing
+                </Bullet>
+                <Bullet
+                  color="bg-tomato-1 dark:bg-tomatoDark-1 border-tomato-6 dark:border-tomatoDark-6 text-tomato-11 dark:text-tomatoDark-11"
+                >
+                  Developement
+                </Bullet>
+              </div>
+            </li>
+            <li
+              class="bg-white dark:bg-sageDark-2 border rounded-md border-sage-6 dark:border-sageDark-6 shadow-md py-4 px-6 lg:px-8 hover:shadow-lg ease-out hover:ease-in duration-300"
             >
-              2. Planning
-            </h4>
-            <p>
-              To decide the technical aspects of the project, such as the
-              selection of the tech stack to build the website and content
-              strategy planning.
-            </p>
-            <p class=":uno: my-2 text-f-sm uppercase fw600">Key Process:</p>
-            <div class=":uno: flex flex-wrap p-1 justify-start">
-              <Bullet
-                color="bg-radixpurple-1 border-radixpurple-6 text-radixpurple-11"
+              <div
+                class="rounded-full flex mxa bg-yellow-3 dark:bg-yellowDark-3 h-16 -mt-12 p-3 ring-2 ring-yellow-7 dark:ring-yellowDark-7 ring-offset-yellow-7 dark:ring-offset-yellowDark-7 ring-offset-8 w-16 z-10 relative items-center justify-center"
               >
-                Content Developement Strategy
-              </Bullet>
-              <Bullet
-                color="bg-radixpurple-1 border-radixpurple-6 text-radixpurple-11"
+                <span
+                  class="h-12 text-yellow-12 dark:text-yellowDark-12 w-12 i-solar-test-tube-minimalistic-line-duotone"
+                  role="none"></span>
+              </div>
+              <h4
+                class="border-b-2 border-yellow-6 dark:border-yellowDark-6 my-4 text-f-lg fw700 tracking-wider font-display"
               >
-                SEO Strategy
-              </Bullet>
-              <Bullet
-                color="bg-radixpurple-1 border-radixpurple-6 text-radixpurple-11"
+                4. Testing
+              </h4>
+              <p>
+                Website testing consists of several different tests, including
+                functionality, usability, interface, compatibility, etc.
+              </p>
+              <p
+                class="my-2 text-f-sm uppercase tracking-wider text-sage-11 dark:text-sageDark-11 fw600"
               >
-                Technology stacks
-              </Bullet>
-            </div>
-          </li>
-          <li
-            class=":uno: bg-radixgray-2 border rounded-md border-radixgray-6 shadow-md py-4 px-6 lg:px-8"
-          >
-            <div
-              class=":uno: rounded-full flex mxa bg-radixtomato-3 h-16 -mt-12 p-3 ring-2 ring-radixtomato-7 ring-offset-radixtomato-7 ring-offset-8 w-16 z-10 relative items-center justify-center"
+                Key Process:
+              </p>
+              <div class="flex flex-wrap p-1 justify-start">
+                <Bullet
+                  color="bg-yellow-1 dark:bg-yellowDark-1 border-yellow-6 dark:border-yellowDark-6 text-yellow-11 dark:text-yellowDark-11"
+                >
+                  Testing
+                </Bullet>
+                <Bullet
+                  color="bg-yellow-1 dark:bg-yellowDark-1 border-yellow-6 dark:border-yellowDark-6 text-yellow-11 dark:text-yellowDark-11"
+                >
+                  Compatibility
+                </Bullet>
+              </div>
+            </li>
+            <li
+              class="bg-white dark:bg-sageDark-2 border rounded-md border-sage-6 dark:border-sageDark-6 shadow-md py-4 px-6 lg:px-8 hover:shadow-lg ease-out hover:ease-in duration-300 sm:col-span-2"
             >
-              <span
-                class=":uno: h-12 text-radixtomato-12 w-12 i-solar:pallete-2-outline"
-                role="none"></span>
-            </div>
-            <h4
-              class=":uno: border-b-2 border-radixtomato-6 my-4 text-f-lg fw600"
-            >
-              3. Designing
-            </h4>
-            <p>
-              To design the color scheme, logo design, and other interactive
-              design elements to be incorporated on the website and figure out
-              the structure.
-            </p>
-            <p class=":uno: my-2 text-f-sm uppercase fw600">Key Process:</p>
-            <div class=":uno: flex flex-wrap p-1 justify-start">
-              <Bullet
-                color="bg-radixtomato-1 border-radixtomato-6 text-radixtomato-11"
+              <div
+                class="rounded-full flex mxa bg-green-3 dark:bg-greenDark-3 h-16 -mt-12 p-3 ring-2 ring-green-7 dark:ring-greenDark-7 ring-offset-green-7 dark:ring-offset-greenDark-7 ring-offset-8 w-16 z-10 relative items-center justify-center"
               >
-                Prototyping
-              </Bullet>
-              <Bullet
-                color="bg-radixtomato-1 border-radixtomato-6 text-radixtomato-11"
+                <span
+                  class="h-12 text-green-12 dark:text-greenDark-12 w-12 i-solar:rocket-line-duotone"
+                  role="none"></span>
+              </div>
+              <h4
+                class="border-b-2 border-green-6 dark:border-greenDark-6 my-4 text-f-lg fw700 tracking-wider font-display"
               >
-                Designing
-              </Bullet>
-              <Bullet
-                color="bg-radixtomato-1 border-radixtomato-6 text-radixtomato-11"
+                5. Launching and Maintenance
+              </h4>
+              <p>
+                Launching the website involves transferring it from my local
+                server to a live server. The launch isn't the end of the
+                development journey. The maintenance phase is what follows and
+                is critical for the website to be successfully up and running.
+              </p>
+              <p
+                class="my-2 text-f-sm uppercase tracking-wider text-sage-11 dark:text-sageDark-11 fw600"
               >
-                Developement
-              </Bullet>
-            </div>
-          </li>
-          <li
-            class=":uno: bg-radixgray-2 border rounded-md border-radixgray-6 shadow-md py-4 px-6 lg:px-8"
-          >
-            <div
-              class=":uno: rounded-full flex mxa bg-radixyellow-3 h-16 -mt-12 p-3 ring-2 ring-radixyellow-7 ring-offset-radixyellow-7 ring-offset-8 w-16 z-10 relative items-center justify-center"
-            >
-              <span
-                class=":uno: h-12 text-radixyellow-12 w-12 i-solar:test-tube-minimalistic-line-duotone"
-                role="none"></span>
-            </div>
-            <h4
-              class=":uno: border-b-2 border-radixyellow-6 my-4 text-f-lg fw600"
-            >
-              4. Testing
-            </h4>
-            <p>
-              Website testing consists of several different tests, including
-              functionality, usability, interface, compatibility, etc.
-            </p>
-            <p class=":uno: my-2 text-f-sm uppercase fw600">Key Process:</p>
-            <div class=":uno: flex flex-wrap p-1 justify-start">
-              <Bullet
-                color="bg-radixyellow-1 border-radixyellow-6 text-radixyellow-11"
-              >
-                Testing
-              </Bullet>
-              <Bullet
-                color="bg-radixyellow-1 border-radixyellow-6 text-radixyellow-11"
-              >
-                Compatibility
-              </Bullet>
-            </div>
-          </li>
-          <li
-            class=":uno: bg-radixgray-2 border rounded-md border-radixgray-6 shadow-md py-4 px-6 sm:col-span-2 lg:px-8"
-          >
-            <div
-              class=":uno: rounded-full flex mxa bg-radixgreen-3 h-16 -mt-12 p-3 ring-2 ring-radixgreen-7 ring-offset-radixgreen-7 ring-offset-8 w-16 z-10 relative items-center justify-center"
-            >
-              <span
-                class=":uno: h-12 text-radixgreen-12 w-12 i-solar:rocket-line-duotone"
-                role="none"></span>
-            </div>
-            <h4
-              class=":uno: border-b-2 border-radixgreen-6 my-4 text-f-lg fw600"
-            >
-              5. Launching and Maintenance
-            </h4>
-            <p>
-              Launching the website involves transferring it from my local
-              server to a live server. The launch isn't the end of the
-              development journey. The maintenance phase is what follows and is
-              critical for the website to be successfully up and running.
-            </p>
-            <p class=":uno: my-2 text-f-sm uppercase fw600">Key Process:</p>
-            <div class=":uno: flex flex-wrap p-1 justify-start">
-              <Bullet
-                color="bg-radixgreen-1 border-radixgreen-6 text-radixgreen-11"
-              >
-                Testing
-              </Bullet>
-              <Bullet
-                color="bg-radixgreen-1 border-radixgreen-6 text-radixgreen-11"
-              >
-                Maintenance
-              </Bullet>
-            </div>
-          </li>
-        </ul>
+                Key Process:
+              </p>
+              <div class="flex flex-wrap p-1 justify-start">
+                <Bullet
+                  color="bg-green-1 dark:bg-greenDark-1 border-green-6 dark:border-greenDark-6 text-green-11 dark:text-greenDark-11"
+                >
+                  Testing
+                </Bullet>
+                <Bullet
+                  color="bg-green-1 dark:bg-greenDark-1 border-green-6 dark:border-greenDark-6 text-green-11 dark:text-greenDark-11"
+                >
+                  Maintenance
+                </Bullet>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 </Page>
