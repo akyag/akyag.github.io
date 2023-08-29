@@ -3,7 +3,7 @@
 ---
 
 <button
-  class="rounded-full bg-teal-9 h-10 text-center text-white opacity-0 transition-opacity right-10 bottom-10 w-10 duration-500 i-solar-round-alt-arrow-up-bold back-to-top fixed block hover:bg-teal-10 dark:hover:bg-tealDark-10 focus:bg-radixteal-9"
+  class="rounded-full bg-teal-9 h-10 text-center text-white opacity-0 transition-opacity right-10 bottom-10 w-10 duration-500 i-solar-round-alt-arrow-up-bold back-to-top fixed block hover:bg-teal-10 dark:hover:bg-tealDark-10 focus:bg-teal-9"
   title="Back to Top"
   role="button"
   aria-label="Back to Top"
@@ -11,29 +11,29 @@
 </button>
 
 <script is:inline>
-const showOnPx = 100;
-const backToTopButton = document.querySelector(".back-to-top");
+  const showOnPx = 100;
+  const backToTopButton = document.querySelector(".back-to-top");
 
-const scrollContainer = () => {
-  return document.documentElement || document.body;
-};
+  const scrollContainer = () => {
+    return document.documentElement || document.body;
+  };
 
-const goToTop = () => {
-  document.body.scrollIntoView({
-    behavior: "smooth",
+  const goToTop = () => {
+    document.body.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  document.addEventListener("scroll", () => {
+    console.log("Scroll Height: ", scrollContainer().scrollHeight);
+    console.log("Client Height: ", scrollContainer().clientHeight);
+
+    if (scrollContainer().scrollTop > showOnPx) {
+      backToTopButton.classList.remove("opacity-0");
+    } else {
+      backToTopButton.classList.add("opacity-0");
+    }
   });
-};
 
-document.addEventListener("scroll", () => {
-  console.log("Scroll Height: ", scrollContainer().scrollHeight);
-  console.log("Client Height: ", scrollContainer().clientHeight);
-
-  if (scrollContainer().scrollTop > showOnPx) {
-    backToTopButton.classList.remove("opacity-0");
-  } else {
-    backToTopButton.classList.add("opacity-0");
-  }
-});
-
-backToTopButton.addEventListener("click", goToTop);
+  backToTopButton.addEventListener("click", goToTop);
 </script>

@@ -4,7 +4,6 @@ import Head from "../layouts/Head.astro";
 import Hero from "../layouts/ArchiveHero.astro";
 import nextGen from "../assets/images/nextgen.svg";
 import ButtonIcon from "../components/ButtonIcon.astro";
-import { Image } from "astro:assets";
 
 const meta = {
   title: "Archive",
@@ -22,7 +21,7 @@ const meta = {
           Archive
         </h3>
         <div class="font-display text-f-lg fw600">
-          <span class="border-b-4 border-radixteal-9">NExtGen ROM</span>
+          <span class="border-b-4 border-brand-6">NExtGen ROM</span>
         </div>
         <div class="italic">
           A Custom ROM based on Android Gingerbread 2.3.x for HTC Explorer
@@ -43,7 +42,7 @@ const meta = {
           the XDA Forum at the link mentioned below. Feel free to check it out.
         </p>
         <div
-          class="container bg-radixgray-2 border-l-8 border-radixgray-6 shadow-lg px-6"
+          class="container bg-sage-2 dark:bg-sageDark-2 border border-l-8 border-sage-6 dark:border-sageDark-6 shadow-md rounded-md px-6"
         >
           <p class="font-mono py-6 break-all">
             https://forum.xda-developers.com/showthread.php?t=1812624
@@ -56,7 +55,7 @@ const meta = {
           thankful for the overwhelming support. Thank you!!!
         </p>
         <div class="font-display text-f-lg fw600">
-          <span class="border-b-4 border-radixgreen-9"
+          <span class="border-b-4 border-green-6"
             >Forum Signatures & Wallpapers</span
           >
         </div>
@@ -65,22 +64,28 @@ const meta = {
           You can view the gallery at DeviantArt.
         </p>
         <div class="flex gap-x-4 items-center">
-          <ButtonIcon
-            hue="hue-radixgreen"
+          <a
             href="https://www.deviantart.com/akyag/gallery/37760236/signatures"
+            class="btn-green"
+            rel="prefetch"
+            tabindex="0"
+            role="button"
             target="_blank"
-            iconClass="w-6 h-6 mr-2 fill-current i-simple-icons:deviantart"
-          >
-            signatures
-          </ButtonIcon>
-          <ButtonIcon
-            hue="hue-radixgray"
+            ><span class="w-6 h-6 mr2 fill-current i-simple-icons-deviantart"
+            ></span>Signatures
+          </a>
+          <a
             href="https://www.deviantart.com/akyag/gallery/37773265/wallpapers"
+            class="btn-sage"
+            rel="prefetch"
+            tabindex="0"
+            role="button"
             target="_blank"
-            iconClass="w-6 h-6 mr-2 fill-current i-simple-icons:deviantart"
           >
-            Wallpapers
-          </ButtonIcon>
+            <span class="w-6 h-6 mr-2 fill-current i-simple-icons:deviantart"
+            ></span>
+             Wallpapers
+          </a>
         </div>
       </div>
     </div>

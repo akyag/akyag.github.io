@@ -6,7 +6,6 @@ import Hero from "../layouts/WorkHero.astro";
 import mangesh from "../assets/images/mangesh.png";
 import mangeshFull from "../assets/images/mangesh-lg.png";
 import Modal from "../components/Modal.astro";
-import ButtonIcon from "../components/ButtonIcon.astro";
 import { Image } from "astro:assets";
 
 const meta = {
@@ -22,16 +21,14 @@ const meta = {
     id="content-wrapper"
     class="container mxa py-6 px-8 md:py-24 md:px-0 lg:py-12"
   >
-    <div
-      class="container min-h-full space-y-12 my-2 text-left leading-relaxed px-4 lg:px-8"
-    >
+    <div class="min-h-full space-y-12 my-2 text-left px-4 lg:px-8">
       <div
         id="pagination"
-        class="flex flex-wrap space-x-2 rounded-1 shadow-md p-4 items-center bg-radixgray-2 border border-radixgray-6"
+        class="flex flex-wrap space-x-2 bg-sage-2 dark:bg-sageDark-2 rounded-1 shadow-md p-4 items-center border border-sage-6 dark:border-sageDark-6"
       >
         <a
           href="/"
-          class="hover:transition-all hover:ease hover:text-radixcrimson-11 hover:duration-200 focus:outline-none focus:border-b-4 focus:border-radixgray-7"
+          class="transition-all ease-in hover:ease-out dark:hover:text-cyanDark-11 hover:text-cyan-11 duration-200 focus:outline-none focus:border-b-4 focus:border-sage-6 dark:focus:border-sageDark-6"
           tabindex="0">Home</a
         >
         <span
@@ -39,7 +36,7 @@ const meta = {
           role="none"></span>
         <a
           href="/work/#content-wrapper"
-          class="hover:transition-all hover:ease hover:text-radixcrimson-11 hover:duration-200 focus:outline-none focus:border-b-4 focus:border-radixgray-7"
+          class="transition-all ease-in hover:ease-out dark:hover:text-cyanDark-11 hover:text-cyan-11 duration-200 focus:outline-none focus:border-b-4 focus:border-sage-6 dark:focus:border-sageDark-6"
           tabindex="0">Work</a
         >
         <span
@@ -47,18 +44,18 @@ const meta = {
           role="none"></span>
         <a
           href="#"
-          class="focus:outline-none focus:border-b-4 focus:border-radixgray-7"
+          class="focus:outline-none focus:border-b-4 focus:border-sage-6 dark:focus:border-sageDark-6"
           tabindex="0">Mangesh Thombare</a
         >
       </div>
 
       <div class="font-display my-6 text-f-xl fw600">
         Mangesh
-        <span class="text-radixcyan-11"> Thombare</span>
+        <span class="text-cyan-11 dark:text-cyanDark-11"> Thombare</span>
       </div>
       <div class="flex flex-col items-start md:flex-row">
         <div
-          class="flex border-2 border-radixgray-6 flex-shrink-0 shadow-lg my-4 mx-2 md:w-1/2 lg:w-auto"
+          class="flex border-2 border-sage-6 dark:border-sageDark-6 flex-shrink-0 shadow-lg shadow-cyan-9/50 my-4 mx-2 md:w-1/2 lg:w-auto"
         >
           <Image
             class="h-auto object-contain w-full dark:filter dark:brightness-75 dark:contrast-125"
@@ -85,33 +82,55 @@ const meta = {
             <li>Modal for images.</li>
           </ul>
 
-          <div class="self-start">
-            <ButtonIcon
-              hue="hue-radixcyan"
-              id="modal3-trigger"
-              iconClass="w-5 h-5 mr-2 text-current i-solar:full-screen-square-line-duotone"
-            >
-              Screenshot
-            </ButtonIcon>
+          <div>
+            <Modal id="dialog" open="Screenshot">
+              <main
+                slot="main"
+                class="mt-3 dark:bg-sageDark-4 p-10 grid place-content-center"
+              >
+                <picture>
+                  <source
+                    media="(max-width:768px)"
+                    srcset={mangeshFull.src}
+                    width="300"
+                  />
+                  <source
+                    media="(max-width:1024px)"
+                    srcset={mangeshFull.src}
+                    width="450"
+                  />
+                  <img
+                    src={mangeshFull.src}
+                    class={"h-auto dark:filter dark:brightness-75 dark:contrast-125"}
+                    width="600"
+                    alt="Mangesh Thombare Full Image"
+                    role="img"
+                  />
+                </picture>
+              </main>
+              <div class="flex justify-end" slot="close">
+                <button class="btn-red m-5">Close</button>
+              </div>
+            </Modal>
           </div>
         </div>
       </div>
       <div
-        class="bg-radixgray-2 border rounded-md border-radixgray-7 shadow-md p-6 gap-4"
+        class="bg-sage-2 dark:bg-sageDark-2 border rounded-md border-sage-6 dark:border-sageDark-6 shadow-md p-6 gap-4"
       >
         <div class="flex flex-col items-center md:items-start gap-6">
           <div class="md:ml-6">
             <div
-              class="rounded-full flex self-start shrink-0 mxa border-radixgray-6 border-2 h-28 w-28 items-center justify-center"
+              class="rounded-full flex self-start shrink-0 mxa border-sage-6 dark:border-sageDark-6 border-2 h-28 w-28 items-center justify-center"
             >
               <span
-                class="h-16 w-16 i-solar:user-hand-up-bold-duotone"
+                class="h-16 w-16 i-solar-user-hand-up-bold-duotone text-cyan-9"
                 role="none"></span>
             </div>
           </div>
 
           <span
-            class="shrink-0 self-start h-10 text-radixcrimson-9 w-10 i-ph:quotes-duotone md:h-12 md:w-12"
+            class="shrink-0 self-start h-10 text-cyan-9 w-10 i-ph-quotes-duotone md:h-12 md:w-12"
             role="none"></span>
 
           <div class="space-y-3 px-4 md:px-8">
@@ -130,42 +149,11 @@ const meta = {
           </div>
           <div class="shrink-0 self-end">
             <span
-              class="h-10 text-radixcrimson-9 w-10 i-ph:quotes-duotone md:h-12 md:w-12"
+              class="h-10 text-cyan-9 w-10 i-ph-quotes-duotone md:h-12 md:w-12"
               role="none"></span>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <Modal triggerId="modal3-trigger" title="Mangesh Thombare">
-    <div class="mt-3 grid place-content-center">
-      <!-- <Picture
-        class="dark:filter dark:brightness-75 dark:contrast-125"
-        src={mangeshFull}
-        alt="Mangesh Thombare Full Image"
-        widths={[300, 450, 600]}
-        sizes="(max-width: 768px) 300px, (max-width: 1024px) 450px, 600px"
-        aspectRatio={1.24}
-      /> -->
-      <picture>
-        <source
-          media="(max-width:768px)"
-          srcset={mangeshFull.src}
-          width="300"
-        />
-        <source
-          media="(max-width:1024px)"
-          srcset={mangeshFull.src}
-          width="450"
-        />
-        <img
-          src={mangeshFull.src}
-          class={"h-auto dark:filter dark:brightness-75 dark:contrast-125"}
-          width="600"
-          alt="Mangesh Thombare Full Image"
-          role="img"
-        />
-      </picture>
-    </div>
-  </Modal>
 </Page>

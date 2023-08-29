@@ -16,7 +16,7 @@ const meta = {
   <Head slot="head" {meta} />
   <Hero />
   <main id="content-wrapper" class="container mxa py-6 px-8 md:py-12 md:px-0">
-    <div class="mxa space-y-12 leading-relaxed max-w-6xl">
+    <div class="mxa space-y-12 max-w-6xl">
       <h3 class="font-display my-5 mx-3 text-center text-f-2xl fw700">About</h3>
       <div
         class="flex flex-col space-y-12 md:flex-row md:space-x-12 md:space-y-0"
@@ -28,18 +28,18 @@ const meta = {
             aria-role="img"
             width={128}
             height={128}
-            class="rounded-full border-4 border-radixcrimson-8 h-32 shadow-lg mx-8 transition ease-in-out w-32 duration-200"
+            class="rounded-full border-6 border-brand-6 dark:border-brandDark-6 hover:border-brand-7 dark:hover:border-brandDark-7 h-32 shadow-lg mx-8 transition ease-in hover:ease-out w-32 duration-200 filter-drop-shadow-md"
           />
         </div>
         <div class="space-y-4">
           <div class="text-f-lg fw600">
             Hi there,
             <span
-              class="h-8 text-radixcrimson-11 w-8 i-ph:hand-waving-duotone"
+              class="h-8 text-brand-9 w-8 i-ph:hand-waving-duotone"
               role="none"></span>
           </div>
           <p
-            class="first-letter:text-f-xl first-letter:text-radixcrimson-11 first-letter:fw600"
+            class="first-letter:text-f-xl first-letter:text-brand-9 first-letter:fw600"
           >
             I am a front-end designer, freelance developer, and self-proclaimed
             nerd. My expertise lies primarily in HTML, CSS, and JS, and I have
@@ -66,14 +66,14 @@ const meta = {
           <p class="font-medium mr-12 text-right">- Akshay Ghate</p>
         </div>
       </div>
-      <div class="font-display text-f-lg uppercase fw600">
-        <span class="border-b-4 border-radixcrimson-9">Tech Stack</span>
+      <div class="font-display text-f-lg uppercase fw700 tracking-wider">
+        <span class="border-b-4 border-brand-9">Tech Stack</span>
 
         <div class="flex flex-wrap py-8 gap-6 items-start">
           <div>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#E34F26] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter transition-all ease-in hover:ease-out text-[#E34F26] duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-transparent focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="HTML5"
@@ -88,7 +88,7 @@ const meta = {
           <div>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#1572B6] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter transition-all ease-in hover:ease-out text-[#1572B6] duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-transparent focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="CSS3"
@@ -103,7 +103,7 @@ const meta = {
           <div>
             <a
               href="https://astro.build"
-              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#FF5D01] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter transition-all ease-in hover:ease-out text-[#FF5D01] duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-transparent focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="Astro"
@@ -118,7 +118,7 @@ const meta = {
           <div>
             <a
               href="https://nuxtjs.org"
-              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#00DC82] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter transition-all ease-in hover:ease-out text-[#00DC82] duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-transparent focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="NuxtJS"
@@ -133,7 +133,7 @@ const meta = {
           <div>
             <a
               href="https://v3.vuejs.org/"
-              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#4FC08D] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter transition-all ease-in hover:ease-out text-[#4FC08D] duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-transparent focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="Vue JS"
@@ -148,7 +148,7 @@ const meta = {
           <div>
             <a
               href="https://tailwindcss.com/"
-              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#06B6D4] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter transition-all ease-in hover:ease-out text-[#06B6D4] duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-transparent focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="TailwindCSS"
@@ -163,7 +163,7 @@ const meta = {
           <div>
             <a
               href="https://unocss.dev/"
-              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-radixgray-11 hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter transition-all ease-in hover:ease-out text-sage-11 duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-transparent focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="UnoCSS"
@@ -178,7 +178,7 @@ const meta = {
           <div>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#F7DF1E] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter transition-all ease-in hover:ease-out text-[#F7DF1E] duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-transparent focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="JavaScript"
@@ -194,7 +194,7 @@ const meta = {
           <div>
             <a
               href="https://git-scm.com/"
-              class="inline-block grayscale filter hover:transition-all hover:ease-in-out text-[#F05032] hover:duration-300 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-radixgray-7 focus:ring-offset-radixgray-1 focus:ring-offset-4 focus:grayscale-0"
+              class="inline-block grayscale filter transition-all ease-in hover:ease-out text-[#F05032] duration-200 hover:grayscale-0 focus:outline-none focus:ring-4 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-transparent focus:ring-offset-4 focus:grayscale-0"
               target="_blank"
               rel="noopener"
               title="Git"
@@ -211,12 +211,12 @@ const meta = {
 
       <div>
         <p class="font-display text-f-lg italic fw700">
-          <span class="border-b-4 border-radixtomatos-9">Special thanks:</span>
+          <span class="border-b-4 border-brand-9">Special thanks:</span>
         </p>
         <div
-          class="container bg-radixteal-2 border-l-8 border border-radixteal-6 shadow-lg mt-8 px-6"
+          class="container bg-teal-2 dark:bg-tealDark-2 border-l-8 border border-teal-6 dark:border-tealDark-6 shadow-md rounded-md mt-8 px-6"
         >
-          <p class="py-6 text-radixteal-11">
+          <p class="py-6 text-teal-11 dark:text-tealDark-11">
             Teresa Tafoya, Sushrut Joshi, Kshitij Limaye, Mangesh Thombare,
             Sohan Zambare, Arturo Guzman, Meghana Gokhale, Tejas Gokhale.
           </p>
