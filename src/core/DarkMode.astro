@@ -1,4 +1,5 @@
 ---
+
 ---
 
 <script is:inline>
@@ -30,10 +31,10 @@
       document.getElementById("menu")?.classList.toggle("hidden");
       document
         .getElementById("menu-icon")
-        ?.classList.toggle("i-solar:hamburger-menu-line-duotone");
+        ?.classList.toggle("i-solar-hamburger-menu-line-duotone");
       document
         .getElementById("menu-icon")
-        ?.classList.toggle("i-solar:close-circle-line-duotone");
+        ?.classList.toggle("i-solar-close-circle-line-duotone");
     });
     attachEvent("[toggle-color-scheme]", "click", function () {
       document.documentElement.classList.toggle("dark");
@@ -51,9 +52,9 @@
     document.getElementById("menu")?.classList.add("hidden");
     document
       .getElementById("menu-icon")
-      ?.classList.remove("i-solar:close-circle-line-duotone");
+      ?.classList.remove("i-solar-close-circle-line-duotone");
     document
       .getElementById("menu-icon")
-      ?.classList.add("i-solar:hamburger-menu-line-duotone");
+      ?.classList.add("i-solar-hamburger-menu-line-duotone");
   };
 </script>

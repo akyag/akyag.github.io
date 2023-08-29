@@ -15,11 +15,11 @@
   <label for="mobileswitch">
     <span
       aria-hidden="true"
-      class="i-solar:sun-2-bold absolute z-1 left-2"
+      class="i-solar-sun-2-bold absolute z-1 left-2"
       id="sun1"></span>
     <span
       aria-hidden="true"
-      class="i-solar:moon-bold absolute z-1 left-9"
+      class="i-solar-moon-bold absolute z-1 left-9"
       id="moon1"></span>
   </label>
 </mobile-theme-toggle>
@@ -40,18 +40,19 @@
     content: "";
     width: 4rem;
     height: 2rem;
-    background-color: hsl(151, 8.8%, 93%);
+    background-color: theme("colors.teal.4");
     border-radius: 2rem;
     transition: background-color 200ms ease-in-out;
   }
   input[type="checkbox"].mobilethemeToggle:focus + label::before {
-    outline: 2px solid hsl(155, 3.5%, 55.5%);
+    outline: 2px solid theme("colors.teal.7");
   }
+
   input[type="checkbox"].mobilethemeToggle + label::after {
     content: "";
     width: 1.8rem;
     height: 1.8rem;
-    background-color: hsl(336, 80%, 57.8%);
+    background-color: theme("colors.brand.9");
     border-radius: 2rem;
     margin-right: 1rem;
     position: absolute;
@@ -61,14 +62,14 @@
       transform 200ms ease-in-out;
   }
   input[type="checkbox"].mobilethemeToggle:checked + label::before {
-    background-color: hsl(150, 5.8%, 19.9%);
+    background-color: theme("colors.sageDark.3");
   }
   input[type="checkbox"].mobilethemeToggle:checked + label::after {
-    background-color: hsl(173, 80%, 36%);
+    background-color: theme("colors.tealDark.9");
     transform: translateX(100%);
   }
   input[type="checkbox"].mobilethemeToggle + label > span#sun1 {
-    color: rgb(255, 255, 255);
+    color: white;
     transition: background-color 200ms ease-in-out;
   }
   input[type="checkbox"].mobilethemeToggle:checked + label > span#sun1 {

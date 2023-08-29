@@ -21,9 +21,7 @@ const meta = {
     id="content-wrapper"
     class="container mxa py-6 px-8 md:py-24 md:px-0 lg:py-12"
   >
-    <div
-      class="h-auto min-h-full space-y-12 my-2 text-left px-4 lg:px-8"
-    >
+    <div class="h-auto min-h-full space-y-12 my-2 text-left px-4 lg:px-8">
       <div
         id="pagination"
         class="flex flex-wrap space-x-2 bg-sage-2 dark:bg-sageDark-2 rounded-1 shadow-md p-4 items-center border border-sage-6 dark:border-sageDark-6"
@@ -51,7 +49,7 @@ const meta = {
         >
       </div>
 
-      <div class="font-display my-6 text-f-xl fw600">
+      <div class="font-display tracking-tight my-6 text-f-xl fw600">
         Captivating
         <span class="text-crimson-11"> Journeys</span>
       </div>
@@ -82,40 +80,47 @@ const meta = {
                 target="_blank"
                 class="btn-crimson"
                 rel="prefetch"
-                tabindex="0">
-                <span class="w-5 h-5 mr-2 text-current i-solar-square-top-down-linear"></span>              
-                Demo
-              </a></div>
-
-              <Modal id="dialog" open="Screenshot">
-                <main slot="main" class="mt-3 dark:bg-sageDark-4 p-10 grid place-content-center">
-                  <picture>
-                    <source
-                      media="(max-width:768px)"
-                      srcset={captivatingJourneysFull.src}
-                      width="250"
-                    />
-                    <source
-                      media="(max-width:1024px)"
-                      srcset={captivatingJourneysFull.src}
-                      width="375"
-                    />
-                    <img
-                      src={captivatingJourneysFull.src}
-                      class={"h-auto dark:filter dark:brightness-75 dark:contrast-125"}
-                      width="500"
-                      alt="Captivating Journeys Full Image"
-                      role="img"
-                    />
-                  </picture>
-                </main>
-                <div class="flex justify-end" slot="close">
-                <button class="btn-red m-5">Close</button>
-                  </div>
-              </Modal>
+                tabindex="0"
+              >
+                <span
+                  class="w-5 h-5 mr-2 text-current i-solar-square-top-down-linear"
+                ></span>
+                 Demo
+              </a>
             </div>
+
+            <Modal id="dialog" open="Screenshot">
+              <main
+                slot="main"
+                class="mt-3 dark:bg-sageDark-4 p-10 grid place-content-center"
+              >
+                <picture>
+                  <source
+                    media="(max-width:768px)"
+                    srcset={captivatingJourneysFull.src}
+                    width="250"
+                  />
+                  <source
+                    media="(max-width:1024px)"
+                    srcset={captivatingJourneysFull.src}
+                    width="375"
+                  />
+                  <img
+                    src={captivatingJourneysFull.src}
+                    class={"h-auto dark:filter dark:brightness-75 dark:contrast-125"}
+                    width="500"
+                    alt="Captivating Journeys Full Image"
+                    role="img"
+                  />
+                </picture>
+              </main>
+              <div class="flex justify-end" slot="close">
+                <button class="btn-red m-5">Close</button>
+              </div>
+            </Modal>
           </div>
         </div>
       </div>
+    </div>
   </main>
 </Page>

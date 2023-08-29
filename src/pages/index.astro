@@ -14,9 +14,11 @@ const meta = {
   <Head slot="head" {meta} />
   <Hero />
   <main id="content-wrapper" class="mxa py-12">
-    <section id="A" class="space-y-48 grid place-items-center">
-      <div class="max-w-prose">
-        <h3 class="font-display my-5 mx-3 text-center text-f-2xl fw900">
+    <div id="A" class="space-y-48 grid place-items-center">
+      <div class="max-w-prose px-4">
+        <h3
+          class="font-display my-5 mx-3 text-center tracking-tight text-f-2xl fw900"
+        >
           What I do
         </h3>
         <p
@@ -29,7 +31,7 @@ const meta = {
           your online information and written content on your website change.
         </p>
       </div>
-      <div>
+      <div class="px-4">
         <div
           class="rounded-full flex bg-teal-3 dark:bg-tealDark-3 h-16 ml-4 p-3 ring-2 ring-teal-7 dark:ring-tealDark-7 ring-offset-teal-7 ring-offset-8 w-16 z-10 relative items-center justify-center dark:ring-offset-tealDark-7"
         >
@@ -48,8 +50,10 @@ const meta = {
         </div>
       </div>
       <div class="bg-sage-2 dark:bg-sageDark-3 w-full">
-        <div class="max-w-7xl mxa py-24">
-          <h3 class="font-display mx-3 mt-5 text-f-xl text-center mb-14 fw700">
+        <div class="max-w-7xl mxa py-24 px-4">
+          <h3
+            class="font-display mx-3 mt-5 text-f-xl tracking-tight text-center mb-14 fw700"
+          >
             Our Process
           </h3>
           <ul
@@ -267,6 +271,6 @@ const meta = {
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 </Page>
