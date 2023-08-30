@@ -44,34 +44,6 @@
   font-size: var(--step-5);
 } */
 
-  :root {
-    --lightCoral: #f57e7e;
-    --lightRose: #fbcbcb;
-    --coral1: hsl(0, 85.6%, 99.38%);
-    --coral2: hsl(0, 85.6%, 98.97%);
-    --coral3: hsl(0, 85.6%, 97.05%);
-    --coral4: hsl(0, 85.6%, 94.71%);
-    --coral5: hsl(0, 85.6%, 91.97%);
-    --coral6: hsl(0, 85.6%, 88.4%);
-    --coral7: hsl(0, 85.6%, 82.5%);
-    --coral8: hsl(0, 85.6%, 73.75%);
-    --coral9: hsl(0, 85.6%, 45.86%);
-    --coral10: hsl(0, 85.6%, 42.49%);
-    --coral11: hsl(0, 85.6%, 38.24%);
-    --coral12: hsl(0, 85.6%, 13.53%);
-    --coral1D: hsl(0, 85.6%, 17.97%);
-    --coral2D: hsl(0, 85.6%, 23.07%);
-    --coral3D: hsl(0, 85.6%, 37.37%);
-    --coral4D: hsl(0, 85.6%, 47.99%);
-    --coral5D: hsl(0, 85.6%, 62.5%);
-    --coral6D: hsl(0, 85.6%, 71.4%);
-    --coral7D: hsl(0, 85.6%, 79.82%);
-    --coral8D: hsl(0, 85.6%, 87.05%);
-    --coral9D: hsl(0, 85.6%, 95.25%);
-    --coral10D: hsl(0, 85.6%, 96.03%);
-    --coral11D: hsl(0, 85.6%, 96.89%);
-    --coral12D: hsl(0, 85.6%, 99.64%);
-  }
   .font-body {
     font-family: "Atkinson Hyperlegible", sans-serif;
   }
@@ -81,45 +53,45 @@
   }
 
   body {
-    @apply bg-[url(../src/assets/images/light-sm.svg)] bg-cover bg-no-repeat absolute inset-0;
+    @apply bg-[url(../assets/images/light-sm.svg)] bg-cover bg-no-repeat absolute inset-0;
   }
   .dark body {
-    @apply bg-[url(../src/assets/images/dark-sm.svg)];
+    @apply bg-[url(../assets/images/dark-sm.svg)];
   }
 
   @screen sm {
     body {
-      @apply bg-[url(../src/assets/images/light-md.svg)];
+      @apply bg-[url(../assets/images/light-md.svg)];
     }
     .dark body {
-      @apply bg-[url(../src/assets/images/dark-md.svg)];
+      @apply bg-[url(../assets/images/dark-md.svg)];
     }
   }
 
   @screen md {
     body {
-      @apply bg-[url(../src/assets/images/light-lg.svg)];
+      @apply bg-[url(../assets/images/light-lg.svg)];
     }
     .dark body {
-      @apply bg-[url(../src/assets/images/dark-lg.svg)];
+      @apply bg-[url(../assets/images/dark-lg.svg)];
     }
   }
 
   @screen lg {
     body {
-      @apply bg-[url(../src/assets/images/light-xl.svg)];
+      @apply bg-[url(../assets/images/light-xl.svg)];
     }
     .dark body {
-      @apply bg-[url(../src/assets/images/dark-xl.svg)];
+      @apply bg-[url(../assets/images/dark-xl.svg)];
     }
   }
 
   @screen xl {
     body {
-      @apply bg-[url(../src/assets/images/lightbg.svg)];
+      @apply bg-[url(../assets/images/lightbg.svg)];
     }
     .dark body {
-      @apply bg-[url(../src/assets/images/darkbg.svg)];
+      @apply bg-[url(../assets/images/darkbg.svg)];
     }
   }
 
