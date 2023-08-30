@@ -32,18 +32,26 @@ import ScrollDown from "../components/ScrollDown.astro";
           id="WorkHero"
         /> -->
         <picture>
-          <source media="(max-width:768px)" srcset={workHero.src} width="300" />
+          <source
+            media="(max-width:768px)"
+            srcset={workHero.src}
+            width="300"
+            height="214"
+          />
           <source
             media="(max-width:1024px)"
             srcset={workHero.src}
             width="450"
+            height="321"
           />
           <img
             src={workHero.src}
             class={"h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
             width="600"
+            height="429"
             alt="Work"
-            role="presentation"
+            role="img"
+            aria-label="Work"
             id="WorkHero"
           />
         </picture>

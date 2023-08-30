@@ -18,7 +18,7 @@ import ScrollDown from "../components/ScrollDown.astro";
           class="mt-2 text-f-lg text-center tracking-tight text-teal-10 dark:text-tealDark-10 fw500"
         >
           <span class="rounded bg-brand-9 px-2 text-white">I’m Akshay.</span>
-          Nice to meet you
+           Nice to meet you
         </h2>
       </div>
       <div>
@@ -37,18 +37,22 @@ import ScrollDown from "../components/ScrollDown.astro";
             media="(max-width:768px)"
             srcset={aboutHero.src}
             width="300"
+            height="204"
           />
           <source
             media="(max-width:1024px)"
             srcset={aboutHero.src}
             width="450"
+            height="307"
           />
           <img
             src={aboutHero.src}
             class={"h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
             width="600"
+            height="409"
             alt="About Me"
-            role="presentation"
+            role="img"
+            aria-label="About Me"
             id="AboutHero"
           />
         </picture>

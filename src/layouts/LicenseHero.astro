@@ -36,18 +36,22 @@ import ScrollDown from "../components/ScrollDown.astro";
             media="(max-width:768px)"
             srcset={licenseHero.src}
             width="300"
+            height="175"
           />
           <source
             media="(max-width:1024px)"
             srcset={licenseHero.src}
             width="475"
+            height="277"
           />
           <img
             src={licenseHero.src}
             class={"h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
             width="600"
+            height="350"
             alt="License"
-            role="presentation"
+            role="img"
+            aria-label="License"
             id="LicenseHero"
           />
         </picture>

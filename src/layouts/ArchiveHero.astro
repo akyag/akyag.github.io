@@ -36,18 +36,22 @@ import ScrollDown from "../components/ScrollDown.astro";
             media="(max-width:768px)"
             srcset={archiveHero.src}
             width="200"
+            height="208"
           />
           <source
             media="(max-width:1024px)"
             srcset={archiveHero.src}
             width="300"
+            height="312"
           />
           <img
             src={archiveHero.src}
             class={"h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
             width="400"
+            height="417"
             alt="Archive"
-            role="presentation"
+            role="img"
+            aria-label="Archive"
             id="ArchiveHero"
           />
         </picture>

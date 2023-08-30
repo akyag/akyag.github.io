@@ -37,18 +37,22 @@ import ScrollDown from "../components/ScrollDown.astro";
             media="(max-width:768px)"
             srcset={designHero.src}
             width="250"
+            height="211"
           />
           <source
             media="(max-width:1024px)"
             srcset={designHero.src}
             width="375"
+            height="316"
           />
           <img
             src={designHero.src}
             class={"h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
             width="500"
+            height="421"
             alt="Design"
-            role="presentation"
+            role="img"
+            aria-label="Design"
             id="DesignHero"
           />
         </picture>

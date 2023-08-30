@@ -36,18 +36,22 @@ import ScrollDown from "../components/ScrollDown.astro";
             media="(max-width:768px)"
             srcset={contactHero.src}
             width="200"
+            height="176"
           />
           <source
             media="(max-width:1024px)"
             srcset={contactHero.src}
             width="350"
+            height="308"
           />
           <img
             src={contactHero.src}
             class={"h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
             width="400"
+            height="352"
             alt="Contact Me"
-            role="presentation"
+            role="img"
+            aria-label="Contact Me"
             id="ContactHero"
           />
         </picture>

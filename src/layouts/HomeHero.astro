@@ -44,18 +44,26 @@ import ScrollDown from "../components/ScrollDown.astro";
           id="HomeHero"
         /> -->
         <picture>
-          <source media="(max-width:768px)" srcset={homeHero.src} width="350" />
+          <source
+            media="(max-width:768px)"
+            srcset={homeHero.src}
+            width="350"
+            height="150"
+          />
           <source
             media="(max-width:1024px)"
             srcset={homeHero.src}
             width="525"
+            height="225"
           />
           <img
             src={homeHero.src}
             class={"h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
             width="700"
+            height="300"
             alt="Welcome to Web-o-Reviews!"
-            role="presentation"
+            role="img"
+            aria-label="Welcome to Web-o-Reviews!"
             id="HomeHero"
           />
         </picture>
