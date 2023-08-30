@@ -53,45 +53,49 @@
   }
 
   body {
-    @apply bg-[url(../assets/images/light-sm.svg)] bg-cover bg-no-repeat absolute inset-0;
+    background-image: url(../assets/images/light-sm.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
   }
   .dark body {
-    @apply bg-[url(../assets/images/dark-sm.svg)];
+    background-image: url(../assets/images/dark-sm.svg);
   }
 
   @screen sm {
     body {
-      @apply bg-[url(../assets/images/light-md.svg)];
+      background-image: url(../assets/images/light-md.svg);
     }
     .dark body {
-      @apply bg-[url(../assets/images/dark-md.svg)];
+      background-image: url(../assets/images/dark-md.svg);
     }
   }
 
   @screen md {
     body {
-      @apply bg-[url(../assets/images/light-lg.svg)];
+      background-image: url(../assets/images/light-lg.svg);
     }
     .dark body {
-      @apply bg-[url(../assets/images/dark-lg.svg)];
+      background-image: url(../assets/images/dark-lg.svg);
     }
   }
 
   @screen lg {
     body {
-      @apply bg-[url(../assets/images/light-xl.svg)];
+      background-image: url(../assets/images/light-xl.svg);
     }
     .dark body {
-      @apply bg-[url(../assets/images/dark-xl.svg)];
+      background-image: url(../assets/images/dark-xl.svg);
     }
   }
 
   @screen xl {
     body {
-      @apply bg-[url(../assets/images/lightbg.svg)];
+      background-image: url(../assets/images/lightbg.svg);
     }
     .dark body {
-      @apply bg-[url(../assets/images/darkbg.svg)];
+      background-image: url(../assets/images/darkbg.svg);
     }
   }
 
