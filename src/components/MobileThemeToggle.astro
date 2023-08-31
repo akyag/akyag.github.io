@@ -86,12 +86,16 @@
   }
 </style>
 
-<script is:inline>
-  if (
-    localStorage.theme === "dark" ||
-    (!("theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches)
-  ) {
-    document.getElementById("mobileswitch").checked = true;
-  }
+<script>
+  const DarkModeMobileSwitch = () => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.getElementById("mobileswitch").checked = true;
+    }
+  };
+  DarkModeMobileSwitch();
+  document.addEventListener("astro:after-swap", DarkModeMobileSwitch);
 </script>

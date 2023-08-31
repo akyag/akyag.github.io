@@ -1,6 +1,7 @@
 ---
 import designHero from "../assets/images/web-design.svg";
 import ScrollDown from "../components/ScrollDown.astro";
+import { fade } from "astro:transitions";
 ---
 
 <section class="z-10 relative" id="hero">
@@ -47,13 +48,14 @@ import ScrollDown from "../components/ScrollDown.astro";
           />
           <img
             src={designHero.src}
-            class={"h-auto transform translate-x-25 op0 dark:filter dark:brightness-75 dark:contrast-125"}
+            class={"h-auto dark:filter dark:brightness-75 dark:contrast-125"}
             width="500"
             height="421"
             alt="Design"
             role="img"
             aria-label="Design"
             id="DesignHero"
+            transition:animate={fade({ duration: "0.9s" })}
           />
         </picture>
       </div>
@@ -61,13 +63,3 @@ import ScrollDown from "../components/ScrollDown.astro";
     <ScrollDown />
   </div>
 </section>
-<script>
-  import { animate, inView } from "motion";
-  inView("#DesignHero", (info) => {
-    animate(
-      info.target,
-      { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] },
-    );
-  });
-</script>

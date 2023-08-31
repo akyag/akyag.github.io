@@ -1,11 +1,102 @@
 ---
 import MetaTags from "../core/MetaTags.astro";
-import DarkMode from "../core/DarkMode.astro";
+import { ViewTransitions } from "astro:transitions";
 
 const { meta = {} } = Astro.props;
 ---
 
 <head>
   <MetaTags {...meta} />
-  <DarkMode />
+  <ViewTransitions />
 </head>
+<script>
+  function attachEvent(
+    selector: string,
+    event: string,
+    fn: { (): void; (arg0: any, arg1: any): any },
+  ) {
+    const matches =
+      typeof selector === "string"
+        ? document.querySelectorAll(selector)
+        : [selector];
+
+    matches.forEach((elem) => {
+      elem.addEventListener(event, (e: any) => fn(e, elem), false);
+    });
+  }
+
+  const DarkMode = () => {
+    if (!localStorage.theme) {
+      localStorage.theme = "light";
+    }
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
+  const setDarkMode = () => {
+    attachEvent("[toggle-color-scheme]", "click", function () {
+      document.documentElement.classList.toggle("dark");
+      localStorage.theme = document.documentElement.classList.contains("dark")
+        ? "dark"
+        : "light";
+    });
+  };
+
+  const MobileMenu = () => {
+    function attachEvent(
+      selector: string,
+      event: string,
+      fn: { (elem: any): void; (arg0: any): any },
+    ) {
+      const matches = document.querySelectorAll(selector);
+      if (matches && matches.length) {
+        matches.forEach((elem) => {
+          elem.addEventListener(event, () => fn(elem), false);
+        });
+      }
+    }
+    attachEvent(
+      "[toggle-menu]",
+      "click",
+      function (elem: { classList: { toggle: (arg0: string) => void } }) {
+        elem.classList.toggle("expanded");
+        document.body.classList.toggle("overflow-hidden");
+        document.getElementById("menu")?.classList.toggle("hidden");
+        document
+          .getElementById("menu-icon")
+          ?.classList.toggle("i-solar-hamburger-menu-line-duotone");
+        document
+          .getElementById("menu-icon")
+          ?.classList.toggle("i-solar-close-circle-line-duotone");
+      },
+    );
+
+    const elem = document.querySelector("[toggle-menu]");
+    if (elem) {
+      elem.classList.remove("expanded");
+    }
+    document.body.classList.remove("overflow-hidden");
+    document.getElementById("menu")?.classList.add("hidden");
+    document
+      .getElementById("menu-icon")
+      ?.classList.remove("i-solar-close-circle-line-duotone");
+    document
+      .getElementById("menu-icon")
+      ?.classList.add("i-solar-hamburger-menu-line-duotone");
+  };
+
+  // Runs on initial navigation
+  DarkMode();
+  setDarkMode();
+  MobileMenu();
+  // Runs on view transitions navigation
+  document.addEventListener("astro:after-swap", DarkMode);
+  document.addEventListener("astro:after-swap", setDarkMode);
+  document.addEventListener("astro:after-swap", MobileMenu);
+</script>

@@ -19,8 +19,4 @@ export default defineConfig({
     prefetch(),
     Compress(),
   ],
-  compressHTML: true,
-  experimental: {
-    assets: true,
-  },
 });

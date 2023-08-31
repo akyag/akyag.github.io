@@ -86,12 +86,16 @@
   }
 </style>
 
-<script is:inline>
-  if (
-    localStorage.theme === "dark" ||
-    (!("theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches)
-  ) {
-    document.getElementById("switch").checked = true;
-  }
+<script>
+  const DarkModeSwitch = () => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.getElementById("switch").checked = true;
+    }
+  };
+  DarkModeSwitch();
+  document.addEventListener("astro:after-swap", DarkModeSwitch);
 </script>
