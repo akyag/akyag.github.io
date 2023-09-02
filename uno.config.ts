@@ -14,8 +14,11 @@ export default defineConfig({
     [
       /^btn-(.*)$/,
       ([, c]) =>
-        `text-f-sm hover:ease-out transition-all ease-in duration-150 flex justify-center items-center rounded-full px-4 py-2 fw600 text-${c}-11 dark:text-${c}Dark-11 shadow-md focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent bg-${c}-3 dark:bg-${c}Dark-6 hover:bg-${c}-5 dark:hover:bg-${c}Dark-7 border-2 border-${c}-6 dark:border-${c}Dark-5 hover:border-${c}-8 dark:hover:border-${c}Dark-5`,
+        `text-f-sm hover:ease-out transition-all ease-in duration-150 flex justify-center items-center rounded-full px-4 py-2 fw600 text-${c}-11 dark:text-${c}Dark-11 shadow-md focus:outline-none focus:transition-none focus:ring-2 focus:ring-teal-7 dark:focus:ring-tealDark-7 focus:ring-offset-2 focus:ring-offset-transparent bg-${c}-3 dark:bg-${c}Dark-6 hover:bg-${c}-5 dark:hover:bg-${c}Dark-7 border-2 border-${c}-6 dark:border-${c}Dark-5 hover:border-${c}-8 dark:hover:border-${c}Dark-5`,
     ],
+    {
+      ring: "focus:outline-none focus:transition-none focus:ring-offset-transparent focus:ring-2 focus:ring-teal-7 dark:focus:ring-tealDark-7 focus:ring-offset-2",
+    },
   ],
   presets: [
     presetUno(),

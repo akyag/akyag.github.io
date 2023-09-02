@@ -45,7 +45,7 @@ import Link from "../components/Link.astro";
           <div class="col-span-4">
             <a
               href="/license/"
-              class="mx-4 text-sage-11 dark:text-sageDark-11 transition-all ease-in hover:ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
+              class="mx-4 text-sage-11 dark:text-sageDark-11 transition-all ease-in hover:ease-out duration-200 ring group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               tabindex="0">License</a
             >
           </div>
@@ -61,7 +61,7 @@ import Link from "../components/Link.astro";
           <div class="col-span-4">
             <a
               href="/archive/"
-              class="mx-4 text-sage-11 dark:text-sageDark-11 transition-all ease-in hover:ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
+              class="mx-4 text-sage-11 dark:text-sageDark-11 transition-all ease-in hover:ease-out duration-200 ring group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               tabindex="0">Archive</a
             >
           </div>
@@ -83,7 +83,7 @@ import Link from "../components/Link.astro";
           </div>
           <div class="col-span-4">
             <a
-              class="mx-4 text-sage-11 dark:text-sageDark-11 inline-flex items-center transition-all ease-in hover:ease-out hover:duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
+              class="mx-4 text-sage-11 dark:text-sageDark-11 inline-flex items-center transition-all ease-in hover:ease-out hover:duration-200 ring group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               href="https://github.com/akyag"
               target="_blank"
               rel="noopener"
@@ -106,7 +106,7 @@ import Link from "../components/Link.astro";
           </div>
           <div class="col-span-4">
             <a
-              class="mx-4 text-sage-11 dark:text-sageDark-11 inline-flex items-center transition-all ease-in hover:ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
+              class="mx-4 text-sage-11 dark:text-sageDark-11 inline-flex items-center transition-all ease-in hover:ease-out duration-200 ring group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               href="https://www.linkedin.com/in/akshayghate/"
               target="_blank"
               rel="noopener"
@@ -129,7 +129,7 @@ import Link from "../components/Link.astro";
           </div>
           <div class="col-span-4">
             <a
-              class="mx-4 text-sage-11 dark:text-sageDark-11 inline-flex items-center transition-all ease-in hover:ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
+              class="mx-4 text-sage-11 dark:text-sageDark-11 inline-flex items-center transition-all ease-in hover:ease-out duration-200 ring group-hover:text-teal-11 dark:group-hover:text-tealDark-11"
               href="https://twitter.com/akshayg"
               target="_blank"
               rel="noopener"
@@ -148,14 +148,14 @@ import Link from "../components/Link.astro";
       <div>
         <a
           href="/"
-          class="block hover:transition-all ease-in hover:ease-out hover:scale-105 duration-200 focus:outline-none focus:ring-2 focus:ring-sage-7 dark:focus:ring-sageDark-7 focus:ring-offset-2 focus:ring-offset-transparent"
+          class="block hover:transition-all ease-in hover:ease-out hover:scale-105 duration-200 ring"
           tabindex="0"
         >
           <!-- <Image src={footerLogo} alt="Web-o-Reviews" width={250} height={32} /> -->
           <div role="img" aria-label="Web-o-Reviews">
             <span class="sr-only">Web-o-Reviews</span>
             <svg xmlns="http://www.w3.org/2000/svg" height="32.089" width="250"
-              ><g fill-rule="evenodd"
+              ><title>Web-o-Reviews</title><g fill-rule="evenodd"
                 ><path
                   d="M0 .42 12.413.19 28.39 31.913H15.516zM14.256.312 26.67.082c5.469 10.737 18.143 20.712 15.976 31.722H29.772z"
                   fill="#00989b"></path><path
@@ -185,7 +185,7 @@ import Link from "../components/Link.astro";
           <span class="h-5 w-5 i-solar-copyright-line-duotone" role="none"
           ></span>
 
-           2009 - {currentDate} - Built using <Link
+          {currentDate} - Built using <Link
             href="https://astro.build"
             target="_blank"
             rel="noopener"
