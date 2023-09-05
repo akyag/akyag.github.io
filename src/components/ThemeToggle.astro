@@ -2,18 +2,17 @@
 
 ---
 
-<theme-toggle>
+<div>
   <span class="sr-only">Theme Toggle</span>
   <input
     type="checkbox"
     id="switch"
-    role="switch"
     class="themeToggle"
     aria-label="Switch Dark theme"
     tabindex="0"
     toggle-color-scheme
   />
-  <label for="switch" role="switch">
+  <label for="switch">
     <span
       aria-hidden="true"
       class="i-solar-sun-2-bold absolute z-1 left-2"
@@ -23,7 +22,7 @@
       class="i-solar-moon-bold absolute z-1 left-9"
       id="moon"></span>
   </label>
-</theme-toggle>
+</div>
 
 <style>
   input[type="checkbox"].themeToggle {
@@ -46,7 +45,8 @@
     transition: background-color 200ms ease-in-out;
   }
   input[type="checkbox"].themeToggle:focus + label::before {
-    outline: 2px solid theme("colors.teal.7");
+    outline: 4px solid theme("colors.teal.7");
+    outline-offset: 2px;
   }
 
   input[type="checkbox"].themeToggle + label::after {
@@ -93,7 +93,8 @@
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
-      document.getElementById("switch").checked = true;
+      const toggle = document.getElementById("switch") as HTMLInputElement;
+      toggle.checked = true;
     }
   };
   DarkModeSwitch();

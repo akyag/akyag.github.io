@@ -2,18 +2,17 @@
 
 ---
 
-<mobile-theme-toggle>
+<div>
   <span class="sr-only">Theme Toggle</span>
   <input
     type="checkbox"
     id="mobileswitch"
-    role="switch"
-    aria-label="Switch Dark theme"
     class="mobilethemeToggle"
+    aria-label="Switch Dark theme"
     tabindex="0"
     toggle-color-scheme
   />
-  <label for="mobileswitch" role="switch">
+  <label for="mobileswitch">
     <span
       aria-hidden="true"
       class="i-solar-sun-2-bold absolute z-1 left-2"
@@ -23,7 +22,7 @@
       class="i-solar-moon-bold absolute z-1 left-9"
       id="moon1"></span>
   </label>
-</mobile-theme-toggle>
+</div>
 
 <style>
   input[type="checkbox"].mobilethemeToggle {
@@ -93,7 +92,10 @@
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
-      document.getElementById("mobileswitch").checked = true;
+      const mobiletoggle = document.getElementById(
+        "mobileswitch",
+      ) as HTMLInputElement;
+      mobiletoggle.checked = true;
     }
   };
   DarkModeMobileSwitch();
