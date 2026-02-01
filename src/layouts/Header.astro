@@ -15,11 +15,11 @@ import ThemeToggle from "../components/ThemeToggle.astro";
     </a>
   </div>
   <nav class="flex space-x-2 items-center">
-    <ActiveLink href={"/"}>Home</ActiveLink>
-    <ActiveLink href={"/about/"}>About</ActiveLink>
-    <ActiveLink href={"/design/"}>Design</ActiveLink>
-    <ActiveLink href={"/work/"}>Work</ActiveLink>
-    <ActiveLink href={"/contact/"}>Contact</ActiveLink>
+    <ActiveLink href={"/"} data-astro-prefetch>Home</ActiveLink>
+    <ActiveLink href={"/about/"} data-astro-prefetch>About</ActiveLink>
+    <ActiveLink href={"/design/"} data-astro-prefetch>Design</ActiveLink>
+    <ActiveLink href={"/work/"} data-astro-prefetch>Work</ActiveLink>
+    <ActiveLink href={"/contact/"} data-astro-prefetch>Contact</ActiveLink>
     <ThemeToggle />
   </nav>
 </header>

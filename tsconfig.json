@@ -1,6 +1,11 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  // Note: No change needed if you use "astro/tsconfigs/strict" or "astro/tsconfigs/strictest"
+  "extends": "astro/tsconfigs/base",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
   "compilerOptions": {
+    "strictNullChecks": true,
     "resolveJsonModule": true,
+    "allowJs": true
   }
 }

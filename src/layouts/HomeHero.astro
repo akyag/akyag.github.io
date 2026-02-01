@@ -1,6 +1,7 @@
 ---
 import homeHero from "../assets/images/home.svg";
 import ScrollDown from "../components/ScrollDown.astro";
+import { Image } from "astro:assets";
 import { fade } from "astro:transitions";
 ---
 
@@ -69,6 +70,17 @@ import { fade } from "astro:transitions";
             transition:animate={fade({ duration: "0.9s" })}
           />
         </picture>
+        <!-- <Image
+          src={homeHero}
+          class={"h-auto dark:filter dark:brightness-75 dark:contrast-125"}
+          widths={[350, 525, homeHero.width]}
+          sizes={`(max-width: 768px) 350px, (max-width: 1024px) 525px, ${homeHero.width}px`}
+          alt="Welcome to Web-o-Reviews!"
+          role="img"
+          aria-label="Welcome to Web-o-Reviews!"
+          id="HomeHero"
+          transition:animate={fade({ duration: "0.9s" })}
+        /> -->
       </div>
     </div>
     <ScrollDown />
