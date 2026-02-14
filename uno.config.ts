@@ -1,9 +1,9 @@
 import {
   defineConfig,
   // presetAttributify,
-  presetIcons,
-  presetUno,
+  presetIcons
 } from "unocss";
+import presetWind3 from '@unocss/preset-wind3'
 import myColors from "./my-colors";
 
 import { presetScrollbar } from "unocss-preset-scrollbar";
@@ -21,7 +21,7 @@ export default defineConfig({
     },
   ],
   presets: [
-    presetUno(),
+    presetWind3(),
     myColors(),
     presetIcons({
       extraProperties: {
@@ -30,15 +30,13 @@ export default defineConfig({
       },
       collections: {
         "simple-icons": () =>
-          import("@iconify-json/simple-icons/icons.json").then(
-            (i) => i.default as any,
-          ),
+          import('@iconify-json/simple-icons/icons.json').then((i) => i.default as any,),
         phosphor: () =>
-          import("@iconify-json/ph/icons.json").then((i) => i.default),
+          import('@iconify-json/ph/icons.json').then((i) => i.default as any,),
         remix: () =>
-          import("@iconify-json/ri/icons.json").then((i) => i.default),
+          import('@iconify-json/ri/icons.json').then((i) => i.default),
         solar: () =>
-          import("@iconify-json/solar/icons.json").then(
+          import('@iconify-json/solar/icons.json').then(
             (i) => i.default as any,
           ),
       },

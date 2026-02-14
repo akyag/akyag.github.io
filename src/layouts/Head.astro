@@ -1,13 +1,13 @@
 ---
 import MetaTags from "../core/MetaTags.astro";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 const { meta = {} } = Astro.props;
 ---
 
 <head>
   <MetaTags {...meta} />
-  <ViewTransitions fallback="swap" />
+  <ClientRouter fallback="swap" />
 </head>
 <script>
   function attachEvent(
